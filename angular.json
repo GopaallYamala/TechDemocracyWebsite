@@ -4,6 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "TDC-Websitev3.0": {
+      "i18n": {
+
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -28,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
