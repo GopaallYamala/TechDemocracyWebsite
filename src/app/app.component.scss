@@ -13,6 +13,26 @@
   .hdng {
     font-size: 12px;
     font-weight: bold;
+    margin: 0;
+  }
+  .gartner-header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .report-content {
+    align-items: center;
+    a {
+      font-size: 12px;
+      margin-left: 2rem;
+    }
+  }
+  .actions a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    &:first-child {
+      margin-right: 1rem;
+    }
   }
 }
 
@@ -314,4 +334,33 @@
   .free-consult-headings {
     margin-top: 1rem;
   }
+
+  .yt-iframe {
+    border-radius: 15px;
+  }
+}
+
+.specialised-solutions {
+
+  
+  .img-container {
+    width: inherit;
+    height: 20rem;
+    background: url("../assets/images/hall-bg.JPG") no-repeat;
+    // background-size: contain;
+    // width: 100%;
+  }
+
+  .space-left-container {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.75rem;
+      font-weight: 600;
+      width: 55%;
+    }
+  }
+  
 }
