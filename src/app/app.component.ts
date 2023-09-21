@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'TDC-Websitev3.0';
   isMenuCollapsed: boolean = false;
   // images = [944, 1011, 984].map((n) => `../assets/images/HeroImage1920_960.png`);
-  images = ['../assets/images/Slideshow1.png', '../assets/images/Slideshow2.png', '../assets/images/Slideshow3.png']
+
 
   showNavigationArrows = true;
 	showNavigationIndicators = false;

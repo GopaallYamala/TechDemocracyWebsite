@@ -1,0 +1,50 @@
+.our-solutions {
+  padding-top: 6rem;
+  .our-solutions-header .our-solutions-content {
+    width: 55%;
+  }
+
+  .our-solutions-body .our-solution {
+    width: 280px;
+    height: 240px;
+    padding: 2rem;
+    border-radius: 22px;
+    margin-bottom: 1rem;
+    // &:not(:first-child) {
+    margin-right: 1rem;
+    // }
+    h3 {
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    p {
+      font-size: 0.85rem;
+      color: #ffffff;
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Background colors
+  .sol-dark-blue {
+    background-color: #333f55;
+  }
+  .sol-dark-pink {
+    background-color: #984c63;
+  }
+  .sol-light-blue {
+    background-color: #4c6491;
+  }
+  .sol-dark-purple {
+    background-color: #543355;
+  }
+
+  .our-solutions-body {
+    margin-top: 2rem;
+  }
+
+  .our-solutions-body .solution-workers {
+    background: url("../assets/images/solutions-workers.JPG") no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+}
