@@ -1,0 +1,47 @@
+.id-secure-solutions {
+  padding-top: 3rem;
+  .solution-blocks h2 {
+    font-size: 32px;
+    width: 48%;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+  }
+  .sol-blocks .sol-block {
+    background-color: #edf2fb;
+    border-radius: 18px;
+    margin-right: 1rem;
+    padding: 5rem 1rem 1rem 1rem;
+    width: 30%;
+    h3 {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 100;
+    }
+    .sol-link h4 {
+      width: 70%;
+    }
+  }
+
+  // Testimonials block
+  .testimonials-block {
+    background-color: #f3fbfe;
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: 18px;
+
+    .titles h2 {
+      font-size: 20px;
+    }
+    .titles h3 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 100;
+    }
+
+    .testimony-body .testimony-name {
+      font-size: 18px;
+    }
+    .testimony-body .testimony-content {
+      font-size: 14px;
+    }
+  }
+}

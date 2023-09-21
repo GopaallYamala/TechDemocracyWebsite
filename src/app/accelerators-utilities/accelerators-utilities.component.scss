@@ -1,0 +1,31 @@
+.utilities {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.utilities-header h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.utilities-body {
+  padding-top: 2rem;
+}
+
+.utility .utility-icon {
+  width: 150px;
+  height: 100px;
+  background: #edf2fb;
+  margin-right: 1.5rem;
+}
+
+.utility .utility-name {
+  font-size: 18px;
+}
+
+.utility .utility-link {
+  color: #ee435c;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}

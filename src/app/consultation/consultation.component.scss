@@ -1,0 +1,31 @@
+.consultation-container {
+  padding-top: 1rem;
+  width: 100%;
+  background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 34, 98, 1) 51%, rgba(23, 60, 180, 1) 85%);
+  // .decor-bg-blu {
+  //   height: 2rem;
+  //   background: rgb(2, 0, 36);
+  //   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(23, 60, 180, 1) 0%, rgba(0, 34, 98, 1) 100%);
+  //   width: 100%;
+  //   margin: 0;
+  // }
+  .consult-section {
+    align-items: center;
+    padding: 3rem 0;
+
+    width: 100%;
+    margin: 0;
+  }
+  .consult-action {
+    padding: 0 5rem;
+    h1 {
+      color: #ffffff;
+      font-size: 1.85rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .consult-content p {
+    color: #FFFFFF;
+  }
+}

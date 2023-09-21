@@ -1,0 +1,33 @@
+.specialised-solutions {
+  padding: 3rem 0;
+
+  .img-container {
+    width: inherit;
+    height: 20rem;
+    background: url("../assets/images/hall-bg.JPG") no-repeat;
+    // background-size: contain;
+    // width: 100%;
+  }
+
+  .spec-left-container {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.75rem;
+      font-weight: 600;
+      width: 55%;
+    }
+  }
+
+  .spec-right-container .spec {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+
+}

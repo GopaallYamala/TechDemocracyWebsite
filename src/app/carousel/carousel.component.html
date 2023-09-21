@@ -1,0 +1,12 @@
+<ngb-carousel @slideUp class="tdc-carousel-container" *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+[showNavigationIndicators]="showNavigationIndicators">
+<ng-template ngbSlide *ngFor="let image of images">
+  <div class="picsum-img-wrapper">
+    <img class="tdc-carousel-img" [src]="image" alt="Random slide" />
+  </div>
+  <!-- <div class="carousel-caption">
+    <h3>No mouse navigation</h3>
+    <p>Some carousel text</p>
+  </div> -->
+</ng-template>
+</ngb-carousel>

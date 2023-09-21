@@ -1,0 +1,54 @@
+.about-us {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ECF3FF;
+  .about-us-header {
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .headings h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .headings p {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .about-us-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .highlight {
+    position: relative;
+    align-items: center;
+    width: 230px;
+  }
+
+  .highlight .highlight-left {
+    // position: absolute;
+    left: 0;
+    width: 0.75rem;
+    height: 90%;
+    background: #173CB4;
+    border-radius: 10px;
+  }
+
+  .highlight-content {
+    padding-left: 1rem;
+  }
+
+  .highlight-content p {
+    width: 100%;
+    font-weight: 500;
+  }
+
+  .free-consult-headings {
+    margin-top: 1rem;
+  }
+
+  .yt-iframe {
+    border-radius: 15px;
+  }
+}

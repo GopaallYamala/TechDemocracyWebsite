@@ -1,0 +1,30 @@
+.gartner-header {
+  height: 45px;
+  background-color: #a1c4fd;
+  display: flex;
+  align-items: center;
+  .hdng {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .gartner-header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .report-content {
+    align-items: center;
+    a {
+      font-size: 12px;
+      margin-left: 2rem;
+    }
+  }
+  .actions a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}
