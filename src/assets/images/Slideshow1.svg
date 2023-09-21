@@ -1,0 +1,113 @@
+<svg id="Component_26_7" data-name="Component 26 – 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="690" viewBox="0 0 1920 690">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.097" y2="1.372" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#173cb4"/>
+      <stop offset="1" stop-color="#009dff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.056" y1="-0.121" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#173cb4" stop-opacity="0.255"/>
+      <stop offset="1" stop-color="#009dff" stop-opacity="0.09"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f6a5ac" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#f641ac"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6482ff"/>
+      <stop offset="1" stop-color="#645aff" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#645aff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#8000f6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#22c3fd" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#226afd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="0.5" y1="0.464" x2="1" y2="0.459" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1518b7"/>
+      <stop offset="1" stop-color="#173cb4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="0.519" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5315b7"/>
+      <stop offset="1" stop-color="#173cb4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="0.511" y1="0.48" x2="0" y2="0.477" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4318b7"/>
+      <stop offset="1" stop-color="#173cb4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="0.455" y1="0.5" x2="0.011" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8018b7"/>
+      <stop offset="1" stop-color="#173cb4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2987" data-name="Group 2987" transform="translate(0 -107)">
+    <g id="Path_84674" data-name="Path 84674" transform="translate(0 107)" fill="url(#linear-gradient)">
+      <path d="M 1919.5 689.5 L 0.5 689.5 L 0.5 0.5 L 1919.5 0.5 L 1919.5 689.5 Z" stroke="none"/>
+      <path d="M 1 1 L 1 689 L 1919 689 L 1919 1 L 1 1 M 0 0 L 1920 0 L 1920 690 L 0 690 L 0 0 Z" stroke="none" fill="#707070"/>
+    </g>
+    <g id="Button" transform="translate(263 624)">
+      <rect id="Placement_Area" data-name="Placement Area" width="108" height="48" fill="red" opacity="0"/>
+      <rect id="Background" width="141" height="48" rx="10" fill="#002262"/>
+      <text id="Text" transform="translate(30 30)" fill="#fff" font-size="18" font-family="AdobeClean-Bold, Adobe Clean" font-weight="700"><tspan x="0" y="0">Read More..</tspan></text>
+    </g>
+    <g id="Component_40_1" data-name="Component 40 – 1" transform="translate(938 174)">
+      <g id="Rectangle_2206" data-name="Rectangle 2206" transform="translate(163 32)" stroke="#00b1ff" stroke-width="1" fill="url(#linear-gradient-2)">
+        <rect width="484" height="495" rx="69" stroke="none"/>
+        <rect x="0.5" y="0.5" width="483" height="494" rx="68.5" fill="none"/>
+      </g>
+      <path id="Polygon_1" data-name="Polygon 1" d="M115.5,0,154,66.5,115.5,133h-77L0,66.5,38.5,0Z" transform="translate(338 59)" fill="#fff"/>
+      <path id="Polygon_2" data-name="Polygon 2" d="M115.5,0,154,66.5,115.5,133h-77L0,66.5,38.5,0Z" transform="translate(309 382)" fill="#fff"/>
+      <g id="Rectangle_2235" data-name="Rectangle 2235" transform="translate(239)" stroke="#00b1ff" stroke-width="1" fill="url(#linear-gradient-2)">
+        <rect width="322" height="556" rx="69" stroke="none"/>
+        <rect x="0.5" y="0.5" width="321" height="555" rx="68.5" fill="none"/>
+      </g>
+      <g id="Component_39_2" data-name="Component 39 – 2" transform="translate(0 0.039)">
+        <g id="Group_3109" data-name="Group 3109" transform="translate(176.94)">
+          <path id="Path_84779" data-name="Path 84779" d="M157.414,215.923H282.063L344.4,107.952,282.063,0H157.414L95.08,107.952Z" transform="translate(-95.08)" fill="url(#linear-gradient-4)"/>
+        </g>
+        <g id="Group_3108" data-name="Group 3108" transform="translate(372.321 113)">
+          <path id="Path_84776" data-name="Path 84776" d="M263.644,277.773H388.311L450.645,169.82,388.311,61.85H263.644L201.31,169.82Z" transform="translate(-201.31 -61.85)" fill="url(#linear-gradient-5)"/>
+        </g>
+        <path id="Path_84771" data-name="Path 84771" d="M157.414,339.633H282.063L344.4,231.662,282.063,123.71H157.414L95.08,231.662Z" transform="translate(81.861 103.29)" fill="url(#linear-gradient-6)"/>
+        <path id="Path_84773" data-name="Path 84773" d="M263.644,401.483H388.311L450.645,293.53,388.311,185.56H263.644L201.31,293.53Z" transform="translate(171.012 154.44)" fill="url(#linear-gradient-7)"/>
+        <path id="Union_1" data-name="Union 1" d="M0,78.928,45.306,0H388.154V158.386H45.306Z" transform="translate(406 369)" fill="url(#linear-gradient-8)"/>
+        <path id="Union_2" data-name="Union 2" d="M0,79.162,45.306.234H388.154V158.62H45.306Z" transform="translate(406 141.766)" fill="url(#linear-gradient-9)"/>
+        <path id="Union_4" data-name="Union 4" d="M433.4,79.458l-45.306,78.928H45.242V0H388.091Z" transform="translate(-45.242 256)" fill="url(#linear-gradient-10)"/>
+        <path id="Union_3" data-name="Union 3" d="M433.4,79.692,388.091,158.62H45.242V.234H388.091Z" transform="translate(-45.242 28.766)" fill="url(#linear-gradient-11)"/>
+        <g id="Group_3226" data-name="Group 3226" transform="translate(-9038.242 1477)">
+          <text id="Identity_Governance_Administration_-_IGA" data-name="Identity Governance
+&amp; Administration - IGA" transform="translate(9130 -1414.307)" fill="#fff" font-size="24" font-family="NHaasGroteskDSPro-65Md, Neue Haas Grotesk Display Pro" font-weight="500"><tspan x="0" y="22">Identity Governance</tspan><tspan x="0" y="46">&amp; Administration - IGA</tspan></text>
+          <rect id="Rectangle_2202" data-name="Rectangle 2202" width="75" height="25" rx="6" transform="translate(9130 -1348.307)"/>
+          <text id="View_More" data-name="View More" transform="translate(9139 -1331.307)" fill="#fff" font-size="13" font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">View More</tspan></text>
+        </g>
+        <g id="Group_3227" data-name="Group 3227" transform="translate(-9038.242 1697.729)">
+          <text id="Identity_Access_Management_-_IAM" data-name="Identity &amp; Access
+Management - IAM" transform="translate(9130 -1414.307)" fill="#fff" font-size="24" font-family="NHaasGroteskDSPro-65Md, Neue Haas Grotesk Display Pro" font-weight="500"><tspan x="0" y="22">Identity &amp; Access</tspan><tspan x="0" y="46">Management - IAM</tspan></text>
+          <rect id="Rectangle_2202-2" data-name="Rectangle 2202" width="75" height="25" rx="6" transform="translate(9130 -1348.307)"/>
+          <text id="View_More-2" data-name="View More" transform="translate(9139 -1331.307)" fill="#fff" font-size="13" font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">View More</tspan></text>
+        </g>
+        <g id="Group_3228" data-name="Group 3228" transform="translate(-8652.242 1590)">
+          <text id="Privileged_Access_Management_-_PAM" data-name="Privileged Access
+Management - PAM" transform="translate(9130 -1414.307)" fill="#fff" font-size="24" font-family="NHaasGroteskDSPro-65Md, Neue Haas Grotesk Display Pro" font-weight="500"><tspan x="0" y="22">Privileged Access</tspan><tspan x="0" y="46">Management - PAM</tspan></text>
+          <rect id="Rectangle_2202-3" data-name="Rectangle 2202" width="75" height="25" rx="6" transform="translate(9130 -1348.307)"/>
+          <text id="View_More-3" data-name="View More" transform="translate(9139 -1331.307)" fill="#fff" font-size="13" font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">View More</tspan></text>
+        </g>
+        <g id="Group_3229" data-name="Group 3229" transform="translate(-8652.242 1805.459)">
+          <text id="Customer_Identity_Access_Management_-_CIAM" data-name="Customer Identity Access
+Management - CIAM" transform="translate(9130 -1414.307)" fill="#fff" font-size="24" font-family="NHaasGroteskDSPro-65Md, Neue Haas Grotesk Display Pro" font-weight="500"><tspan x="0" y="22">Customer Identity Access</tspan><tspan x="0" y="46">Management - CIAM</tspan></text>
+          <rect id="Rectangle_2202-4" data-name="Rectangle 2202" width="75" height="25" rx="6" transform="translate(9130 -1348.307)"/>
+          <text id="View_More-4" data-name="View More" transform="translate(9139 -1331.307)" fill="#fff" font-size="13" font-family="NHaasGroteskDSPro-55Rg, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">View More</tspan></text>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_2240" data-name="Rectangle 2240" width="155" height="518" transform="translate(49 186)" fill="none"/>
+    <rect id="Rectangle_2241" data-name="Rectangle 2241" width="155" height="518" transform="translate(1714 193)" fill="none"/>
+  </g>
+  <text id="Identity_Attacks_are_Fast-Growing_Serious_and_Costly._How_Prepared_are_You_" data-name="Identity Attacks are Fast-Growing, Serious, and Costly. 
+How Prepared are You?" transform="translate(263 195)" fill="#fff" font-size="48" font-family="NHaasGroteskDSPro-65Md, Neue Haas Grotesk Display Pro" font-weight="500"><tspan x="0" y="45">Identity Attacks are Fast-</tspan><tspan x="0" y="103">Growing, Serious, and Costly. </tspan><tspan x="0" y="161">How Prepared are You?</tspan></text>
+  <text id="Secure_Identities_Defend_Against_Threats_and_Meet_All-new_Compliance_Levels" data-name="Secure Identities, Defend Against Threats,
+and Meet All-new Compliance Levels" transform="translate(263 387)" fill="#fff" font-size="22" font-family="NHaasGroteskTXPro-55Rg, Neue Haas Grotesk Text Pro" opacity="0.9"><tspan x="0" y="22">Secure Identities, Defend Against Threats,</tspan><tspan x="0" y="54">and Meet All-new Compliance Levels</tspan></text>
+  <rect id="Rectangle_2182" data-name="Rectangle 2182" width="201" height="566" transform="translate(0 58)" fill="none"/>
+  <rect id="Rectangle_2183" data-name="Rectangle 2183" width="201" height="566" transform="translate(1719 58)" fill="none"/>
+</svg>
