@@ -51,11 +51,11 @@
 
 .tdc-carousel-container .tdc-carousel-img {
   width: 100%;
-  height: 400px;
+  // height: 400px;
 }
 
 .tdc-carousel-container .carousel-inner {
-  max-height: 400px;
+  max-height: initial;
 }
 
 /** Identity-secure-solutions */
@@ -341,7 +341,7 @@
 }
 
 .specialised-solutions {
-
+  padding: 3rem 0;
   
   .img-container {
     width: inherit;
@@ -351,7 +351,7 @@
     // width: 100%;
   }
 
-  .space-left-container {
+  .spec-left-container {
     h2 {
       font-size: 1.5rem;
       font-weight: 400;
@@ -361,6 +361,15 @@
       font-weight: 600;
       width: 55%;
     }
+  }
+
+  .spec-right-container .spec {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    margin: 0 0.5rem 0.5rem 0;
   }
   
 }
