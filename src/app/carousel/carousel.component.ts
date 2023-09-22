@@ -14,7 +14,7 @@ export class CarouselComponent {
 
   showNavigationArrows = true;
   showNavigationIndicators = false;
-  images = ['../assets/images/Slideshow1.png', '../assets/images/Slideshow2.png', '../assets/images/Slideshow3.png']
+  images = ['../../assets/images/Slideshow1.png', '../../assets/images/Slideshow2.png', '../../assets/images/Slideshow3.png']
   constructor(config: NgbCarouselConfig) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
