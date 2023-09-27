@@ -1,7 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
-
 @Component({
   selector: 'top-navbar',
   templateUrl: './navbar.component.html',
