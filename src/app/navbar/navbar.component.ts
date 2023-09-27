@@ -75,13 +75,13 @@ export class NavBarComponent {
   }
 
   showSolutionsNav() {
-    this.solutionsMenu = true;
+    this.solutionsMenu = !this.solutionsMenu;
     this.displayCreateMenu = false;
   }
 
   showServicesNav() {
     this.solutionsMenu = false;
-    this.displayCreateMenu = true;
+    this.displayCreateMenu = !this.displayCreateMenu;
   }
 
 }
