@@ -1,5 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
-@import './assets/styles/flex-box-styles.scss'
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/styles/flex-box-styles.scss";
+
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -moz-box-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+.flex-row-nowrap {
+  display: flex;
+  flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  -moz-box-flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+}
+
+.flex-col-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  -moz-box-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+}
+
+.flex-col-nowrap {
+  display: flex;
+  flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  -moz-box-flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+}
+
+.cursor {
+  cursor: pointer;
+}

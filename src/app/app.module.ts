@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppHomeModule } from './app-home/app-home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,10 @@ import { AppHomeModule } from './app-home/app-home.module';
     NgbModule,
     RouterModule,
     AppRoutingModule,
-    AppHomeModule
+    AppHomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
