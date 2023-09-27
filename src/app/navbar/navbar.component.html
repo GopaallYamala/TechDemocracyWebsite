@@ -3,18 +3,30 @@
     <a class="navbar-brand">
       <img src="../assets/images/tdc-logo.png" class="tdc-logo" alt="TechDemocracy Logo">
     </a>
-
-    <div class="header-menu-actions flex-row-nowrap">
+    <div clickOutside (clickOutside)="displayCreateMenu = false || solutionsMenu = false"
+      class="header-menu-actions flex-row-nowrap">
       <div [ngbCollapse]="isMenuCollapsed" class="navbar">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Solutions</a>
+          <!-- (mouseover)="showMenu('SolutionsMenu')" (mouseout)="hideMenu('SolutionsMenu')" -->
+          <li (click)="showSolutionsNav()" class="nav-item">
+            <div class="nav-link cursor flex-row-nowrap">
+              <span class="{{solutionsMenu?'nav-active':''}}">Solutions</span>
+              <svg-icon-component *ngIf="!solutionsMenu" [name]="'expand_more'"></svg-icon-component>
+              <svg-icon-component class="{{solutionsMenu?'nav-active':''}}" *ngIf="solutionsMenu"
+                [name]="'expand_less'"></svg-icon-component>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Services</a>
+          <!-- (mouseover)="showMenu('ServicesMenu')" (mouseout)="hideMenu('ServicesMenu')" -->
+          <li (click)="showServicesNav()" class="nav-item services-menu">
+            <div class="nav-link cursor flex-row-nowrap">
+              <span class="{{displayCreateMenu?'nav-active':''}}">Services</span>
+              <svg-icon-component *ngIf="!displayCreateMenu" [name]="'expand_more'"></svg-icon-component>
+              <svg-icon-component class="{{displayCreateMenu?'nav-active':''}}" *ngIf="displayCreateMenu"
+                [name]="'expand_less'"></svg-icon-component>
+            </div>
           </li>
           <li class="nav-item active">
             <a class="nav-link">Partners</a>
@@ -29,6 +41,27 @@
       </div>
       <div class="free-consult-btn">
         <button type="button" class="btn btn-outline-danger ">Free Consultation</button>
+      </div>
+      <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap">
+        <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
+          <h5 class="nav-tittle">{{solution.tittle}}</h5>
+          <div class="nav-desc">
+            <p>{{solution.desc}}</p>
+          </div>
+          <a>{{solution.stories}}</a>
+          <a>{{solution.approch}}</a>
+          <a>{{solution.customise}}</a>
+        </div>
+      </div>
+      <div @slideDown *ngIf="displayCreateMenu" id="ServicesMenu" class="nav-info flex-row-nowrap">
+        <div class="flex-col-nowrap nav-content" *ngFor="let service of servicesObj">
+          <h5 class="nav-tittle">{{service.tittle}}</h5>
+          <div class="nav-desc">
+            <p>{{service.desc}}</p>
+          </div>
+          <a>{{service.businessModel}}</a>
+          <a>{{service.stories}}</a>
+        </div>
       </div>
     </div>
   </div>

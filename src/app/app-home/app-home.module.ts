@@ -12,6 +12,8 @@ import { ConsultationComponent } from '../consultation/consultation.component';
 import { AboutUsComponent } from '../about/about-us.component';
 import { SpecialisedSolutionsComponent } from '../specialised-solutions/specialised-solutions.component';
 import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ClickOutsideDirective } from '../directives/click-outside.directive';
+import { SVGIconComponent } from '../form-controls/svg-icon.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-boots
     AcceleratorsUtilitiesComponent,
     ConsultationComponent,
     AboutUsComponent,
-    SpecialisedSolutionsComponent
+    SpecialisedSolutionsComponent,
+    ClickOutsideDirective,
+    SVGIconComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
@@ -32,6 +36,10 @@ import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-boots
     BrowserAnimationsModule,
     NgbAlertModule, NgbAccordionModule,
     NgbCarouselModule,
+  ],
+  exports: [
+    ClickOutsideDirective,
+    SVGIconComponent
   ]
 
 })

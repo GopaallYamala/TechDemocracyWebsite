@@ -11,4 +11,21 @@ import { AnimationDefinitions } from 'src/shared/animations';
 
 export class AppHomeComponent {
 
+  countryName: string;
+  timeStamp: string;
+
+  constructor() {
+    // this.timeStamp = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    // this.getContry();
+  }
+
+  getContry() {
+    fetch('https://api.ipregistry.co/?key=tryout')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (payload) {
+        console.log(payload.location.country.name + ', ' + payload.location.city);
+      });
+  }
 }
