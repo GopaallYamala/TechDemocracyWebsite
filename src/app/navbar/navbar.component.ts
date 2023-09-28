@@ -18,28 +18,28 @@ export class NavBarComponent {
     tittle: 'Identity Governance & Administration',
     desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
     stories: 'Success stories',
-    approch: 'Our Approch',
+    approch: 'Our Approach',
     customise: 'Customise Solutions',
   },
   {
     tittle: 'Customer Identity & Access Management',
     desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
     stories: 'Success stories',
-    approch: 'Our Approch',
+    approch: 'Our Approach',
     customise: 'Customise Solutions',
   },
   {
     tittle: 'Previliged Access Management',
     desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
     stories: 'Success stories',
-    approch: 'Our Approch',
+    approch: 'Our Approach',
     customise: 'Customise Solutions',
   },
   {
     tittle: 'Access Management',
     desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
     stories: 'Success stories',
-    approch: 'Our Approch',
+    approch: 'Our Approach',
     customise: 'Customise Solutions',
   }]
 
