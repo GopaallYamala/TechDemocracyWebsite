@@ -14,6 +14,7 @@ import { SpecialisedSolutionsComponent } from '../specialised-solutions/speciali
 import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClickOutsideDirective } from '../directives/click-outside.directive';
 import { SVGIconComponent } from '../form-controls/svg-icon.component';
+import { PopupDropdownComponent } from '../form-controls/popup-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SVGIconComponent } from '../form-controls/svg-icon.component';
     AboutUsComponent,
     SpecialisedSolutionsComponent,
     ClickOutsideDirective,
-    SVGIconComponent
+    SVGIconComponent,
+    PopupDropdownComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
@@ -39,7 +41,8 @@ import { SVGIconComponent } from '../form-controls/svg-icon.component';
   ],
   exports: [
     ClickOutsideDirective,
-    SVGIconComponent
+    SVGIconComponent,
+    PopupDropdownComponent
   ]
 
 })

@@ -8,22 +8,17 @@
     </div>
     <div class="actions flex-row-nowrap">
       <a href="#">Chat with Sales</a>
-      <a href="#">United States</a>
-      <!-- <select class="form-select" aria-label=".form-select-sm example">
-        <option selected>United States</option>
-        <option value="1">India</option>
-        <option value="2">Canada</option>
-        <option value="3">Philippines</option>
-      </select> -->
-      <!-- <div class="dropdown">
-        <button class="dropbtn">United States</button>
-        <div class="dropdown-content">
-          <a href="#">United States</a>
-          <a href="#">India</a>
-          <a href="#">Canada</a>
-          <a href="#">Philippines</a>
+      <!-- <a href="#">United States</a> -->
+      <div clickOutside (clickOutside)="displayCreateMenu = false">
+        <div class="flex-row-nowrap">
+          <button class="select-org" (click)="quickSelect()">{{selectedState}}</button>
+          <svg-icon-component *ngIf="!displayCreateMenu" class="expand-svg" [name]="'expand_more'"></svg-icon-component>
+          <svg-icon-component *ngIf="displayCreateMenu" class="expand-svg" [name]="'expand_less'"></svg-icon-component>
         </div>
-      </div> -->
+        <app-custom-popup-component [popupActive]="displayCreateMenu" [values]="quickActions"
+          (selected)="selectAction($event)">
+        </app-custom-popup-component>
+      </div>
     </div>
   </div>
 </header>
