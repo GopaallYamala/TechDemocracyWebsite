@@ -1,6 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { AnimationDefinitions } from 'src/shared/animations';
-
+import { AnimationDefinitions } from '../../shared/animations';
 
 @Component({
   selector: 'top-navbar',
@@ -76,13 +75,13 @@ export class NavBarComponent {
   }
 
   showSolutionsNav() {
-    this.solutionsMenu = true;
+    this.solutionsMenu = !this.solutionsMenu;
     this.displayCreateMenu = false;
   }
 
   showServicesNav() {
     this.solutionsMenu = false;
-    this.displayCreateMenu = true;
+    this.displayCreateMenu = !this.displayCreateMenu;
   }
 
 }
