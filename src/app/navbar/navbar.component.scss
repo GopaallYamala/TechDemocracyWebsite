@@ -46,7 +46,9 @@
   }
 }
 .nav-link {
+  font-family: neue-haas-grotesk-display-600;
   &:hover {
+    cursor: pointer;
     color: #dc3545;
     svg {
       fill: #f25b23 !important;
@@ -58,4 +60,8 @@
       fill: #f25b23 !important;
     }
   }
+}
+
+.nav-link > span {
+  font-family: neue-haas-grotesk-display-600;
 }
