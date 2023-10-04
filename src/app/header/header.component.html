@@ -7,11 +7,16 @@
       <a href="#" class="pl-3">Check the Reports</a>
     </div>
     <div class="actions flex-row-nowrap">
-      <a href="#">Chat with Sales</a>
+      <div class="chat-container flex-row-nowrap">
+        <svg-icon-component [name]="'chat_bubble_white'" class="icon-svg"></svg-icon-component>
+        <a href="#">Chat with Sales</a>
+      </div>
+      
       <!-- <a href="#">United States</a> -->
       <div clickOutside (clickOutside)="displayCreateMenu = false">
-        <div class="flex-row-nowrap">
-          <button class="select-org" (click)="quickSelect()">{{selectedState}}</button>
+        <div class="flex-row-nowrap lang-container">
+          <svg-icon-component [name]="'lang_globe'" class="icon-svg"></svg-icon-component>
+          <a class="select-org" (click)="quickSelect()">{{selectedState}}</a>
           <svg-icon-component *ngIf="!displayCreateMenu" class="expand-svg" [name]="'expand_more'"></svg-icon-component>
           <svg-icon-component *ngIf="displayCreateMenu" class="expand-svg" [name]="'expand_less'"></svg-icon-component>
         </div>
