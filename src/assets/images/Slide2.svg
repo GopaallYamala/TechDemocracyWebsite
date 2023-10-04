@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="690" viewBox="0 0 1920 690">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.097" y2="1.372" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#173cb4"/>
+      <stop offset="1" stop-color="#009dff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.056" y1="-0.121" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#173cb4" stop-opacity="0.255"/>
+      <stop offset="1" stop-color="#009dff" stop-opacity="0.09"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.989" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9645d2"/>
+      <stop offset="1" stop-color="#173cb4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.989" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#009dff"/>
+      <stop offset="1" stop-color="#173cb4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.989" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d26045"/>
+      <stop offset="1" stop-color="#173cb4"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3390" data-name="Group 3390" transform="translate(-12725 4304)">
+    <g id="Group_3388" data-name="Group 3388">
+      <g id="Group_2987" data-name="Group 2987" transform="translate(12725 -4411)">
+        <path id="Path_84674" data-name="Path 84674" d="M0,0H1920V690H0Z" transform="translate(0 107)" fill="url(#linear-gradient)"/>
+        <path id="Path_84674_-_Outline" data-name="Path 84674 - Outline" d="M1,1V689H1919V1H1M0,0H1920V690H0Z" transform="translate(0 107)" fill="#707070"/>
+        <g id="Button" transform="translate(263 624)">
+          <rect id="Placement_Area" data-name="Placement Area" width="108" height="48" fill="red" opacity="0"/>
+          <rect id="Background" width="141" height="48" rx="10" fill="#002262"/>
+          <text id="Text" transform="translate(30 30)" fill="#fff" font-size="18" font-family="AdobeClean-Bold, Adobe Clean" font-weight="700"><tspan x="0" y="0">Read More..</tspan></text>
+        </g>
+      </g>
+      <text id="Not_Half-baked_Not_a_Broken_Piece_of_Solution_Not_Off-the-shelf" data-name="Not Half-baked, Not a Broken
+Piece of Solution, Not Off-the-shelf" transform="translate(12988 -4087)" fill="#fff" font-size="44" font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"><tspan x="0" y="41">Not Half-baked, Not a Broken</tspan><tspan x="0" y="99">Piece of Solution, Not Off-the-shelf</tspan></text>
+      <text id="Modernize_your_Identity_security_posture_with_our_comprehensive." data-name="Modernize your Identity security posture 
+with our comprehensive." transform="translate(12988 -3958)" fill="#fff" font-size="22" font-family="NHaasGroteskTXPro-55Rg, Neue Haas Grotesk Text Pro" opacity="0.9"><tspan x="0" y="22">Modernize your Identity security posture </tspan><tspan x="0" y="54">with our comprehensive.</tspan></text>
+      <rect id="Rectangle_2182" data-name="Rectangle 2182" width="201" height="566" transform="translate(12725 -4246)" fill="none"/>
+      <rect id="Rectangle_2183" data-name="Rectangle 2183" width="201" height="566" transform="translate(14444 -4246)" fill="none"/>
+      <rect id="Rectangle_2242" data-name="Rectangle 2242" width="155" height="518" transform="translate(12774 -4225)" fill="none"/>
+      <rect id="Rectangle_2243" data-name="Rectangle 2243" width="155" height="518" transform="translate(14439 -4218)" fill="none"/>
+      <g id="Group_3265" data-name="Group 3265" transform="translate(12725 -4472)">
+        <rect id="Rectangle_2255" data-name="Rectangle 2255" width="268" height="491" rx="69" transform="translate(1274 264)" fill="url(#linear-gradient-2)"/>
+        <path id="Rectangle_2255_-_Outline" data-name="Rectangle 2255 - Outline" d="M69,1A67.678,67.678,0,0,0,30.981,12.613,68.2,68.2,0,0,0,6.343,42.532,67.573,67.573,0,0,0,1,69V422a67.678,67.678,0,0,0,11.613,38.019,68.2,68.2,0,0,0,29.919,24.638A67.573,67.573,0,0,0,69,490H199a67.678,67.678,0,0,0,38.019-11.613,68.2,68.2,0,0,0,24.638-29.919A67.573,67.573,0,0,0,267,422V69a67.678,67.678,0,0,0-11.613-38.019A68.2,68.2,0,0,0,225.468,6.343,67.573,67.573,0,0,0,199,1H69m0-1H199a69,69,0,0,1,69,69V422a69,69,0,0,1-69,69H69A69,69,0,0,1,0,422V69A69,69,0,0,1,69,0Z" transform="translate(1274 264)" fill="#00b1ff"/>
+        <rect id="Rectangle_2249" data-name="Rectangle 2249" width="329" height="130" rx="30" transform="translate(1109 296)" fill="url(#linear-gradient-3)"/>
+        <rect id="Rectangle_2250" data-name="Rectangle 2250" width="363" height="130" rx="30" transform="translate(1160 442)" fill="url(#linear-gradient-4)"/>
+        <rect id="Rectangle_2251" data-name="Rectangle 2251" width="394" height="130" rx="30" transform="translate(1210 585)" fill="url(#linear-gradient-5)"/>
+        <text id="Advisory_Consulting" data-name="Advisory
+Consulting" transform="translate(1236 354)" fill="#fff" font-size="26" font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">Advisory</tspan><tspan x="0" y="34">Consulting</tspan></text>
+        <text id="Implementation_Services" data-name="Implementation
+Services" transform="translate(1295 500)" fill="#fff" font-size="26" font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">Implementation</tspan><tspan x="0" y="32">Services</tspan></text>
+        <text id="Managed_Services_Operations" data-name="Managed Services
+&amp; Operations" transform="translate(1351 647)" fill="#fff" font-size="26" font-family="NHaasGroteskDSPro-75Bd, Neue Haas Grotesk Display Pro"><tspan x="0" y="0">Managed Services</tspan><tspan x="0" y="32">&amp; Operations</tspan></text>
+        <g id="Group_3265-2" data-name="Group 3265" transform="translate(91 -294)">
+          <circle id="Ellipse_65" data-name="Ellipse 65" cx="43" cy="43" r="43" transform="translate(1097 758)" fill="#002262"/>
+          <g id="lock" transform="translate(1063.52 782.359)">
+            <g id="Group_2993" data-name="Group 2993" transform="translate(64)">
+              <path id="Path_84677" data-name="Path 84677" d="M88.269,12.481h-2.08V9.707a9.707,9.707,0,0,0-19.415,0v2.774h-2.08a.693.693,0,0,0-.693.693V30.509a2.776,2.776,0,0,0,2.774,2.774H86.188a2.776,2.776,0,0,0,2.773-2.774V13.174A.693.693,0,0,0,88.269,12.481ZM78.557,26.966a.694.694,0,0,1-.689.77H75.094a.694.694,0,0,1-.689-.77l.437-3.933A2.743,2.743,0,0,1,73.707,20.8a2.774,2.774,0,0,1,5.547,0,2.743,2.743,0,0,1-1.135,2.231Zm3.471-14.485H70.934V9.707a5.547,5.547,0,0,1,11.094,0Z" transform="translate(-64)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_3267" data-name="Group 3267" transform="translate(34 4)">
+          <circle id="Ellipse_64" data-name="Ellipse 64" cx="43" cy="43" r="43" transform="translate(1095 313)" fill="#002262"/>
+          <g id="lock-2" data-name="lock" transform="translate(1061.519 339.359)">
+            <g id="Group_2993-2" data-name="Group 2993" transform="translate(64)">
+              <path id="Path_84677-2" data-name="Path 84677" d="M88.269,12.481h-2.08V9.707a9.707,9.707,0,0,0-19.415,0v2.774h-2.08a.693.693,0,0,0-.693.693V30.509a2.776,2.776,0,0,0,2.774,2.774H86.188a2.776,2.776,0,0,0,2.773-2.774V13.174A.693.693,0,0,0,88.269,12.481ZM78.557,26.966a.694.694,0,0,1-.689.77H75.094a.694.694,0,0,1-.689-.77l.437-3.933A2.743,2.743,0,0,1,73.707,20.8a2.774,2.774,0,0,1,5.547,0,2.743,2.743,0,0,1-1.135,2.231Zm3.471-14.485H70.934V9.707a5.547,5.547,0,0,1,11.094,0Z" transform="translate(-64)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_3266" data-name="Group 3266" transform="translate(149 10)">
+          <circle id="Ellipse_66" data-name="Ellipse 66" cx="43" cy="43" r="43" transform="translate(1095 601)" fill="#002262"/>
+          <g id="lock-3" data-name="lock" transform="translate(1061.52 625.717)">
+            <g id="Group_2993-3" data-name="Group 2993" transform="translate(64)">
+              <path id="Path_84677-3" data-name="Path 84677" d="M88.269,12.481h-2.08V9.707a9.707,9.707,0,0,0-19.415,0v2.774h-2.08a.693.693,0,0,0-.693.693V30.509a2.776,2.776,0,0,0,2.774,2.774H86.188a2.776,2.776,0,0,0,2.773-2.774V13.174A.693.693,0,0,0,88.269,12.481ZM78.557,26.966a.694.694,0,0,1-.689.77H75.094a.694.694,0,0,1-.689-.77l.437-3.933A2.743,2.743,0,0,1,73.707,20.8a2.774,2.774,0,0,1,5.547,0,2.743,2.743,0,0,1-1.135,2.231Zm3.471-14.485H70.934V9.707a5.547,5.547,0,0,1,11.094,0Z" transform="translate(-64)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
