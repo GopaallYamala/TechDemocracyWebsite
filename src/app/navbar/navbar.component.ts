@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from '../../shared/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'top-navbar',
@@ -13,6 +14,10 @@ export class NavBarComponent {
   isMenuCollapsed: boolean = false;
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
+
+  constructor (private readonly router: Router) {
+
+  }
 
   solutionsObj = [{
     tittle: 'Identity Governance & Administration',
@@ -82,6 +87,12 @@ export class NavBarComponent {
   showServicesNav() {
     this.solutionsMenu = false;
     this.displayCreateMenu = !this.displayCreateMenu;
+  }
+
+  navToPages (pageName: string) {
+    this.router.navigate([pageName]);
+    this.displayCreateMenu = false;
+    this.solutionsMenu = false;
   }
 
 }

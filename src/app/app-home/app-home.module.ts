@@ -5,26 +5,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { IdentitySecureSolutionComponent } from '../identity-secure-solution/identity-secure-solution.component';
-import { PotentialDifferentiatorComponent } from '../potential-differentiator/potential-differentiator.component';
+// import { PotentialDifferentiatorComponent } from '../potential-differentiator/potential-differentiator.component';
 import { OurSolutionsComponent } from '../our-solutions/our-solutions.component';
-import { AcceleratorsUtilitiesComponent } from '../accelerators-utilities/accelerators-utilities.component';
-import { ConsultationComponent } from '../consultation/consultation.component';
+// import { AcceleratorsUtilitiesComponent } from '../accelerators-utilities/accelerators-utilities.component';
+// import { ConsultationComponent } from '../consultation/consultation.component';
 import { AboutUsComponent } from '../about/about-us.component';
 import { SpecialisedSolutionsComponent } from '../specialised-solutions/specialised-solutions.component';
 import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClickOutsideDirective } from '../directives/click-outside.directive';
 import { SVGIconComponent } from '../form-controls/svg-icon.component';
 import { PopupDropdownComponent } from '../form-controls/popup-dropdown.component';
+import { SharedModule } from 'src/shared/shared.module';
 
 @NgModule({
   declarations: [
     AppHomeComponent,
     CarouselComponent,
     IdentitySecureSolutionComponent,
-    PotentialDifferentiatorComponent,
+    // PotentialDifferentiatorComponent,
     OurSolutionsComponent,
-    AcceleratorsUtilitiesComponent,
-    ConsultationComponent,
+    // AcceleratorsUtilitiesComponent,
+    // ConsultationComponent,
     AboutUsComponent,
     SpecialisedSolutionsComponent,
     ClickOutsideDirective,
@@ -38,6 +39,7 @@ import { PopupDropdownComponent } from '../form-controls/popup-dropdown.componen
     BrowserAnimationsModule,
     NgbAlertModule, NgbAccordionModule,
     NgbCarouselModule,
+    SharedModule
   ],
   exports: [
     ClickOutsideDirective,
