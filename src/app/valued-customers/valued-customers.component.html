@@ -1,0 +1,15 @@
+<section class="valued-customers">
+  <div class="container">
+    <div class="row">
+      <div class="customers-hdng col-md-4">
+        <h2>Our Valued <div>Customers</div></h2>
+      </div>
+      <div class="customers-list col-md-8 flex-row-nowrap">
+        <!-- <img src="../../assets/images/ast.JPG" alt=""> -->
+        <div *ngFor="let path of imgPath">
+          <img src="{{path}}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
