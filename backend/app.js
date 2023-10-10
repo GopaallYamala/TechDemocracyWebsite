@@ -46,6 +46,13 @@ app.use("/api", router);
 //call heros routing
 homeRoutes(router);
 
+app.use(express.static("../dist/tdc-websitev3.0"));
+app.set("view engine", "pug");
+
+app.get("/", (req, res) => {
+  res.sendFile("index.html", { root: __dirname });
+});
+
 // intialise server
 app.listen(properties.PORT, (req, res) => {
   console.log(`Server is running on ${properties.PORT} port.`);
