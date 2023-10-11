@@ -1,0 +1,13 @@
+.solutions-hero-container {
+  .solutions-hero-section {
+    background: linear-gradient(#173cb4 0%, #009dff 100%);
+    border: 1px solid #707070;
+    color: #FFFFFF;
+    position: relative;
+  }
+  .absolute-img {
+    position: absolute;
+    right: 16%;
+    top: 70%;
+  }
+}
