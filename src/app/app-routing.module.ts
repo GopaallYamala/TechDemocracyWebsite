@@ -3,14 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppHomeComponent } from './app-home/app-home.component';
 import { PartnersComponent } from './partners/partners.component';
 import { SolutionsComponent } from './solutions/solutions.component';
+import { SolutionCIAMComponent } from './solution-ciam/solution-ciam.component';
+import { SolutionPAMComponent } from './solution-pam/solution-pam.component';
+import { SolutionAMComponent } from './solution-am/solution-am.component';
 import { AdminBlogPostComponent } from './admin/admin-blog-post/admin-blog-post.compoent';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: AppHomeComponent },
-  { path: 'partners', component: PartnersComponent },
-  { path: 'solutions', component: SolutionsComponent },
-  { path: 'admin', component: AdminBlogPostComponent }
+	{ path: '',  redirectTo: 'home', pathMatch: 'full' },
+	{ path: 'home', component: AppHomeComponent },
+	{ path: 'partners', component: PartnersComponent},
+	{ path: 'admin', component: AdminBlogPostComponent },
+	{ path: 'solution-iga', component: SolutionsComponent},
+	{ path: 'solution-ciam', component: SolutionCIAMComponent},
+	{ path: 'solution-pam', component: SolutionPAMComponent},
+	{ path: 'solution-am', component: SolutionAMComponent}
 
 ];
 

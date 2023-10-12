@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'solutions-hero',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class SolutionsHeroComponent {
-
+  @Input() solutionName = ``;
+  @Input() dataObj = {
+    solutionName: '',
+    solutionContent: '',
+    solutionImg: ''
+  }
 }

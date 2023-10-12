@@ -37,7 +37,7 @@
               <a class="nav-link">Partners</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="navToPages('/admin')">Resources</a>
+              <a class="nav-link">Resources</a>
             </li>
             <li class="nav-item" >
               <a class="nav-link">Company</a>
@@ -49,11 +49,11 @@
         </div>
         <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap">
           <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
-            <h5 class="nav-tittle">{{solution.tittle}}</h5>
+            <h5 (click)="navToPages('/solution-iga', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
             <div class="nav-desc">
               <p>{{solution.desc}}</p>
             </div>
-            <a [routerLink]="['/solutions']" (click)="navToPages('/solutions')">{{solution.stories}}</a>
+            <a>{{solution.stories}}</a>
             <a>{{solution.approch}}</a>
             <a>{{solution.customise}}</a>
           </div>
