@@ -12,7 +12,7 @@ import { AppHomeModule } from './app-home/app-home.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PartnersComponent } from './partners/partners.component';
 import { SolutionsComponent } from './solutions/solutions.component';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from 'src/app/admin/admin-blog-post/shared/shared.module';
 
 @NgModule({
   declarations: [

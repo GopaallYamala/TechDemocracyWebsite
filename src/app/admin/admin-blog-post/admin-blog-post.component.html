@@ -1,0 +1,43 @@
+<div class="blog-post-container">
+  <input name="image" type="file" id="upload" class="hidden" onchange="" style="display:none">
+
+
+  <input type="file" id="fileElem" multiple accept="image/*" style="display:none" (change)="handleFiles()">
+  <a href="#" id="fileSelect" style="display:none;">Select some files</a>
+
+  <!-- <div class="progress-bar" id="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div> -->
+
+  <div id="gallery"></div>
+  <div class="container">
+    <form (ngSubmit)="onSubmit()">
+      <!-- <input id="upload-img" type="file" name="file"> -->
+
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input (keyup)="onChangeKeyTitle()" [(ngModel)]="post.title" type="text" name="title" class="form-control"
+          id="title" placeholder="Enter Title">
+      </div>&nbsp;
+
+      <div class="form-group">
+        <label for="url">URL</label>
+        <input type="text" class="form-control" id="url" aria-describedby="urlHelp" [(ngModel)]="post.url"
+          placeholder="Enter URL" name="url">
+        <!-- <small id="urlHelp" class="form-text text-muted">Use dash to separte, example: my-title-post</small> -->
+      </div>&nbsp;
+
+      <div class="form-group">
+        <label for="body">Post</label>
+        <!-- apiKey="eqoh606va990zyh42822gap0ovp4lypqhrrhcoirk08auavp" -->
+        <editor name="body" [init]="tinyconfig" [(ngModel)]="post.body"></editor>
+      </div>
+
+
+      <div class="buttons">
+        <button class="btn btn-primary">Publish</button>
+        <button class="btn btn-outline-dark" (click)="onCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
