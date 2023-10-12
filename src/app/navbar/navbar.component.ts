@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { AnimationDefinitions } from 'src/shared/animations';
+import { AnimationDefinitions } from 'src/app/shared/animations';
 
 @Component({
   selector: 'top-navbar',

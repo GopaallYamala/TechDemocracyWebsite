@@ -18,7 +18,7 @@ import { PopupDropdownComponent } from '../form-controls/popup-dropdown.componen
 import { AdminBlogPostComponent } from '../admin/admin-blog-post/admin-blog-post.compoent';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
