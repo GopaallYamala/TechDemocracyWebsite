@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { AnimationDefinitions } from './shared/animations';
+import { AnimationDefinitions } from '../shared/animations';
 
 
 @Component({

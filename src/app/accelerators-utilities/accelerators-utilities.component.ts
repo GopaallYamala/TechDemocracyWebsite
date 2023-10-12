@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { AnimationDefinitions } from '../shared/animations';
+import { AnimationDefinitions } from '../../shared/animations';
 
 
 @Component({

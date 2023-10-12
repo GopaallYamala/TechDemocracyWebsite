@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { AnimationDefinitions } from 'src/app/shared/animations';
+import { AnimationDefinitions } from 'src/shared/animations';
 
 
 @Component({

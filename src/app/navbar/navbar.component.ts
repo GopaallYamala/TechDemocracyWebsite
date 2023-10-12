@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { AnimationDefinitions } from 'src/app/shared/animations';
+import { AnimationDefinitions } from 'src/shared/animations';
 
 @Component({
   selector: 'top-navbar',
@@ -95,13 +95,13 @@ export class NavBarComponent {
 
       switch (title) {
         case 'Identity Governance & Administration':
-          this.router.navigate(['/solution-iga']);          
+          this.router.navigate(['/solution-iga']);
           break;
         case 'Customer Identity & Access Management':
-          this.router.navigate(['/solution-ciam']);          
+          this.router.navigate(['/solution-ciam']);
           break;
         case `Previliged Access Management`:
-          this.router.navigate(['/solution-pam']);          
+          this.router.navigate(['/solution-pam']);
           break;
         case `Access Management`:
           this.router.navigate([`/solution-am`]);
@@ -116,7 +116,7 @@ export class NavBarComponent {
       this.displayCreateMenu = false;
       this.solutionsMenu = false;
     }
-    
+
   }
 
 }
