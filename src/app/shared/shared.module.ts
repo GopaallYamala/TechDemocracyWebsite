@@ -13,9 +13,13 @@ import { ValuedCustomersComponent } from 'src/app/valued-customers/valued-custom
 import { SolutionsHeroComponent } from 'src/app/solutions-hero/solutions-hero.component';
 import { SuccessStoriesComponent } from 'src/app/success-stories/success-stories.component';
 import { IGASolutionsComponent } from 'src/app/iga-solutions/iga-solutions.component';
+import { IGAImplementationComponent } from 'src/app/IGA-Implementation/iga-implementation.component';
+import { SolutionCIAMComponent } from 'src/app/solution-ciam/solution-ciam.component';
+import { SolutionPAMComponent } from 'src/app/solution-pam/solution-pam.component';
+import { SolutionAMComponent } from 'src/app/solution-am/solution-am.component';
 
 @NgModule({
-  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent],
+  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -23,7 +27,7 @@ import { IGASolutionsComponent } from 'src/app/iga-solutions/iga-solutions.compo
     RouterModule,
     HttpClientModule
   ],
-  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent]
+  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent]
 })
 
 export class SharedModule {}

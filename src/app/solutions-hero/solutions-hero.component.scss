@@ -17,11 +17,13 @@
     position: relative;
     p {
       padding-top: 3rem;
+      width: 80%;
     }
   }
   .absolute-img {
     position: absolute;
     // right: 16%;
-    top: 70%;
+    top: 85%;
+    border-radius: 16px;
   }
 }
