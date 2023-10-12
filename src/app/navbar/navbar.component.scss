@@ -27,6 +27,10 @@
     max-width: 40%;
     .nav-tittle {
       // min-height: 20%;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
     .nav-desc {
       max-width: 90%;

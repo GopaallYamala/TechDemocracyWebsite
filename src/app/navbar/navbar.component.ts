@@ -89,10 +89,34 @@ export class NavBarComponent {
     this.displayCreateMenu = !this.displayCreateMenu;
   }
 
-  navToPages (pageName: string) {
-    this.router.navigate([pageName]);
-    this.displayCreateMenu = false;
-    this.solutionsMenu = false;
+  navToPages (pageName: string, title?: any) {
+
+    if (title) {
+
+      switch (title) {
+        case 'Identity Governance & Administration':
+          this.router.navigate(['/solution-iga']);          
+          break;
+        case 'Customer Identity & Access Management':
+          this.router.navigate(['/solution-ciam']);          
+          break;
+        case `Previliged Access Management`:
+          this.router.navigate(['/solution-pam']);          
+          break;
+        case `Access Management`:
+          this.router.navigate([`/solution-am`]);
+          break;
+        default:
+          break;
+      }
+      this.displayCreateMenu = false;
+      this.solutionsMenu = false;
+    } else {
+      this.router.navigate([pageName]);
+      this.displayCreateMenu = false;
+      this.solutionsMenu = false;
+    }
+    
   }
 
 }
