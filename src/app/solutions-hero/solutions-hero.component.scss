@@ -1,13 +1,27 @@
 .solutions-hero-container {
+  .solutions-pill {
+    font-weight: normal;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1rem;
+  }
   .solutions-hero-section {
     background: linear-gradient(#173cb4 0%, #009dff 100%);
     border: 1px solid #707070;
     color: #FFFFFF;
     position: relative;
+    .contact-expert {
+      margin-top: 2rem;
+    }
+  }
+  .content-img {
+    position: relative;
+    p {
+      padding-top: 3rem;
+    }
   }
   .absolute-img {
     position: absolute;
-    right: 16%;
+    // right: 16%;
     top: 70%;
   }
 }
