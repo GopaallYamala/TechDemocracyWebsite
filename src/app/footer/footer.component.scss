@@ -14,7 +14,6 @@
     flex-flow: column;
     justify-content: center;
     // align-items: center;
-		
 		ul {
 			list-style: none;
 			padding: 0;
@@ -37,10 +36,42 @@
 		}
 	}
 
+	// CSS for Menu separator line
+	// .tdc-footer-content article::after {
+	// 	content: '';
+	// 	height: 30%;
+	// 	border-right: 1px solid #CACACA;
+	// }
+
+	.delivery-centers-list {
+		padding: 0;
+		h2 {
+			margin-bottom: 0.5rem !important;
+		}
+	}
+
+	.delivery-centers-list li {
+		display: inline;
+		padding-left: 0.5rem;
+		padding-right: 1rem;
+		border-right: 1px solid #CACACA;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			border: none;
+		}
+	}
+
 	.tdc-footer-content article::after {
 		// position: relative;
 		// content: '';
 		// border-right: 1px solid #203150;
+	}
+
+	.footer-text-hdng {
+		color: #FFFFFF;
+		font-size: 0.85rem;
 	}
 
 	.logo-content p {
@@ -57,16 +88,28 @@
 	}
 
 	.foot-note {
-		justify-content: space-between;
+		align-items: center;
+		// justify-content: space-between;
+		p {
+			margin: 0;
+		}
 		.copyright-txt {
 			color: #FFFFFF;
 			font-size: 0.85rem;
 		}
+	}
+	.footnote-links {
+		padding-left: 1rem;
 	}
 	.footnote-links a {
 		color: #FFFFFF;
 		font-size: 0.85rem;
 		text-decoration: none;
 		margin-right: 1rem;
+		border-left: 1px solid #FFFFFF;
+		padding-left: 0.5rem;
+		&:last-child {
+			padding-right: 0.5rem;
+		}
 	}
 }
