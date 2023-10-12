@@ -1,18 +1,23 @@
 .tdc-footer {
 	background-color: #0C1E5A;
 	padding: 3rem 0;
+	.footer-head {
+		margin-bottom: 3rem;
+	}
 	.tdc-footer-content {
 		align-items: baseline;
+		justify-content: space-between;
 	}
 	.tdc-footer-content article {
 		width: 20%;
 		display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 		
 		ul {
 			list-style: none;
+			padding: 0;
 		}
 		ul li a {
 			font-size: 0.85rem;
@@ -27,10 +32,17 @@
 		}
 		address {
 			font-size: 0.85rem;
-			padding: 0 3rem;
+			// padding: 0 3rem;
 			color: #FFFFFF;
 		}
 	}
+
+	.tdc-footer-content article::after {
+		// position: relative;
+		// content: '';
+		// border-right: 1px solid #203150;
+	}
+
 	.logo-content p {
 		font-size: 0.85rem;
 		margin-top: 1rem;
