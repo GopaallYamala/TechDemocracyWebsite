@@ -4,6 +4,7 @@
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 @import "./assets/styles/flex-box-styles.scss";
+@import "./assets/styles/spacings";
 
 .flex-row-wrap {
   display: flex;
@@ -38,4 +39,11 @@
 
 .cursor {
   cursor: pointer;
+}
+// blog post editor classes
+.tox-statusbar__branding {
+  display: none;
+}
+.tox-notifications-container {
+  display: none;
 }

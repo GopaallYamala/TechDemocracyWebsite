@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
 
+
 @Component({
   selector: 'our-solutions',
   templateUrl: './our-solutions.component.html',

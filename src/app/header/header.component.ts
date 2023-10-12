@@ -3,6 +3,7 @@ import { AnimationDefinitions } from 'src/shared/animations';
 
 
 
+
 @Component({
   selector: 'main-header',
   templateUrl: './header.component.html',

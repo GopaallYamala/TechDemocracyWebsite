@@ -1,0 +1,16 @@
+.blog-post-container {
+  margin-top: 152px;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  .buttons {
+    width: 100%;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .buttons button:first-child {
+    margin-right: 16px;
+  }
+}
