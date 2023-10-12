@@ -3,6 +3,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { AnimationDefinitions } from 'src/shared/animations';
 
 
+
 @Component({
   selector: 'about-us',
   templateUrl: './about-us.component.html',

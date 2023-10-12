@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
 
+
 @Component({
   selector: 'footer-component',
   templateUrl: './footer.component.html',
