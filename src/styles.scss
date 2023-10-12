@@ -4,6 +4,7 @@
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 @import "./assets/styles/flex-box-styles.scss";
+@import "./assets/styles/spacings";
 
 .flex-row-wrap {
   display: flex;

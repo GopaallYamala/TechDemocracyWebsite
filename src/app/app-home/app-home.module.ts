@@ -15,10 +15,10 @@ import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-boots
 import { ClickOutsideDirective } from '../directives/click-outside.directive';
 import { SVGIconComponent } from '../form-controls/svg-icon.component';
 import { PopupDropdownComponent } from '../form-controls/popup-dropdown.component';
-import { SharedModule } from 'src/app/admin/admin-blog-post/shared/shared.module';
 import { AdminBlogPostComponent } from '../admin/admin-blog-post/admin-blog-post.compoent';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [

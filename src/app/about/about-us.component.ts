@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { AnimationDefinitions } from 'src/app/admin/admin-blog-post/shared/animations';
+import { AnimationDefinitions } from 'src/shared/animations';
+
 
 
 @Component({

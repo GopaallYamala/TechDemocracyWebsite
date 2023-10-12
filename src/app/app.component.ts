@@ -1,8 +1,8 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { AnimationDefinitions } from './admin/admin-blog-post/shared/animations';
-// import { AnimationDefinitions } from 'src/shared/animations';
+import { AnimationDefinitions } from '../shared/animations';
+
 
 @Component({
   selector: 'app-root',

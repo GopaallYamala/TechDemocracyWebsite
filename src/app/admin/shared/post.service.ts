@@ -49,8 +49,8 @@ export class PostService {
     return { ...this.posts.find(p => p.url === url) };
   }
 
-  update(post:any) {
-    let index:any;
+  update(post: any) {
+    let index: any;
     for (let i = 0; i < this.posts.length; i++) {
       if (this.posts[i].id === post.id) {
         index = i;
@@ -64,7 +64,7 @@ export class PostService {
     return true;
   }
 
-  create(post:any) {
+  create(post: any) {
     const id = Date.now().toString();
     post.id = id;
     this.posts.push(post);
@@ -79,8 +79,9 @@ export class PostService {
     return true;
   }
 
-  saveInDB(posts:any) {
-    localStorage.setItem("posts", JSON.stringify(posts))
+  saveInDB(posts: any) {
+    console.log(posts);
+    // localStorage.setItem("posts", JSON.stringify(posts))
   }
 
 
