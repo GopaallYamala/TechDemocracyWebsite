@@ -1,5 +1,5 @@
 <section class="app-container">
-  <header class="main-header fixed-top">
+  <header *ngIf="router.url !== '/login'" class="main-header fixed-top">
     <!-- Gartner Header -->
     <main-header></main-header>
     <!-- Responsive NAV Bar -->
@@ -10,5 +10,5 @@
   </header>
   <router-outlet></router-outlet>
   <!-- Footer area -->
-  <footer-component></footer-component>
+  <footer-component *ngIf="router.url !== '/login'"></footer-component>
 </section>

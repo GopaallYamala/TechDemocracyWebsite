@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PartnersComponent } from './partners/partners.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { SharedModule } from '../shared/shared.module';
+import { LoginComponent } from './admin/login.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { SharedModule } from '../shared/shared.module';
     FooterComponent,
     PartnersComponent,
     SolutionsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
