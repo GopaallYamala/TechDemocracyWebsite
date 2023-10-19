@@ -17,9 +17,10 @@ import { IGAImplementationComponent } from 'src/app/IGA-Implementation/iga-imple
 import { SolutionCIAMComponent } from 'src/app/solution-ciam/solution-ciam.component';
 import { SolutionPAMComponent } from 'src/app/solution-pam/solution-pam.component';
 import { SolutionAMComponent } from 'src/app/solution-am/solution-am.component';
+import { TestimonialsComponent } from 'src/app/testimonials/testimonials.component';
 
 @NgModule({
-  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent],
+  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -27,7 +28,7 @@ import { SolutionAMComponent } from 'src/app/solution-am/solution-am.component';
     RouterModule,
     HttpClientModule
   ],
-  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent]
+  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent]
 })
 
 export class SharedModule {}

@@ -8,10 +8,10 @@
   }
   .headings h2 {
     font-size: 1.5rem;
-    font-weight: 400;
+    // font-weight: 400;
   }
   .headings p {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.2;
   }
@@ -46,6 +46,15 @@
 
   .free-consult-headings {
     margin-top: 1rem;
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    p {
+      font-weight: 600;
+      font-size: 1.2rem;
+      width: 50%;
+    }
   }
 
   .yt-iframe {

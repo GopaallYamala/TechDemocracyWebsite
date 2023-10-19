@@ -1,0 +1,35 @@
+<div class="testimonials-container">
+  <div class="container">
+    <div class="testimonial-header flex-row-nowrap">
+      <h2>Testimonials from Satisfied Customers</h2>
+      <div class="nav-btn-container flex-row-nowrap">
+        <button class="back-ctrl"><</button>
+        <button class="next-ctrl">></button>
+      </div>
+    </div>
+    <div class="testimonials row">
+      <div class="col-md-6" *ngFor="let testimony of testimonialsData">
+        <div class="testimonial">
+            <blockquote>
+              <p>
+                {{testimony.tContent}}
+              </p>
+            </blockquote>
+          <img src="{{testimony.tClientImg}}" alt="">
+          <h5 class="role-name">{{testimony.tRole}}</h5>
+        </div>
+      </div>
+      <!-- <div class="col-md-6">
+        <div class="testimonial">
+          <blockquote>
+            <p>
+              TechDemocracy has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my RoadMap.
+            </p>
+          </blockquote>
+          <img src="../../assets/images/T-Mobile.JPG" alt="">
+          <h5 class="role-name">Security Consult Advisory Manager</h5>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
