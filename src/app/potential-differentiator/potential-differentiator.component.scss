@@ -1,57 +1,64 @@
-.potential-diffs {
+.potential-diffs-container {
+  background-color: #F2F9FE;
   padding-top: 6rem;
-}
-
-.potential-diffs .potential-diffs-hdr {
-  position: relative;
-}
-
-.potential-diffs .know-more-btn {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-}
-
-.potential-diffs-hdr p {
-  width: 55%;
-}
-
-.differentiators {
-  padding: 3rem 1rem;
-  background-color: #f3f4fa;
-  .diff-item {
+  margin-top: 3rem;
+  // .potential-diffs {
+  //   padding-top: 6rem;
+  // }
+  
+  .potential-diffs .potential-diffs-hdr {
     position: relative;
-    width: 30%;
   }
-  .diff-item .icon-container {
-    width: 35px;
+  
+  .potential-diffs .know-more-btn {
     position: absolute;
-    height: 35px;
-    border-radius: 100px;
+    right: 1rem;
+    top: 1rem;
   }
-  // Background colors
-  .icon-bg-blu {
-    background-color: #c2e3f8;
+  
+  .potential-diffs-hdr p {
+    width: 55%;
   }
-  .icon-bg-deep-blu {
-    background-color: #c2e2f8;
+  
+  .differentiators {
+    padding: 3rem 1rem;
+    // background-color: #f3f4fa;
+    .diff-item {
+      position: relative;
+      width: 30%;
+    }
+    .diff-item .icon-container {
+      width: 35px;
+      position: absolute;
+      height: 35px;
+      border-radius: 100px;
+    }
+    // Background colors
+    .icon-bg-blu {
+      background-color: #c2e3f8;
+    }
+    .icon-bg-deep-blu {
+      background-color: #c2e2f8;
+    }
+    .icon-bg-pink {
+      background-color: #f2d0d9;
+    }
+    .icon-bg-purple {
+      background-color: #e6c8dd;
+    }
+    .icon-bg-green {
+      background-color: #d0f1c7;
+    }
+    .diff-item .diff-content {
+      padding-left: 3rem;
+    }
+    .diff-item .diff-content h3 {
+      font-size: 18px;
+    }
+    .diff-item .diff-content p {
+      font-size: 14px;
+    }
   }
-  .icon-bg-pink {
-    background-color: #f2d0d9;
-  }
-  .icon-bg-purple {
-    background-color: #e6c8dd;
-  }
-  .icon-bg-green {
-    background-color: #d0f1c7;
-  }
-  .diff-item .diff-content {
-    padding-left: 3rem;
-  }
-  .diff-item .diff-content h3 {
-    font-size: 18px;
-  }
-  .diff-item .diff-content p {
-    font-size: 14px;
-  }
+  
 }
+

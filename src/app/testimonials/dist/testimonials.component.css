@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.testimonials-container {
+  margin-top: 3rem;
+}
+.testimonials-container .testimonial-header {
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials-container .testimonial-header .nav-btn-container .back-ctrl {
+  margin-right: 1rem;
+}
+.testimonials-container .testimonial-header .nav-btn-container .back-ctrl,
+.testimonials-container .testimonial-header .nav-btn-container .next-ctrl {
+  border: 1px solid #b1b1b1;
+  background-color: #fdfdfd;
+  padding: 1rem;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  color: #000;
+  font-weight: 500;
+  font-size: 24px;
+}
+.testimonials-container .testimonials {
+  margin-top: 2rem;
+}
+.testimonials-container .testimonial {
+  padding: 1rem 2rem;
+  border: 1px solid #7070704d;
+  border-radius: 30px;
+  min-height: 300px;
+  max-height: 300px;
+  overflow-y: hidden;
+}
+.testimonials-container .testimonial blockquote:before {
+  content: open-quote;
+}
+.testimonials-container .testimonial blockquote p {
+  padding-left: 2rem;
+  font-family: "Roboto Slab", serif;
+  color: rgba(0, 0, 0, 0.8);
+  max-height: 100px;
+  overflow-y: hidden;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+}
+.testimonials-container .testimonial blockquote:before {
+  display: inline-block;
+  vertical-align: bottom;
+  color: red;
+  font-size: 4em;
+  top: 0.2em;
+  position: relative;
+  height: 2.5rem;
+}
+.testimonials-container .role-name {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
