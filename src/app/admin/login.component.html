@@ -1,0 +1,61 @@
+<section class="login-container">
+  <section class="my-login-page">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="card-wrapper">
+          <div class="brand">
+            <img src="../../assets/images/tdc-logo.png" alt="logo">
+          </div>
+          <div class="card fat">
+            <div class="card-body">
+              <h4 class="card-title">Login</h4>
+              <form method="POST" class="my-login-validation" novalidate="">
+                <div class="form-group breathing-space-bottom">
+                  <label class="breathing-space-bottom" for="email">E-Mail Address</label>
+                  <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                  <div class="invalid-feedback">
+                    Email is invalid
+                  </div>
+                </div>
+
+                <div class="form-group breathing-space-bottom password-settings">
+                  <label class="breathing-space-bottom" for="password">Password
+                    <a href="" class="float-right">
+                      Forgot Password?
+                    </a>
+                  </label>
+                  <input id="Password" type="password" class="form-control" name="password" required data-eye>
+                  <div (click)="showPassword('Password','showToggleConfirm')" class="action-password">
+                    <i class="bi bi-eye-slash" id="showToggleConfirm"></i>
+                  </div>
+                  <div class="invalid-feedback">
+                    Password is required
+                  </div>
+                </div>
+
+                <!-- <div class="form-group breathing-space-bottom">
+                  <div class="custom-checkbox custom-control flex-row-nowrap">
+                    <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                    &nbsp;<label for="remember" class="custom-control-label">Remember Me</label>
+                  </div>
+                </div> -->
+
+                <div class="form-group m-0 gutter-top-1">
+                  <button type="submit" class="btn btn-primary btn-block w-100">
+                    Login
+                  </button>
+                </div>
+                <div class="mt-4 text-center create-account">
+                  Don't have an account? Contact administrator
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer">
+            Copyright &copy; 2023 &mdash; Techdemocracy LLC,USA. All Rights Reserved. Terms and Conditions*
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

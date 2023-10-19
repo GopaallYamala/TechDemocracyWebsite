@@ -19,6 +19,7 @@ import { AdminBlogPostComponent } from '../admin/admin-blog-post/admin-blog-post
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../../shared/shared.module';
+import { LoginComponent } from '../admin/login.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SharedModule } from '../../shared/shared.module';
     ClickOutsideDirective,
     SVGIconComponent,
     PopupDropdownComponent,
-    AdminBlogPostComponent
+    AdminBlogPostComponent,
+    // LoginComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
