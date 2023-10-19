@@ -7,16 +7,18 @@ import { SolutionCIAMComponent } from './solution-ciam/solution-ciam.component';
 import { SolutionPAMComponent } from './solution-pam/solution-pam.component';
 import { SolutionAMComponent } from './solution-am/solution-am.component';
 import { AdminBlogPostComponent } from './admin/admin-blog-post/admin-blog-post.compoent';
+import { LoginComponent } from './admin/login.component';
 
 const routes: Routes = [
-	{ path: '',  redirectTo: 'home', pathMatch: 'full' },
-	{ path: 'home', component: AppHomeComponent },
-	{ path: 'partners', component: PartnersComponent},
-	{ path: 'admin', component: AdminBlogPostComponent },
-	{ path: 'solution-iga', component: SolutionsComponent},
-	{ path: 'solution-ciam', component: SolutionCIAMComponent},
-	{ path: 'solution-pam', component: SolutionPAMComponent},
-	{ path: 'solution-am', component: SolutionAMComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: AppHomeComponent },
+  { path: 'partners', component: PartnersComponent },
+  { path: 'admin', component: AdminBlogPostComponent },
+  { path: 'solution-iga', component: SolutionsComponent },
+  { path: 'solution-ciam', component: SolutionCIAMComponent },
+  { path: 'solution-pam', component: SolutionPAMComponent },
+  { path: 'solution-am', component: SolutionAMComponent },
+  { path: 'login', component: LoginComponent }
 
 ];
 
