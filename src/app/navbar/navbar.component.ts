@@ -106,6 +106,15 @@ export class NavBarComponent {
         case `Access Management`:
           this.router.navigate([`/solution-am`]);
           break;
+        case `Advisory Consulting`:
+          this.router.navigate([`/adv-consulting`]);
+          break;
+        case `Implementation Service`:
+          this.router.navigate([`/impl-services`]);
+          break;
+        case `Operations & Manage Services`:
+          this.router.navigate([`/ops-manage-services`]);
+          break;
         default:
           break;
       }

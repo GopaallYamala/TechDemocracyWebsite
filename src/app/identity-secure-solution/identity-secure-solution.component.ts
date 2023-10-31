@@ -1,8 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
-
-
 @Component({
   selector: 'identity-secure-solution',
   templateUrl: './identity-secure-solution.component.html',

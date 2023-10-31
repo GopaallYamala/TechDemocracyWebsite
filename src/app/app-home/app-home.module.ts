@@ -13,7 +13,7 @@ import { AboutUsComponent } from '../about/about-us.component';
 import { SpecialisedSolutionsComponent } from '../specialised-solutions/specialised-solutions.component';
 import { NgbAccordionModule, NgbAlertModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClickOutsideDirective } from '../directives/click-outside.directive';
-import { SVGIconComponent } from '../form-controls/svg-icon.component';
+// import { SVGIconComponent } from '../form-controls/svg-icon.component';
 import { PopupDropdownComponent } from '../form-controls/popup-dropdown.component';
 import { AdminBlogPostComponent } from '../admin/admin-blog-post/admin-blog-post.compoent';
 import { EditorModule } from '@tinymce/tinymce-angular';
@@ -33,7 +33,7 @@ import { LoginComponent } from '../admin/login.component';
     AboutUsComponent,
     SpecialisedSolutionsComponent,
     ClickOutsideDirective,
-    SVGIconComponent,
+    // SVGIconComponent,
     PopupDropdownComponent,
     AdminBlogPostComponent,
     // LoginComponent
@@ -51,7 +51,7 @@ import { LoginComponent } from '../admin/login.component';
   ],
   exports: [
     ClickOutsideDirective,
-    SVGIconComponent,
+    // SVGIconComponent,
     PopupDropdownComponent
   ]
 

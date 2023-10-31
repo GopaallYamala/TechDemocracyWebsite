@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 
 export class SolutionAMComponent {
   solutionData = {
+    title: 'Our Solutions',
+    heading: 'Unlocking Secure Access:',
+    subHeading: 'Automate compliance and protect your enterprise against threats.',
     solutionName: 'Access Management',
     solutionContent: ' is the organizational and technical processes for first registering and authorizing access rights in the configuration phase, and then in the operation phase for identifying, authenticating and controlling individuals or groups of people to have access to applications, systems or networks based on previously authorized access rights.',
-    solutionImg: ''
+    solutionImg: '../../assets/images/Solutions-Page.png '
   }
 }

@@ -1,0 +1,29 @@
+{
+  "en-us": {
+    "lang": "en-us",
+    "module": {
+      "home": {
+        "identitySecSolutions":{
+          "heading":"Identity Security Solutions by TechDemocracy",
+          "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+        }
+      },
+      "solutions": {},
+      "services": {},
+      "partners": {},
+      "resources": {},
+      "company": {}
+    }
+  },
+  "fr-ca": {
+    "lang": "fr-ca",
+    "module": {
+      "home": {},
+      "solutions": {},
+      "services": {},
+      "partners": {},
+      "resources": {},
+      "company": {}
+    }
+  }
+}
