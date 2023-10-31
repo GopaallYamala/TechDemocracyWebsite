@@ -18,9 +18,20 @@ import { SolutionCIAMComponent } from 'src/app/solution-ciam/solution-ciam.compo
 import { SolutionPAMComponent } from 'src/app/solution-pam/solution-pam.component';
 import { SolutionAMComponent } from 'src/app/solution-am/solution-am.component';
 import { TestimonialsComponent } from 'src/app/testimonials/testimonials.component';
+import { AdvisoryConsultingComponent } from 'src/app/advisory-consulting/advisory-consulting.component';
+import { IAMAdvisoryAssessmentWhyComponent } from 'src/app/IAM-advisory-assessment-why/IAM-advisory-assessment-why.component';
+import { SVGIconComponent } from 'src/app/form-controls/svg-icon.component';
+import { TDCforConsultantComponent } from 'src/app/tdc-adv-consultant/tdc-adv-consultant.component';
+import { ExpertsInIdentityComponent } from 'src/app/experts-in-identity/experts-in-identity.component';
+import { TDCRightPartnerComponent } from 'src/app/tdc-right-partner/tdc-right-partner.component';
+import { ImplServiceComponent } from 'src/app/implementation-service/implementation-service.component';
+import { OpsManageServicesComponent } from 'src/app/ops-manage-services/ops-manage-services.component';
 
 @NgModule({
-  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent],
+  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent,
+    SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, 
+    TDCRightPartnerComponent, 
+    ImplServiceComponent, OpsManageServicesComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -28,7 +39,7 @@ import { TestimonialsComponent } from 'src/app/testimonials/testimonials.compone
     RouterModule,
     HttpClientModule
   ],
-  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent]
+  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent]
 })
 
 export class SharedModule {}
