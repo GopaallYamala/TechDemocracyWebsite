@@ -9,6 +9,9 @@ import { Component, Input } from '@angular/core';
 export class SolutionsHeroComponent {
   @Input() solutionName = ``;
   @Input() dataObj = {
+    title: '',
+    heading: '',
+    subHeading: '',
     solutionName: '',
     solutionContent: '',
     solutionImg: ''

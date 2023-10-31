@@ -60,7 +60,7 @@
         </div>
         <div @slideDown *ngIf="displayCreateMenu" id="ServicesMenu" class="nav-info flex-row-nowrap">
           <div class="flex-col-nowrap nav-content" *ngFor="let service of servicesObj">
-            <h5 class="nav-tittle">{{service.tittle}}</h5>
+            <h5 (click)="navToPages('/adv-consulting', service.tittle)" class="nav-tittle">{{service.tittle}}</h5>
             <div class="nav-desc">
               <p>{{service.desc}}</p>
             </div>

@@ -1,0 +1,45 @@
+.tdc-right-partner-container {
+  .block {
+    padding: 2rem;
+    border-radius: 15px;
+    &.block-a {
+      background-color: #E5E8F2;
+    }
+    &.block-b {
+      background-color: #F0E5E8;
+    }
+    &.block-c {
+      background-color: #F3F3F3;
+    }
+    &.block-d {
+      background-color: #E5F7FF;
+    }
+  }
+
+  .sep-row {
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .full-bloc {
+    padding: 2rem;
+    border-radius: 15px;
+    img {
+      margin-bottom: 2rem;
+    }
+    h4 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
+    &.flexibility {
+      background-color: #E5FAFE;
+      margin-bottom: 2.5rem;
+    }
+    &.concern {
+      background-color: #F3F3F3;
+    }
+  }
+}

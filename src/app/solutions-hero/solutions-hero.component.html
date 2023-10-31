@@ -3,16 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <span class="badge rounded-pill solutions-pill text-bg-dark">OUR SOLUTIONS</span>
-          <h1>Unlocking Secure Access: {{dataObj.solutionName}}</h1>
-          <p>Automate compliance and protect your enterprise against threats.</p>
+          <span class="badge rounded-pill solutions-pill text-bg-dark">{{dataObj.title}}</span>
+          <h1>{{dataObj.heading}} {{dataObj.solutionName}}</h1>
+          <p>{{dataObj.subHeading}}</p>
           <button class="btn btn-danger contact-expert">Talk to an Expert</button>
         </div>
         <div class="col-md-6 content-img">
           <p>
             <strong>{{dataObj.solutionName}}</strong>{{dataObj.solutionContent}}
           </p>
-          <img src="../../assets/images/Solutions-Page.png" class="absolute-img" alt="">
+          <img src="{{dataObj.solutionImg}}" class="absolute-img" alt="">
         </div>
       </div>
     </div>

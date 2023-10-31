@@ -1,0 +1,22 @@
+.adv-why-container {
+  margin-bottom: 1rem;
+  .reason {
+    // min-height: 300px;
+    // min-width: 300px;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    &.get-aligned {
+      background-color: #E7E7F8;
+    }
+    &.find-gaps {
+      background-color: #E5F5FF;
+    }
+    &.proj-priority {
+      background-color: #FDEEF0;
+    }
+    
+  }
+  .svg-icon {
+    height: 4rem !important;
+  }
+}

@@ -8,6 +8,9 @@ import { SolutionPAMComponent } from './solution-pam/solution-pam.component';
 import { SolutionAMComponent } from './solution-am/solution-am.component';
 import { AdminBlogPostComponent } from './admin/admin-blog-post/admin-blog-post.compoent';
 import { LoginComponent } from './admin/login.component';
+import { AdvisoryConsultingComponent } from './advisory-consulting/advisory-consulting.component';
+import { ImplServiceComponent } from './implementation-service/implementation-service.component';
+import { OpsManageServicesComponent } from './ops-manage-services/ops-manage-services.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,6 +21,9 @@ const routes: Routes = [
   { path: 'solution-ciam', component: SolutionCIAMComponent },
   { path: 'solution-pam', component: SolutionPAMComponent },
   { path: 'solution-am', component: SolutionAMComponent },
+  { path: 'adv-consulting', component: AdvisoryConsultingComponent },
+  { path: 'impl-services', component: ImplServiceComponent },
+  { path: 'ops-manage-services', component: OpsManageServicesComponent},
   { path: 'login', component: LoginComponent }
 
 ];
