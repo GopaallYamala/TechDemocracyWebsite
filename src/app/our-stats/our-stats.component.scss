@@ -1,0 +1,27 @@
+.our-stats {
+  background-color: #1337A4;
+  min-height: 3rem;
+  padding: 3rem 0;
+  margin: 2rem 0;
+  .stat-content {
+    width: 60%;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+  }
+
+  .stat {
+    // border-left: 0.5rem solid #fff;
+    // padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .stat p, .stat h3 {
+    color: #FFFFFF;
+  }
+  .stat p {
+    // width: 50%;
+    font-size: 0.9rem;
+    width: 95%;
+  }
+
+
+}
