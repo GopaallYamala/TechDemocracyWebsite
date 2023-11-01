@@ -1,0 +1,41 @@
+<section class="casestudies-container">
+  <section class="px-4 py-3">
+    <div class="container">
+      <section class="casestudies-section row">
+        <article class="casestudies-content col-md-12">
+          <h3>CaseStudies</h3>
+          <div class="view-casestudies">
+            <p>Some of the Success Stories of Our Clients</p>
+            <a href="#">View All</a>
+          </div>
+          <button *ngFor="let btn of buttonsList" type="button" class="btn btn-outline-light">{{btn}}</button>
+          <section class="casestudies-action">
+            <div class="slideshow-container" #slideshow>
+              <div class="left" *ngIf="totalPages > 1" (click)="currentPage != 1 && changePage(-1)"
+                [ngClass]="{'disabled':currentPage === 1}">
+                <svg-icon-component [name]="'navigate_before'"></svg-icon-component>
+              </div>
+              <div class="cards" [ngClass]="{'w-100': totalPages === 1}">
+                <div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
+                  <article class="casestudie-card-body" *ngFor="let i of arr; let index = index"
+                    [ngStyle]="{'width': cardWidth}">
+                    <div class="card">
+                      <!-- <span>{{i}}</span> -->
+                    </div>
+                    <div class="card-content">
+                      <p>Legacy Identity Technology to Modern Identity Governance Case Study</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="right" *ngIf="totalPages > 1" (click)="currentPage != totalPages && changePage(+1)"
+                [ngClass]="{'disabled':currentPage === totalPages}">
+                <svg-icon-component [name]="'navigate_next'"></svg-icon-component>
+              </div>
+            </div>
+          </section>
+        </article>
+      </section>
+    </div>
+  </section>
+</section>
