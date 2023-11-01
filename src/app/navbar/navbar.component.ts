@@ -46,6 +46,13 @@ export class NavBarComponent {
     stories: 'Success stories',
     approch: 'Our Approach',
     customise: 'Customise Solutions',
+  },
+  {
+    tittle: 'Manage SOC',
+    desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+    stories: 'Success stories',
+    approch: 'Our Approach',
+    customise: 'Customise Solutions',
   }]
 
   servicesObj = [
@@ -62,11 +69,17 @@ export class NavBarComponent {
       stories: 'Customer Success Stories',
     },
     {
-      tittle: 'Operations & Manage Services',
+      tittle: 'Operations & Support',
       desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
+    {
+      tittle: 'Manage Services',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    }
   ]
 
   showMenu(id: string) {
