@@ -1,0 +1,149 @@
+.casestudies-container {
+  padding-top: 1rem;
+  width: 100%;
+  min-height: 20rem;
+  margin-bottom: 14rem;
+  position: relative;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 34, 98, 1) 51%,
+    rgba(23, 60, 180, 1) 85%
+  );
+
+  .casestudies-section {
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0;
+  }
+  .casestudies-content {
+    h3 {
+      color: #ffffff;
+    }
+
+    p {
+      color: #ffffff;
+      font-weight: 300;
+    }
+
+    .view-casestudies {
+      display: flex;
+      justify-content: space-between;
+      color: #ffffff;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
+    .btn-outline-light {
+      font-size: 13px;
+      color: #f8f9fa;
+      letter-spacing: 1px;
+      line-height: 15px;
+      margin-right: 0.4rem;
+      margin-bottom: 2rem;
+      border: 2px solid #f8f9fa;
+      border-radius: 40px;
+      background: transparent;
+      transition: all 0.3s ease 0s;
+    }
+    .btn-outline-light:hover {
+      color: #000;
+      background: #f8f9fa;
+      border: 2px solid #000;
+    }
+
+    .casestudies-action {
+      position: absolute;
+
+      p {
+        color: #000;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+        font-weight: 300;
+      }
+
+      .case-study {
+        background: #f2f9fe;
+        width: 14rem;
+        height: 12rem;
+        border-radius: 10%;
+      }
+      // }
+
+      .slideshow-container {
+        position: relative;
+      }
+
+      .cards {
+        // width: calc(100% - 80px);
+        width: 75rem;
+        overflow: hidden;
+      }
+
+      .overflow {
+        position: relative;
+        transition: left 0.5s ease-in-out;
+      }
+
+      .casestudie-card-body {
+        display: inline-block;
+        position: relative;
+      }
+
+      .card {
+        height: 12rem;
+        width: 15rem;
+        background-color: #edf2fb;
+        border-radius: 25px;
+        position: relative;
+      }
+      .card-content {
+        width: 15rem;
+      }
+
+      .no-right-margin {
+        margin-right: 0px;
+      }
+
+      .card span {
+        font-size: 48px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .left,
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        background-color: #0072bc;
+        z-index: 1;
+        position: absolute;
+        top: 35%;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+
+      .left.disabled,
+      .right.disabled {
+        background-color: #fff;
+      }
+
+      .left {
+        left: -1.5rem;
+      }
+
+      .right {
+        right: -1.5rem;
+      }
+    }
+  }
+}

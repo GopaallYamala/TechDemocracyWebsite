@@ -26,12 +26,13 @@ import { ExpertsInIdentityComponent } from 'src/app/experts-in-identity/experts-
 import { TDCRightPartnerComponent } from 'src/app/tdc-right-partner/tdc-right-partner.component';
 import { ImplServiceComponent } from 'src/app/implementation-service/implementation-service.component';
 import { OpsManageServicesComponent } from 'src/app/ops-manage-services/ops-manage-services.component';
+import { CaseStudiesComponent } from 'src/app/case-studies/case-studies.component';
 import { OurStatsComponent } from 'src/app/our-stats/our-stats.component';
 
 @NgModule({
-  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent,
-    SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, 
-    TDCRightPartnerComponent, 
+  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent,
+    SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
+    TDCRightPartnerComponent,
     ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent],
   imports: [
     CommonModule,
@@ -40,7 +41,7 @@ import { OurStatsComponent } from 'src/app/our-stats/our-stats.component';
     RouterModule,
     HttpClientModule
   ],
-  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent]
+  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent]
 })
 
 export class SharedModule {}
