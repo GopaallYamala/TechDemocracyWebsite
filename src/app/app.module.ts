@@ -14,6 +14,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { SharedModule } from '../shared/shared.module';
 import { LoginComponent } from './admin/login.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { LoginComponent } from './admin/login.component';
     FooterComponent,
     PartnersComponent,
     SolutionsComponent,
-    LoginComponent
+    LoginComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
