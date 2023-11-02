@@ -16,7 +16,7 @@ export class HeaderComponent {
   displayCreateMenu: boolean = false;
   selectedState = "United States";
   // quickActions: string[];
-  quickActions = ['United States', 'India', 'Canada', 'Philippines'];
+  quickActions = ['United States', 'India', 'Canada'];
   selectAction(action: any) {
     this.selectedState = action;
     this.displayCreateMenu = false;
