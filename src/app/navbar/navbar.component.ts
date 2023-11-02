@@ -15,7 +15,7 @@ export class NavBarComponent {
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
 
-  constructor (private readonly router: Router) {
+  constructor(private readonly router: Router) {
 
   }
 
@@ -101,8 +101,8 @@ export class NavBarComponent {
     this.solutionsMenu = false;
     this.displayCreateMenu = !this.displayCreateMenu;
   }
-
-  navToPages (pageName: string, title?: any) {
+  // previous method
+  navToPages1(pageName: string, title?: any) {
 
     if (title) {
 
@@ -140,5 +140,46 @@ export class NavBarComponent {
     }
 
   }
+
+  navToPages(pageName: string, title?: any) {
+    if (title) {
+      switch (title) {
+        case 'Identity Governance & Administration':
+          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case 'Customer Identity & Access Management':
+          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case `Previliged Access Management`:
+          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case `Access Management`:
+          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case `Advisory Consulting`:
+          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case `Implementation Service`:
+          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case `Operations & Support`:
+          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        case `Manage Services`:
+          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
+          break;
+        default:
+          break;
+      }
+      this.displayCreateMenu = false;
+      this.solutionsMenu = false;
+    } else {
+      this.router.navigate([pageName]);
+      this.displayCreateMenu = false;
+      this.solutionsMenu = false;
+    }
+
+  }
+
 
 }

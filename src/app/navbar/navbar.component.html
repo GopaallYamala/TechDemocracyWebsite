@@ -49,7 +49,7 @@
       </div>
       <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap">
         <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
-          <h5 (click)="navToPages('/solution-iga', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
+          <h5 (click)="navToPages('/solutions', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
           <div class="nav-desc">
             <p>{{solution.desc}}</p>
           </div>
