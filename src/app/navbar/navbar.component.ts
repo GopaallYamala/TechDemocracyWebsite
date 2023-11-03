@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, TitleStrategy } from '@angular/router';
 import { AnimationDefinitions } from 'src/shared/animations';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'top-navbar',
@@ -15,7 +16,7 @@ export class NavBarComponent {
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
 
-  constructor(private readonly router: Router) {
+  constructor(private readonly router: Router, private location: Location) {
 
   }
 
@@ -143,33 +144,16 @@ export class NavBarComponent {
 
   navToPages(pageName: string, title?: any) {
     if (title) {
-      switch (title) {
-        case 'Identity Governance & Administration':
-          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case 'Customer Identity & Access Management':
-          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case `Previliged Access Management`:
-          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case `Access Management`:
-          this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case `Advisory Consulting`:
-          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case `Implementation Service`:
-          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case `Operations & Support`:
-          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        case `Manage Services`:
-          this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
-          break;
-        default:
-          break;
+      if (title === 'Identity Governance & Administration' || title === 'Customer Identity & Access Management' || title === 'Previliged Access Management' || title === 'Access Management') {
+        this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
+        this.location.replaceState('/solutions');
+      }
+      else if (title === 'Advisory Consulting' || title === 'Implementation Service' || title === 'Operations & Support' || title === 'Manage Services') {
+        this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
+        this.location.replaceState('/adv-consulting');
+      }
+      else {
+        this.router.navigate(['/home']);
       }
       this.displayCreateMenu = false;
       this.solutionsMenu = false;
