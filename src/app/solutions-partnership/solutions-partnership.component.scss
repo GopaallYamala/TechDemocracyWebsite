@@ -1,0 +1,15 @@
+.solutions-partnership {
+  padding: 4rem 0;
+  background-color: #E7E9F9;
+  margin-top: 2rem;
+  .partner-text {
+    font-weight: 500;
+  }
+  .img-container {
+    margin-top: 2rem;
+    img {
+      filter: grayscale(1);
+      margin-right: 2rem;
+    }
+  }
+}

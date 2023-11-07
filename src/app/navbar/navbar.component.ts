@@ -92,6 +92,10 @@ export class NavBarComponent {
     element.style.visibility = 'hidden';
   }
 
+  // displayMenu () {
+  //   this.isMenuCollapsed = !this.isMenuCollapsed;
+  // }
+
   showSolutionsNav() {
     this.solutionsMenu = !this.solutionsMenu;
     this.displayCreateMenu = false;
