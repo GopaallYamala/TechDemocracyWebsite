@@ -23,6 +23,11 @@
         color: #000;
         font-weight: 500;
         font-size: 24px;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
       }
     }
   }
