@@ -8,7 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class AdvisoryConsultingComponent implements OnInit {
-  solutionData: any = {}
+  solutionData: any = {
+    title: 'Our Services',
+    heading: 'Your Trusted Identity Security',
+    subHeading: 'Leverage our 20+ years of IAM experience to choose the right tools, process, and investment for your industry.',
+    solutionName: 'Advisory Consultant',
+    solutionContent: '',
+    // solutionImg: '../../assets/images/Solutions-Page.png',
+    solutionImg: ''
+  }
   title: any;
 
   constructor(private readonly activatedRoute: ActivatedRoute) {
