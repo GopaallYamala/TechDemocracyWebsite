@@ -23,12 +23,26 @@
         color: #000;
         font-weight: 500;
         font-size: 24px;
+
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
       }
     }
   }
   .testimonials {
     margin-top: 2rem;
+    overflow: auto;
   }
+  .testimonials {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .testimonials::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
   .testimonial {
     padding: 1rem 2rem;
     border: 1px solid #7070704d;

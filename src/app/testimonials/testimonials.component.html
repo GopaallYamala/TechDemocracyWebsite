@@ -3,11 +3,11 @@
     <div class="testimonial-header flex-row-nowrap">
       <h2>Testimonials from Satisfied Customers</h2>
       <div class="nav-btn-container flex-row-nowrap">
-        <button class="back-ctrl"><</button>
-        <button class="next-ctrl">></button>
+        <button (click)="scrollLeft()" class="back-ctrl"><</button>
+        <button (click)="scrollRight()" class="next-ctrl">></button>
       </div>
     </div>
-    <div class="testimonials row">
+    <div #widgetsContent class="testimonials row flex-row-nowrap">
       <div class="col-md-6" *ngFor="let testimony of testimonialsData">
         <div class="testimonial">
             <blockquote>
