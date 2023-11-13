@@ -1,7 +1,8 @@
 <nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand">
-      <img src="../assets/images/tdc-logo.png" class="tdc-logo" alt="TechDemocracy Logo">
+      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyMainLogo.svg" class="company-logo" alt="TechDemocracy Logo">
+      <img *ngIf="country == 'IN'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo" alt="Cotelligent Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
