@@ -15,6 +15,9 @@ export class NavBarComponent {
   isMenuCollapsed: boolean = false;
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
+  resourcesMenu: boolean = false;
+
+
 
   constructor(private readonly router: Router, private location: Location) {
 
@@ -83,6 +86,39 @@ export class NavBarComponent {
     }
   ]
 
+  resourcesObj = [
+    {
+      tittle: 'Case Study',
+      caseStudys: [
+        {
+          tittle: 'Customer Identity & Access Management',
+        },
+        {
+          tittle: 'Customer Identity & Access Management',
+        },
+        {
+          tittle: 'Customer Identity & Access Management',
+        }
+      ]
+    },
+    {
+      tittle: 'Customer Success',
+    },
+    {
+      tittle: 'Online Journal',
+    },
+    {
+      tittle: 'WhitePapers',
+    },
+    {
+      tittle: 'Events & Videos',
+    },
+    {
+      tittle: 'Reports',
+    }
+
+  ]
+
   showMenu(id: string) {
     let element = document.getElementById(id) as HTMLElement;
     element.style.visibility = 'visible';
@@ -100,11 +136,18 @@ export class NavBarComponent {
   showSolutionsNav() {
     this.solutionsMenu = !this.solutionsMenu;
     this.displayCreateMenu = false;
+    this.resourcesMenu = false;
   }
 
   showServicesNav() {
     this.solutionsMenu = false;
+    this.resourcesMenu = false;
     this.displayCreateMenu = !this.displayCreateMenu;
+  }
+  showResourcesNav() {
+    this.solutionsMenu = false;
+    this.displayCreateMenu = false;
+    this.resourcesMenu = !this.resourcesMenu;
   }
   // previous method
   navToPages1(pageName: string, title?: any) {
@@ -161,10 +204,12 @@ export class NavBarComponent {
       }
       this.displayCreateMenu = false;
       this.solutionsMenu = false;
+      this.resourcesMenu = false;
     } else {
       this.router.navigate([pageName]);
       this.displayCreateMenu = false;
       this.solutionsMenu = false;
+      this.resourcesMenu = false;
     }
 
   }

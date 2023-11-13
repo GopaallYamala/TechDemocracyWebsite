@@ -69,6 +69,14 @@
     font-weight: 500;
     line-height: 1.85;
   }
+  .caseStudy {
+    min-width: 14rem;
+    min-height: 10rem;
+    background-color: #DDD;
+    margin-right: 1rem;
+    border-radius: 4%;
+    margin-bottom: 0.5rem;
+  }
 }
 .nav-link {
   font-family: "nhgt-pro-normal";
@@ -91,7 +99,6 @@
   font-family: "nhgt-pro-normal";
 }
 
-
 // @media (max-width:600px)  { /* smartphones, iPhone, portrait 480x320 phones */
 //   .header-menu-actions {
 //     display: none;
@@ -108,7 +115,7 @@
 //     display: block;
 //   }
 // }
-// @media (min-width:768px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+// @media (min-width:768px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 //   .header-menu-actions {
 //     display: none;
 //   }

@@ -4,13 +4,13 @@
       <img src="../assets/images/tdc-logo.png" class="tdc-logo" alt="TechDemocracy Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <!-- (click)="displayMenu()" -->
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
-    <div clickOutside (clickOutside)="displayCreateMenu = false || solutionsMenu = false"
-      class="header-menu-actions flex-row-nowrap" >
+    <div clickOutside (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false"
+      class="header-menu-actions flex-row-nowrap">
       <!-- [ngClass]="isMenuCollapsed ? 'd-none' : 'd-block'" -->
       <div [ngbCollapse]="isMenuCollapsed" class="navbar">
         <ul class="navbar-nav">
@@ -38,9 +38,17 @@
           <li class="nav-item active" (click)="navToPages('/partners')">
             <a class="nav-link">Partners</a>
           </li>
-          <li class="nav-item" (click)="navToPages('/resources')">
-            <a class="nav-link">Resources</a>
+          <li (click)="showResourcesNav()" class="nav-item services-menu">
+            <div class="nav-link cursor flex-row-nowrap">
+              <span class="{{resourcesMenu?'nav-active':''}}">Resources</span>
+              <svg-icon-component *ngIf="!resourcesMenu" [name]="'expand_more'"></svg-icon-component>
+              <svg-icon-component class="{{resourcesMenu?'nav-active':''}}" *ngIf="resourcesMenu"
+                [name]="'expand_less'"></svg-icon-component>
+            </div>
           </li>
+          <!-- <li class="nav-item" (click)="navToPages('/resources')">
+            <a class="nav-link">Resources</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link">Company</a>
           </li>
@@ -74,8 +82,22 @@
           </div>
         </div>
       </div>
+      <div @slideDown *ngIf="resourcesMenu" id="ResourcesMenu" class="nav-info">
+        <section class="row">
+          <div class="flex-col-nowrap col-md-4">
+            <div class="nav-content breathing-space-bottom" *ngFor="let resource of resourcesObj">
+              <h6 (click)="navToPages('/resources')" class="nav-tittle">{{resource.tittle}}</h6>
+            </div>
+            <button class="btn btn-outline-dark btn-md w-25 gutter-top-1">View All</button>
+          </div>
+          <div class="flex-row-nowrap col-md-8" *ngFor="let resource of resourcesObj">
+            <section *ngFor="let caseStudy of resource.caseStudys">
+              <div class="caseStudy"></div>
+              <h6>{{caseStudy.tittle}}</h6>
+            </section>
+          </div>
+        </section>
+      </div>
     </div>
-    <!-- </div> -->
-
   </div>
 </nav>
