@@ -1,8 +1,13 @@
 .tdc-footer {
-	background-color: #0C1E5A;
+	// background-color: #0C1E5A;
+	background-color: #000F2B;
 	padding: 3rem 0;
 	.footer-head {
 		margin-bottom: 3rem;
+	}
+	.company-logo {
+		max-height: 80px;
+		height: 50px;
 	}
 	.tdc-footer-content {
 		align-items: baseline;

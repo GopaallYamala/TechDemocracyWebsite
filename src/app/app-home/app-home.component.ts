@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
 
@@ -10,7 +10,7 @@ import { AnimationDefinitions } from 'src/shared/animations';
   animations: AnimationDefinitions
 })
 
-export class AppHomeComponent {
+export class AppHomeComponent implements OnInit {
 
   countryName: string;
   timeStamp: string;
@@ -18,6 +18,9 @@ export class AppHomeComponent {
   constructor() {
     // this.timeStamp = Intl.DateTimeFormat().resolvedOptions().timeZone;
     // this.getContry();
+  }
+
+  ngOnInit() {
   }
 
   getContry() {
@@ -29,4 +32,5 @@ export class AppHomeComponent {
         console.log(payload.location.country.name + ', ' + payload.location.city);
       });
   }
+
 }

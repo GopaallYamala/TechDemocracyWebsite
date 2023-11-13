@@ -1,7 +1,8 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Router, TitleStrategy } from '@angular/router';
 import { AnimationDefinitions } from 'src/shared/animations';
 import { Location } from '@angular/common';
+import { TDCGeoLocationService } from 'src/shared/services/geo-location.service';
 
 @Component({
   selector: 'top-navbar',
@@ -10,14 +11,43 @@ import { Location } from '@angular/common';
   encapsulation: ViewEncapsulation.None,
   animations: [AnimationDefinitions]
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit {
 
   isMenuCollapsed: boolean = false;
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
 
-  constructor(private readonly router: Router, private location: Location) {
+  // Geo location variables
+  ipaddress: string = '';
+  latitude: string = '';
+  longitude: string = '';
+  currency: string = '';
+  currencysymbol: string = '';
+  isp: string = '';
+  city: string = '';
+  country: string = '';
+  province: string = '';
 
+  constructor(private readonly router: Router, 
+    private location: Location, 
+    private readonly geoLocationService: TDCGeoLocationService) {
+
+  }
+
+  ngOnInit() {
+    this.geoLocationService.getIpAddress().subscribe(resp => {
+      console.log(resp, 'geo location response-----------');
+      this.ipaddress = resp['ip'];
+      this.geoLocationService.getGEOLocation(this.ipaddress).subscribe(res => {
+        console.log(res);
+        this.latitude = res['latitude'];
+        this.longitude = res['longitude'];
+        this.city = res['city'];
+        this.country = res['country_code2'];
+        this.isp = res['isp'];
+        this.province = res['state_prov']
+      })
+    })
   }
 
   solutionsObj = [{
