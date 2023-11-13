@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'challenges',
@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./challenges.component.scss']
 })
 
-export class ChallengesComponent {
+export class ChallengesComponent implements OnInit {
+  hasAppeared: boolean;
+  onAppear(){
+    this.hasAppeared = true;
+  }
 
+  ngOnInit() {
+    
+  }
+
+  test () {
+    this.onAppear();
+  }
 }

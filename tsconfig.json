@@ -23,6 +23,7 @@
       "dom"
     ],
     "strictPropertyInitialization": false,
+    "suppressImplicitAnyIndexErrors": true,
     "resolveJsonModule": true,
     "esModuleInterop": true
   },

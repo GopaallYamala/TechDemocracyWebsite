@@ -29,12 +29,14 @@ import { OpsManageServicesComponent } from 'src/app/ops-manage-services/ops-mana
 import { CaseStudiesComponent } from 'src/app/case-studies/case-studies.component';
 import { OurStatsComponent } from 'src/app/our-stats/our-stats.component';
 import { SolutionsPartnershipComponent } from 'src/app/solutions-partnership/solutions-partnership.component';
+import { AppearDirective } from './directives/appearDirective';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent,
     SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent,
-    ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent],
+    ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, 
+  AppearDirective],
   imports: [
     CommonModule,
     BrowserModule,
@@ -42,7 +44,7 @@ import { SolutionsPartnershipComponent } from 'src/app/solutions-partnership/sol
     RouterModule,
     HttpClientModule
   ],
-  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent]
+  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, AppearDirective]
 })
 
 
