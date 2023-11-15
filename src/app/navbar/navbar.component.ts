@@ -30,9 +30,10 @@ export class NavBarComponent implements OnInit {
   city: string = '';
   country: string = '';
   province: string = '';
+  selectedResourceType: string = "Case Study";
 
-  constructor(private readonly router: Router, 
-    private location: Location, 
+  constructor(private readonly router: Router,
+    private location: Location,
     private readonly geoLocationService: TDCGeoLocationService) {
 
   }
@@ -117,6 +118,9 @@ export class NavBarComponent implements OnInit {
   ]
 
   resourcesObj = [
+    {
+      tittle: 'All',
+    },
     {
       tittle: 'Case Study',
       caseStudys: [
@@ -242,6 +246,10 @@ export class NavBarComponent implements OnInit {
       this.resourcesMenu = false;
     }
 
+  }
+
+  resourceType(type: string) {
+    this.selectedResourceType = type;
   }
 
 

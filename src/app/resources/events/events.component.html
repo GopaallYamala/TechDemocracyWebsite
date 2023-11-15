@@ -1,0 +1,40 @@
+<div class="events-container">
+  <div class="container">
+    <div class="view-all flex-row-nowrap">
+      <h3 class="gutter-bottom-2">Upcoming Events</h3>
+      <button *ngIf="upcomingEventIndex === 3" (click)="viewUpcomingEvent()" class="btn btn-outline-danger gutter-bottom-1">View All</button>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let event of upcomingEvents | slice:0:upcomingEventIndex;">
+        <article class="prefernces prefered-size breathing-space-bottom">
+        </article>
+        <div class="event-info">
+          <label class="events">Customer Story</label>
+          <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui odit
+              vel,
+              tenetur deleniti,
+              ratione
+              eligendi aliquid vitae</strong></p>
+          <p class="event-time">14th November 2023, 06:43 PM</p>
+          <button class="btn btn-outline-danger gutter-bottom-1 register-btn">Register</button>
+        </div>
+      </div>
+    </div>
+    <div class="view-all flex-row-nowrap gutter-top-2">
+      <h3 class="gutter-bottom-2">Latest Videos</h3>
+      <button *ngIf="latestVideosIndex === 3" (click)="viewAllVideos()" class="btn btn-outline-danger gutter-bottom-1">View All</button>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let video of latestVideos | slice:0:latestVideosIndex">
+        <article class="prefernces prefered-size breathing-space-bottom">
+        </article>
+        <label class="events">Whitepapers</label>
+        <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui odit
+            vel,
+            tenetur deleniti,
+            ratione
+            eligendi aliquid vitae</strong></p>
+      </div>
+    </div>
+  </div>
+</div>

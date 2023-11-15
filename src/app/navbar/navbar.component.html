@@ -1,8 +1,10 @@
 <nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand">
-      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyMainLogo.svg" class="company-logo" alt="TechDemocracy Logo">
-      <img *ngIf="country == 'IN'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo" alt="Cotelligent Logo">
+      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyMainLogo.svg" class="company-logo"
+        alt="TechDemocracy Logo">
+      <img *ngIf="country == 'IN'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
+        alt="Cotelligent Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,17 +87,19 @@
       </div>
       <div @slideDown *ngIf="resourcesMenu" id="ResourcesMenu" class="nav-info">
         <section class="row">
-          <div class="flex-col-nowrap col-md-4">
+          <div class="flex-col-nowrap col-md-3">
             <div class="nav-content breathing-space-bottom" *ngFor="let resource of resourcesObj">
-              <h6 (click)="navToPages('/resources')" class="nav-tittle">{{resource.tittle}}</h6>
+              <h6 (click)="resourceType(resource.tittle)" class="nav-tittle w-75 {{selectedResourceType === resource.tittle ? 'active-resource':''}}">{{resource.tittle}}</h6>
             </div>
-            <button class="btn btn-outline-dark btn-md w-25 gutter-top-1">View All</button>
           </div>
-          <div class="flex-row-nowrap col-md-8" *ngFor="let resource of resourcesObj">
-            <section *ngFor="let caseStudy of resource.caseStudys">
-              <div class="caseStudy"></div>
-              <h6>{{caseStudy.tittle}}</h6>
+          <div class="col-md-9">
+            <section class="flex-row-nowrap" *ngFor="let resource of resourcesObj">
+              <section *ngFor="let caseStudy of resource.caseStudys">
+                <div class="caseStudy">{{selectedResourceType}}</div>
+                <h6>{{caseStudy.tittle}}</h6>
+              </section>
             </section>
+            <button (click)="navToPages('/resources')" class="btn btn-outline-dark btn-md w-20 gutter-top-1">View All</button>
           </div>
         </section>
       </div>
