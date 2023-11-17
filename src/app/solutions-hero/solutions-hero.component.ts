@@ -14,6 +14,6 @@ export class SolutionsHeroComponent {
     subHeading: '',
     solutionName: '',
     solutionContent: '',
-    solutionImg: ''
+    solutionImg: '../../assets/images/Solutions-Page.png',
   }
 }

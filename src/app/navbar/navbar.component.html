@@ -7,13 +7,15 @@
         alt="Cotelligent Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" (click)="isCollapsed = !isCollapsed"
+      aria-label="Toggle navigation">
       <!-- (click)="displayMenu()" -->
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
-    <div clickOutside (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false"
-      class="header-menu-actions flex-row-nowrap">
+    <div id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed" clickOutside
+      (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false"
+      class="header-menu-actions flex-row-nowrap collapse navbar-collapse">
       <!-- [ngClass]="isMenuCollapsed ? 'd-none' : 'd-block'" -->
       <div [ngbCollapse]="isMenuCollapsed" class="navbar">
         <ul class="navbar-nav">
@@ -60,49 +62,54 @@
       <div class="free-consult-btn">
         <button type="button" class="btn btn-outline-danger ">Free Consultation</button>
       </div>
-      <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap">
-        <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
-          <h5 (click)="navToPages('/solutions', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
-          <div class="nav-desc">
-            <p>{{solution.desc}}</p>
-          </div>
-          <div class="more-links flex-col-wrap">
-            <a>{{solution.stories}}</a>
-            <a>{{solution.approch}}</a>
-            <a>{{solution.customise}}</a>
-          </div>
-        </div>
-      </div>
-      <div @slideDown *ngIf="displayCreateMenu" id="ServicesMenu" class="nav-info flex-row-nowrap">
-        <div class="flex-col-nowrap nav-content" *ngFor="let service of servicesObj">
-          <h5 (click)="navToPages('/adv-consulting', service.tittle)" class="nav-tittle">{{service.tittle}}</h5>
-          <div class="nav-desc">
-            <p>{{service.desc}}</p>
-          </div>
-          <div class="more-links flex-col-wrap">
-            <a>{{service.businessModel}}</a>
-            <a>{{service.stories}}</a>
-          </div>
-        </div>
-      </div>
-      <div @slideDown *ngIf="resourcesMenu" id="ResourcesMenu" class="nav-info">
-        <section class="row">
-          <div class="flex-col-nowrap col-md-3">
-            <div class="nav-content breathing-space-bottom" *ngFor="let resource of resourcesObj">
-              <h6 (click)="resourceType(resource.tittle)" class="nav-tittle w-75 {{selectedResourceType === resource.tittle ? 'active-resource':''}}">{{resource.tittle}}</h6>
+      <section class="row">
+        <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap col-md-12">
+          <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
+            <h5 (click)="navToPages('/solutions', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
+            <div class="nav-desc">
+              <p>{{solution.desc}}</p>
+            </div>
+            <div class="more-links flex-col-wrap">
+              <a>{{solution.stories}}</a>
+              <a>{{solution.approch}}</a>
+              <a>{{solution.customise}}</a>
             </div>
           </div>
-          <div class="col-md-9">
-            <section class="flex-row-nowrap" *ngFor="let resource of resourcesObj">
-              <section *ngFor="let caseStudy of resource.caseStudys">
-                <div class="caseStudy">{{selectedResourceType}}</div>
-                <h6>{{caseStudy.tittle}}</h6>
-              </section>
-            </section>
-            <button (click)="navToPages('/resources')" class="btn btn-outline-dark btn-md w-20 gutter-top-1">View All</button>
+        </div>
+        <div @slideDown *ngIf="displayCreateMenu" id="ServicesMenu" class="nav-info flex-row-nowrap col-md-12">
+          <div class="flex-col-nowrap nav-content" *ngFor="let service of servicesObj">
+            <h5 (click)="navToPages('/adv-consulting', service.tittle)" class="nav-tittle">{{service.tittle}}</h5>
+            <div class="nav-desc">
+              <p>{{service.desc}}</p>
+            </div>
+            <div class="more-links flex-col-wrap">
+              <a>{{service.businessModel}}</a>
+              <a>{{service.stories}}</a>
+            </div>
           </div>
-        </section>
-      </div>
+        </div>
+        <div @slideDown *ngIf="resourcesMenu" id="ResourcesMenu" class="nav-info col-md-12">
+          <section class="row">
+            <div class="flex-col-nowrap col-md-3">
+              <div class="nav-content breathing-space-bottom" *ngFor="let resource of resourcesObj">
+                <h6 (click)="resourceType(resource.tittle)"
+                  class="nav-tittle w-75 {{selectedResourceType === resource.tittle ? 'active-resource':''}}">
+                  {{resource.tittle}}</h6>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <section class="flex-row-nowrap" *ngFor="let resource of resourcesObj">
+                <section *ngFor="let caseStudy of resource.caseStudys">
+                  <div class="caseStudy">{{selectedResourceType}}</div>
+                  <h6>{{caseStudy.tittle}}</h6>
+                </section>
+              </section>
+              <button (click)="navToPages('/resources', selectedResourceType, true)"
+                class="btn btn-outline-dark btn-md w-20 gutter-top-1">View All</button>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
   </div>
 </nav>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute } from '@angular/router';
 import { StrapiService } from 'src/shared/services/strapi.service';
 
 @Component({
@@ -9,13 +10,23 @@ import { StrapiService } from 'src/shared/services/strapi.service';
 export class ResourcesComponent implements OnInit {
 
   strapiBlogAttrs: any;
-  constructor (private readonly strapiService: StrapiService) {}
+  contextType: string = 'All'
+
+  constructor(private readonly strapiService: StrapiService,
+    private readonly activatedRoute: ActivatedRoute) { }
+
+
   ngOnInit() {
+    this.activatedRoute.queryParams.subscribe((query: any) => {
+      if (query.prop) {
+        this.contextType = query.prop;
+      }
+    });
     this.freeConsult();
   }
 
-  
-  freeConsult () {
+
+  freeConsult() {
     this.strapiService.getBlog().subscribe((resp) => {
       // console.log(resp, '------------Blog');
       const data = resp.data;

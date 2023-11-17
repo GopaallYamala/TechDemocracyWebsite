@@ -1,0 +1,81 @@
+.resource-context-container {
+  position: relative;
+  .resources-highlights-section {
+    background: linear-gradient(#2a3059 0%, #273d4b 100%);
+    border: 1px solid #707070;
+    color: #ffffff;
+    min-height: 18rem;
+    margin-bottom: 20rem !important;
+  }
+  .prefered-caseStudie {
+    position: absolute;
+    // top: 100%;
+    // width: 85%;
+  }
+  .prefernces {
+    min-height: 18rem;
+    background: #edf2fb;
+  }
+  .events {
+    color: #dc3545;
+  }
+
+  .account-manager {
+    .profile-img{
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      background: #d6d8dc;
+    }
+    .profile-name, label{
+      color: #2d2d2d;
+      margin: 0;
+    }
+    .circular--square{
+      border-radius: 50%;
+    }
+  }
+
+  .prefered-size {
+    // height: 100%;
+    width: 95%;
+    border-radius: 12px;
+  }
+  p {
+    color: #2d2d2d;
+  }
+  .events-container {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    .prefernces {
+      min-height: 15rem;
+      background: #edf2fb;
+    }
+    .events {
+      color: #dc3545;
+    }
+
+    .prefered-size {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .event-info {
+      height: 50%;
+    }
+    .register-btn {
+      border-radius: 25px;
+    }
+    .event-time {
+      font-size: 12px;
+    }
+    .view-all {
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        width: 10%;
+        height: 10%;
+      }
+    }
+  }
+}

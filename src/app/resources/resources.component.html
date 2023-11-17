@@ -9,7 +9,15 @@
       <p>{{child.text}}</p>
     </div>
   </article> -->
-  <highlights></highlights>
-  <resources-categories></resources-categories>
-  <events></events>
+  <ng-container *ngIf="contextType === 'All';else other">
+    <highlights></highlights>
+    <resources-categories></resources-categories>
+    <events></events>
+  </ng-container>
+  <ng-template #other>
+    <ng-container>
+      <resources-context [contextType]="contextType"></resources-context>
+    </ng-container>
+  </ng-template>
+
 </section>

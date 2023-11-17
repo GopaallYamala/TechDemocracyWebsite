@@ -26,7 +26,7 @@ const routes: Routes = [
   // { path: 'impl-services', component: ImplServiceComponent },
   // { path: 'ops-manage-services', component: OpsManageServicesComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'resources', component: ResourcesComponent }
+  { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' }
 
 ];
 
