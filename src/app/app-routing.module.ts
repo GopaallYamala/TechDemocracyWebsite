@@ -12,6 +12,7 @@ import { AdvisoryConsultingComponent } from './advisory-consulting/advisory-cons
 // import { ImplServiceComponent } from './implementation-service/implementation-service.component';
 // import { OpsManageServicesComponent } from './ops-manage-services/ops-manage-services.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { ContactUsCompoent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,7 +27,8 @@ const routes: Routes = [
   // { path: 'impl-services', component: ImplServiceComponent },
   // { path: 'ops-manage-services', component: OpsManageServicesComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' }
+  { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
+  { path: 'contact-us', component: ContactUsCompoent }
 
 ];
 
