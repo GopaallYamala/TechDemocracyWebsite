@@ -1,12 +1,12 @@
 <section class="valued-customers">
   <div class="container">
     <div class="row">
-      <div class="customers-hdng col-md-4">
+      <div class="customers-hdng col-md-4 col-xs-12">
         <h2>Our Valued <div>Customers</div></h2>
       </div>
-      <div class="customers-list col-md-8 flex-row-nowrap">
+      <div class="customers-list col-md-8  col-xs-12 flex-row-wrap">
         <!-- <img src="../../assets/images/ast.JPG" alt=""> -->
-        <div *ngFor="let path of imgPath">
+        <div *ngFor="let path of imgPath" class="col">
           <img src="{{path}}" alt="">
         </div>
       </div>

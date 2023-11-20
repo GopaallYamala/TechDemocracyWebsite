@@ -17,6 +17,7 @@ export class NavBarComponent implements OnInit {
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
   resourcesMenu: boolean = false;
+  companyMenu: boolean = false;
 
 
 
@@ -151,7 +152,45 @@ export class NavBarComponent implements OnInit {
     {
       tittle: 'Reports',
     }
+  ]
 
+  companyMenuData = [
+    {
+      title: 'About us',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    },
+    {
+      title: 'Leadership',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    },
+    {
+      title: 'Contact us',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    },
+    {
+      title: 'Careers',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    },
+    {
+      title: 'News',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    },
+    {
+      title: 'Testimonials',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      businessModel: 'Business Model',
+      stories: 'Customer Success Stories',
+    }
   ]
 
   showMenu(id: string) {
@@ -172,17 +211,28 @@ export class NavBarComponent implements OnInit {
     this.solutionsMenu = !this.solutionsMenu;
     this.displayCreateMenu = false;
     this.resourcesMenu = false;
+    this.companyMenu = false;
   }
 
   showServicesNav() {
     this.solutionsMenu = false;
     this.resourcesMenu = false;
+    this.companyMenu = false;
+
     this.displayCreateMenu = !this.displayCreateMenu;
   }
   showResourcesNav() {
     this.solutionsMenu = false;
     this.displayCreateMenu = false;
+    this.companyMenu = false;
     this.resourcesMenu = !this.resourcesMenu;
+  }
+
+  showCompanyMenu () {
+    this.solutionsMenu = false;
+    this.displayCreateMenu = false;
+    this.resourcesMenu = false;
+    this.companyMenu = !this.companyMenu;
   }
   // previous method
   navToPages1(pageName: string, title?: any) {
