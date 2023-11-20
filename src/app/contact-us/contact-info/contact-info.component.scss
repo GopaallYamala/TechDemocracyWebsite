@@ -1,0 +1,11 @@
+.contact-info-container {
+  .info-header {
+    background: linear-gradient(#111741 0%, #0e2a3b 100%);
+    min-height: 18rem;
+    display: flex;
+    align-items: center;
+    h3, p {
+      color: #fff;
+    }
+  }
+}
