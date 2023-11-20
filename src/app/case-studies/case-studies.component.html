@@ -16,7 +16,7 @@
                 <svg-icon-component [name]="'navigate_before'"></svg-icon-component>
               </div>
               <div class="cards" [ngClass]="{'w-100': totalPages === 1}">
-                <div class="overflow" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
+                <div class="overflow flex-row-nowrap" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
                   <article class="casestudie-card-body" *ngFor="let i of arr; let index = index"
                     [ngStyle]="{'width': cardWidth}">
                     <div class="card">

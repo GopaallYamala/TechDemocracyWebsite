@@ -1,0 +1,32 @@
+.resources-container {
+  margin-top: 17rem;
+
+  .caseStudy {
+    min-height: 12rem;
+    min-width: 8rem;
+    background-color: #edf2fb;
+    margin-right: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  label {
+    color: #dc3545;
+  }
+  a {
+    color: #212529;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.85;
+  }
+  ul, li {
+    list-style-type: none;
+  }
+
+  .list-casestudy {
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}

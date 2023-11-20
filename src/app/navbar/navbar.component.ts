@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Router, TitleStrategy } from '@angular/router';
+import { Router } from '@angular/router';
 import { AnimationDefinitions } from 'src/shared/animations';
 import { Location } from '@angular/common';
 import { TDCGeoLocationService } from 'src/shared/services/geo-location.service';
@@ -16,6 +16,9 @@ export class NavBarComponent implements OnInit {
   isMenuCollapsed: boolean = false;
   displayCreateMenu: boolean = false;
   solutionsMenu: boolean = false;
+  resourcesMenu: boolean = false;
+
+
 
   // Geo location variables
   ipaddress: string = '';
@@ -27,9 +30,11 @@ export class NavBarComponent implements OnInit {
   city: string = '';
   country: string = '';
   province: string = '';
+  selectedResourceType: string = "All";
+  isCollapsed:boolean = true;
 
-  constructor(private readonly router: Router, 
-    private location: Location, 
+  constructor(private readonly router: Router,
+    private location: Location,
     private readonly geoLocationService: TDCGeoLocationService) {
 
   }
@@ -113,6 +118,42 @@ export class NavBarComponent implements OnInit {
     }
   ]
 
+  resourcesObj = [
+    {
+      tittle: 'All',
+    },
+    {
+      tittle: 'Case Study',
+      caseStudys: [
+        {
+          tittle: 'Customer Identity & Access Management',
+        },
+        {
+          tittle: 'Customer Identity & Access Management',
+        },
+        {
+          tittle: 'Customer Identity & Access Management',
+        }
+      ]
+    },
+    {
+      tittle: 'Customer Success',
+    },
+    {
+      tittle: 'Online Journal',
+    },
+    {
+      tittle: 'WhitePapers',
+    },
+    {
+      tittle: 'Events & Videos',
+    },
+    {
+      tittle: 'Reports',
+    }
+
+  ]
+
   showMenu(id: string) {
     let element = document.getElementById(id) as HTMLElement;
     element.style.visibility = 'visible';
@@ -130,11 +171,18 @@ export class NavBarComponent implements OnInit {
   showSolutionsNav() {
     this.solutionsMenu = !this.solutionsMenu;
     this.displayCreateMenu = false;
+    this.resourcesMenu = false;
   }
 
   showServicesNav() {
     this.solutionsMenu = false;
+    this.resourcesMenu = false;
     this.displayCreateMenu = !this.displayCreateMenu;
+  }
+  showResourcesNav() {
+    this.solutionsMenu = false;
+    this.displayCreateMenu = false;
+    this.resourcesMenu = !this.resourcesMenu;
   }
   // previous method
   navToPages1(pageName: string, title?: any) {
@@ -176,8 +224,8 @@ export class NavBarComponent implements OnInit {
 
   }
 
-  navToPages(pageName: string, title?: any) {
-    if (title) {
+  navToPages(pageName: string, title?: any, isResourcePage?: boolean) {
+    if (title && !isResourcePage) {
       if (title === 'Identity Governance & Administration' || title === 'Customer Identity & Access Management' || title === 'Previliged Access Management' || title === 'Access Management') {
         this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
         this.location.replaceState('/solutions');
@@ -191,12 +239,19 @@ export class NavBarComponent implements OnInit {
       }
       this.displayCreateMenu = false;
       this.solutionsMenu = false;
+      this.resourcesMenu = false;
     } else {
-      this.router.navigate([pageName]);
+      this.router.navigate([pageName], { queryParams: { prop: title }, skipLocationChange: true });
+      this.location.replaceState(pageName);
       this.displayCreateMenu = false;
       this.solutionsMenu = false;
+      this.resourcesMenu = false;
     }
 
+  }
+
+  resourceType(type: string) {
+    this.selectedResourceType = type;
   }
 
 

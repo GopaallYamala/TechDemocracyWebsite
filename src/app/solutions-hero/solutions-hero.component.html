@@ -1,4 +1,4 @@
-<section class="solutions-hero-container">
+<section class="solutions-hero-container {{solutionName == 'services'?'service-bottom-fix':''}}">
   <section class="px-4 py-5 my-5 solutions-hero-section">
     <div class="container">
       <div class="row">
@@ -9,13 +9,13 @@
           <button class="btn btn-danger contact-expert">Talk to an Expert</button>
         </div>
         <div class="col-md-6 content-img">
-          <p>
+          <!-- <p>
             <strong>{{dataObj.solutionName}}</strong>{{dataObj.solutionContent}}
-          </p>
-          <img src="{{dataObj.solutionImg}}" class="absolute-img" alt="">
+          </p> -->
+          <img src="../../assets/images/Solutions-Page.png" class="{{solutionName == 'services'?'service-img':'absolute-img'}}" alt="">
         </div>
       </div>
     </div>
-    
+
   </section>
 </section>

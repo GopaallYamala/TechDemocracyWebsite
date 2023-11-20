@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core'
+import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,13 +30,17 @@ import { CaseStudiesComponent } from 'src/app/case-studies/case-studies.componen
 import { OurStatsComponent } from 'src/app/our-stats/our-stats.component';
 import { SolutionsPartnershipComponent } from 'src/app/solutions-partnership/solutions-partnership.component';
 import { AppearDirective } from './directives/appearDirective';
+import { ResourcesHighlightsComponent } from 'src/app/resources/highlights/highlights.component';
+import { ResourcesCategoriesComponent } from 'src/app/resources/categories/resources-categories.component';
+import { EventsComponent } from 'src/app/resources/events/events.component';
+import { ResourcesContextComponent } from 'src/app/resources/context/resources-context.component';
 
 @NgModule({
-  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent,
+  declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent,
     SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent,
-    ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, 
-  AppearDirective],
+    ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent, ResourcesContextComponent,
+    AppearDirective],
   imports: [
     CommonModule,
     BrowserModule,
@@ -44,8 +48,8 @@ import { AppearDirective } from './directives/appearDirective';
     RouterModule,
     HttpClientModule
   ],
-  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, AppearDirective]
+  exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent, SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent, TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent, TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent]
 })
 
 
-export class SharedModule {}
+export class SharedModule { }

@@ -1,0 +1,40 @@
+.resources-highlights-container {
+  position: relative;
+  // .resources-highlights-pill {
+  //   font-weight: normal;
+  //   letter-spacing: 0.125rem;
+  //   margin-bottom: 1rem;
+  // }
+  .resources-highlights-section {
+    background: linear-gradient(#173cb4 0%, #009dff 100%);
+    border: 1px solid #707070;
+    color: #ffffff;
+    min-height: 18rem;
+  }
+  .first-col {
+    position: relative;
+  }
+  .second-col {
+    position: relative;
+  }
+  .prefered-caseStudie {
+    position: absolute;
+    top: 100%;
+  }
+  .prefernces {
+    min-height: 18rem;
+    background: #edf2fb;
+  }
+  .events {
+    color: #dc3545;
+  }
+
+  .prefered-size {
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+  }
+  p {
+    color: #2d2d2d;
+  }
+}

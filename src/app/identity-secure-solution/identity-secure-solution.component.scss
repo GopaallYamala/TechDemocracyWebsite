@@ -14,6 +14,7 @@
     cursor: pointer;
     border-radius: 18px;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 1rem;
     // width: 30%;
     h3 {
@@ -26,6 +27,7 @@
     }
     .sol-link p {
       font-size: 14px;
+      max-width: 95%;
     }
     .sol-link .heading {
       justify-content: space-around;

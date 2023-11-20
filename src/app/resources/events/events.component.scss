@@ -1,0 +1,34 @@
+.events-container {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  .prefernces {
+    min-height: 15rem;
+    background: #edf2fb;
+  }
+  .events {
+    color: #dc3545;
+  }
+
+  .prefered-size {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .event-info {
+    height: 50%;
+  }
+  .register-btn {
+    border-radius: 25px;
+  }
+  .event-time {
+    font-size: 12px;
+  }
+  .view-all {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: 10%;
+      height: 10%;
+    }
+  }
+}
