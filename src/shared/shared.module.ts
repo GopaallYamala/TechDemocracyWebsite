@@ -36,13 +36,16 @@ import { EventsComponent } from 'src/app/resources/events/events.component';
 import { ResourcesContextComponent } from 'src/app/resources/context/resources-context.component';
 import { ContactUsCompoent } from 'src/app/contact-us/contact-us.component';
 import { ContactInfoComponent } from 'src/app/contact-us/contact-info/contact-info.component';
+import { CertifiedPartnersComponent } from 'src/app/certified-partners/certified-partners.component';
+import { PartnersComponent } from 'src/app/partners/partners.component';
+import { PartnersClientNewsComponent } from 'src/app/partner-client-news/partner-client-news.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
-    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent],
+    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -54,7 +57,7 @@ import { ContactInfoComponent } from 'src/app/contact-us/contact-info/contact-in
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
-    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent]
+    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent]
 })
 
 

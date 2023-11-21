@@ -1,7 +1,7 @@
 <nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand">
-      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyMainLogo.svg" class="company-logo"
+      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyBlackText.svg" class="company-logo"
         alt="TechDemocracy Logo">
       <img *ngIf="country == 'IN'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
         alt="Cotelligent Logo">
@@ -14,7 +14,7 @@
     </button>
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
     <div id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed" clickOutside
-      (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false"
+      (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false || companyMenu = false"
       class="header-menu-actions flex-row-nowrap collapse navbar-collapse">
       <!-- [ngClass]="isMenuCollapsed ? 'd-none' : 'd-block'" -->
       <div [ngbCollapse]="isMenuCollapsed" class="navbar">
@@ -63,7 +63,7 @@
         <button type="button" class="btn btn-outline-danger" routerLink="/contact-us" routerLinkActive="active">Free
           Consultation</button>
       </div>
-      <section class="row">
+      <section class="row" *ngIf="displayCreateMenu == true || solutionsMenu == true || resourcesMenu == true || companyMenu == true">
         <!-- Solutions sub-menu -->
         <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap col-md-12">
           <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
@@ -117,7 +117,7 @@
         <div @slideDown *ngIf="companyMenu" id="CompanyMenu" class="nav-info flex-row-nowrap col-md-12">
           <section class="row">
             <div class="nav-content breathing-space-bottom col" *ngFor="let item of companyMenuData">
-              <h6 (click)="resourceType(item.title)"
+              <h6 (click)="navToPages('/contact-us', item.title)"
                 class="nav-tittle w-75">
                 {{item.title}}</h6>
                 <div class="nav-desc">

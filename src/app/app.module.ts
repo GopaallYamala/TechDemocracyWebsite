@@ -23,7 +23,7 @@ import { ResourcesComponent } from './resources/resources.component';
     HeaderComponent,
     NavBarComponent,
     FooterComponent,
-    PartnersComponent,
+    // PartnersComponent,
     SolutionsComponent,
     LoginComponent,
     ResourcesComponent
