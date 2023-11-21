@@ -14,9 +14,6 @@ import { SolutionsHeroComponent } from 'src/app/solutions-hero/solutions-hero.co
 import { SuccessStoriesComponent } from 'src/app/success-stories/success-stories.component';
 import { IGASolutionsComponent } from 'src/app/iga-solutions/iga-solutions.component';
 import { IGAImplementationComponent } from 'src/app/IGA-Implementation/iga-implementation.component';
-import { SolutionCIAMComponent } from 'src/app/solution-ciam/solution-ciam.component';
-import { SolutionPAMComponent } from 'src/app/solution-pam/solution-pam.component';
-import { SolutionAMComponent } from 'src/app/solution-am/solution-am.component';
 import { TestimonialsComponent } from 'src/app/testimonials/testimonials.component';
 import { AdvisoryConsultingComponent } from 'src/app/advisory-consulting/advisory-consulting.component';
 import { IAMAdvisoryAssessmentWhyComponent } from 'src/app/IAM-advisory-assessment-why/IAM-advisory-assessment-why.component';
@@ -24,8 +21,6 @@ import { SVGIconComponent } from 'src/app/form-controls/svg-icon.component';
 import { TDCforConsultantComponent } from 'src/app/tdc-adv-consultant/tdc-adv-consultant.component';
 import { ExpertsInIdentityComponent } from 'src/app/experts-in-identity/experts-in-identity.component';
 import { TDCRightPartnerComponent } from 'src/app/tdc-right-partner/tdc-right-partner.component';
-import { ImplServiceComponent } from 'src/app/implementation-service/implementation-service.component';
-import { OpsManageServicesComponent } from 'src/app/ops-manage-services/ops-manage-services.component';
 import { CaseStudiesComponent } from 'src/app/case-studies/case-studies.component';
 import { OurStatsComponent } from 'src/app/our-stats/our-stats.component';
 import { SolutionsPartnershipComponent } from 'src/app/solutions-partnership/solutions-partnership.component';
@@ -34,17 +29,17 @@ import { ResourcesHighlightsComponent } from 'src/app/resources/highlights/highl
 import { ResourcesCategoriesComponent } from 'src/app/resources/categories/resources-categories.component';
 import { EventsComponent } from 'src/app/resources/events/events.component';
 import { ResourcesContextComponent } from 'src/app/resources/context/resources-context.component';
-import { ContactUsCompoent } from 'src/app/contact-us/contact-us.component';
-import { ContactInfoComponent } from 'src/app/contact-us/contact-info/contact-info.component';
 import { CertifiedPartnersComponent } from 'src/app/certified-partners/certified-partners.component';
 import { PartnersComponent } from 'src/app/partners/partners.component';
 import { PartnersClientNewsComponent } from 'src/app/partner-client-news/partner-client-news.component';
+import { ContactInfoComponent } from 'src/app/company/contact-us/contact-info/contact-info.component';
+import { ContactUsCompoent } from 'src/app/company/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
-    SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent,
+    SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
-    TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
+    TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
     ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent],
   imports: [
     CommonModule,
@@ -54,9 +49,9 @@ import { PartnersClientNewsComponent } from 'src/app/partner-client-news/partner
     HttpClientModule
   ],
   exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
-    SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent, SolutionCIAMComponent, SolutionPAMComponent, SolutionAMComponent,
+    SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
-    TDCRightPartnerComponent, ImplServiceComponent, OpsManageServicesComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
+    TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
     ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent]
 })
 
