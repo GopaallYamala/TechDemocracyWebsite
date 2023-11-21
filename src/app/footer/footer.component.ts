@@ -22,6 +22,7 @@ export class FooterComponent implements OnInit {
   isp: string = '';
   city: string = '';
   country: string = '';
+  countryCode: string = '';
   province: string = '';
 
   constructor(private readonly geoLocationService: TDCGeoLocationService) {
@@ -34,12 +35,13 @@ export class FooterComponent implements OnInit {
       this.ipaddress = resp['ip'];
       this.geoLocationService.getGEOLocation(this.ipaddress).subscribe(res => {
         console.log(res);
-        this.latitude = res['latitude'];
-        this.longitude = res['longitude'];
+        this.latitude = res['lat'];
+        this.longitude = res['long'];
         this.city = res['city'];
-        this.country = res['country_code2'];
+        this.country = res['country'];
+        this.countryCode = res['countryCode'];
         this.isp = res['isp'];
-        this.province = res['state_prov']
+        this.province = res['regionName']
       })
     })
   }

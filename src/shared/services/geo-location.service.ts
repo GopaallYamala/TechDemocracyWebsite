@@ -19,7 +19,8 @@ export class TDCGeoLocationService {
   }
 
   getGEOLocation(ip: any) {
-    let url = "https://api.ipgeolocation.io/ipgeo?apiKey=b81cc74e124247a0b99438bc3c22f79c&ip=" + ip + "&fields=geo";
+    // let url = "https://api.ipgeolocation.io/ipgeo?apiKey=b81cc74e124247a0b99438bc3c22f79c&ip=" + ip + "&fields=geo";
+    let url = "http://ip-api.com/json/" + ip;
     return this.http
       .get(url)
       .pipe(catchError(this.handleError));
