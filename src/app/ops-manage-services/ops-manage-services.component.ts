@@ -13,6 +13,7 @@ export class OpsManageServicesComponent {
     subHeading: 'Leverage our 20+ years of IAM experience to choose the right tools, process, and investment for your industry.',
     solutionName: 'Operations & Manage Services',
     solutionContent: '',
+    displayBtn: true,
     // solutionImg: '../../assets/images/Solutions-Page.png',
     solutionImg: ''
   }

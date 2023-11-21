@@ -1,7 +1,7 @@
 <nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand">
-      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyMainLogo.svg" class="company-logo"
+      <img *ngIf="country != 'IN'" src="../../assets/images/TechDemocracyBlackText.svg" class="company-logo"
         alt="TechDemocracy Logo">
       <img *ngIf="country == 'IN'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
         alt="Cotelligent Logo">
@@ -14,7 +14,7 @@
     </button>
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
     <div id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed" clickOutside
-      (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false"
+      (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false || companyMenu = false"
       class="header-menu-actions flex-row-nowrap collapse navbar-collapse">
       <!-- [ngClass]="isMenuCollapsed ? 'd-none' : 'd-block'" -->
       <div [ngbCollapse]="isMenuCollapsed" class="navbar">
@@ -22,7 +22,6 @@
           <li class="nav-item active" (click)="navToPages('/home')">
             <a class="nav-link">Home</a>
           </li>
-          <!-- (mouseover)="showMenu('SolutionsMenu')" (mouseout)="hideMenu('SolutionsMenu')" -->
           <li (click)="showSolutionsNav()" class="nav-item">
             <div class="nav-link cursor flex-row-nowrap">
               <span class="{{solutionsMenu?'nav-active':''}}">Solutions</span>
@@ -31,7 +30,6 @@
                 [name]="'expand_less'"></svg-icon-component>
             </div>
           </li>
-          <!-- (mouseover)="showMenu('ServicesMenu')" (mouseout)="hideMenu('ServicesMenu')" -->
           <li (click)="showServicesNav()" class="nav-item services-menu">
             <div class="nav-link cursor flex-row-nowrap">
               <span class="{{displayCreateMenu?'nav-active':''}}">Services</span>
@@ -51,11 +49,13 @@
                 [name]="'expand_less'"></svg-icon-component>
             </div>
           </li>
-          <!-- <li class="nav-item" (click)="navToPages('/resources')">
-            <a class="nav-link">Resources</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link">Company</a>
+          <li class="nav-item" (click)="showCompanyMenu()">
+            <div class="nav-link cursor flex-row-nowrap">
+              <span class="{{companyMenu?'nav-active':''}}">Company</span>
+              <svg-icon-component *ngIf="!companyMenu" [name]="'expand_more'"></svg-icon-component>
+              <svg-icon-component class="{{companyMenu?'nav-active':''}}" *ngIf="companyMenu"
+                [name]="'expand_less'"></svg-icon-component>
+            </div>
           </li>
         </ul>
       </div>
@@ -63,7 +63,8 @@
         <button type="button" class="btn btn-outline-danger" routerLink="/contact-us" routerLinkActive="active">Free
           Consultation</button>
       </div>
-      <section class="row">
+      <section class="row" *ngIf="displayCreateMenu == true || solutionsMenu == true || resourcesMenu == true || companyMenu == true">
+        <!-- Solutions sub-menu -->
         <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap col-md-12">
           <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
             <h5 (click)="navToPages('/solutions', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
@@ -77,6 +78,7 @@
             </div>
           </div>
         </div>
+        <!-- Services sub-menu -->
         <div @slideDown *ngIf="displayCreateMenu" id="ServicesMenu" class="nav-info flex-row-nowrap col-md-12">
           <div class="flex-col-nowrap nav-content" *ngFor="let service of servicesObj">
             <h5 (click)="navToPages('/adv-consulting', service.tittle)" class="nav-tittle">{{service.tittle}}</h5>
@@ -89,12 +91,13 @@
             </div>
           </div>
         </div>
+        <!-- Resources sub-menu -->
         <div @slideDown *ngIf="resourcesMenu" id="ResourcesMenu" class="nav-info col-md-12">
           <section class="row">
             <div class="flex-col-nowrap col-md-3">
               <div class="nav-content breathing-space-bottom" *ngFor="let resource of resourcesObj">
                 <h6 (click)="resourceType(resource.tittle)"
-                  class="nav-tittle w-75 {{selectedResourceType === resource.tittle ? 'active-resource':''}}">
+                  class="w-75 {{selectedResourceType === resource.tittle ? 'active-resource':''}}">
                   {{resource.tittle}}</h6>
               </div>
             </div>
@@ -107,6 +110,23 @@
               </section>
               <button (click)="navToPages('/resources', selectedResourceType, true)"
                 class="btn btn-outline-dark btn-md w-20 gutter-top-1">View All</button>
+            </div>
+          </section>
+        </div>
+        <!-- Company sub-menu -->
+        <div @slideDown *ngIf="companyMenu" id="CompanyMenu" class="nav-info flex-row-nowrap col-md-12">
+          <section class="row">
+            <div class="nav-content breathing-space-bottom col" *ngFor="let item of companyMenuData">
+              <h6 (click)="navToPages('/contact-us', item.title)"
+                class="nav-tittle w-75">
+                {{item.title}}</h6>
+                <div class="nav-desc">
+                  <p>{{item.desc}}</p>
+                </div>
+                <div class="more-links flex-col-wrap">
+                  <a>{{item.businessModel}}</a>
+                  <a>{{item.stories}}</a>
+                </div>
             </div>
           </section>
         </div>

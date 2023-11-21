@@ -1,0 +1,22 @@
+.certified-partners {
+  margin-bottom: 3rem;
+  .sq-card-row {
+    margin-bottom: 1rem;
+    :last-child {
+      margin: 0;
+    }
+  }
+  
+  .sq-card {
+    min-height: 180px;
+    min-width: 200px;
+    background-color: #F5F7FD;
+    justify-content: end;
+    align-items: center;
+    border-radius: 6px;
+    padding: 1rem;
+    p {
+      font-size: 12px;
+    }
+  }
+}

@@ -6,13 +6,13 @@
           <span class="badge rounded-pill solutions-pill text-bg-dark">{{dataObj.title}}</span>
           <h1>{{dataObj.heading}} {{dataObj.solutionName}}</h1>
           <p>{{dataObj.subHeading}}</p>
-          <button class="btn btn-danger contact-expert">Talk to an Expert</button>
+          <button *ngIf="dataObj.displayBtn" class="btn btn-danger contact-expert">Talk to an Expert</button>
         </div>
         <div class="col-md-6 content-img">
           <!-- <p>
             <strong>{{dataObj.solutionName}}</strong>{{dataObj.solutionContent}}
           </p> -->
-          <img src="../../assets/images/Solutions-Page.png" class="{{solutionName == 'services'?'service-img':'absolute-img'}}" alt="">
+          <img src="{{dataObj.solutionImg}}" class="{{dataObj.solutionName == 'services' || dataObj.solutionName == 'Partners'?'service-img':'absolute-img'}}" alt="">
         </div>
       </div>
     </div>
