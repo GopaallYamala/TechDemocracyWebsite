@@ -11,4 +11,6 @@ export class ContactInfoComponent implements OnInit {
 
   }
 
+  display: any;
+
 }

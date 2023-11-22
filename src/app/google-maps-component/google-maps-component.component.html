@@ -1,0 +1,8 @@
+<div class="container map-container mb-5">
+  <google-map height="400px" width="100%" [center]="center" [zoom]="zoom" (mapClick)="addMarker($event)">
+    <!-- <map-marker *ngFor="let markerPosition of markerPositions"
+            [position]="markerPosition"
+            [options]="markerOptions"></map-marker> -->
+    <map-ground-overlay [url]="imageUrl" [bounds]="imageBounds"></map-ground-overlay>
+  </google-map>
+</div>
