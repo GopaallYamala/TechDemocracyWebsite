@@ -5,7 +5,10 @@
     min-height: 18rem;
     display: flex;
     align-items: center;
-    h3,
+    .contact-details {
+      z-index: 4;
+    }
+    .contact-hdng,
     p {
       color: #fff;
     }
@@ -26,4 +29,6 @@
   .contact-info {
     position: relative;
   }
+
+
 }

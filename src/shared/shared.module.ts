@@ -34,25 +34,31 @@ import { PartnersComponent } from 'src/app/partners/partners.component';
 import { PartnersClientNewsComponent } from 'src/app/partner-client-news/partner-client-news.component';
 import { ContactInfoComponent } from 'src/app/company/contact-us/contact-info/contact-info.component';
 import { ContactUsCompoent } from 'src/app/company/contact-us/contact-us.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { GoogleMapsComponent } from 'src/app/google-maps-component/google-maps-component.component';
+import { AboutTDCComponent } from 'src/app/about-tdc/about-tdc.component';
+import { OtherLocationsBannerComponent } from 'src/app/other-locations-banner/other-locations-banner.component';
+import { LeadershipBannerComponent } from 'src/app/leadership-banner/leadership-banner.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
-    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent],
+    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
   ],
   exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
-    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent]
+    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent]
 })
 
 
