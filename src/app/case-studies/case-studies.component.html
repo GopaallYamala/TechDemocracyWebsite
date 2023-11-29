@@ -10,16 +10,18 @@
           </div>
           <button *ngFor="let btn of buttonsList" type="button" class="btn btn-outline-light">{{btn}}</button>
           <section class="casestudies-action">
-            <div class="slideshow-container" #slideshow>
-              <div class="left" *ngIf="totalPages > 1" (click)="currentPage != 1 && changePage(-1)"
-                [ngClass]="{'disabled':currentPage === 1}">
+            <div class="slideshow-container">
+              <div class="left" (click)="scrollLeft()">
                 <svg-icon-component [name]="'navigate_before'"></svg-icon-component>
               </div>
-              <div class="cards" [ngClass]="{'w-100': totalPages === 1}">
-                <div class="overflow flex-row-nowrap" [ngStyle]="{'width': overflowWidth, 'left': pagePosition}">
-                  <article class="casestudie-card-body" *ngFor="let i of arr; let index = index"
-                    [ngStyle]="{'width': cardWidth}">
+              <!-- [ngClass]="{'disabled':currentPage === 1}" -->
+              <!-- [ngClass]="{'w-100': totalPages === 1}" -->
+              <div #widgetsContent id="Casestudies" class="cards">
+                <div class="overflow flex-row-nowrap">
+                  <!-- [ngStyle]="{'width': overflowWidth, 'left': pagePosition}" -->
+                  <article class="casestudie-card-body" *ngFor="let i of arr; let index = index">
                     <div class="card">
+                      <!-- [ngStyle]="{'width': cardWidth}" -->
                       <!-- <span>{{i}}</span> -->
                     </div>
                     <div class="card-content">
@@ -28,8 +30,8 @@
                   </article>
                 </div>
               </div>
-              <div class="right" *ngIf="totalPages > 1" (click)="currentPage != totalPages && changePage(+1)"
-                [ngClass]="{'disabled':currentPage === totalPages}">
+              <!-- [ngClass]="{'disabled':currentPage === totalPages}" -->
+              <div class="right" (click)="scrollRight()">
                 <svg-icon-component [name]="'navigate_next'"></svg-icon-component>
               </div>
             </div>
