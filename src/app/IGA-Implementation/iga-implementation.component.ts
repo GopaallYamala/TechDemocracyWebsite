@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: `iga-implementation`,
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class IGAImplementationComponent {
-
+  @Input() whyChooseTDCObj: any = {
+    theQsn: ``,
+    theAns: ``
+  };
 }

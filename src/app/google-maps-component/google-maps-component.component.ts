@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { AnimationDefinitions } from 'src/shared/animations';
 
 @Component({
   selector: 'google-maps-comp',
   templateUrl: './google-maps-component.component.html',
-  styleUrls: ['./google-maps-component.component.scss']
+  styleUrls: ['./google-maps-component.component.scss'],
+  animations: [AnimationDefinitions]
 })
 
 export class GoogleMapsComponent {

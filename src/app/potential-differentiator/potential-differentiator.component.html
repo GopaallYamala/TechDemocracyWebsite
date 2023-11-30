@@ -3,8 +3,8 @@
     <div class="container">
       <header class="potential-diffs-hdr">
         <div>
-          <h2>The TechDemocracy Advantage</h2>
-          <p>We are a boutique cybersecurity company that’s been in the business for more than two decades. Our philosophy is to work with a cohort of businesses where we can roll up our sleeves and deliver them the security, safety and seamless deployment within their budget and timelines.</p>
+          <h2>{{potentialDiffObj?.hdng}}</h2>
+          <p>{{potentialDiffObj?.content}}</p>
         </div>
         <button type="button" class="btn btn-outline-dark know-more-btn">Know More</button>
       </header>
@@ -13,17 +13,17 @@
   </section>
   <section @slideUp class="differentiators">
     <div class="container flex-row-wrap">
-      <div class="row">
-        <div class="diff-item  col-md-4">
-          <div class="icon-container icon-bg-deep-blu">
+      <div class="row diff-row">
+        <div class="diff-item col-md-4" *ngFor="let item of potentialDiffObj.featuresObj">
+          <div class="icon-container">
     
           </div>
           <div class="diff-content">
-            <h3>Skilled Resources</h3>
-            <p>Ready-to-go, experienced consultants available to kickstart engagement from Day 0</p>
+            <h3>{{item?.title}}</h3>
+            <p>{{item?.info}}</p>
           </div>
         </div>
-        <div class="diff-item col-md-4">
+        <!-- <div class="diff-item col-md-4">
           <div class="icon-container icon-bg-pink">
     
           </div>
@@ -69,7 +69,7 @@
             <h3>Alliance & Partnership</h3>
             <p>Reseller and services partnerships with leading Identity product vendors in the USA, Canada, and India.</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

@@ -9,9 +9,10 @@
           <button *ngIf="dataObj.displayBtn" class="btn btn-danger contact-expert">Talk to an Expert</button>
         </div>
         <div class="col-md-6 content-img">
-          <!-- <p>
-            <strong>{{dataObj.solutionName}}</strong>{{dataObj.solutionContent}}
-          </p> -->
+          <p>
+            <!-- <strong>{{dataObj.solutionName}}</strong> -->
+            {{dataObj.solutionContent}}
+          </p>
           <img src="{{dataObj.solutionImg}}" class="{{dataObj.solutionName == 'services' || dataObj.solutionName == 'Partners'?'service-img':'absolute-img'}}" alt="">
         </div>
       </div>

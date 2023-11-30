@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
 
@@ -12,6 +12,15 @@ import { AnimationDefinitions } from 'src/shared/animations';
 })
 export class PotentialDifferentiatorComponent {
 
-
+  @Input() potentialDiffObj: any = {
+    hdng: ``,
+    content: ``,
+    featuresObj: [
+      {
+        title: ``,
+        info: ``
+      }
+    ]
+  }
 
 }

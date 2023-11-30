@@ -8,6 +8,7 @@ import { LoginComponent } from './admin/login.component';
 import { AdvisoryConsultingComponent } from './advisory-consulting/advisory-consulting.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ContactUsCompoent } from './company/contact-us/contact-us.component';
+import { CompanyComponent } from './company/company.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'adv-consulting', component: AdvisoryConsultingComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
   { path: 'login', component: LoginComponent },
   { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
-  { path: 'contact-us', component: ContactUsCompoent }
+  { path: 'company', component: CompanyComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' }
 
 ];
 

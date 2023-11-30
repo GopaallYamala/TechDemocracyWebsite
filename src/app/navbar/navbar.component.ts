@@ -240,14 +240,14 @@ export class NavBarComponent implements OnInit {
   navToPages(pageName: string, title?: any, isResourcePage?: boolean) {
     if (title && !isResourcePage) {
       if (title === 'Identity Governance & Administration' || title === 'Customer Identity & Access Management' || title === 'Previliged Access Management' || title === 'Access Management') {
-        this.router.navigate(['/solutions'], { queryParams: { prop: title }, skipLocationChange: true });
+        this.router.navigate(['/solutions'], { queryParams: { prop: title } });
         this.location.replaceState('/solutions');
       } else if (title === 'Advisory Consulting' || title === 'Implementation Service' || title === 'Operations & Support' || title === 'Manage Services') {
-        this.router.navigate(['/adv-consulting'], { queryParams: { prop: title }, skipLocationChange: true });
+        this.router.navigate(['/adv-consulting'], { queryParams: { prop: title } });
         this.location.replaceState('/adv-consulting');
-      } else if (title === 'Contact us') {
-        this.router.navigate(['/contact-us'], { skipLocationChange: true});
-        this.location.replaceState('/contact-us');
+      } else if (title === 'Contact us' || title === 'About us' || title === 'Leadership' || title === 'Careers' || title === 'News' || title === 'Testimonials') {
+        this.router.navigate(['/company'], { queryParams: { prop: title } });
+        this.location.replaceState('/company');
       } else {
         this.router.navigate(['/home']);
       }
