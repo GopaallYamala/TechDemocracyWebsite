@@ -13,11 +13,31 @@ import { AnimationDefinitions } from 'src/shared/animations';
 export class PotentialDifferentiatorComponent {
 
   @Input() potentialDiffObj: any = {
-    hdng: ``,
-    content: ``,
+    hdng: `IGA Features and Capabilities`,
+    content: `We recognize that the intricate dance between user access, compliance, and security is more crucial than ever and need these capabilities:`,
     featuresObj: [
       {
-        title: ``,
+        title: `Identity life cycle management`,
+        info: ``
+      },
+      {
+        title: `User Provisioning and Deprovisioning`,
+        info: ``
+      },
+      {
+        title: `Access Certiﬁcation`,
+        info: ``
+      },
+      {
+        title: `Certify User Access`,
+        info: ``
+      },
+      {
+        title: `Access Request`,
+        info: ``
+      },
+      {
+        title: `Segregation of Duties (SOD)`,
         info: ``
       }
     ]

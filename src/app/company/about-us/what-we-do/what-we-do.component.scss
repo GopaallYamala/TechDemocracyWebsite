@@ -1,0 +1,39 @@
+.what-we-do {
+    .what-we-do-container {
+      padding: 2rem 0 6rem 0;
+      h2.primary-hdng {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+    .what-we-do-list {
+      list-style: none;
+      padding: 0;
+      li::before {
+        content: url('../../../../assets/images/chevron-right-img.JPG');
+        position: relative;
+        bottom: -6px;
+        display: inline-block;
+      }
+      li::after {
+        content: '';
+        border-bottom: 1px solid #CACACA;
+        width: 70%;
+        display: block;
+        position: relative;
+        left: 1.75rem;
+        top: 0.25rem;
+      }
+    }
+
+    .about-us-secondary {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      .secondary-hdng {
+        font-size: 1.75rem;
+        width: 70%;
+      }
+    }
+
+}
