@@ -1,10 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AnimationDefinitions } from 'src/shared/animations';
 
 @Component({
   selector: 'solutions',
   templateUrl: './solutions.component.html',
-  styleUrls: ['./solutions.component.scss']
+  styleUrls: ['./solutions.component.scss'],
+  encapsulation: ViewEncapsulation.None,
+  animations: AnimationDefinitions
 })
 
 export class SolutionsComponent implements OnInit {
