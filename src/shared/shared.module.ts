@@ -39,13 +39,16 @@ import { GoogleMapsComponent } from 'src/app/google-maps-component/google-maps-c
 import { AboutTDCComponent } from 'src/app/about-tdc/about-tdc.component';
 import { OtherLocationsBannerComponent } from 'src/app/other-locations-banner/other-locations-banner.component';
 import { LeadershipBannerComponent } from 'src/app/leadership-banner/leadership-banner.component';
+import { CompanyComponent } from 'src/app/company/company.component';
+import { AboutUsUIComponent } from 'src/app/company/about-us/about-us-ui.component';
+import { WhatWeDoComponent } from 'src/app/company/about-us/what-we-do/what-we-do.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
-    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent],
+    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -58,7 +61,7 @@ import { LeadershipBannerComponent } from 'src/app/leadership-banner/leadership-
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
-    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent]
+    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent]
 })
 
 

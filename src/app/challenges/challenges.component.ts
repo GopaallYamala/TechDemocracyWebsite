@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'challenges',
@@ -11,6 +11,29 @@ export class ChallengesComponent implements OnInit {
   onAppear(){
     this.hasAppeared = true;
   }
+
+  @Input() benefitsDataObj = {
+    qsnImportance: ``,
+    importanceText: ``,
+    benefits: [
+      {
+        bHdng: ``,
+        bContent: ``
+      },
+      {
+        bHdng: ``,
+        bContent: ``
+      },
+      {
+        bHdng: ``,
+        bContent: ``
+      },
+      {
+        bHdng: ``,
+        bContent: ``
+      }
+    ]
+  };
 
   ngOnInit() {
     

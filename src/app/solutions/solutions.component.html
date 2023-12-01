@@ -1,16 +1,16 @@
-<div class="solutions-container">
+<div class="solutions-container" @slideUp>
   <!-- Solutions Hero Section -->
   <solutions-hero [dataObj]="solutionData"></solutions-hero>
   <!-- IGA Solutions -->
-  <iga-solutions></iga-solutions>
+  <iga-solutions [igaDataObj]="igaData"></iga-solutions>
   <!-- Challenges -->
-  <challenges></challenges>
+  <challenges [benefitsDataObj]="challengesData"></challenges>
   <!-- Solutions Partnership -->
   <solutions-partnership></solutions-partnership>
   <!-- IGA Implementation -->
-  <iga-implementation></iga-implementation>
+  <iga-implementation [whyChooseTDCObj]="whyChooseTDCDataObj"></iga-implementation>
   <!-- Potential Differentiators -->
-  <potential-differentiator></potential-differentiator>
+  <potential-differentiator [potentialDiffObj]="potentialDiffDataObj"></potential-differentiator>
   <!-- Consultation -->
   <consultation-component></consultation-component>
   <!-- Success Stories -->

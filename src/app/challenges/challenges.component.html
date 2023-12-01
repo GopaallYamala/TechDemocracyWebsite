@@ -2,49 +2,21 @@
 <section class="challenges-container">
   <div class="container">
     <section class="challenges-block">
-      <h2 (click)="test()" (appear)="onAppear()" class="challenges-title">Why is IGA important.</h2>
-      <p class="para-text">IGA is vital because it safeguards an organization’s digital assets by controlling who can access what, reducing security risks, and ensuring compliance with regulations. It enhances operational efficiency by streamlining user access management, which ultimately supports better productivity and lowers administrative overhead. In essence, IGA is crucial for both security and efficiency in modern organizations.</p>
+      <h2 (click)="test()" (appear)="onAppear()" class="challenges-title">{{benefitsDataObj.qsnImportance}}</h2>
+      <p class="para-text">{{benefitsDataObj.importanceText}}</p>
       <section class="challenges-row row">
-        <article class="col-md-3 challenge-col">
-          <img class="challenge-img" src="../../assets/images/Thumbnail_1.png" alt="Free IGA Workshop Image">
-          <h3 class="challenge-hdng">
-            Free IGA workshop
-          </h3>
-          <p class="challenge-content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-          </p>
-          <a href="#" class="link-danger text-decoration-none">Learn More</a>
-        </article>
-        <article class="col-md-3 challenge-col">
-          <img class="challenge-img" src="../../assets/images/Thumbnail_2.png" alt="Vendor Selection Image">
-          <h3 class="challenge-hdng">
-            Vendor Selection
-          </h3>
-          <p class="challenge-content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-          </p>
-          <a href="#" class="link-danger text-decoration-none">Learn More</a>
-        </article>
-        <article class="col-md-3 challenge-col">
-          <img class="challenge-img" src="../../assets/images/Thumbnail_1.png" alt="Free IGA Workshop Image">
-          <h3 class="challenge-hdng">
-            Strategic Deployment
-          </h3>
-          <p class="challenge-content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-          </p>
-          <a href="#" class="link-danger text-decoration-none">Learn More</a>
-        </article>
-        <article class="col-md-3 challenge-col">
-          <img class="challenge-img" src="../../assets/images/Thumbnail_2.png" alt="Vendor Selection Image">
-          <h3 class="challenge-hdng">
-            IGA Managed Services
-          </h3>
-          <p class="challenge-content">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-          </p>
-          <a href="#" class="link-danger text-decoration-none">Learn More</a>
-        </article>
+        <!-- {{benefitsDataObj.benefits| json}} -->
+          <article class="col-md-3 challenge-col" *ngFor="let bnf of benefitsDataObj.benefits">
+            <!-- {{bnf | json}} -->
+            <img class="challenge-img" src="../../assets/images/Thumbnail_1.png" alt="Free IGA Workshop Image">
+            <h3 class="challenge-hdng">
+              {{bnf?.bHdng}}
+            </h3>
+            <p class="challenge-content">
+              {{bnf?.bContent}}
+            </p>
+            <!-- <a href="#" class="link-danger text-decoration-none">Learn More</a> -->
+          </article>
       </section>
     </section>
   </div>

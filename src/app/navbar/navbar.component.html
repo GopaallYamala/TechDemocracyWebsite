@@ -60,7 +60,7 @@
         </ul>
       </div>
       <div class="free-consult-btn">
-        <button type="button" class="btn btn-outline-danger" routerLink="/contact-us" routerLinkActive="active">Free
+        <button type="button" class="btn btn-outline-danger" routerLinkActive="active">Free
           Consultation</button>
       </div>
       <section class="row" *ngIf="displayCreateMenu == true || solutionsMenu == true || resourcesMenu == true || companyMenu == true">
@@ -117,7 +117,7 @@
         <div @slideDown *ngIf="companyMenu" id="CompanyMenu" class="nav-info flex-row-nowrap col-md-12">
           <section class="row">
             <div class="nav-content breathing-space-bottom col" *ngFor="let item of companyMenuData">
-              <h6 (click)="navToPages('/contact-us', item.title)"
+              <h6 (click)="navToPages('/company', item.title)"
                 class="nav-tittle w-75">
                 {{item.title}}</h6>
                 <div class="nav-desc">
