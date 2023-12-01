@@ -1,0 +1,30 @@
+<div class="careers-ui-container">
+  <solutions-hero [dataObj]="careersUsData"></solutions-hero>
+  <section class="container">
+    <div class="col-md-12">
+      <h3 class="gutter-bottom-1">Careers</h3>
+      <iframe class="iframe-base" src="" title="ZOHO"></iframe>
+    </div>
+    <div class="row gutter-bottom-1">
+      <p class="abt-us">About Us TechDemocracy</p>
+      <div class="row gutter-bottom-2">
+        <h3 class="col-md-10">Full range of consultant services and software solutions to help you quickly deploy
+          critical cybersecurity
+          technologies</h3>
+        <button class="btn btn-outline-dark btn-sm h-75 col-md-2">Find Whom We are</button>
+      </div>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let achivements of achivedCardsArr; let i = index;">
+          <div
+            class="achived-cards flex-col-nowrap {{i === 0 || i === 2 ? 'block-1': i === 1 || i === 3 ? 'block-2':''}}">
+            <h3>{{achivements.value}}</h3>
+            <p>{{achivements.desc}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <testimonials></testimonials>
+  </section>
+  <consultation-component></consultation-component>
+</div>

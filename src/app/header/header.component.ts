@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
+import { UtilService } from 'src/shared/services/util.service';
 
 
 
@@ -13,6 +14,8 @@ import { AnimationDefinitions } from 'src/shared/animations';
 })
 export class HeaderComponent {
 
+  constructor(private readonly utilService: UtilService) { }
+
   displayCreateMenu: boolean = false;
   selectedState = "United States";
   // quickActions: string[];
@@ -20,6 +23,7 @@ export class HeaderComponent {
   selectAction(action: any) {
     this.selectedState = action;
     this.displayCreateMenu = false;
+    this.utilService.passValue(action);
   }
   quickSelect() {
     this.displayCreateMenu = !this.displayCreateMenu;

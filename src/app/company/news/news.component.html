@@ -1,0 +1,26 @@
+<div class="news-ui-container">
+  <solutions-hero [dataObj]="newsUsData"></solutions-hero>
+  <div class="events-container">
+    <div class="container">
+      <div class="view-all flex-row-nowrap">
+        <h3 class="gutter-bottom-2">News & Press Release</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let event of upcomingEvents;">
+          <article class="prefernces prefered-size breathing-space-bottom">
+          </article>
+          <div class="event-info">
+            <h6 class="events">Customer Story</h6>
+            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui odit
+                vel,
+                tenetur deleniti,
+                ratione
+                eligendi aliquid vitae</strong></p>
+            <p class="event-time">1st December 2023, 06:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <consultation-component></consultation-component>
+</div>
