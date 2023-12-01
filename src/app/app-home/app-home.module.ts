@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselComponent } from '../carousel/carousel.component';
-import { IdentitySecureSolutionComponent } from '../identity-secure-solution/identity-secure-solution.component';
+// import { IdentitySecureSolutionComponent } from '../identity-secure-solution/identity-secure-solution.component';
 // import { PotentialDifferentiatorComponent } from '../potential-differentiator/potential-differentiator.component';
 import { OurSolutionsComponent } from '../our-solutions/our-solutions.component';
 // import { AcceleratorsUtilitiesComponent } from '../accelerators-utilities/accelerators-utilities.component';
@@ -25,7 +25,7 @@ import { LoginComponent } from '../admin/login.component';
   declarations: [
     AppHomeComponent,
     CarouselComponent,
-    IdentitySecureSolutionComponent,
+    // IdentitySecureSolutionComponent,
     // PotentialDifferentiatorComponent,
     OurSolutionsComponent,
     // AcceleratorsUtilitiesComponent,

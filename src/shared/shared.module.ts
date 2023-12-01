@@ -42,13 +42,15 @@ import { LeadershipBannerComponent } from 'src/app/leadership-banner/leadership-
 import { CompanyComponent } from 'src/app/company/company.component';
 import { AboutUsUIComponent } from 'src/app/company/about-us/about-us-ui.component';
 import { WhatWeDoComponent } from 'src/app/company/about-us/what-we-do/what-we-do.component';
+import { IdentitySecureSolutionComponent } from 'src/app/identity-secure-solution/identity-secure-solution.component';
+import { YoutubeVidContainerComponent } from 'src/app/company/about-us/yt-vid-container/yt-vid-container.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
-    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent],
+    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -61,7 +63,7 @@ import { WhatWeDoComponent } from 'src/app/company/about-us/what-we-do/what-we-d
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
-    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent]
+    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent]
 })
 
 
