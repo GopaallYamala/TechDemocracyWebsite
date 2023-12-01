@@ -57,7 +57,7 @@
     }
 
     .casestudies-action {
-      position: absolute;
+      position: relative;
 
       p {
         color: #000;
@@ -71,26 +71,18 @@
         height: 12rem;
         border-radius: 10%;
       }
-      // }
-
-      .slideshow-container {
-        position: relative;
-      }
 
       .cards {
-        // width: calc(100% - 80px);
-        width: 75rem;
-        overflow: hidden;
+        width: 100%;
+        overflow: auto;
+        position: absolute;
+      }
+      .cards::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
       }
 
       .overflow {
-        position: relative;
         transition: left 0.5s ease-in-out;
-      }
-
-      .casestudie-card-body {
-        // display: inline-block;
-        position: relative;
       }
 
       .card {
@@ -98,7 +90,7 @@
         width: 15rem;
         background-color: #edf2fb;
         border-radius: 25px;
-        position: relative;
+        margin-right: 2rem;
       }
       .card-content {
         width: 15rem;
@@ -110,7 +102,6 @@
 
       .card span {
         font-size: 48px;
-        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -127,7 +118,7 @@
         background-color: #0072bc;
         z-index: 1;
         position: absolute;
-        top: 35%;
+        top: 6rem;
         border-radius: 50%;
         transform: translateY(-50%);
       }
