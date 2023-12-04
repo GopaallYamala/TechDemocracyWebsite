@@ -1,0 +1,36 @@
+.careers-ui-container {
+  margin: 156px 0 0 0;
+
+  .iframe-base {
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 2rem;
+  }
+  .abt-us{
+    font-size: 20px;
+  }
+
+  .achived-cards {
+    border-radius: 25px;
+    width: 100%;
+    padding: 4rem 1rem 1rem 1rem;
+    min-height: 12rem;
+    color: #fff;
+
+    &.block-1 {
+      background: #4563c3;
+    }
+    &.block-2 {
+      background: #334e81;
+    }
+  }
+  .detected-elms {
+    position: fixed;
+    top: 10rem;
+    right: 5px;
+    padding: 5px;
+    border: 2px solid green;
+    background-color: white;
+  }
+}

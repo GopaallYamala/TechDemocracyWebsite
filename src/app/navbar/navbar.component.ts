@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AnimationDefinitions } from 'src/shared/animations';
 import { Location } from '@angular/common';
 import { TDCGeoLocationService } from 'src/shared/services/geo-location.service';
+import { UtilService } from 'src/shared/services/util.service';
 
 @Component({
   selector: 'top-navbar',
@@ -33,29 +34,35 @@ export class NavBarComponent implements OnInit {
   countryCode: string = '';
   province: string = '';
   selectedResourceType: string = "All";
-  isCollapsed:boolean = true;
+  isCollapsed: boolean = true;
 
   constructor(private readonly router: Router,
     private location: Location,
-    private readonly geoLocationService: TDCGeoLocationService) {
+    private readonly geoLocationService: TDCGeoLocationService,
+    private readonly utilService: UtilService) {
 
   }
 
   ngOnInit() {
-    this.geoLocationService.getIpAddress().subscribe(resp => {
-      console.log(resp, 'geo location response-----------');
-      this.ipaddress = resp['ip'];
-      this.geoLocationService.getGEOLocation(this.ipaddress).subscribe(res => {
-        console.log(res);
-        this.latitude = res['lat'];
-        this.longitude = res['long'];
-        this.city = res['city'];
-        this.country = res['country'];
-        this.countryCode = res['countryCode'];
-        this.isp = res['isp'];
-        this.province = res['regionName']
-      })
-    })
+    this.utilService.dataState.subscribe(
+      (data: string) => {
+        this.country = data;
+      }
+    )
+    // this.geoLocationService.getIpAddress().subscribe(resp => {
+    //   console.log(resp, 'geo location response-----------');
+    //   this.ipaddress = resp['ip'];
+    //   this.geoLocationService.getGEOLocation(this.ipaddress).subscribe(res => {
+    //     console.log(res);
+    //     this.latitude = res['lat'];
+    //     this.longitude = res['long'];
+    //     this.city = res['city'];
+    //     this.country = res['country'];
+    //     this.countryCode = res['countryCode'];
+    //     this.isp = res['isp'];
+    //     this.province = res['regionName']
+    //   })
+    // })
   }
 
   solutionsObj = [{
@@ -222,7 +229,7 @@ export class NavBarComponent implements OnInit {
     this.companyMenu = false;
     this.displayCreateMenu = !this.displayCreateMenu;
   }
-  
+
   showResourcesNav() {
     this.solutionsMenu = false;
     this.displayCreateMenu = false;
@@ -230,7 +237,7 @@ export class NavBarComponent implements OnInit {
     this.resourcesMenu = !this.resourcesMenu;
   }
 
-  showCompanyMenu () {
+  showCompanyMenu() {
     this.solutionsMenu = false;
     this.displayCreateMenu = false;
     this.resourcesMenu = false;

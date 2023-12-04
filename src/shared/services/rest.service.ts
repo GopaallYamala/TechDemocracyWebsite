@@ -108,11 +108,18 @@ export class RestService {
 	}
 
 	// getStrapiBlogPost (relativeUrl) {
-	// 	return this.httpClient.get(this.strapiContextUrl + relativeUrl, 
+	// 	return this.httpClient.get(this.strapiContextUrl + relativeUrl,
 	// 		{
 	// 			headers: this.headers
 	// 		})
+<<<<<<< HEAD
 	// }	
 
 
 }
+=======
+	// }
+
+
+}
+>>>>>>> 9e2e237c67ae6d6daa3d52ad125c8a5ded2b1b5e
