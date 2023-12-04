@@ -8,9 +8,9 @@ import { environment } from '../../environments/environment';
 })
 
 export class RestService {
-  maincontexturl: string | undefined;
+	maincontexturl: string | undefined;
 	strapiContextUrl: string | undefined;
-  constructor(private httpClient: HttpClient) {
+	constructor(private httpClient: HttpClient) {
 
 		if (environment.production) {
 			// this.maincontexturl = '/backend-api';
@@ -18,14 +18,14 @@ export class RestService {
 		} else {
 			// this.maincontexturl = 'http://10.0.20.24:4201';
 			// this.maincontexturl = 'http://10.0.20.50:4201';
-			 this.maincontexturl = 'http://10.0.1.27:4201';
-			 this.strapiContextUrl = 'http://localhost:1337'
+			this.maincontexturl = 'http://10.0.1.27:4201';
+			this.strapiContextUrl = 'http://localhost:1337'
 			// this.maincontexturl = 'http://10.0.20.43:4201';
 
 		}
 	}
 
-  private get headers(): HttpHeaders {
+	private get headers(): HttpHeaders {
 		const headerDict = {
 			'Content-Type': 'application/json',
 			// 'Authorization': 'Bearer ' + localStorage.getItem('JWT_TOKEN'),
@@ -34,7 +34,7 @@ export class RestService {
 		return new HttpHeaders(headerDict);
 	}
 
-  private get headersMultipart(): HttpHeaders {
+	private get headersMultipart(): HttpHeaders {
 		const headerDict = {
 			'Accept': 'text/csv',
 			// 'Authorization': 'Bearer ' + localStorage.getItem('JWT_TOKEN'),
@@ -44,49 +44,49 @@ export class RestService {
 
 	public get(relativeUrl: string, httpParams?: HttpParams): any {
 		return this.httpClient.get(this.maincontexturl + relativeUrl,
-		  {
-			headers: this.headers,
-			params: httpParams,
-			// responseType: 'arraybuffer'
-			responseType: 'blob'
-		  }).pipe(
-			map(
-			  (res: any) => {
-				console.log("GET Request: ", res);
-				return <any>res;
-			  },
-			  (error: any) => {
-				console.log("GET Request Error", error);
-			  }
-			),
-			shareReplay()
-		  );
-	  }
+			{
+				headers: this.headers,
+				params: httpParams,
+				// responseType: 'arraybuffer'
+				responseType: 'blob'
+			}).pipe(
+				map(
+					(res: any) => {
+						console.log("GET Request: ", res);
+						return <any>res;
+					},
+					(error: any) => {
+						console.log("GET Request Error", error);
+					}
+				),
+				shareReplay()
+			);
+	}
 
-		// Get request for Strapi
+	// Get request for Strapi
 
-		public getStrapi(relativeUrl: string, httpParams?: HttpParams): any {
-			return this.httpClient.get(this.strapiContextUrl + relativeUrl,
-				{
+	public getStrapi(relativeUrl: string, httpParams?: HttpParams): any {
+		return this.httpClient.get(this.strapiContextUrl + relativeUrl,
+			{
 				headers: this.headers,
 				params: httpParams,
 				// responseType: 'arraybuffer'
 				responseType: 'json'
-				}).pipe(
+			}).pipe(
 				map(
 					(res: any) => {
-					console.log("GET Request: ", res);
-					return <any>res;
+						console.log("GET Request: ", res);
+						return <any>res;
 					},
 					(error: any) => {
-					console.log("GET Request Error", error);
+						console.log("GET Request Error", error);
 					}
 				),
 				shareReplay()
-				);
-			}
+			);
+	}
 
-  public post(relativeUrl: string, data: any, httpParams?: HttpParams): any {
+	public post(relativeUrl: string, data: any, httpParams?: HttpParams): any {
 		return this.httpClient.post(this.maincontexturl + relativeUrl, data,
 			{
 				headers: this.headers,
@@ -94,7 +94,7 @@ export class RestService {
 			});
 	}
 
-  public postMultipart(relativeUrl: string, data?: any, httpParams?: HttpParams) {
+	public postMultipart(relativeUrl: string, data?: any, httpParams?: HttpParams) {
 		return this.httpClient.post(this.maincontexturl + relativeUrl, data,
 			{
 				headers: this.headersMultipart,
@@ -105,7 +105,7 @@ export class RestService {
 
 	uploadCSVFile(formData: FormData) {
 		return this.httpClient.post(`${this.maincontexturl}/upload-form`, formData);
-  }
+	}
 
 	// getStrapiBlogPost (relativeUrl) {
 	// 	return this.httpClient.get(this.strapiContextUrl + relativeUrl,
