@@ -7,10 +7,11 @@ import { Subject } from "rxjs";
 
 export class UtilService {
 
-  public stringSubject = new Subject<string>();
+  public dataSubject = new Subject<string>();
+  public dataState = this.dataSubject.asObservable();
 
   passValue(data: string) {
-    this.stringSubject.next(data);
+    this.dataSubject.next(data);
   }
 
 }

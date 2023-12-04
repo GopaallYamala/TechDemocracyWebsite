@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 import { UtilService } from 'src/shared/services/util.service';
 
@@ -12,19 +12,24 @@ import { UtilService } from 'src/shared/services/util.service';
   encapsulation: ViewEncapsulation.None,
   animations: [AnimationDefinitions]
 })
-export class HeaderComponent {
-
-  constructor(private readonly utilService: UtilService) { }
+export class HeaderComponent implements OnInit {
 
   displayCreateMenu: boolean = false;
   selectedState = "United States";
-  // quickActions: string[];
   quickActions = ['United States', 'India', 'Canada'];
+
+  constructor(private readonly utilService: UtilService) { }
+
+  ngOnInit() {
+    this.utilService.passValue(this.selectedState);
+  }
+
   selectAction(action: any) {
     this.selectedState = action;
     this.displayCreateMenu = false;
-    this.utilService.passValue(action);
+    this.utilService.passValue(this.selectedState);
   }
+
   quickSelect() {
     this.displayCreateMenu = !this.displayCreateMenu;
   }

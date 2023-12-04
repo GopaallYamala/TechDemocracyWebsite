@@ -25,4 +25,12 @@
       background: #334e81;
     }
   }
+  .detected-elms {
+    position: fixed;
+    top: 10rem;
+    right: 5px;
+    padding: 5px;
+    border: 2px solid green;
+    background-color: white;
+  }
 }

@@ -29,7 +29,7 @@ export class RestService {
 		const headerDict = {
 			'Content-Type': 'application/json',
 			// 'Authorization': 'Bearer ' + localStorage.getItem('JWT_TOKEN'),
-			'Authorization': 'Bearer 63b72a505898c197db0313e19f3c01c951324587bf2c10d13b53eec26f63f001e1195e26dc3017b6689690ac1358924b52f1595e227806c1f3921135c4feb9e1c6c30cf1e1c1d4218f73f470381a231a87e0b6a833e9c136e78163bfc4bb06f7f6e9dc6d8fec7f1c2223481db87dcbfb09752e49b4379f1bb58846ef384bb9f1'
+			'Authorization': 'Bearer 9c7c1cd82e979487cdac36b3d7e3b36eeec3a77e8e08372248160e103fb7fdbeabf1f408523d211d674ba3eaffa6897384388e596230e96012118d8814c86a760371c91014043f35acc1dab85156a13543f1acb8667846be800a44396580802e0cff210beb19ac6248bf1acb6f55f76d2cad9bc23b4d03c9bb07ff0cba1d459f'
 		}
 		return new HttpHeaders(headerDict);
 	}
@@ -108,11 +108,11 @@ export class RestService {
   }
 
 	// getStrapiBlogPost (relativeUrl) {
-	// 	return this.httpClient.get(this.strapiContextUrl + relativeUrl, 
+	// 	return this.httpClient.get(this.strapiContextUrl + relativeUrl,
 	// 		{
 	// 			headers: this.headers
 	// 		})
-	// }	
-	
-	 
+	// }
+
+
 }
