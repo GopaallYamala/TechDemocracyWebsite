@@ -112,14 +112,7 @@ export class RestService {
 	// 		{
 	// 			headers: this.headers
 	// 		})
-<<<<<<< HEAD
-	// }	
-
-
-}
-=======
 	// }
 
 
 }
->>>>>>> 9e2e237c67ae6d6daa3d52ad125c8a5ded2b1b5e
