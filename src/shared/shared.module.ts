@@ -44,13 +44,17 @@ import { AboutUsUIComponent } from 'src/app/company/about-us/about-us-ui.compone
 import { WhatWeDoComponent } from 'src/app/company/about-us/what-we-do/what-we-do.component';
 import { IdentitySecureSolutionComponent } from 'src/app/identity-secure-solution/identity-secure-solution.component';
 import { YoutubeVidContainerComponent } from 'src/app/company/about-us/yt-vid-container/yt-vid-container.component';
+import { NewsComponent } from 'src/app/company/news/news.component';
+import { CareersComponent } from 'src/app/company/careers/careers.component';
+import { BlogComponent } from 'src/app/blogs/blog.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
-    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent],
+    ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent,
+    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -63,7 +67,8 @@ import { YoutubeVidContainerComponent } from 'src/app/company/about-us/yt-vid-co
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
-    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent]
+    ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent,
+    GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent]
 })
 
 

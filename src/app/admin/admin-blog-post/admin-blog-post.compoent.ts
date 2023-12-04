@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-// import $ from 'jquery';
 import { PostService } from 'src/app/admin/shared/post.service';
 
-// import { PostService } from '../../../../services/post.service'
 
 @Component({
   selector: 'app-admin-blog-post',

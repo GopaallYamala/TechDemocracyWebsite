@@ -1,9 +1,9 @@
 <nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand">
-      <img *ngIf="countryCode != 'IN'" src="../../assets/images/TechDemocracyBlackText.svg" class="company-logo"
-        alt="TechDemocracy Logo">
-      <img *ngIf="countryCode == 'IN'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
+      <img *ngIf="country === 'United States' || country === 'Canada' || country === ''"
+        src="../../assets/images/TechDemocracyBlackText.svg" class="company-logo" alt="TechDemocracy Logo">
+      <img *ngIf="country == 'India'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
         alt="Cotelligent Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -63,7 +63,8 @@
         <button type="button" class="btn btn-outline-danger" routerLinkActive="active">Free
           Consultation</button>
       </div>
-      <section class="row" *ngIf="displayCreateMenu == true || solutionsMenu == true || resourcesMenu == true || companyMenu == true">
+      <section class="row"
+        *ngIf="displayCreateMenu == true || solutionsMenu == true || resourcesMenu == true || companyMenu == true">
         <!-- Solutions sub-menu -->
         <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap col-md-12">
           <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
@@ -117,16 +118,15 @@
         <div @slideDown *ngIf="companyMenu" id="CompanyMenu" class="nav-info flex-row-nowrap col-md-12">
           <section class="row">
             <div class="nav-content breathing-space-bottom col" *ngFor="let item of companyMenuData">
-              <h6 (click)="navToPages('/company', item.title)"
-                class="nav-tittle w-75">
+              <h6 (click)="navToPages('/company', item.title)" class="nav-tittle w-75">
                 {{item.title}}</h6>
-                <div class="nav-desc">
-                  <p>{{item.desc}}</p>
-                </div>
-                <div class="more-links flex-col-wrap">
-                  <a>{{item.businessModel}}</a>
-                  <a>{{item.stories}}</a>
-                </div>
+              <div class="nav-desc">
+                <p>{{item.desc}}</p>
+              </div>
+              <div class="more-links flex-col-wrap">
+                <a>{{item.businessModel}}</a>
+                <a>{{item.stories}}</a>
+              </div>
             </div>
           </section>
         </div>
