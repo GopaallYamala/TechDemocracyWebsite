@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
   selector: 'tdc-adv-consultant',
@@ -8,5 +8,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 
 export class TDCforConsultantComponent {
-
+  @Input() tdcConsultantObj: any = {
+    heading: ``,
+    content: ``
+  }
 }

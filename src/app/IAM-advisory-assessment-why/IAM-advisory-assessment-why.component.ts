@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
   selector: 'IAM-advisory-assessment-why',
@@ -9,5 +9,22 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 
 export class IAMAdvisoryAssessmentWhyComponent {
+  @Input() advAssmtObj: any = {
+    heading: '',
+    list: [
+     {
+      hdng: '',
+      content: ''
+     },
+     {
+      hdng: '',
+      content: ''
+     },
+     {
+      hdng: '',
+      content: ''
+     }
+    ]
+  }
 
 }
