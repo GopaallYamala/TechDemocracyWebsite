@@ -63,11 +63,11 @@
         <button type="button" class="btn btn-outline-danger" routerLinkActive="active">Free
           Consultation</button>
       </div>
-      <section class="row"
+      <section class=""
         *ngIf="displayCreateMenu == true || solutionsMenu == true || resourcesMenu == true || companyMenu == true">
         <!-- Solutions sub-menu -->
-        <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap col-md-12">
-          <div class="flex-col-nowrap nav-content" *ngFor="let solution of solutionsObj">
+        <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap row">
+          <div class="flex-col-nowrap nav-content col" *ngFor="let solution of solutionsObj">
             <h5 (click)="navToPages('/solutions', solution.tittle)" class="nav-tittle">{{solution.tittle}}</h5>
             <div class="nav-desc">
               <p>{{solution.desc}}</p>

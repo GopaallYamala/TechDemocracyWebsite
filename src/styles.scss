@@ -7,6 +7,11 @@
 @import "./assets/styles/spacings";
 @import "./assets/styles/utils.scss";
 
+// For responsive screens - Images should take 100% of parent's width
+img {
+  // width: 100%;
+}
+
 .flex-row-wrap {
   display: flex;
   flex-flow: row wrap;
