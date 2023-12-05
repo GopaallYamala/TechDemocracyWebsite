@@ -7,9 +7,9 @@
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 34, 98, 1) 51%,
-    rgba(23, 60, 180, 1) 85%
+    #0c1e5a 0%,
+    #011d59 51%,
+    #08468e 85%
   );
 
   .casestudies-section {
@@ -88,7 +88,7 @@
       .card {
         height: 12rem;
         width: 15rem;
-        background-color: #edf2fb;
+        background-color: #d8e1f2;
         border-radius: 25px;
         margin-right: 2rem;
       }
@@ -115,7 +115,7 @@
         height: 3rem;
         width: 3rem;
         cursor: pointer;
-        background-color: #0072bc;
+        background-color: #ffffff;
         z-index: 1;
         position: absolute;
         top: 6rem;

@@ -7,6 +7,8 @@ var bodyParser = require("body-parser");
 
 //home routes
 var homeRoutes = require("../api/home/home.routes");
+//blog routes
+let blogRoutes = require("../api/blog/blog.routes");
 //configure bodyparser
 var bodyParserJSON = bodyParser.json();
 var bodyParserURLEncoded = bodyParser.urlencoded({ extended: true });
@@ -32,9 +34,19 @@ db();
 
 // Error handling
 app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  // res.setHeader("Access-Control-Allow-Origin", "*");
+  const allowedOrigins = [
+    "http://127.0.0.1:8020",
+    "http://localhost:4200",
+    "http://127.0.0.1:9000",
+    "http://localhost:4201",
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Access-Control-Allow-Origin,Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers,Authorization"
@@ -45,6 +57,7 @@ app.use(function (req, res, next) {
 app.use("/api", router);
 //call heros routing
 homeRoutes(router);
+blogRoutes(router);
 
 app.use(express.static("../dist/tdc-websitev3.0"));
 app.set("view engine", "pug");
