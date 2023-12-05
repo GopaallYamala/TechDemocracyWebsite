@@ -47,6 +47,7 @@ import { YoutubeVidContainerComponent } from 'src/app/company/about-us/yt-vid-co
 import { NewsComponent } from 'src/app/company/news/news.component';
 import { CareersComponent } from 'src/app/company/careers/careers.component';
 import { BlogComponent } from 'src/app/blogs/blog.component';
+import { GuidingPrinciplesComponent } from 'src/app/guiding-principles/guiding-principles.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
@@ -54,7 +55,7 @@ import { BlogComponent } from 'src/app/blogs/blog.component';
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
     ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent,
-    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent],
+    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -68,7 +69,7 @@ import { BlogComponent } from 'src/app/blogs/blog.component';
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
     ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent,
-    GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent]
+    GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent]
 })
 
 

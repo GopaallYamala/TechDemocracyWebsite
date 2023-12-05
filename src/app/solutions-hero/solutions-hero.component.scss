@@ -1,4 +1,12 @@
 .solutions-hero-container {
+  @media screen and (max-width: 992px) {
+    .solutions-img, .absolute-img {
+      display: block;
+      position: relative !important;
+      top: 0 !important;
+      width: 100%;
+    }
+  }
   .solutions-pill {
     font-weight: normal;
     letter-spacing: 0.125rem;
