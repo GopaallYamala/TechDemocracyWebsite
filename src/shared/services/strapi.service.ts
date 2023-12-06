@@ -8,13 +8,18 @@ import { Observable } from "rxjs";
 
 export class StrapiService extends RestService {
 
-  getBlog (): Observable<any> {
+  getBlog(): Observable<any> {
     const strapiBlogUrl = `/api/blogs`
     return this.getStrapi(strapiBlogUrl);
   }
 
+  getFullBlog(): Observable<any> {
+    const strapiBlogUrl = `/api/blogs?populate=HeroImage&populate=SupportingImage&populate=SupportingDocuments`
+    return this.getStrapi(strapiBlogUrl);
+  }
+
   getUserByUserName(userName: string): Observable<any> {
-		const UserUrls = `/user/${userName}`
+    const UserUrls = `/user/${userName}`
     return this.get(UserUrls);
   }
 }
