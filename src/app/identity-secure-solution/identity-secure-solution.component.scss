@@ -11,6 +11,7 @@
   }
   .sol-blocks .blocks {
     margin-bottom: 1rem;
+    max-height: 24rem;
   }
   .sol-blocks .sol-block {
     // background-color: #edf2fb;
@@ -19,7 +20,7 @@
     // margin-right: 0.5rem;
     margin-bottom: 1rem;
     height: 100%;
-    padding: 1rem;
+    padding: 2rem;
     // width: 30%;
     h3 {
       font-size: 14px;
@@ -32,9 +33,10 @@
     .sol-link p {
       font-size: 14px;
       max-width: 95%;
+      margin: 0;
     }
     .sol-link .heading {
-      justify-content: space-around;
+      justify-content: space-between;
     }
     &.block-1 {
       background-color: #e7e7f8;
@@ -64,6 +66,8 @@
     .svg-icon {
       min-height: 4rem;
       margin-bottom: 1rem;
+      width: 2rem;
+      height: 2rem;
     }
   }
 

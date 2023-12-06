@@ -1,10 +1,12 @@
 @import url("https://use.typekit.net/rkg4nnb.css");
 
 .tdc-navbar {
-  height: 6rem !important;
+  height: 5rem !important;
   // width: fit-content;
   width: 100%;
   background-color: #ffffff !important;
+  // box-shadow: 0 3px 8px rgba(0,0,0,0.18), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 8px rgb(255 255 255 / 18%), 0 3px 6px rgb(0 0 0 / 8%);
 }
 
 .tdc-navbar .company-logo {
@@ -36,10 +38,12 @@
   position: absolute;
   min-height: 15rem;
   max-width: 76%;
-  top: 6.25rem;
+  top: 5.25rem;
   left: 13rem;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  //   0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 8px rgb(255 255 255 / 18%), 0 3px 6px rgb(0 0 0 / 8%);
+  border-radius: 4px;
   background-color: #fff;
   z-index: 1;
   padding: 2rem;
@@ -48,9 +52,8 @@
     // max-width: 40%;
     margin-right: 0.75rem;
     position: relative;
-    .nav-tittle {
-      // min-height: 20%;
-      font-size: 18px;
+    .nav-title {
+      font-size: 1.25rem;
       &:hover {
         cursor: pointer;
         text-decoration: underline;

@@ -246,7 +246,7 @@ export class NavBarComponent implements OnInit {
 
   navToPages(pageName: string, title?: any, isResourcePage?: boolean) {
     if (title && !isResourcePage) {
-      if (title === 'Identity Governance & Administration' || title === 'Customer Identity & Access Management' || title === 'Previliged Access Management' || title === 'Access Management') {
+      if (title === 'Identity Governance & Administration' || title === 'Customer Identity & Access Management' || title === 'Previliged Access Management' || title === 'Access Management' || title === 'Manage SOC') {
         this.router.navigate(['/solutions'], { queryParams: { prop: title } });
         this.location.replaceState('/solutions');
       } else if (title === 'Advisory Consulting' || title === 'Implementation Service' || title === 'Operations & Support' || title === 'Manage Services') {

@@ -18,27 +18,33 @@ export class PotentialDifferentiatorComponent {
     featuresObj: [
       {
         title: `Identity life cycle management`,
-        info: ``
+        info: ``,
+        icon: ``
       },
       {
         title: `User Provisioning and Deprovisioning`,
-        info: ``
+        info: ``,
+        icon: ``
       },
       {
         title: `Access Certiﬁcation`,
-        info: ``
+        info: ``,
+        icon: ``
       },
       {
         title: `Certify User Access`,
-        info: ``
+        info: ``,
+        icon: ``
       },
       {
         title: `Access Request`,
-        info: ``
+        info: ``,
+        icon: ``
       },
       {
         title: `Segregation of Duties (SOD)`,
-        info: ``
+        info: ``,
+        icon: ``
       }
     ]
   }
