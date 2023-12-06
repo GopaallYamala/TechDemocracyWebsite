@@ -25,14 +25,15 @@ export class BlogComponent {
 
 
   getStrapiBlog() {
-    this.strapiService.getBlog().subscribe((resp) => {
-      this.blogData = resp.data;
-      const data = resp.data;
+    // this.strapiService.getBlog().subscribe((resp) => {
+    this.strapiService.getFullBlog().subscribe(res => {
+      this.blogData = res.data;
+      const data = res.data;
       console.log(data, '------------data');
       this.strapiBlogAttrs = data[0].attributes;
       console.log(this.strapiBlogAttrs, '------------attr');
-
-    })
+    });
+    // })
   }
 
   // Save the blog
