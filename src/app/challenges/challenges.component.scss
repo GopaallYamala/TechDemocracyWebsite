@@ -2,6 +2,11 @@
   .para-text {
     // font-size: 0.85rem;
   }
+  .challenges-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
   .challenge-col {
     .challenge-hdng {
       font-size: 1.5rem;

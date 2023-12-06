@@ -4,9 +4,12 @@
       <header class="potential-diffs-hdr">
         <div>
           <h2>{{potentialDiffObj?.hdng}}</h2>
-          <p>{{potentialDiffObj?.content}}</p>
+          <div class="">
+            <button type="button" class="btn btn-outline-dark know-more-btn">Know More</button>
+          </div>
+          
         </div>
-        <button type="button" class="btn btn-outline-dark know-more-btn">Know More</button>
+        <p class="gutter-top-1">{{potentialDiffObj?.content}}</p>
       </header>
   
     </div>
@@ -16,7 +19,7 @@
       <div class="row diff-row">
         <div class="diff-item col-md-4" *ngFor="let item of potentialDiffObj?.featuresObj">
           <div class="icon-container">
-    
+            <img *ngIf="item.icon" src="{{item?.icon}}" alt="{{item?.title}}">
           </div>
           <div class="diff-content">
             <h3>{{item?.title}}</h3>

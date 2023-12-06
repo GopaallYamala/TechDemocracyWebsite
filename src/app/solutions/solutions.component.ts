@@ -125,27 +125,33 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Identity life cycle management`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `User Provisioning and Deprovisioning`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Access Certiﬁcation`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Certify User Access`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Access Request`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Segregation of Duties (SOD)`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               }
             ]
           }
@@ -199,27 +205,33 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `User registration`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Identity proofing`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `SSO (Single Sign On)`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Single Portal Access all the applications`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `MFA (Multi factor Authentication)`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Preference Management`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               }
             ]
           };
@@ -273,23 +285,28 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Credential Vaulting & Password Management (Just in-Time)`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Session Recording &Management`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Least Privilege and End Point Protection`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Secret Management`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Application Privileged Account Management (APAM)`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
             ]
           };
@@ -343,19 +360,94 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Single Sign-On`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `MFA`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Federation (SAML/0Auth/Open ID Connect)`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
               },
               {
                 title: `Policy Management`,
-                info: ``
+                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
+                icon: ``
+              }
+            ]
+          };
+          break;
+        case `Manage SOC`:
+          this.solutionData = {
+            title: 'Our Solutions',
+            heading: 'Cyber Security',
+            subHeading: 'An essential to secure digital business',
+            solutionName: 'Operations Center',
+            solutionContent: "Cyber Security Operations Center encompasses Technologies, Processes and People to defend IT, OT/ICT infrastructure like data, applications, assets and networks from cyber attacks. It is required to enable best cyber resilience by providing situational awareness, real-time alerting, swift incident response and decisive remediations",
+            solutionImg: '../../assets/images/Solutions-Page.png '
+          };
+          this.igaData = {
+            solutionHdng: 'SOC Service Models',
+            pointsList: [
+              'Fully Managed SOC-as-a-Service',
+              'Hybrid/Co-Managed SOC-as-a-Service',
+              'Customized SOC Service'
+            ]
+          };
+          this.challengesData = {
+            qsnImportance: `Challenges in Cyber SOC`,
+            importanceText: `Beyond access control, our AM simplifies Single Sign-On complexities, strengthens authentication with multi-factor methods, and streamlines policy management. This ensures not just secure access but also an optimized and user-friendly experience.`,
+            benefits: [
+              {
+                bHdng: `Technology`,
+                bContent: `Disconnected tools - Lack of automation and integration -Attackers increasingly “live off the land” and use techniques that won’t trigger individual security defenses.
+                Security analysts workflow complexity – Investigate multiple tools and challenges in determining priority & remediation steps. Build play books and delayed response.
+                Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`
+              },
+              {
+                bHdng: `Process`,
+                bContent: `Evolving threat landscape - Cybercriminals remain adept at successfully infiltrating organizations across the globe
+                Process latency - Both environments and processes evolve faster than people’s understanding of them. So, processes lag the environment, and people lag the processes.
+                Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`
+              },
+              {
+                bHdng: `People`,
+                bContent: `Staffing, Skill and knowledge shortage – Knowledge shortage is closely related to skills shortage. Even those well versed in working all the systems management tools can fail if they know too little about the systems environment being protected.
+                Struggle to keep up - Attackers use automation to overwhelm defenders, who have difficulty evaluating many fast-moving parts at once`
+              }
+            ]
+          };
+          this.whyChooseTDCDataObj = {
+            theQsn: `Why choose TechDemocracy for Manage SOC?`,
+            theAns: `Enterprises seeking AM solutions desire more than a simplistic access control mechanism—they seek a partner capable of simplifying Single Sign-On complexities, fortifying multi-factor authentication, and navigating the intricacies of policy management with finesse.`
+          };
+          this.potentialDiffDataObj = {
+            hdng: `Our Solutions and portfolio`,
+            content: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero`,
+            featuresObj: [
+              {
+                title: `Managed SOC with aiXDR`,
+                info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI+VA+EDR: Comprehensive Cybersecurity for Digital-Era) a holistic approach to cybersecurity by gathering deep insights from endpoints, servers, clouds, network devices, applications, IOT, and OT and applying user identity, threat intelligence, and vulnerability assessment to establish threat profiles, generate threat indicators, raise essential alerts, and offer remediation path – automated or triaged.`,
+                icon: ``
+              },
+              {
+                title: `Managed SOC with aiSIEM`,
+                info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI: Comprehensive Cybersecurity for Digital-Era) aiSIEM platform augments and automates security services with our AI and ML powered solutions. It delivers continuous coverage by collecting telemetry from logs, identity management, networks, endpoints, clouds and applications.`,
+                icon: ``
+              },
+              {
+                title: `Cyber Advisory Services`,
+                info: `Threat and security assessment Secure business strategies, products, and services. Support business growth by providing comprehensive security risk. A deep understanding of your business priorities enables us to provide strategic advice and a ‘secure by design’ approach. With our expertise and experience, we efficiently and flexibly assist our clients in the planning and implementation of their security programs`,
+                icon: ``
+              },
+              {
+                title: `Integrated Threat Management (Common threat intelligence + Threat Hunting)`,
+                info: `ITM is a security approach that consolidates different security components into a single platform or application for an enterprise IT architecture. ITM evolved as a response to increasingly complex and frequent malicious attacks by hackers and others intent on damaging systems. ITM solutions address different types of attacks, such as malware and spam.`,
+                icon: ``
               }
             ]
           };

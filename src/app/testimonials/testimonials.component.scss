@@ -7,6 +7,13 @@
     justify-content: space-between;
     align-items: center;
     .nav-btn-container {
+      .btn-outline-secondary {
+        &:hover {
+          .svg-icon svg {
+            fill: #ffffff !important;
+          }
+        }
+      }
       .back-ctrl {
         margin-right: 1rem;
       }
@@ -50,6 +57,10 @@
     min-height: 300px;
     max-height: 300px;
     overflow-y: hidden;
+
+    blockquote {
+      margin: 0;
+    }
     blockquote:before {
       content: open-quote;
     }
@@ -57,11 +68,12 @@
     blockquote:after {
       content: close-quote;
       visibility: hidden;
+      position: absolute;
     }
 
     blockquote p {
       padding-left: 2rem;
-      font-family: "Roboto Slab", serif;
+      // font-family: "Roboto Slab", serif;
       color: rgba(0, 0, 0, 0.8);
       max-height: 100px;
       overflow-y: hidden;
@@ -77,6 +89,10 @@
       top: 0.2em;
       position: relative;
       height: 2.5rem;
+    }
+    .client img {
+      width: 35%;
+      height: auto;
     }
   }
   .role-name {

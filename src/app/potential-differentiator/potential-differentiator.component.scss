@@ -1,34 +1,38 @@
 .potential-diffs-container {
-  background-color: #F2F9FE;
+  background-color: #f2f9fe;
   padding-top: 6rem;
   margin-top: 3rem;
   // .potential-diffs {
   //   padding-top: 6rem;
   // }
-  
+
   .potential-diffs .potential-diffs-hdr {
     position: relative;
   }
-  
+
   .potential-diffs .know-more-btn {
     position: absolute;
     right: 1rem;
     top: 1rem;
   }
-  
+
   .potential-diffs-hdr p {
-    width: 55%;
+    width: 90%;
   }
-  
+
   .differentiators {
     padding: 3rem 1rem;
     // background-color: #f3f4fa;
     .diff-item {
       position: relative;
       min-height: 6rem;
+      margin-bottom: 1rem;
       // width: 30%;
     }
     .diff-row {
+      // display: flex;
+      // flex-flow: row wrap;
+      // justify-content: space-evenly;
       .diff-item:first-child .icon-container {
         background-color: #c2e3f8;
       }
@@ -49,11 +53,17 @@
       }
     }
     .diff-item .icon-container {
-      width: 35px;
+      width: 4rem;
       position: absolute;
-      height: 35px;
+      height: 4rem;
       border-radius: 100px;
-      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
     }
     // Background colors
     .icon-bg-blu {
@@ -72,15 +82,17 @@
       background-color: #d0f1c7;
     }
     .diff-item .diff-content {
-      padding-left: 3rem;
+      // padding-left: 3rem;
+      margin-left: 5rem;
     }
     .diff-item .diff-content h3 {
       font-size: 18px;
     }
     .diff-item .diff-content p {
       font-size: 14px;
+      word-break: auto-phrase;
+      padding-right: 1rem;
+      word-wrap: break-word;
     }
   }
-  
 }
-
