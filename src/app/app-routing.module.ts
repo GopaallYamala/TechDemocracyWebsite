@@ -11,6 +11,7 @@ import { CompanyComponent } from './company/company.component';
 import { BlogComponent } from './blogs/blog.component';
 
 const routes: Routes = [
+  { path: '', component: AppHomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: AppHomeComponent },
   { path: 'partners', component: PartnersComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
   { path: 'company', component: CompanyComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
-  { path: 'blogs', component: BlogComponent }
+  { path: 'blogs', component: BlogComponent },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 
 ];
 
