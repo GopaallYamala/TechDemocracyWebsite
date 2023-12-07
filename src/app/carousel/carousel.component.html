@@ -1,12 +1,20 @@
+<!-- <div class="dummy"></div> -->
+
 <ngb-carousel @slideUp class="tdc-carousel-container" *ngIf="images" [showNavigationArrows]="showNavigationArrows"
 [showNavigationIndicators]="showNavigationIndicators">
-  <ng-template ngbSlide *ngFor="let image of images">
-    <div class="picsum-img-wrapper">
-      <img class="tdc-carousel-img" [src]="image" alt="Random slide" />
+  <ng-template ngbSlide *ngFor="let ind = index; let obj of slideShowData">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-xs-12 captions-container">
+        <span>{{obj.caption}}</span>
+        <h1>{{obj.heading}}</h1>
+        <p>{{obj.content}}</p>
+        <div class="actions-container">
+          <button type="button" class="btn btn-danger">Talk to an Expert</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xs-12">
+        <img class="tdc-carousel-img" src="{{obj.imgUrl}}" alt="Slide show image - {{ind+1}}">
+      </div>
     </div>
-    <!-- <div class="carousel-caption">
-      <h3>No mouse navigation</h3>
-      <p>Some carousel text</p>
-    </div> -->
   </ng-template>
 </ngb-carousel>
