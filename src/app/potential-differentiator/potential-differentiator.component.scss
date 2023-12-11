@@ -8,12 +8,15 @@
 
   .potential-diffs .potential-diffs-hdr {
     position: relative;
+    .head-section {
+      justify-content: space-between;
+    }
   }
 
   .potential-diffs .know-more-btn {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    // position: absolute;
+    // right: 1rem;
+    // top: 1rem;
   }
 
   .potential-diffs-hdr p {
