@@ -29,6 +29,36 @@ export const AnimationDefinitions = [
       animate('200ms ease-out', style({ opacity: 0, height: '0px' }))
     ])
   ]),
+  trigger('slideUpA', [
+    transition(':enter', [
+      style({ transform: 'translateY(10%)', opacity: 0 }),
+      animate('800ms ease-in', style({ transform: 'translateY(0%)', opacity: 1 }))
+    ]),
+    transition(':leave', [
+      style({ opacity: 1, 'min-height': '0px', height: '*' }),
+      animate('300ms ease-out', style({ opacity: 0, height: '0px' }))
+    ])
+  ]),
+  trigger('slideUpB', [
+    transition(':enter', [
+      style({ transform: 'translateY(10%)', opacity: 0 }),
+      animate('900ms ease-in', style({ transform: 'translateY(0%)', opacity: 1 }))
+    ]),
+    transition(':leave', [
+      style({ opacity: 1, 'min-height': '0px', height: '*' }),
+      animate('400ms ease-out', style({ opacity: 0, height: '0px' }))
+    ])
+  ]),
+  trigger('slideUpC', [
+    transition(':enter', [
+      style({ transform: 'translateY(10%)', opacity: 0 }),
+      animate('1000ms ease-in', style({ transform: 'translateY(0%)', opacity: 1 }))
+    ]),
+    transition(':leave', [
+      style({ opacity: 1, 'min-height': '0px', height: '*' }),
+      animate('500ms ease-out', style({ opacity: 0, height: '0px' }))
+    ])
+  ]),
   trigger('slideDown', [
     transition(':enter', [
       style({ transform: 'translateY(-10%)', opacity: 0 }),
@@ -111,5 +141,14 @@ export const AnimationDefinitions = [
     transition('expanded => closed', [
       animate('200ms ease-out')
     ])
+  ]),
+  trigger('fadeSlideInOut', [
+    transition(':enter', [
+      style({ opacity: 0, transform: 'translateY(10px)' }),
+      animate('500ms', style({ opacity: 1, transform: 'translateY(0)' })),
+    ]),
+    transition(':leave', [
+      animate('500ms', style({ opacity: 0, transform: 'translateY(10px)' })),
+    ]),
   ])
 ]

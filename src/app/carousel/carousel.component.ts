@@ -28,25 +28,25 @@ export class CarouselComponent implements OnInit {
       caption: `Your trusted identity partner:`,
       heading: `Identity attacks are Fast-Growing, Serious and Costly. How prepared are you?`,
       content: `Secure identities, Defend against Threats, and Meet All-new Compliance Levels`,
-      imgUrl: `../../assets/images/slides/HeroSlide_Services-01.svg`
+      imgUrl: `../../assets/images/slides/HeroImg_Services.svg`
     },
     {
       caption: `Your trusted identity partner:`,
       heading: `Not Half-baked, Not a Broken piece of Solution, Not Off-the-shelf`,
       content: `Modernize your Identity security posture with our comprehensive.`,
-      imgUrl: `../../assets/images/slides/HeroSlide_Solutions.svg`
+      imgUrl: `../../assets/images/slides/HeroImg_Solutions.svg`
     },
     {
       caption: `Your trusted identity partner:`,
       heading: `We are experts in Delivering Identity Solutions`,
       content: `Embark on a captivating carousel showcasing our IDM prowess. Explore cutting-edge solutions like multi-factor authentication, role based access control, and more. Elevate your identity security with us.`,
-      imgUrl: `../../assets/images/slides/HeroSlide_AboutUS-01.svg`
+      imgUrl: `../../assets/images/slides/HeroImg_AboutUS_v2-01.svg`
     },
     {
       caption: `SecureCyber Hub:`,
       heading: `Cybersecurity security Operations Center`,
       content: `Cyber Security Operations Center encompasses Technologies, Processes, People and processes to defend IT, OT/ICT infrastructure like data, applications, assets and networks from cyber attacks.`,
-      imgUrl: `../../assets/images/slides/HeroSlide_ManageSOC.svg`
+      imgUrl: `../../assets/images/slides/HeroImg_ManagedSoc-01.svg`
     }
   ]
   }

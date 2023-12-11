@@ -125,33 +125,33 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Identity life cycle management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Identity lifecycle management ensures secure and compliant user access, covering creation, modification, and deactivation throughout their association with an organization.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `User Provisioning and Deprovisioning`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Automated user provisioning and deprovisioning streamline access management, ensuring efficient and secure control over user privileges.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Access Certiﬁcation`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Verify and approve user access rights, ensuring alignment with security policies and compliance standards, enhancing governance and control.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Certify User Access`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Certify user access to validate alignment with security policies, ensuring compliance and strengthening overall governance and control.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Access Request`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Initiate access requests to obtain permissions, streamlining user access while adhering to security policies and compliance requirements`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Segregation of Duties (SOD)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Segregation of Duties (SoD) enforces separation among conflicting tasks, preventing potential conflicts and reducing the risk of fraud or errors.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               }
             ]
           }
@@ -205,33 +205,33 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `User registration`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Efficient user registration in Customer Identity & Access Management (CIAM) ensures seamless onboarding, prioritizing security and user experience.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Identity proofing`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `In CIAM, identity proofing ensures robust user authentication, bolstering security measures and fostering trust in digital interactions.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `SSO (Single Sign On)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `CIAM's SSO streamlines user access, offering a secure and seamless experience by allowing authentication across multiple services with a single login.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Single Portal Access all the applications`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Streamline user experience with CIAM's single portal, granting access to all applications for a unified and efficient interaction.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `MFA (Multi factor Authentication)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `In CIAM, MFA adds an extra layer of security by requiring users to provide multiple authentication factors, ensuring robust protection and access control.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Preference Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `In CIAM, preference management empowers users to customize their settings, fostering personalized and user-centric experiences for enhanced satisfaction and engagement.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               }
             ]
           };
@@ -285,28 +285,28 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Credential Vaulting & Password Management (Just in-Time)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `PAM ensures security with credential vaulting and just-in-time password management, minimizing exposure and enhancing privileged access controls effectively.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Session Recording &Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `PAM's session recording and management track and monitor privileged user activities, enhancing security, compliance, and incident response capabilities.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Least Privilege and End Point Protection`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Least privilege and endpoint protection in PAM bolster security by limiting access and fortifying endpoints against potential threats effectively.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Secret Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `PAM's secret management safeguards sensitive information, ensuring secure storage, controlled access, and compliance with robust security protocols.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Application Privileged Account Management (APAM)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `APAM secures and manages privileged accounts tied to applications, thwarting unauthorized access and ensuring adherence to security policies effectively.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
             ]
           };
@@ -360,23 +360,23 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Single Sign-On`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `SSO simplifies user access, enabling a single login for multiple applications, promoting convenience, and ensuring security in access management.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `MFA`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `MFA enhances security by requiring users to provide multiple forms of identification, bolstering access management beyond traditional password measures.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Federation (SAML/0Auth/Open ID Connect)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Federation with SAML, OAuth, and OpenID Connect enables secure and seamless user authentication and authorization across various systems in access management.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Policy Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Policy Management enforces rules on user permissions, ensuring adherence to security policies and regulatory requirements for effective access control governance.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               }
             ]
           };
