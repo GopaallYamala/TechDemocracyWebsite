@@ -1,13 +1,15 @@
 <section class="solutions-hero-container {{solutionName == 'services'?'service-bottom-fix':''}}">
-  <section class="px-4 py-5 my-5 solutions-hero-section">
+  <section class="px-4 py-5 solutions-hero-section">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <span class="badge rounded-pill solutions-pill text-bg-dark">{{dataObj.title}}</span>
-          <h1>{{dataObj.heading}} {{dataObj.solutionName}}</h1>
+          <h1>{{dataObj.heading}} <br> {{dataObj.solutionName}}</h1>
           <p>{{dataObj.subHeading}}</p>
-          <button *ngIf="dataObj.displayBtn" class="btn btn-danger contact-expert">Talk to an Expert</button>
+          <!-- <button type="button" *ngIf="dataObj.displayBtn" class="btn btn-danger contact-expert">Talk to an Expert</button> -->
+          <button type="button" class="btn btn-danger">Talk to an Expert</button>
         </div>
+      
         <div class="col-md-6 content-img">
           <p>
             <!-- <strong>{{dataObj.solutionName}}</strong> -->

@@ -1,14 +1,14 @@
 <!-- Challenges block -->
 <section class="challenges-container">
-  <div class="container">
+  <div class="container py-5 my-3">
     <section class="challenges-block">
       <h2 (click)="test()" (appear)="onAppear()" class="challenges-title">{{benefitsDataObj.qsnImportance}}</h2>
-      <p class="para-text">{{benefitsDataObj.importanceText}}</p>
-      <section class="challenges-row row">
+      <p class="subtitle">{{benefitsDataObj.importanceText}}</p>
+      <section class="challenges-row row gx-5">
         <!-- {{benefitsDataObj.benefits| json}} -->
           <article class="col-md-3 challenge-col" *ngFor="let bnf of benefitsDataObj.benefits">
             <!-- {{bnf | json}} -->
-            <img class="challenge-img" src="../../assets/images/Thumbnail_1.png" alt="Free IGA Workshop Image">
+            <img class="challenge-img" src="{{bnf.image}}" alt="Free IGA Workshop Image">
             <h3 class="challenge-hdng">
               {{bnf?.bHdng}}
             </h3>
