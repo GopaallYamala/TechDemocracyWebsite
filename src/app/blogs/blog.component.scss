@@ -1,3 +1,75 @@
 .blog-container {
-  margin: 156px 0 0 0;
+  margin-top: 125px;
+  @media screen and (max-width: 992px) {
+    margin-top: 0;
+  }
+  .blog-header {
+    .blog-headding-main {
+      background: #111111;
+      color: #fff;
+      min-height: 6rem;
+      display: flex;
+      align-items: center;
+    }
+    .blog-header-content {
+      background: #e9ecf5;
+      padding-top: 2rem;
+      min-height: 17rem;
+      .resource-type {
+        color: red;
+      }
+      .flat-svg {
+        width: 5%;
+      }
+      .hero-image {
+        position: relative;
+
+        img {
+          position: absolute;
+        }
+      }
+    }
+  }
+  .blog-body {
+    .share-link {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    .media-icons {
+      background: #000;
+      margin-left: 0.5rem;
+      padding: 0.3rem;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .updated-on {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: gray;
+    }
+    .caseStudy {
+      min-height: 10rem;
+      min-width: 6rem;
+      background-color: #edf2fb;
+
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .iga {
+      img {
+        float: right;
+        margin: 0 20px 20px 20px;
+        width: 40%;
+        height: 200px;
+      }
+
+      p {
+        text-align: justify;
+        // text-indent: 2em;
+      }
+    }
+  }
 }

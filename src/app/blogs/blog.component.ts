@@ -13,6 +13,18 @@ export class BlogComponent {
   strapiBlogAttrs: any;
   contextType: string = 'All';
   blogData: any;
+  CategorieObj = [
+    {
+      type: 'Customer Story',
+      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      read: 'Read Customer Story'
+    },
+    {
+      type: 'Whitepapers',
+      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      read: 'Read Whitepapers'
+    }
+  ]
 
   constructor(private readonly strapiService: StrapiService,
     private readonly blogService: BlogService) { }
@@ -28,6 +40,7 @@ export class BlogComponent {
     // this.strapiService.getBlog().subscribe((resp) => {
     this.strapiService.getFullBlog().subscribe(res => {
       this.blogData = res.data;
+      // this.saveBlog();
       const data = res.data;
       console.log(data, '------------data');
       this.strapiBlogAttrs = data[0].attributes;
@@ -41,7 +54,8 @@ export class BlogComponent {
     const myJSON = JSON.stringify(this.blogData);
     let json = {
       jsonObject: myJSON,
-      strapiId: this.blogData[0].id
+      strapiId: this.blogData[0].id,
+      resourceType: this.blogData[0].attributes.ResourceType
     }
     this.blogService.saveStrapiJson(json).subscribe((res: any) => {
       console.log(res);
