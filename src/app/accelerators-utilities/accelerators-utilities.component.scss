@@ -16,15 +16,23 @@
   padding-top: 2rem;
 }
 
-.utility .utility-icon {
-  width: 150px;
-  height: 100px;
+.utility-body {
+  width: 80%;
+}
+
+.utility-icon {
+  width: 96px;
+  height: 96px;
   background: #edf2fb;
   margin-right: 1.5rem;
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .utility .utility-name {
-  font-size: 18px;
+  // font-size: 18px;
 }
 
 .utility .utility-link {

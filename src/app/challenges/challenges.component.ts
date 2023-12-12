@@ -18,19 +18,23 @@ export class ChallengesComponent implements OnInit {
     benefits: [
       {
         bHdng: ``,
-        bContent: ``
+        bContent: ``,
+        image:''
       },
       {
         bHdng: ``,
-        bContent: ``
+        bContent: ``,
+        image:''
       },
       {
         bHdng: ``,
-        bContent: ``
+        bContent: ``,
+        image:''
       },
       {
         bHdng: ``,
-        bContent: ``
+        bContent: ``,
+        image:''
       }
     ]
   };

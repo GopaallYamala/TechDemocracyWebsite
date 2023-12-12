@@ -1,6 +1,6 @@
 .success-stories {
   .success-stories-container {
-    padding: 4rem 0 2rem 0;
+    // padding: 4rem 0 2rem 0;
   }
   .ss-hdng {
     font-size: 1.25rem;
@@ -9,8 +9,19 @@
   .ss-content-para {
     font-size: 1.75rem;
     font-weight: 600;
-    width: 75%;
+    // width: 75%;
     line-height: 1.25;
     margin-bottom: 2.5rem;
+  }
+
+  .ss-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .ss-img-container img {
+    border-radius: 16px;
   }
 }

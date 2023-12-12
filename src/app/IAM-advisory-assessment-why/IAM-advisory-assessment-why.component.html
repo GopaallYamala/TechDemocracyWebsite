@@ -1,13 +1,16 @@
 <section class="adv-why-container">
-  <div class="container">
+  <div class="container py-5">
     <div>
-      <h3>{{advAssmtObj.heading}}</h3>
-      <div class="row">
-        <div class="col-md-4" *ngFor="let item of advAssmtObj.list">
-          <div class="flex-col-nowrap reason get-aligned">
+      <h2>{{advAssmtObj.heading}}</h2>
+      <div class="row py-4 gy-3">
+        <div class="col-md-4 " *ngFor="let item of advAssmtObj.list">
+          <div class="flex-col-nowrap reason get-aligned ">
             <svg-icon-component [name]="'impl_services'"></svg-icon-component>
-            <h4>{{item.hdng}}</h4>
-            <p>{{item.content}}</p>
+            <div class="pt-4">
+              <h3>{{item.hdng}}</h3>
+              <p>{{item.content}}</p>
+            </div>
+
           </div>
         </div>
         <!-- <div class="col-md-4">

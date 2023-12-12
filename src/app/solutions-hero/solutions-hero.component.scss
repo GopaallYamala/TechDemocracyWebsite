@@ -1,6 +1,7 @@
 .solutions-hero-container {
   @media screen and (max-width: 992px) {
-    .solutions-img, .absolute-img {
+    .solutions-img,
+    .absolute-img {
       display: block;
       position: relative !important;
       top: 0 !important;
@@ -8,13 +9,20 @@
     }
   }
   .solutions-pill {
-    font-weight: normal;
+    font-size: 12px;
+    font-weight: lighter;
     letter-spacing: 0.125rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    opacity: 0.75;
   }
   .solutions-hero-section {
-    background: linear-gradient(#173cb4 0%, #009dff 100%);
-    border: 1px solid #707070;
+    @media screen and (max-width: 992px) {
+    margin-top: 5rem;
+    }
+
+    // background: linear-gradient(#173cb4 0%, #009dff 100%);
+background: linear-gradient(105deg, #173cb4 0%, #009dff 49.9%, #173cb4 100%);
     color: #ffffff;
     position: relative;
     .contact-expert {
@@ -25,13 +33,14 @@
     position: relative;
     p {
       padding-top: 3rem;
-      width: 80%;
+      // width: 80%;
     }
   }
   .absolute-img {
+    width: 95%;
     position: absolute;
     // right: 16%;
-    top: 100%;
+    top: 75%;
     border-radius: 16px;
     z-index: 3;
   }

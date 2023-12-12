@@ -1,12 +1,12 @@
 .consultation-container {
-  padding-top: 1rem;
+  // padding-top: 1rem;
   width: 100%;
   background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 34, 98, 1) 51%, rgba(23, 60, 180, 1) 85%);
   .consult-section {
     align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0;
+    // justify-content: space-between;
+    // padding: 3rem 0;
     width: 100%;
     margin: 0;
   }
@@ -19,6 +19,7 @@
     }
   }
   .consult-content p {
+    width: 100%;
     color: #FFFFFF;
   }
 }
