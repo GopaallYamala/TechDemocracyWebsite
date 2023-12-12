@@ -86,7 +86,7 @@ export class SolutionsComponent implements OnInit {
             solutionImg: '../../assets/images/Solutions-Page.png ',
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance & Administration challenges',
+            solutionHdng: 'Solve key Identity Governance and Administration challenges',
             pointsList: [
               'Limited resources and budget constraints',
               'Complexity of IT environment ',
@@ -99,19 +99,23 @@ export class SolutionsComponent implements OnInit {
             benefits: [
               {
                 bHdng: `Streamlined Onboarding`,
-                bContent: `Effortlessly integrate new users into your ecosystem with precision and speed.`
+                bContent: `Effortlessly integrate new users into your ecosystem with precision and speed.`,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               },
               {
                 bHdng: `Airtight Access Controls`,
-                bContent: `Enjoy the peace of mind that comes with robust role-based access controls, tailored to your organization's unique needs.`
+                bContent: `Enjoy the peace of mind that comes with robust role-based access controls, tailored to your organization's unique needs.`,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               },
               {
                 bHdng: `Strategic Advantage`,
-                bContent: `Transform identity management from a compliance necessity into a strategic advantage, aligning it with your organizational goals.`
+                bContent: `Transform identity management from a compliance necessity into a strategic advantage, aligning it with your organizational goals.`,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               },
               {
                 bHdng: `Enhanced Security Posture`,
-                bContent: `IGA enhances security by managing identities and access, reducing the impact of insider threats and external attacks on sensitive data. `
+                bContent: `IGA enhances security by managing identities and access, reducing the impact of insider threats and external attacks on sensitive data. `,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               }
             ]
           };
@@ -125,33 +129,33 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Identity life cycle management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Identity lifecycle management ensures secure and compliant user access, covering creation, modification, and deactivation throughout their association with an organization.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `User Provisioning and Deprovisioning`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Automated user provisioning and deprovisioning streamline access management, ensuring efficient and secure control over user privileges.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Access Certiﬁcation`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Verify and approve user access rights, ensuring alignment with security policies and compliance standards, enhancing governance and control.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Certify User Access`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Certify user access to validate alignment with security policies, ensuring compliance and strengthening overall governance and control.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Access Request`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Initiate access requests to obtain permissions, streamlining user access while adhering to security policies and compliance requirements`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Segregation of Duties (SOD)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Segregation of Duties (SoD) enforces separation among conflicting tasks, preventing potential conflicts and reducing the risk of fraud or errors.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               }
             ]
           }
@@ -163,10 +167,10 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Customer Identity & Access Management',
             solutionContent: "TechDemocracy's Customer Identity and Access Management (CIAM) solutions are crafted with a profound understanding that identities are not just data points but pivotal elements of trust-building in the digital realm.",
-            solutionImg: '../../assets/images/Solutions-Page.png '
+            solutionImg: '../../assets/images/SolutionThumbnailLower.png'
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance & Administration challenges',
+            solutionHdng: 'Solve key Identity Governance and Administration challenges',
             pointsList: [
               'Seamless Onboarding Complexity',
               'Identity Proofing Enhancement',
@@ -179,19 +183,23 @@ export class SolutionsComponent implements OnInit {
             benefits: [
               {
                 bHdng: `Frictionless Registration`,
-                bContent: `Craft seamless and secure user onboarding experiences, minimizing friction, and maximizing security.`
+                bContent: `Craft seamless and secure user onboarding experiences, minimizing friction, and maximizing security.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
               },
               {
                 bHdng: `Secure SSO Experiences`,
-                bContent: `Elevate trust with centralized access and robust authentication, ensuring a secure and user-friendly Single Sign-On process.`
+                bContent: `Elevate trust with centralized access and robust authentication, ensuring a secure and user-friendly Single Sign-On process.`,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               },
               {
                 bHdng: `Valuable Insights`,
-                bContent: `Gain invaluable insights into user behavior through sophisticated analytics, enhancing your understanding of customer interactions.`
+                bContent: `Gain invaluable insights into user behavior through sophisticated analytics, enhancing your understanding of customer interactions.`,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               },
               {
                 bHdng: `Personalized User Experiences`,
-                bContent: `Tailor interactions based on behavioral analytics, creating personalized and engaging experiences that foster customer loyalty.`
+                bContent: `Tailor interactions based on behavioral analytics, creating personalized and engaging experiences that foster customer loyalty.`,
+                image: '../../assets/images/SolutionThumbnail-01-01.svg'
               }
             ]
           };
@@ -205,33 +213,33 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `User registration`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Efficient user registration in Customer Identity & Access Management (CIAM) ensures seamless onboarding, prioritizing security and user experience.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Identity proofing`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `In CIAM, identity proofing ensures robust user authentication, bolstering security measures and fostering trust in digital interactions.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `SSO (Single Sign On)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `CIAM's SSO streamlines user access, offering a secure and seamless experience by allowing authentication across multiple services with a single login.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Single Portal Access all the applications`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Streamline user experience with CIAM's single portal, granting access to all applications for a unified and efficient interaction.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `MFA (Multi factor Authentication)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `In CIAM, MFA adds an extra layer of security by requiring users to provide multiple authentication factors, ensuring robust protection and access control.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Preference Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `In CIAM, preference management empowers users to customize their settings, fostering personalized and user-centric experiences for enhanced satisfaction and engagement.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               }
             ]
           };
@@ -246,7 +254,7 @@ export class SolutionsComponent implements OnInit {
             solutionImg: '../../assets/images/Solutions-Page.png '
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance & Administration challenges',
+            solutionHdng: 'Solve key Identity Governance and Administration challenges',
             pointsList: [
               'Balancing Privilege and Efficiency',
               'Session Visibility Enhancement',
@@ -259,19 +267,27 @@ export class SolutionsComponent implements OnInit {
             benefits: [
               {
                 bHdng: `Just-in-Time Access`,
-                bContent: `Mitigate risks with precisely-timed privileged access, ensuring that access is granted only when needed.`
+                bContent: `Mitigate risks with precisely-timed privileged access, ensuring that access is granted only when needed.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `Comprehensive Session Management`,
-                bContent: `Record and manage sessions efficiently, enhancing visibility and accountability.`
+                bContent: `Record and manage sessions efficiently, enhancing visibility and accountability.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `Efficient Least Privilege`,
-                bContent: `Redefine access by enforcing least privilege measures, minimizing potential attack surfaces.`
+                bContent: `Redefine access by enforcing least privilege measures, minimizing potential attack surfaces.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `Proactive Security Measures`,
-                bContent: `Anticipate and address potential security risks before they escalate, ensuring a proactive defense strategy.`
+                bContent: `Anticipate and address potential security risks before they escalate, ensuring a proactive defense strategy.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               }
             ]
           };
@@ -285,28 +301,28 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Credential Vaulting & Password Management (Just in-Time)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `PAM ensures security with credential vaulting and just-in-time password management, minimizing exposure and enhancing privileged access controls effectively.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Session Recording &Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `PAM's session recording and management track and monitor privileged user activities, enhancing security, compliance, and incident response capabilities.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Least Privilege and End Point Protection`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Least privilege and endpoint protection in PAM bolster security by limiting access and fortifying endpoints against potential threats effectively.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Secret Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `PAM's secret management safeguards sensitive information, ensuring secure storage, controlled access, and compliance with robust security protocols.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Application Privileged Account Management (APAM)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `APAM secures and manages privileged accounts tied to applications, thwarting unauthorized access and ensuring adherence to security policies effectively.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
             ]
           };
@@ -321,7 +337,7 @@ export class SolutionsComponent implements OnInit {
             solutionImg: '../../assets/images/Solutions-Page.png '
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance & Administration challenges',
+            solutionHdng: 'Solve key Identity Governance and Administration challenges',
             pointsList: [
               'Single Sign-On Simplification',
               'Multi-Factor Authentication Enhancement',
@@ -334,19 +350,27 @@ export class SolutionsComponent implements OnInit {
             benefits: [
               {
                 bHdng: `Streamlined Single Sign-On`,
-                bContent: `Simplify access with seamless Single Sign-On, reducing the complexity of multiple credentials.`
+                bContent: `Simplify access with seamless Single Sign-On, reducing the complexity of multiple credentials.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `Fortified Multi-Factor Authentication`,
-                bContent: `Strengthen security with robust authentication, ensuring only authorized users gain access.`
+                bContent: `Strengthen security with robust authentication, ensuring only authorized users gain access.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `Efficient Policy Management`,
-                bContent: `Navigate access policies with finesse and efficiency, ensuring a balance between security and user convenience.`
+                bContent: `Navigate access policies with finesse and efficiency, ensuring a balance between security and user convenience.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `User Convenience Optimization`,
-                bContent: `Optimize user experience by balancing security measures with streamlined access, promoting a user-friendly environment.`
+                bContent: `Optimize user experience by balancing security measures with streamlined access, promoting a user-friendly environment.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               }
             ]
           };
@@ -360,23 +384,23 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Single Sign-On`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `SSO simplifies user access, enabling a single login for multiple applications, promoting convenience, and ensuring security in access management.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `MFA`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `MFA enhances security by requiring users to provide multiple forms of identification, bolstering access management beyond traditional password measures.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Federation (SAML/0Auth/Open ID Connect)`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Federation with SAML, OAuth, and OpenID Connect enables secure and seamless user authentication and authorization across various systems in access management.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               },
               {
                 title: `Policy Management`,
-                info: `Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet`,
-                icon: ``
+                info: `Policy Management enforces rules on user permissions, ensuring adherence to security policies and regulatory requirements for effective access control governance.`,
+                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
               }
             ]
           };
@@ -406,18 +430,24 @@ export class SolutionsComponent implements OnInit {
                 bHdng: `Technology`,
                 bContent: `Disconnected tools - Lack of automation and integration -Attackers increasingly “live off the land” and use techniques that won’t trigger individual security defenses.
                 Security analysts workflow complexity – Investigate multiple tools and challenges in determining priority & remediation steps. Build play books and delayed response.
-                Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`
+                Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `Process`,
                 bContent: `Evolving threat landscape - Cybercriminals remain adept at successfully infiltrating organizations across the globe
                 Process latency - Both environments and processes evolve faster than people’s understanding of them. So, processes lag the environment, and people lag the processes.
-                Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`
+                Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               },
               {
                 bHdng: `People`,
                 bContent: `Staffing, Skill and knowledge shortage – Knowledge shortage is closely related to skills shortage. Even those well versed in working all the systems management tools can fail if they know too little about the systems environment being protected.
-                Struggle to keep up - Attackers use automation to overwhelm defenders, who have difficulty evaluating many fast-moving parts at once`
+                Struggle to keep up - Attackers use automation to overwhelm defenders, who have difficulty evaluating many fast-moving parts at once`,
+                image: '../../assets/images/SolutionThumbnail-01.svg'
+
               }
             ]
           };

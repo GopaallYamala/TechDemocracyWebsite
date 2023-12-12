@@ -1,8 +1,11 @@
 .tdc-consult-container {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
+  // padding-top: 1rem;
   .iga-hdng {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
+  }
+
+  .iga-content{
+    padding-right: 10%;
   }
   .iga-content-para:nth-child(2) {
     margin-bottom: 2rem;
@@ -10,4 +13,10 @@
   .svg-icon {
     min-height: 4rem;
   }
+
+  .iga-img-container img{
+    width: 100%;
+    border-radius: 16px;
+  }
+
 }

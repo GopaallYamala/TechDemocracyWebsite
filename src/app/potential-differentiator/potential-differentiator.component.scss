@@ -1,32 +1,38 @@
 .potential-diffs-container {
   background-color: #f2f9fe;
-  padding-top: 6rem;
-  margin-top: 3rem;
+  // padding-top: 6rem;
+  // margin-top: 3rem;
   // .potential-diffs {
   //   padding-top: 6rem;
   // }
 
   .potential-diffs .potential-diffs-hdr {
     position: relative;
+    .head-section {
+      justify-content: space-between;
+    }
   }
 
   .potential-diffs .know-more-btn {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    // position: absolute;
+    // right: 1rem;
+    // top: 1rem;
   }
 
   .potential-diffs-hdr p {
-    width: 90%;
+    width: 75%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   .differentiators {
-    padding: 3rem 1rem;
-    // background-color: #f3f4fa;
+    // padding: 3rem 1rem;
+    // // background-color: #f3f4fa;
     .diff-item {
       position: relative;
       min-height: 6rem;
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
       // width: 30%;
     }
     .diff-row {
@@ -89,7 +95,6 @@
       font-size: 18px;
     }
     .diff-item .diff-content p {
-      font-size: 14px;
       word-break: auto-phrase;
       padding-right: 1rem;
       word-wrap: break-word;

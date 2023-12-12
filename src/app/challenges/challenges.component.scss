@@ -1,22 +1,32 @@
 .challenges-container {
   .para-text {
-    // font-size: 0.85rem;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
   .challenges-row {
+    margin: 2rem 0rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
+
   .challenge-col {
-    .challenge-hdng {
-      font-size: 1.5rem;
+    padding-left: 0;
+
+    @media screen and (max-width: 992px) {
+      padding-right: 0 !important;
+    }
+
+    .challenge-hdng{
+      font-size: 1.25rem !important;
     }
     .challenge-img {
-      width: 95%;
+      width: 100%;
       margin-bottom: 1rem;
+      border-radius: 16px;
     }
     .challenge-content {
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
   }
 }
