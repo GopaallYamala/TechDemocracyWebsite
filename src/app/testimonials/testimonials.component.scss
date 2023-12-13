@@ -41,6 +41,7 @@
   .testimonials {
     margin-top: 2rem;
     overflow: auto;
+    width: 100%;
   }
   .testimonials {
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -56,6 +57,7 @@
     border-radius: 30px;
     min-height: 300px;
     max-height: 300px;
+    min-width: 600px;
     overflow-y: hidden;
 
     blockquote {

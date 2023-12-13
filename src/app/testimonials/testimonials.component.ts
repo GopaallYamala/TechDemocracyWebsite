@@ -32,6 +32,16 @@ export class TestimonialsComponent implements OnInit {
         tContent: 'TechDemocracy(Cotelligent) has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my Security of my Business.',
         tClientImg: '../../assets/images/Partners/Sailpoint.svg',
         tRole: 'Senior Solutions Consultant'
+      },
+      {
+        tContent: 'TechDemocracy(Cotelligent) has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my Security of my Business.',
+        tClientImg: '../../assets/images/Partners/Ping Identity.svg',
+        tRole: 'Senior Solutions Consultant'
+      },
+      {
+        tContent: 'TechDemocracy(Cotelligent) has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my Security of my Business.',
+        tClientImg: '../../assets/images/Partners/Sailpoint.svg',
+        tRole: 'Senior Solutions Consultant'
       }
     ]
   }

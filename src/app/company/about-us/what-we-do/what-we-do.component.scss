@@ -10,7 +10,8 @@
       list-style: none;
       padding: 0;
       li::before {
-        content: url('../../../../assets/images/chevron-right-img.JPG');
+        // content: url('../../../../assets/images/chevron-right-img.JPG');
+        content: url('../../../../assets/images/chevron-right-img.png');
         position: relative;
         bottom: -6px;
         display: inline-block;
