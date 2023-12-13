@@ -6,10 +6,10 @@
   //   margin-bottom: 1rem;
   // }
   .resources-highlights-section {
-    background: linear-gradient(#173cb4 0%, #009dff 100%);
-    border: 1px solid #707070;
+    background: linear-gradient(105deg, #173cb4 0%, #009dff 49.9%, #173cb4 100%);
+    // border: 1px solid #707070;
     color: #ffffff;
-    min-height: 18rem;
+    height: 24rem;
   }
   .first-col {
     position: relative;
@@ -18,23 +18,32 @@
     position: relative;
   }
   .prefered-caseStudie {
-    position: absolute;
-    top: 100%;
+    position: relative;
+    // top: 100%;
+
   }
-  .prefernces {
-    min-height: 18rem;
-    background: #edf2fb;
+  .resourceimg {
+    height: 356px !important;
+    @media screen and (max-width: 992px) {
+      height: 280px !important;
+    }
   }
   .events {
     color: #dc3545;
   }
 
   .prefered-size {
-    height: 100%;
-    width: 90%;
-    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
   }
-  p {
-    color: #2d2d2d;
+
+  .solutions-pill {
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 0.125rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    opacity: 0.75;
   }
 }

@@ -1,4 +1,7 @@
 .success-stories {
+
+  background: linear-gradient(0deg, rgba(237, 248, 255, 0.548) 0%, rgba(237, 248, 255, 0.33) 100%), #FFF;
+
   .success-stories-container {
     // padding: 4rem 0 2rem 0;
   }
@@ -22,6 +25,10 @@
   }
 
   .ss-img-container img {
+    width: 90%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
     border-radius: 16px;
   }
 }

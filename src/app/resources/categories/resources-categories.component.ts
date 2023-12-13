@@ -13,51 +13,51 @@ export class ResourcesCategoriesComponent {
   CategorieObj = [
     {
       type: 'Customer Story',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Read Customer Story'
     },
     {
       type: 'Whitepapers',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Read Whitepapers'
     },
     {
       type: 'Webinar',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Check Webinar'
     },
     {
       type: 'Customer Story',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Read Customer Story'
     },
     {
       type: 'Whitepapers',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Read Whitepapers'
     },
     {
       type: 'Webinar',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Check Webinar'
     },
     {
       type: 'Webinar',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Check Webinar'
     },
     {
       type: 'Webinar',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Check Webinar'
     },
     {
       type: 'Webinar',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Check Webinar'
     }, {
       type: 'Webinar',
-      desc: 'The quick, brown fox jumps over a lazy dog flock',
+      desc: 'Consumer Identity and Access Management (CIAM) Implementation for a Healthcare Organization',
       read: 'Check Webinar'
     }
 
