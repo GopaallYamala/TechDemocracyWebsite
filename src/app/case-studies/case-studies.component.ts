@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import AOS from "aos";
 
 @Component({
   selector: 'case-studies',
@@ -24,7 +25,7 @@ export class CaseStudiesComponent implements OnInit {
 
 
   ngOnInit() {
-
+    AOS.init();
   }
 
   scrollRight(): void {
