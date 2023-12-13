@@ -41,7 +41,6 @@
   .testimonials {
     margin-top: 2rem;
     overflow: auto;
-    width: 100%;
   }
   .testimonials {
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -57,7 +56,6 @@
     border-radius: 30px;
     min-height: 300px;
     max-height: 300px;
-    min-width: 600px;
     overflow-y: hidden;
 
     blockquote {
@@ -70,7 +68,7 @@
     blockquote:after {
       content: close-quote;
       visibility: hidden;
-      position: absolute;
+      // position: absolute;
     }
 
     blockquote p {
@@ -93,8 +91,8 @@
       height: 2.5rem;
     }
     .client img {
-      width: auto;
-      height: 56px;
+      width: 35%;
+      height: auto;
     }
   }
   .role-name {
