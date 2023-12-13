@@ -1,3 +1,6 @@
 .partners-container {
-  margin-top: 152px;
+  margin-top: 125px;
+  @media screen and (max-width: 992px) {
+    margin-top: 0;
+  }
 }

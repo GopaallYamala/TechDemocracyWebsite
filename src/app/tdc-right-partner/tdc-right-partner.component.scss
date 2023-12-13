@@ -4,22 +4,28 @@
     border-radius: 25px;
     &.block-a {
       background-color: #e5e8f2;
-      min-height: 19rem;
-      margin-bottom: 1rem;
+      // min-height: 19rem;
+      margin-bottom: 1.5rem;
     }
     &.block-b {
       background-color: #f0e5e8;
-      min-height: 22rem;
-      margin-bottom: 1rem;
+      // min-height: 22rem;
+      margin-bottom: 1.5rem;
     }
     &.block-c {
       background-color: #f3f3f3;
-      min-height: 15rem;
+      // min-height: 15rem;
       height: 100%;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 1.5rem;
+      }
     }
     &.block-d {
       background-color: #e5f7ff;
-      min-height: 22rem;
+      min-height: 22.5rem;
+      @media screen and (max-width: 992px) {
+        min-height: auto;
+      }
     }
   }
 
@@ -29,26 +35,30 @@
     }
   }
 
+  .icn {
+    width: 56px;
+  }
+
   .full-bloc {
     padding: 2rem;
     border-radius: 25px;
-    img {
-      margin-bottom: 2rem;
-    }
-    h4 {
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 3rem;
-    }
+    margin-bottom: 1.5rem;
+    // h4 {
+    //   margin-bottom: 1rem;
+    // }
     &.flexibility {
       background-color: #e5fafe;
-      margin-bottom: 1rem;
-      min-height: 22rem;
+      margin-bottom: 1.5rem;
+      @media screen and (max-width: 992px) {
+        height: auto !important;
+      }
     }
     &.concern {
       background-color: #f3f3f3;
-      min-height: 22rem;
+      @media screen and (max-width: 992px) {
+        height: auto !important;
+      }
+      // min-height: 15rem;
     }
   }
 
@@ -56,7 +66,7 @@
     transition: transform 0.5s; /* Animation */
     &:hover {
       cursor: pointer;
-      transform: scale(1.065);
+      transform: scale(1.055);
       // box-shadow: 0 3px 8px rgb(255 255 255 / 18%), 0 3px 6px rgb(0 0 0 / 8%);
     }
   }

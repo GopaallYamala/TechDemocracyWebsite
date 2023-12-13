@@ -1,9 +1,9 @@
 <div class="resources-container">
-  <div class="container">
-    <h5 class="gutter-bottom-2">Categories</h5>
+  <div class="container py-5">
+    <h2 class="gutter-bottom-2">Categories</h2>
     <section class="row">
       <div class="flex-col-nowrap col-md-3">
-        <div class="gutter-bottom-1" *ngFor="let resource of resourcesObj">
+        <div class="py-2" *ngFor="let resource of resourcesObj">
           <li class="list-casestudy w-75">{{resource}}</li>
         </div>
       </div>
@@ -11,15 +11,20 @@
         <div class="row">
           <ng-container *ngFor="let sample of CategorieObj | slice:0:categoriesIndex">
             <div class="flex-col-nowrap col-md-4 gutter-bottom-1">
-              <div class="caseStudy"></div>
-              <label class="breathing-space-bottom">{{sample.type}}</label>
-              <h6><strong>{{sample.desc}}</strong></h6>
+              <!-- <div class="caseStudy"></div> -->
+              <img class="casestudyimg" src="../../assets/images/Resource/TelecomInd.png" />
+              <article class="pt-3 pb-5">
+              <label>{{sample.type}}</label>
+              <h4>{{sample.desc}}</h4>
               <a href="#">{{sample.read}}</a>
+            </article>
             </div>
           </ng-container>
         </div>
-        <button *ngIf="categoriesIndex === 6" (click)="viewAll()" class="btn btn-danger btn-md w-25 gutter-top-2">View
-          All</button>
+        <div class="row">
+          <button *ngIf="categoriesIndex === 6" (click)="viewAll()" class="btn btn-outline-dark btn-lg btn-block">View All</button>
+        </div>
+       
       </div>
     </section>
   </div>

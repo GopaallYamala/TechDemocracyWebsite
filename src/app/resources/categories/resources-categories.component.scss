@@ -1,16 +1,23 @@
 .resources-container {
-  margin-top: 17rem;
+  margin-top: 20rem;
 
-  .caseStudy {
-    min-height: 12rem;
-    min-width: 8rem;
-    background-color: #edf2fb;
-    margin-right: 1rem;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
+  @media screen and (max-width: 992px) {
+    margin-top: 52rem;
   }
+
+  .casestudyimg {
+    width: 100%;
+    height: auto;
+  }
+
+  img.casestudyimg {
+    border-radius: 12px !important; 
+    filter: saturate(80%);
+  }
+
   label {
     color: #dc3545;
+    font-size: 14px !important;
   }
   a {
     color: #212529;
