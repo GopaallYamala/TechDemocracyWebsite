@@ -15,15 +15,16 @@
     max-height: 24rem;
   }
   .sol-blocks .sol-block {
-    // background-color: #edf2fb;
     cursor: pointer;
     border-radius: 18px;
-    // margin-right: 0.5rem;
     margin-bottom: 1rem;
     height: 100%;
     padding: 2rem;
-    // width: 30%;
     overflow: hidden;
+
+    color: 000000;
+    transition: color 0.5s ease;
+    transition: background 0.5s ease;
     h3 {
       font-size: 14px;
       font-style: normal;

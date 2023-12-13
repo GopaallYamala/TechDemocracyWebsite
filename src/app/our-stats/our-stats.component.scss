@@ -1,27 +1,27 @@
 .our-stats {
-  background-color: #1337A4;
+  background-color: #1337a4;
   min-height: 3rem;
   padding: 3rem 0;
-  margin: 2rem 0;
+  // margin: 2rem 0;
   .stat-content {
     width: 60%;
-    color: #FFFFFF;
-    margin-bottom: 3rem;
+    // color: #FFFFFF;
+    // margin-bottom: 3rem;
   }
 
-  .stat {
-    // border-left: 0.5rem solid #fff;
-    // padding-left: 1rem;
-    margin-bottom: 1rem;
+  .stat-container {
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-flow: column;
+    }
   }
-  .stat p, .stat h3 {
-    color: #FFFFFF;
-  }
-  .stat p {
-    // width: 50%;
-    font-size: 0.9rem;
-    width: 95%;
+  .stat-title h1 {
+    font-size: 2rem !important;
+    font-weight: 400;
   }
 
-
+  .stat-container h2 {
+    font-size: 1.8rem !important;
+    color: #e4fd73;
+  }
 }

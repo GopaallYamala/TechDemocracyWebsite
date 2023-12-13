@@ -1,5 +1,6 @@
 .tdc-consult-container {
   // padding-top: 1rem;
+  // background: linear-gradient(0deg, rgba(237, 248, 255, 0.548) 0%, rgba(237, 248, 255, 0.33) 100%), #FFF;
   .iga-hdng {
     // margin-bottom: 2rem;
   }
@@ -15,8 +16,11 @@
   }
 
   .iga-img-container img{
-    width: 100%;
+    width: 90%;
     border-radius: 16px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
 }
