@@ -3,6 +3,7 @@ import { AnimationDefinitions } from 'src/shared/animations';
 import { TDCGeoLocationService } from 'src/shared/services/geo-location.service';
 import { UtilService } from 'src/shared/services/util.service';
 
+import AOS from "aos";
 
 
 @Component({
@@ -31,6 +32,8 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit() {
+    AOS.init();
+
     this.utilService.dataState.subscribe(
       (data: string) => {
         this.country = data;

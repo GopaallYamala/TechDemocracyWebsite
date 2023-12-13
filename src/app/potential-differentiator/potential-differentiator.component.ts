@@ -1,6 +1,7 @@
-import { Component, ViewEncapsulation, Input } from '@angular/core';
+import { Component, ViewEncapsulation, Input, OnInit } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 
+import AOS from "aos";
 
 
 @Component({
@@ -10,8 +11,11 @@ import { AnimationDefinitions } from 'src/shared/animations';
   encapsulation: ViewEncapsulation.None,
   animations: [AnimationDefinitions]
 })
-export class PotentialDifferentiatorComponent {
+export class PotentialDifferentiatorComponent implements OnInit {
 
+  ngOnInit() {
+    AOS.init();
+  }
   @Input() potentialDiffObj: any = {
     hdng: `IGA Features and Capabilities`,
     content: `We recognize that the intricate dance between user access, compliance, and security is more crucial than ever and need these capabilities:`,
