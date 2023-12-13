@@ -31,7 +31,7 @@ export class RestService {
     const headerDict = {
       'Content-Type': 'application/json',
       // 'Authorization': 'Bearer ' + localStorage.getItem('JWT_TOKEN'),
-      'Authorization': 'Bearer 9c7c1cd82e979487cdac36b3d7e3b36eeec3a77e8e08372248160e103fb7fdbeabf1f408523d211d674ba3eaffa6897384388e596230e96012118d8814c86a760371c91014043f35acc1dab85156a13543f1acb8667846be800a44396580802e0cff210beb19ac6248bf1acb6f55f76d2cad9bc23b4d03c9bb07ff0cba1d459f'
+      'Authorization': 'Bearer 8381aed0d6f4809bab767c991a63b957a835cc72cfe433f5a14bba3bd5db7a07a4a7f5a8ad4f16db7edf2c19f2850ff3ed8aae2151829b66f1e39d705d59689eddcd702e5d479ceadd4a173066fc9e92a432187aa0a4c5429ecf59eacb00e6ac5fbaa6e9594b712ef55f801e6edd7e542713593fd7aa9c6e26471f61c7794423'
     }
     return new HttpHeaders(headerDict);
   }

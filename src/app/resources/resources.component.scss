@@ -1,6 +1,8 @@
 .resource-container {
-  margin: 156px 0 2rem 0;
-
+  margin-top: 125px;
+  @media screen and (max-width: 992px) {
+    margin-top: 0;
+  }
   .blog-hosting {
     padding: 3rem 8rem;
   }
