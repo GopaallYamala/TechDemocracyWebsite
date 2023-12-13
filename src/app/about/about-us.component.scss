@@ -1,7 +1,7 @@
 .about-us {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #ECF3FF;
+  background-color: #ecf3ff;
   .about-us-header {
     align-items: center;
     padding-bottom: 2rem;
@@ -24,6 +24,9 @@
     position: relative;
     align-items: center;
     width: 230px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   .highlight .highlight-left {
@@ -31,7 +34,7 @@
     left: 0;
     width: 0.75rem;
     height: 90%;
-    background: #173CB4;
+    background: #173cb4;
     border-radius: 10px;
   }
 
@@ -63,9 +66,15 @@
 
   @media screen and (max-width: 750px) {
     iframe {
-        max-width: 100% !important;
-        width: auto !important;
-        height: auto !important;
+      max-width: 100% !important;
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    iframe {
+      width: 100% !important;
     }
   }
 }
