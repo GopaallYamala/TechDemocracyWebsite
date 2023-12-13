@@ -11,6 +11,10 @@
 @import "./assets/styles/spacings";
 @import "./assets/styles/utils.scss";
 
+html, :root {
+  scroll-behavior: smooth;
+}
+
 // For responsive screens - Images should take 100% of parent's width
 img {
   // width: 100%;

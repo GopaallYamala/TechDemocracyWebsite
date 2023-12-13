@@ -13,10 +13,9 @@
     padding: 3rem 6rem;
   }
   .captions-container {
-    // padding: 2rem 2rem 2rem 12rem;
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: center;
     span, h1, p {
       color: #FFFFFF;
     }
