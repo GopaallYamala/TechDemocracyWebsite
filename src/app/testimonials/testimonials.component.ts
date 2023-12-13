@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
+import AOS from "aos";
 
 @Component({
   selector: 'testimonials',
@@ -12,6 +13,7 @@ export class TestimonialsComponent implements OnInit {
   isOverflow: any;
 
   ngOnInit() {
+    AOS.init();
     this.testimonialsData = [
       {
         tContent: 'TechDemocracy has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my RoadMap.',

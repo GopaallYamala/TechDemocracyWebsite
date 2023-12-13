@@ -1,6 +1,6 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from '../../shared/animations';
-
+import AOS from "aos";
 
 @Component({
   selector: 'accelerators-utilities',
@@ -9,7 +9,9 @@ import { AnimationDefinitions } from '../../shared/animations';
   encapsulation: ViewEncapsulation.None,
   animations: [AnimationDefinitions]
 })
-export class AcceleratorsUtilitiesComponent {
+export class AcceleratorsUtilitiesComponent implements OnInit {
 
-
+  ngOnInit() {
+    AOS.init();
+  }
 }
