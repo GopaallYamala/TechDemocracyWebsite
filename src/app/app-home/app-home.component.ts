@@ -38,7 +38,7 @@ export class AppHomeComponent implements OnInit {
     featuresObj: [
       {
         title: `Skilled Resources`,
-        info: `Ready-to-go, experienced consultants available to kickstart engagement from Day 0`,
+        info: `Our team’s expertise ensures a seamless transition from planning to execution, with ready-to-go, experienced consultants available to kickstart their engagement from Day 0`,
         icon: `../../assets/images/Home_Icons/Home_SkilledResources_32x.svg`
       },
       {
@@ -63,7 +63,7 @@ export class AppHomeComponent implements OnInit {
       },
       {
         title: `Alliance & Partnership`,
-        info: `Reseller and services partnerships with leading Identity product vendors in the USA, Canada, and India.`,
+        info: `Reseller and services partnerships with leading Identity product vendors in the USA, Canada, and India. Our strategic collaborations offer unparalleled access to cutting-edge solutions`,
         icon: `../../assets/images/Home_Icons/Home_Partnership_32x.svg`
       }
     ]

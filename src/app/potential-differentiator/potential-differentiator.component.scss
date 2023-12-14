@@ -21,7 +21,9 @@
   }
 
   .potential-diffs-hdr p {
-    width: 75%;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 85%;
     @media screen and (max-width: 992px) {
       width: 100%;
     }
@@ -96,9 +98,12 @@
       font-size: 18px;
     }
     .diff-item .diff-content p {
+      // word-break: break-all;
+      // white-space: wrap;
+      white-space: pre-line;
+      // word-wrap: break-word;
       word-break: auto-phrase;
       padding-right: 1rem;
-      word-wrap: break-word;
     }
   }
 }

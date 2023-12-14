@@ -2,25 +2,40 @@
 
 .tdc-carousel-container {
   background: linear-gradient(-135deg, #173cb4 35%, #009dff 100%);
-  min-height: 490px;
+  height: 540px;
   width: 100%;
   padding: 0 12rem;
+  @media screen and (max-width: 1400px) {
+    padding: 0% 8%;
+    height: auto;
+  }
   display: flex !important;
   align-items: center;
   justify-content: center;
 
   @media screen and (max-width: 992px) {
-    padding: 3rem 6rem;
+    padding: 3rem 3rem;
+   height: auto;
+   .carousel-talk-btn {
+     width: 100%;
+   }
   }
   .captions-container {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    span, h1, p {
-      color: #FFFFFF;
+    span,
+    h1,
+    p {
+      color: #ffffff;
     }
   }
 }
+
+.carousel-control-prev, .carousel-control-next {
+  width: 8% !important;
+}
+
 
 .tdc-carousel-container .tdc-carousel-img {
   width: 100%;
@@ -29,6 +44,9 @@
 
 .tdc-carousel-container .carousel-inner {
   max-height: initial;
+  @media screen and (min-width: 1400px) {
+    width: 85%;
+  }
 }
 
 // .dummy {

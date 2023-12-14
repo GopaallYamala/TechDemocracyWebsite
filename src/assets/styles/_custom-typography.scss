@@ -16,7 +16,7 @@ h2 {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 600 !important;
   color: #222;
-  font-size: 1.75rem !important;
+  font-size: 1.8rem !important;
   line-height: 2.25rem !important;
 }
 
@@ -44,15 +44,16 @@ h4 {
 
 p {
   font-family: neue-haas-grotesk-text, sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem !important;
   line-height: 1.6rem;
-//   color: #444444;
+  // color: rgb(55, 55, 55);
+  // color: #444444;
 }
 
 .subtitle {
   //   font-family: neue-haas-grotesk-text, sans-serif;
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 1.15rem !important;
   line-height: 1.85rem;
   font-weight: 400;
 }
@@ -62,18 +63,3 @@ p {
   font-size: 1.15rem;
   line-height: 1.85rem;
 }
-
-.resourceimg {
-  height: auto;
-  @media screen and (max-width: 992px) {
-    // height: 280px;
-  }
-  img {
-  // min-height: 18rem;
-  // background: #edf2fb;
-  filter: saturate(70%);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 22px;
-}}
