@@ -14,11 +14,12 @@ import { AnimationDefinitions } from 'src/shared/animations';
 export class AboutUsComponent {
 
   safeURL;
-  videoUrl = `https://www.youtube.com/watch?v=mgMhoY4r0dU&t=6s`;
+  // videoUrl = `https://www.youtube.com/watch?v=mgMhoY4r0dU&t=6s`;
+  // videoUrl = 'https://www.youtube.com/embed/mgMhoY4r0dU?si=1Y2InHUfmNsfezX6&amp;controls=0'
   constructor(
     private _sanitizer: DomSanitizer) {
 
-    this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoUrl);
+    // this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoUrl);
   }
 
 }
