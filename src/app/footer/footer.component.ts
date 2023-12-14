@@ -32,7 +32,9 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit() {
-    AOS.init();
+    AOS.init({
+      startEvent: 'load',
+    });
 
     this.utilService.dataState.subscribe(
       (data: string) => {
