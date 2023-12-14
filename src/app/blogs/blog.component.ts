@@ -41,10 +41,8 @@ export class BlogComponent {
     this.strapiService.getFullBlog().subscribe(res => {
       this.blogData = res.data;
       // this.saveBlog();
-      const data = res.data;
-      console.log(data, '------------data');
-      this.strapiBlogAttrs = data[0].attributes;
-      console.log(this.strapiBlogAttrs, '------------attr');
+      // const data = res.data;
+      // this.strapiBlogAttrs = data[0].attributes;
     });
     // })
   }
@@ -54,8 +52,6 @@ export class BlogComponent {
     const myJSON = JSON.stringify(this.blogData);
     let json = {
       jsonObject: myJSON,
-      strapiId: this.blogData[0].id,
-      resourceType: this.blogData[0].attributes.ResourceType
     }
     this.blogService.saveStrapiJson(json).subscribe((res: any) => {
       console.log(res);
@@ -65,6 +61,7 @@ export class BlogComponent {
   // Fetch All the blogs from DB
   getAllBlogs() {
     this.blogService.getAllBlogs().subscribe((res: any) => {
+      const myJSON = JSON.stringify(this.blogData);
       res.blogs.forEach((e: any) => {
         let json = JSON.parse(e.blogJson);
         e.blogJson = json;

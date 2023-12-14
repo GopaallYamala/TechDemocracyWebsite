@@ -133,5 +133,14 @@ export class RestService {
 			});
 	}
 
+	public put(relativeUrl: string, data?: any, httpParams?: HttpParams) {
+		return this.httpClient.put(this.maincontexturl + relativeUrl, data,
+			{
+				headers: this.headers,
+				responseType: 'text',
+				params: httpParams
+			});
+	}
+
 
 }
