@@ -100,22 +100,22 @@ export class SolutionsComponent implements OnInit {
               {
                 bHdng: `Streamlined Onboarding`,
                 bContent: `Effortlessly integrate new users into your ecosystem with precision and speed.`,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Streamlined Onboarding.svg'
               },
               {
                 bHdng: `Airtight Access Controls`,
                 bContent: `Enjoy the peace of mind that comes with robust role-based access controls, tailored to your organization's unique needs.`,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Airtight Access Control.svg'
               },
               {
                 bHdng: `Strategic Advantage`,
                 bContent: `Transform identity management from a compliance necessity into a strategic advantage, aligning it with your organizational goals.`,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Strategic Advantage.svg'
               },
               {
                 bHdng: `Enhanced Security Posture`,
                 bContent: `IGA enhances security by managing identities and access, reducing the impact of insider threats and external attacks on sensitive data. `,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Enhanced Security Posture.svg'
               }
             ]
           };
@@ -184,22 +184,22 @@ export class SolutionsComponent implements OnInit {
               {
                 bHdng: `Frictionless Registration`,
                 bContent: `Craft seamless and secure user onboarding experiences, minimizing friction, and maximizing security.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Enhanced Security Posture.svg'
               },
               {
                 bHdng: `Secure SSO Experiences`,
                 bContent: `Elevate trust with centralized access and robust authentication, ensuring a secure and user-friendly Single Sign-On process.`,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Secure SSO Experiences.svg'
               },
               {
                 bHdng: `Valuable Insights`,
                 bContent: `Gain invaluable insights into user behavior through sophisticated analytics, enhancing your understanding of customer interactions.`,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Valuable Insights.svg'
               },
               {
                 bHdng: `Personalized User Experiences`,
                 bContent: `Tailor interactions based on behavioral analytics, creating personalized and engaging experiences that foster customer loyalty.`,
-                image: '../../assets/images/SolutionThumbnail-01-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Personalized User Experiences.svg'
               }
             ]
           };
@@ -268,25 +268,25 @@ export class SolutionsComponent implements OnInit {
               {
                 bHdng: `Just-in-Time Access`,
                 bContent: `Mitigate risks with precisely-timed privileged access, ensuring that access is granted only when needed.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Just in time Access.svg'
 
               },
               {
                 bHdng: `Comprehensive Session Management`,
                 bContent: `Record and manage sessions efficiently, enhancing visibility and accountability.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Comprehensive Session management.svg'
 
               },
               {
                 bHdng: `Efficient Least Privilege`,
                 bContent: `Redefine access by enforcing least privilege measures, minimizing potential attack surfaces.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Efficient Least Privilege.svg'
 
               },
               {
                 bHdng: `Proactive Security Measures`,
                 bContent: `Anticipate and address potential security risks before they escalate, ensuring a proactive defense strategy.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Proactive Security Measures.svg'
 
               }
             ]
@@ -351,25 +351,25 @@ export class SolutionsComponent implements OnInit {
               {
                 bHdng: `Streamlined Single Sign-On`,
                 bContent: `Simplify access with seamless Single Sign-On, reducing the complexity of multiple credentials.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Streamlined Single Sign On.svg'
 
               },
               {
                 bHdng: `Fortified Multi-Factor Authentication`,
                 bContent: `Strengthen security with robust authentication, ensuring only authorized users gain access.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Fortified MultiFactor Authentication.svg'
 
               },
               {
                 bHdng: `Efficient Policy Management`,
                 bContent: `Navigate access policies with finesse and efficiency, ensuring a balance between security and user convenience.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Efficient Policy Management.svg'
 
               },
               {
                 bHdng: `User Convenience Optimization`,
                 bContent: `Optimize user experience by balancing security measures with streamlined access, promoting a user-friendly environment.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__User Convenience Optimization.svg'
 
               }
             ]
@@ -431,7 +431,7 @@ export class SolutionsComponent implements OnInit {
                 bContent: `Disconnected tools - Lack of automation and integration -Attackers increasingly “live off the land” and use techniques that won’t trigger individual security defenses.
                 Security analysts workflow complexity – Investigate multiple tools and challenges in determining priority & remediation steps. Build play books and delayed response.
                 Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Technology.svg'
 
               },
               {
@@ -439,14 +439,14 @@ export class SolutionsComponent implements OnInit {
                 bContent: `Evolving threat landscape - Cybercriminals remain adept at successfully infiltrating organizations across the globe
                 Process latency - Both environments and processes evolve faster than people’s understanding of them. So, processes lag the environment, and people lag the processes.
                 Outdated detection - Attackers bypass defenses due to noisy, outdated, and ineffective detection mechanisms.`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Process.svg'
 
               },
               {
                 bHdng: `People`,
                 bContent: `Staffing, Skill and knowledge shortage – Knowledge shortage is closely related to skills shortage. Even those well versed in working all the systems management tools can fail if they know too little about the systems environment being protected.
                 Struggle to keep up - Attackers use automation to overwhelm defenders, who have difficulty evaluating many fast-moving parts at once`,
-                image: '../../assets/images/SolutionThumbnail-01.svg'
+                image: '../../assets/images/All_Solutions/Solutions__People.svg'
 
               }
             ]

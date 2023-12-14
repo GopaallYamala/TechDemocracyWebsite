@@ -41,12 +41,13 @@
           <li class="nav-item active" (click)="navToPages('/partners')">
             <a class="nav-link">Partners</a>
           </li>
-          <li (click)="showResourcesNav()" class="nav-item services-menu">
+          <!-- (click)="showResourcesNav()" -->
+          <li (click)="navToPages('/resources')"  class="nav-item services-menu">
             <div class="nav-link cursor flex-row-nowrap">
               <span class="{{resourcesMenu?'nav-active':''}}">Resources</span>
-              <svg-icon-component *ngIf="!resourcesMenu" [name]="'expand_more'"></svg-icon-component>
+              <!-- <svg-icon-component *ngIf="!resourcesMenu" [name]="'expand_more'"></svg-icon-component>
               <svg-icon-component class="{{resourcesMenu?'nav-active':''}}" *ngIf="resourcesMenu"
-                [name]="'expand_less'"></svg-icon-component>
+                [name]="'expand_less'"></svg-icon-component> -->
             </div>
           </li>
           <li class="nav-item" (click)="showCompanyMenu()">
