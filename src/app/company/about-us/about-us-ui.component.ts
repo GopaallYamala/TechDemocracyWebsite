@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 export class AboutUsUIComponent {
   aboutUsData = {
     title: 'ABOUT US',
-    heading: 'Your Trusted Identity Security Advisory Consultant',
-    subHeading: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.',
-    solutionName: 'Partners',
+    heading: 'TechDemocracy - Your Trusted',
+    subHeading: 'Securing Your Trust, Protecting Your Digital Frontier. Your Safety, Our Priority.',
+    solutionName: 'Identity Security Advisory',
     displayBtn: false,
     solutionContent: '',
     solutionImg: '../../assets/images/partners-img.JPG'
