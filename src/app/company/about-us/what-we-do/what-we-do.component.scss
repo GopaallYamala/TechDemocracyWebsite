@@ -5,26 +5,57 @@
         font-size: 12px;
         font-weight: 400;
       }
+      p {
+        margin-bottom: 0 !important;
+      }
     }
+    // .what-we-do-list {
+    //   list-style: none;
+    //   padding: 0;
+    //   li::before {
+    //     content: url('../../../../assets/images/chevron-right-img.png');
+    //     position: relative;
+    //     bottom: -6px;
+    //     display: inline-block;
+    //   }
+    //   li::after {
+    //     content: '';
+    //     border-bottom: 1px solid #CACACA;
+    //     width: 70%;
+    //     display: block;
+    //     position: relative;
+    //     left: 1.75rem;
+    //     top: 0.25rem;
+    //   }
+    // }
+
     .what-we-do-list {
+      margin-top: 1rem;
       list-style: none;
       padding: 0;
+      align-items: center;
+  
       li::before {
-        content: url('../../../../assets/images/chevron-right-img.png');
+        content: url('../../../../assets/images/chevron-rightarrow.png');
+        transform: scale(.7);
         position: relative;
-        bottom: -6px;
+        bottom: -5px;
         display: inline-block;
+        line-height: 2rem;
+        padding-right: 1rem;
       }
       li::after {
         content: '';
-        border-bottom: 1px solid #CACACA;
-        width: 70%;
+        // border-bottom: 1px solid #CACACA;
+        width: 100%;
         display: block;
         position: relative;
         left: 1.75rem;
         top: 0.25rem;
       }
     }
+
+
 
     .about-us-secondary {
       display: flex;

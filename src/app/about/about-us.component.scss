@@ -66,6 +66,10 @@
     border-radius: 15px;
   }
 
+  .yt-vid-container{
+    padding-right: 3rem;
+  }
+
   @media screen and (max-width: 750px) {
     iframe {
       max-width: 100% !important;
