@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 
 export class AboutUsUIComponent {
   aboutUsData = {
-    title: 'ABOUT US',
-    heading: 'Your Trusted Identity Security Advisory Consultant',
-    subHeading: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.',
-    solutionName: 'Partners',
+    title: 'About Us',
+    heading: 'TechDemocracy - Your Trusted Identity Security Advisory',
+    subHeading: 'Securing Your Trust, Protecting Your Digital Frontier. Your Safety, Our Priority.',
+    solutionName: '',
     displayBtn: false,
     solutionContent: '',
-    solutionImg: '../../assets/images/partners-img.JPG'
+    solutionImg: '../../assets/images/heroimages/About_us.png'
   }
 }
