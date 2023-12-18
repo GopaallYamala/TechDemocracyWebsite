@@ -14,5 +14,25 @@ export class ContactInfoComponent implements OnInit {
   }
 
   display: any;
+  emailObj: any;
+
+  sendMessage() {
+    this.emailObj = {
+      from: 'no-reply@techdemocracy.com',
+      to: 'lakshman.kotipalli@techdemocracy.com, ramu.vundavelli@techdemocracy.com',
+      subject: 'test sendmail',
+      html: 'Mail of test sendmail ',
+    }
+    this.callSendMail(this.emailObj);
+  }
+
+  callSendMail(data) {
+    // const sendmail = require('sendmail')();
+
+    // sendmail(data, function (err, reply) {
+    //   console.log(err && err.stack);
+    //   console.dir(reply);
+    // });
+  }
 
 }
