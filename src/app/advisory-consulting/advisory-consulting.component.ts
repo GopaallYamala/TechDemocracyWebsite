@@ -10,13 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 
 export class AdvisoryConsultingComponent implements OnInit {
   solutionData: any = {
-    title: 'Our Services',
+    title: 'Services',
     heading: 'Your Trusted Identity Security',
     subHeading: 'Leverage our 20+ years of IAM experience to choose the right tools, process, and investment for your industry.',
     solutionName: 'Advisory Consultant',
     solutionContent: '',
     // solutionImg: '../../assets/images/Solutions-Page.png',
-    solutionImg: ''
+    solutionImg: '../../assets/images/heroimages/About_us.png'
   };
   advAssmtDataObj: any = {
     heading: '',
@@ -55,13 +55,13 @@ export class AdvisoryConsultingComponent implements OnInit {
       switch (title) {
         case 'Advisory Consulting':
           this.solutionData = {
-            title: 'Our Services',
+            title: 'Services',
             heading: 'Identity Security Advisory ',
             subHeading: 'We decipher your business challenges, align your Identity security landscape with industry trends, and chart a roadmap for efficiency, risk reduction, and digital transformation.',
             solutionName: '',
             solutionContent: '',
             // solutionImg: '../../assets/images/Solutions-Page.png',
-            solutionImg: ''
+            solutionImg: '../../assets/images/heroimages/Advisory_Consulting.png'
           };
           this.advAssmtDataObj = {
             heading: 'We Advise',
@@ -87,13 +87,13 @@ export class AdvisoryConsultingComponent implements OnInit {
           break;
         case 'Implementation Service':
           this.solutionData = {
-            title: 'Our Services',
+            title: 'Services',
             heading: 'Identity Security Implementation',
             subHeading: 'From system onboarding, migration from legacy Identity security platforms, and reengineering, we leverage industry expertise to transform your Identity Security capabilities, seamlessly.',
             solutionName: '',
             solutionContent: '',
             // solutionImg: '../../assets/images/Solutions-Page.png',
-            solutionImg: ''
+            solutionImg: '../../assets/images/heroimages/Implementation_Services.png'
           };
           this.advAssmtDataObj = {
             heading: 'We Implement',
@@ -119,13 +119,13 @@ export class AdvisoryConsultingComponent implements OnInit {
           break;
         case `Operations & Support`:
           this.solutionData = {
-            title: 'Our Services',
+            title: 'Services',
             heading: 'Operationalizing your Identity Security',
             subHeading: 'We manage your Identity security environment, delivering tailored outcomes and continuous improvement insights.',
             solutionName: '',
             solutionContent: '',
             // solutionImg: '../../assets/images/Solutions-Page.png',
-            solutionImg: ''
+            solutionImg: '../../assets/images/heroimages/Operations_Support.png'
           };
           this.advAssmtDataObj = {
             heading: 'Why Operate and Support',
@@ -151,13 +151,13 @@ export class AdvisoryConsultingComponent implements OnInit {
           break;
         case `Manage Services`:
           this.solutionData = {
-            title: 'Our Services',
+            title: 'Services',
             heading: 'Identity Security Managed Services',
             subHeading: 'Beyond support, we ensure your Identity security ecosystem stays agile for your evolving digital business needs.',
             solutionName: '',
             solutionContent: '',
             // solutionImg: '../../assets/images/Solutions-Page.png',
-            solutionImg: ''
+            solutionImg: '../../assets/images/heroimages/Privileged_Access_Management.png'
           };
           this.advAssmtDataObj = {
             heading: 'We provide Managed Services',

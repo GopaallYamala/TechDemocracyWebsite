@@ -39,7 +39,7 @@
   }
 
   @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    padding: 0% 10%;
+    padding: 0% 11%;
     // height: auto;
   }
 
@@ -62,10 +62,13 @@
     span,
     h1,
     p {
+      word-break: break-word;
+    word-wrap: break-word;
       width: 85%;
       color: #ffffff;
     }
   }
+
 }
 
 .carousel-control-prev,
@@ -80,8 +83,13 @@
 
 .tdc-carousel-container .carousel-inner {
   max-height: initial;
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    width: 100%;
+    // height: auto;
+  }
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
     width: 85%;
+    // height: auto;
   }
 }
 
