@@ -26,6 +26,12 @@
 
         img {
           position: absolute;
+          // position: absolute;
+          top: 20%;
+          border-radius: 16px;
+          width: 96%;
+          height: 24rem;
+          object-fit: cover
         }
       }
     }
@@ -46,8 +52,8 @@
       align-items: center;
     }
     .updated-on {
-      font-size: 0.9rem;
-      font-weight: 300;
+      // font-size: 0.9rem;
+      // font-weight: 300;
       color: gray;
     }
     .caseStudy {
