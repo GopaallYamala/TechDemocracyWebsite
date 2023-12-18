@@ -100,22 +100,22 @@ export class SolutionsComponent implements OnInit {
               {
                 bHdng: `Streamlined Onboarding`,
                 bContent: `Effortlessly integrate new users into your ecosystem with precision and speed.`,
-                image: '../../assets/images/All_Solutions/Solutions__Streamlined Onboarding.svg'
+                image: '../../assets/images/All_Solutions/solutions__Streamlined_Onboarding.svg'
               },
               {
                 bHdng: `Airtight Access Controls`,
                 bContent: `Enjoy the peace of mind that comes with robust role-based access controls, tailored to your organization's unique needs.`,
-                image: '../../assets/images/All_Solutions/Solutions__Airtight Access Control.svg'
+                image: '../../assets/images/All_Solutions/solutions__Airtight_Access_Control.svg'
               },
               {
                 bHdng: `Strategic Advantage`,
                 bContent: `Transform identity management from a compliance necessity into a strategic advantage, aligning it with your organizational goals.`,
-                image: '../../assets/images/All_Solutions/Solutions__Strategic Advantage.svg'
+                image: '../../assets/images/All_Solutions/solutions__Strategic_Advantage.svg'
               },
               {
                 bHdng: `Enhanced Security Posture`,
                 bContent: `IGA enhances security by managing identities and access, reducing the impact of insider threats and external attacks on sensitive data. `,
-                image: '../../assets/images/All_Solutions/Solutions__Enhanced Security Posture.svg'
+                image: '../../assets/images/All_Solutions/solutions__Enhanced_Security_Posture.svg'
               }
             ]
           };
