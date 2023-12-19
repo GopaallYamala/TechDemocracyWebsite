@@ -12,6 +12,7 @@ export class ResourcesCategoriesComponent implements OnChanges {
   @Input() resourceObj: any;
   resourceJson: any;
   selectedCategorie: string = 'CaseStudy';
+  selectedCategorieList: any;
 
   constructor(private readonly router: Router) { }
 
@@ -78,18 +79,24 @@ export class ResourcesCategoriesComponent implements OnChanges {
     if (changes) {
       this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
       console.log(this.resourceJson);
+      this.changeValue("CaseStudy");
 
     }
   }
 
   SelectCategorie(item) {
     this.selectedCategorie = item;
+    this.changeValue(item);
+  }
+
+  changeValue(value: any) {
+    this.selectedCategorieList = this.resourceJson.filter(resource => resource?.attributes?.ResourceType == value);
   }
 
   open(id) {
     let index = this.resourceJson.map(res => res.id).indexOf(id);
     if (index !== -1) {
-      this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]) }]);
+      this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
     }
   }
 }

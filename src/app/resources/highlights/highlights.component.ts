@@ -1,4 +1,6 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -11,17 +13,24 @@ export class ResourcesHighlightsComponent implements OnInit, OnChanges {
   @Input() resourceObj: any;
   resourceJson: any;
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
 
   ngOnInit() {
-    console.log(this.resourceObj);
+
   }
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes) {
       this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
       console.log(this.resourceJson);
+    }
+  }
+
+  open(id) {
+    let index = this.resourceJson.map(res => res.id).indexOf(id);
+    if (index !== -1) {
+      this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
     }
   }
 

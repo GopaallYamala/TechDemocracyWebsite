@@ -10,8 +10,9 @@
       <div class="col-md-9 categories">
         <div class="row">
           <!-- | filter: { episodeId: searchEpisodeById } -->
-          <ng-container *ngFor="let resource of resourceJson | slice:0:categoriesIndex; let i = index">
-            <div (click)="open(resource.id)" *ngIf="resource?.attributes?.ResourceType === selectedCategorie;else empty"
+          <ng-container *ngFor="let resource of selectedCategorieList | slice:0:categoriesIndex; let i = index">
+            <div (click)="open(resource?.id)"
+              *ngIf="resource?.attributes?.ResourceType === selectedCategorie;else empty"
               class="flex-col-nowrap col-md-4 gutter-bottom-1 cursor">
               <!-- <div class="caseStudy"></div> -->
               <!-- <img class="casestudyimg" src="../../assets/images/Resource/TelecomInd.png" /> -->
@@ -24,13 +25,13 @@
                 <!-- <a href="#">{{sample.read}}</a> -->
               </article>
             </div>
-            <ng-template #empty>
+            <!-- <ng-template #empty>
               <ng-container *ngIf="i === 0">
                 <h4>No data avilable</h4>
               </ng-container>
-            </ng-template>
+            </ng-template> -->
           </ng-container>
-          <ng-container *ngIf="resourceJson?.length === 0">
+          <ng-container *ngIf="selectedCategorieList?.length === 0">
             <h4>No data avilable</h4>
           </ng-container>
         </div>

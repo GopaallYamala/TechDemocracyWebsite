@@ -20,7 +20,7 @@
         <div class="col-md-6 col-xs-12 first-col"
           *ngFor="let resource of resourceJson | slice: (resourceJson?.length > 2 ? resourceJson?.length - 2 : 0); index as i">
           <section class="prefered-caseStudie py-3">
-            <article class="resourceimg">
+            <article (click)="open(resource?.id)" class="resourceimg cursor">
               <img src="{{'http://localhost:1337' + resource?.attributes?.HeroImage?.data?.attributes?.url}}"
                 alt="{{resource?.attributes?.HeroImage?.data?.attributes?.hash}}">
             </article>

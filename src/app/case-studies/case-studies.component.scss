@@ -5,12 +5,7 @@
   margin-bottom: 14rem;
   position: relative;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    #0c1e5a 0%,
-    #011d59 51%,
-    #08468e 85%
-  );
+  background: linear-gradient(90deg, #0c1e5a 0%, #011d59 51%, #08468e 85%);
 
   .casestudies-section {
     align-items: center;
@@ -92,6 +87,11 @@
         border-radius: 16px;
         margin-right: 2rem;
         border: none;
+
+        img {
+          height: 100%;
+          border-radius: inherit;
+        }
       }
       .card-content {
         width: 15rem;

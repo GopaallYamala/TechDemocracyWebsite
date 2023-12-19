@@ -1,4 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'resources-context',
@@ -20,6 +21,10 @@ export class ResourcesContextComponent implements OnInit, OnChanges {
   listOfUsers = [{ role: 'Panelist', name: 'Divyansh Chavan', designation: 'Chief Technology Officer' }, { role: 'Panelist', name: 'Manohar Ram', designation: 'Accounting Supervisor' }, { role: 'Panelist', name: 'Ninarika Sengupta', designation: 'Product Developer' }, { role: 'Moderator', name: 'Nayan Bhavsar', designation: 'Cloud System Adminstrator' }]
 
 
+  constructor(private router:Router){
+
+  }
+
   ngOnInit() {
     console.log(this.resourceObj);
   }
@@ -38,6 +43,11 @@ export class ResourcesContextComponent implements OnInit, OnChanges {
     this.upcomingEventIndex = this.upcomingEvents.length;
   }
 
-
+  open(id) {
+    let index = this.resourceJson.map(res => res.id).indexOf(id);
+    if (index !== -1) {
+      this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
+    }
+  }
 
 }

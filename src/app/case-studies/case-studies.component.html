@@ -11,7 +11,7 @@
           <button *ngFor="let btn of buttonsList" type="button" class="btn btn-outline-light">{{btn}}</button>
           <section class="casestudies-action">
             <div class="slideshow-container">
-              <div class="left" (click)="scrollLeft()">
+              <div *ngIf="listOfCaseStudies?.length >= 6" class="left" (click)="scrollLeft()">
                 <svg-icon-component [name]="'navigate_before'"></svg-icon-component>
               </div>
               <!-- [ngClass]="{'disabled':currentPage === 1}" -->
@@ -19,19 +19,22 @@
               <div #widgetsContent id="Casestudies" class="cards">
                 <div class="overflow flex-row-nowrap">
                   <!-- [ngStyle]="{'width': overflowWidth, 'left': pagePosition}" -->
-                  <article class="casestudie-card-body" *ngFor="let i of arr; let index = index">
+                  <article class="casestudie-card-body" *ngFor="let resource of listOfCaseStudies; let index = index">
                     <div class="card">
                       <!-- [ngStyle]="{'width': cardWidth}" -->
                       <!-- <span>{{i}}</span> -->
+                      <img src="{{'http://localhost:1337' + resource?.attributes?.HeroImage?.data?.attributes?.url}}"
+                        alt="{{resource?.attributes?.HeroImage?.data?.attributes?.hash}}">
                     </div>
                     <div class="card-content">
-                      <p>Legacy Identity Technology to Modern Identity Governance Case Study</p>
+                      <!-- <p>Legacy Identity Technology to Modern Identity Governance Case Study</p> -->
+                      <p>{{resource?.attributes?.Comments}}</p>
                     </div>
                   </article>
                 </div>
               </div>
               <!-- [ngClass]="{'disabled':currentPage === totalPages}" -->
-              <div class="right" (click)="scrollRight()">
+              <div *ngIf="listOfCaseStudies?.length >= 6" class="right" (click)="scrollRight()">
                 <svg-icon-component [name]="'navigate_next'"></svg-icon-component>
               </div>
             </div>
