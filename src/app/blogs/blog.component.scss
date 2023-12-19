@@ -1,8 +1,11 @@
+@import "../../assets/styles/blog-styles";
+
 .blog-container {
   margin-top: 125px;
   @media screen and (max-width: 992px) {
-    margin-top: 0;
+    margin-top: 80px;
   }
+ 
   .blog-header {
     .blog-headding-main {
       background: #111111;
@@ -12,25 +15,39 @@
       align-items: center;
     }
     .blog-header-content {
-      background: #e9ecf5;
-      padding-top: 2rem;
+      background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
       min-height: 17rem;
-      .resource-type {
-        color: red;
-      }
-      .flat-svg {
-        width: 5%;
-      }
+      height: auto;
+      margin-bottom: 2rem;
       .hero-image {
         position: relative;
 
         img {
           position: absolute;
+          // position: absolute;
+          top: 15%;
+          border-radius: 24px;
+          width: 96%;
+          height: 24rem;
+          object-fit: cover;
+          @media screen and (max-width: 992px) {
+            position: relative;
+            top: 0;
+            margin-bottom: 2rem;
+          }
         }
       }
     }
   }
   .blog-body {
+    
+    .textedit{
+      padding-right: 8rem;
+      @media screen and (max-width: 992px) {
+        padding-right: 0rem;
+      }
+    }
+
     .share-link {
       display: flex;
       align-items: center;
@@ -45,31 +62,49 @@
       justify-content: center;
       align-items: center;
     }
-    .updated-on {
-      font-size: 0.9rem;
-      font-weight: 300;
-      color: gray;
-    }
+
     .caseStudy {
       min-height: 10rem;
       min-width: 6rem;
       background-color: #edf2fb;
-
       border-radius: 4px;
       margin-bottom: 0.5rem;
     }
-    .iga {
-      img {
-        float: right;
-        margin: 0 20px 20px 20px;
-        width: 40%;
-        height: 200px;
-      }
 
-      p {
-        text-align: justify;
-        // text-indent: 2em;
+    .casestudyimg {
+      width: 100%;
+      height: auto;
+    }
+  
+    img.casestudyimg {
+      border-radius: 12px !important; 
+      filter: saturate(80%);
+    }
+  
+    label {
+      color: #dc3545;
+      font-size: 14px !important;
+    }
+    a {
+      color: #212529;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.85;
+    }
+    ul, li {
+      list-style-type: none;
+    }
+  
+    .list-casestudy {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
       }
+    }
+
+    .stickycase {
+      top : 165px
     }
   }
 }

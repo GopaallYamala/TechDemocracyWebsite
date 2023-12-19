@@ -10,7 +10,7 @@ export class PartnersComponent {
     title: 'Partners',
     heading: 'We are Technologically Partner with major Identity Giants in the World',
     subHeading: '',
-    solutionName: 'Partners',
+    solutionName: '',
     displayBtn: false,
     solutionContent: ' ',
     solutionImg: '../../assets/images/Solutions-Page.png'

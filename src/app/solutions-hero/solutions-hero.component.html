@@ -1,4 +1,4 @@
-<section class="solutions-hero-container {{solutionName == 'services'?'service-bottom-fix':''}}">
+<section class="solutions-hero-container {{solutionName == 'Services'?'service-bottom-fix':''}}">
   <section class="px-4 py-5 solutions-hero-section">
     <div class="container">
       <div class="row">
@@ -15,7 +15,7 @@
             <!-- <strong>{{dataObj.solutionName}}</strong> -->
             {{dataObj.solutionContent}}
           </p>
-          <img src="{{dataObj.solutionImg}}" class="{{dataObj.solutionName == 'services' || dataObj.solutionName == 'Partners'?'service-img':'absolute-img'}} solutions-img" alt="">
+          <img src="{{dataObj.solutionImg}}" class="{{dataObj.title == 'Services' || dataObj.title == 'About Us' || dataObj.title == 'Partners'?'service-img':'absolute-img'}} solutions-img" alt="">
         </div>
       </div>
     </div>

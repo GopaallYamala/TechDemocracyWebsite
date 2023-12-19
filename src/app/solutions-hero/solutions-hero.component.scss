@@ -25,6 +25,7 @@
 background: linear-gradient(105deg, #173cb4 0%, #009dff 49.9%, #173cb4 100%);
     color: #ffffff;
     position: relative;
+    min-height: 360px;
     .contact-expert {
       margin-top: 2rem;
     }
@@ -43,14 +44,18 @@ background: linear-gradient(105deg, #173cb4 0%, #009dff 49.9%, #173cb4 100%);
     top: 75%;
     border-radius: 16px;
     z-index: 3;
+    height: 24rem;
+    object-fit: cover;
   }
   .service-img {
     position: absolute;
     // right: 16%;
     top: 20%;
     border-radius: 16px;
-    width: 100%;
-    height: auto;
+    width: 95%;
+    height: 24rem;
+    object-fit: cover;
+    // height: auto;
   }
 }
 

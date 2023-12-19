@@ -83,7 +83,7 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Identity Governance Solutions',
             solutionContent: 'Our Identity Governance Administration (IGA) solutions serve as the bedrock of a resilient digital identity ecosystem, ensuring that businesses can navigate the complexities of identity management with confidence and precision..',
-            solutionImg: '../../assets/images/Solutions-Page.png ',
+            solutionImg: '../../assets/images/heroimages/SolutionheroImgSample.png',
           };
           this.igaData = {
             solutionHdng: 'Solve key Identity Governance and Administration challenges',
@@ -130,32 +130,32 @@ export class SolutionsComponent implements OnInit {
               {
                 title: `Identity life cycle management`,
                 info: `Identity lifecycle management ensures secure and compliant user access, covering creation, modification, and deactivation throughout their association with an organization.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Identity life cycle management.svg`
               },
               {
                 title: `User Provisioning and Deprovisioning`,
                 info: `Automated user provisioning and deprovisioning streamline access management, ensuring efficient and secure control over user privileges.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__User Provisioning and Deprovisioning.svg`
               },
               {
                 title: `Access Certiﬁcation`,
                 info: `Verify and approve user access rights, ensuring alignment with security policies and compliance standards, enhancing governance and control.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Access Certiﬁcation.svg`
               },
               {
                 title: `Certify User Access`,
                 info: `Certify user access to validate alignment with security policies, ensuring compliance and strengthening overall governance and control.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Certify User Access.svg`
               },
               {
                 title: `Access Request`,
                 info: `Initiate access requests to obtain permissions, streamlining user access while adhering to security policies and compliance requirements`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Access Request.svg`
               },
               {
                 title: `Segregation of Duties (SOD)`,
                 info: `Segregation of Duties (SoD) enforces separation among conflicting tasks, preventing potential conflicts and reducing the risk of fraud or errors.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Segregation of Duties (SOD).svg`
               }
             ]
           }
@@ -167,7 +167,7 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Customer Identity & Access Management',
             solutionContent: "TechDemocracy's Customer Identity and Access Management (CIAM) solutions are crafted with a profound understanding that identities are not just data points but pivotal elements of trust-building in the digital realm.",
-            solutionImg: '../../assets/images/SolutionThumbnailLower.png'
+            solutionImg: '../../assets/images/heroimages/Customer_Identity_Access_Management.png'
           };
           this.igaData = {
             solutionHdng: 'Solve key Identity Governance and Administration challenges',
@@ -214,32 +214,32 @@ export class SolutionsComponent implements OnInit {
               {
                 title: `User registration`,
                 info: `Efficient user registration in Customer Identity & Access Management (CIAM) ensures seamless onboarding, prioritizing security and user experience.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__User registration.svg`
               },
               {
                 title: `Identity proofing`,
                 info: `In CIAM, identity proofing ensures robust user authentication, bolstering security measures and fostering trust in digital interactions.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Identity proofing.svg`
               },
               {
                 title: `SSO (Single Sign On)`,
                 info: `CIAM's SSO streamlines user access, offering a secure and seamless experience by allowing authentication across multiple services with a single login.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__SSO (Single Sign On).svg`
               },
               {
                 title: `Single Portal Access all the applications`,
                 info: `Streamline user experience with CIAM's single portal, granting access to all applications for a unified and efficient interaction.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Single Portal Access all the applications.svg`
               },
               {
                 title: `MFA (Multi factor Authentication)`,
                 info: `In CIAM, MFA adds an extra layer of security by requiring users to provide multiple authentication factors, ensuring robust protection and access control.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__MFA (Multi factor Authentication).svg`
               },
               {
                 title: `Preference Management`,
                 info: `In CIAM, preference management empowers users to customize their settings, fostering personalized and user-centric experiences for enhanced satisfaction and engagement.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Preference Management.svg`
               }
             ]
           };
@@ -251,7 +251,7 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Previliged Access Management',
             solutionContent: "TechDemocracy's Privileged Access Management (PAM) solutions are meticulously designed to not only secure critical assets but to redefine how organizations perceive and manage privileged access.",
-            solutionImg: '../../assets/images/Solutions-Page.png '
+            solutionImg: '../../assets/images/heroimages/Privileged_Access_Management.png'
           };
           this.igaData = {
             solutionHdng: 'Solve key Identity Governance and Administration challenges',
@@ -302,27 +302,27 @@ export class SolutionsComponent implements OnInit {
               {
                 title: `Credential Vaulting & Password Management (Just in-Time)`,
                 info: `PAM ensures security with credential vaulting and just-in-time password management, minimizing exposure and enhancing privileged access controls effectively.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Credential Vaulting & Password Management (Just in-Time).svg`
               },
               {
                 title: `Session Recording &Management`,
                 info: `PAM's session recording and management track and monitor privileged user activities, enhancing security, compliance, and incident response capabilities.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Session Recording &Management.svg`
               },
               {
                 title: `Least Privilege and End Point Protection`,
                 info: `Least privilege and endpoint protection in PAM bolster security by limiting access and fortifying endpoints against potential threats effectively.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Least Privilege and End Point Protection.svg`
               },
               {
                 title: `Secret Management`,
                 info: `PAM's secret management safeguards sensitive information, ensuring secure storage, controlled access, and compliance with robust security protocols.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Secret Management.svg`
               },
               {
                 title: `Application Privileged Account Management (APAM)`,
                 info: `APAM secures and manages privileged accounts tied to applications, thwarting unauthorized access and ensuring adherence to security policies effectively.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Application Privileged Account Management (APAM).svg`
               },
             ]
           };
@@ -334,7 +334,7 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Access Management',
             solutionContent: "TechDemocracy's Access Management (AM) solutions rise to the occasion, not just as gatekeepers but as architects of a secure, user-friendly access experience.",
-            solutionImg: '../../assets/images/Solutions-Page.png '
+            solutionImg: '../../assets/images/heroimages/Privileged_Access_Management.png'
           };
           this.igaData = {
             solutionHdng: 'Solve key Identity Governance and Administration challenges',
@@ -385,22 +385,22 @@ export class SolutionsComponent implements OnInit {
               {
                 title: `Single Sign-On`,
                 info: `SSO simplifies user access, enabling a single login for multiple applications, promoting convenience, and ensuring security in access management.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Single Sign-On.svg`
               },
               {
                 title: `MFA`,
                 info: `MFA enhances security by requiring users to provide multiple forms of identification, bolstering access management beyond traditional password measures.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__MFA.svg`
               },
               {
                 title: `Federation (SAML/0Auth/Open ID Connect)`,
                 info: `Federation with SAML, OAuth, and OpenID Connect enables secure and seamless user authentication and authorization across various systems in access management.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Federation (SAML-0Auth-Open ID Connect).svg`
               },
               {
                 title: `Policy Management`,
                 info: `Policy Management enforces rules on user permissions, ensuring adherence to security policies and regulatory requirements for effective access control governance.`,
-                icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+                icon: `../../assets/images/Icons/Icon__Policy Management.svg`
               }
             ]
           };
@@ -412,7 +412,7 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'An essential to secure digital business',
             solutionName: 'Operations Center',
             solutionContent: "Cyber Security Operations Center encompasses Technologies, Processes and People to defend IT, OT/ICT infrastructure like data, applications, assets and networks from cyber attacks. It is required to enable best cyber resilience by providing situational awareness, real-time alerting, swift incident response and decisive remediations",
-            solutionImg: '../../assets/images/Solutions-Page.png '
+            solutionImg: '../../assets/images/heroimages/Managed_SOC.png'
           };
           this.igaData = {
             solutionHdng: 'SOC Service Models',
@@ -462,22 +462,22 @@ export class SolutionsComponent implements OnInit {
               {
                 title: `Managed SOC with aiXDR`,
                 info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI+VA+EDR: Comprehensive Cybersecurity for Digital-Era) a holistic approach to cybersecurity by gathering deep insights from endpoints, servers, clouds, network devices, applications, IOT, and OT and applying user identity, threat intelligence, and vulnerability assessment to establish threat profiles, generate threat indicators, raise essential alerts, and offer remediation path – automated or triaged.`,
-                icon: ``
+                icon: `../../assets/images/Icons/Icon__Managed SOC with aiXDR.svg`
               },
               {
                 title: `Managed SOC with aiSIEM`,
                 info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI: Comprehensive Cybersecurity for Digital-Era) aiSIEM platform augments and automates security services with our AI and ML powered solutions. It delivers continuous coverage by collecting telemetry from logs, identity management, networks, endpoints, clouds and applications.`,
-                icon: ``
+                icon: `../../assets/images/Icons/Icon__Managed SOC with aiSIEM.svg`
               },
               {
                 title: `Cyber Advisory Services`,
                 info: `Threat and security assessment Secure business strategies, products, and services. Support business growth by providing comprehensive security risk. A deep understanding of your business priorities enables us to provide strategic advice and a ‘secure by design’ approach. With our expertise and experience, we efficiently and flexibly assist our clients in the planning and implementation of their security programs`,
-                icon: ``
+                icon: `../../assets/images/Icons/Icon__Cyber Advisory Services.svg`
               },
               {
                 title: `Integrated Threat Management (Common threat intelligence + Threat Hunting)`,
                 info: `ITM is a security approach that consolidates different security components into a single platform or application for an enterprise IT architecture. ITM evolved as a response to increasingly complex and frequent malicious attacks by hackers and others intent on damaging systems. ITM solutions address different types of attacks, such as malware and spam.`,
-                icon: ``
+                icon: `../../assets/images/Icons/Icon__Integrated Threat Management.svg`
               }
             ]
           };

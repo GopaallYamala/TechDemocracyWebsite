@@ -14,17 +14,18 @@
     <section class="tdc-footer-content row" data-aos="fade-up" 
     data-aos-duration="1000">
 
-      <article class="pages-menu col-md-3 col-sm-12">
-        <h3 class="text-light">Solutions</h3>
+      <article class="pages-menu col-md-4 col-sm-12">
+        <h4 class="text-light">Solutions</h4>
         <ul>
           <li><a href="#">Identity Governance & Administration (IGA)</a></li>
-          <li><a href="#">Privileged Access Management (PAM )</a></li>
-          <li><a href="#">Access Management (AM)</a></li>
           <li><a href="#">Customer Identity Access Management (CIAM)</a></li>
+          <li><a href="#">Privileged Access Management (PAM)</a></li>
+          <li><a href="#">Access Management (AM)</a></li>
+          <li><a href="#">Managed Security Operation Center (SOC)</a></li>
         </ul>
       </article>
-      <article class="col-md-3 col-sm-12">
-        <h3 class="text-light">Services</h3>
+      <article class="col-md-2 col-sm-12">
+        <h4 class="text-light">Services</h4>
         <ul>
           <li><a href="#">Advisory Consulting</a></li>
           <li><a href="#">Implementation Services</a></li>
@@ -33,8 +34,8 @@
         </ul>
         <!-- <address>2005 Stokes Isle Apt. 896, Venaville 10010, USA info@yourdomain.com (+68) 120034509</address> -->
       </article>
-      <article class="col-md-3 col-sm-12">
-        <h3 class="text-light">Our Company</h3>
+      <article class="col-md-3 col-sm-12 footerleft">
+        <h4 class="text-light">Our Company</h4>
         <ul>
           <li><a href="#">About us</a></li>
           <li><a href="#">Leadership Team</a></li>
@@ -43,11 +44,11 @@
         </ul>
       </article>
       <article class="col-md-3 col-sm-12">
-        <h3 class="text-light">Head Office: United States</h3>
+        <h4 class="text-light">Head Office: United States</h4>
         <address>1 Corporate Place South Suite # 110, Piscataway, NJ 08854. Call Us : +1 732 404 8350</address>
         <p style="color: #FFFFFF;">Email us : <a href="#">solutions@techdemocracy.com</a></p>
         <div class="delivery-centers-list">
-          <h2>Delivery Centers :</h2>
+          <h4 class="text-light">Delivery Centers :</h4>
           <ul class="delivery-centers">
             <li><a href="#">Canada</a></li>
             <li><a href="#">India</a></li>
@@ -61,8 +62,9 @@
     <div class="flex-row-nowrap foot-note">
       <p class="copyright-txt">&copy; 2023 TechDemocracy LLC and/or its affiliates. All rights reserved.</p>
       <div class="footnote-links">
-        <a href="#">Privacy policy</a>
-        <a href="#">Cookie policy</a>
+        <a [routerLink]="'/privacy-policy'">Privacy policy</a>
+        <a [routerLink]="'/cookie-policy'">Cookie policy</a>
+        <a [routerLink]="'/terms-conditions'">Terms & Conditions</a>
       </div>
 
     </div>

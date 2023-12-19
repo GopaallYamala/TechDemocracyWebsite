@@ -48,6 +48,8 @@ import { NewsComponent } from 'src/app/company/news/news.component';
 import { CareersComponent } from 'src/app/company/careers/careers.component';
 import { BlogComponent } from 'src/app/blogs/blog.component';
 import { GuidingPrinciplesComponent } from 'src/app/guiding-principles/guiding-principles.component';
+import { PrivacyPolicyComponent } from 'src/app/Policies/privacy-policy.component';
+import { TermsAndConditionsComponent } from 'src/app/terms-conditions/terms-conditions.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
@@ -55,7 +57,8 @@ import { GuidingPrinciplesComponent } from 'src/app/guiding-principles/guiding-p
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
     ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent,
-    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent],
+    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, PrivacyPolicyComponent, TermsAndConditionsComponent],
+    
   imports: [
     CommonModule,
     BrowserModule,
@@ -69,7 +72,8 @@ import { GuidingPrinciplesComponent } from 'src/app/guiding-principles/guiding-p
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
     ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent,
-    GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent]
+    GoogleMapsComponent, PrivacyPolicyComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, 
+    TermsAndConditionsComponent]
 })
 
 

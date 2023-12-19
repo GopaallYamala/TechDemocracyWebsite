@@ -16,24 +16,24 @@ export class TestimonialsComponent implements OnInit {
     AOS.init();
     this.testimonialsData = [
       {
-        tContent: 'TechDemocracy has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my RoadMap.',
-        tClientImg: '../../assets/images/Partners/Sailpoint.svg',
-        tRole: 'Security Consult Advisory Manager'
+        tContent: 'TechDemocracy\'s guidance and Ping Identity\'s advanced IAM platform were a game-changer. Our user experience improved drastically, along with substantial cost savings due to minimized maintenance expenses.',
+        tClientImg: '',
+        tRole: 'IT Manager, Leading Financial Services Firm, North America'
       },
       {
-        tContent: 'TechDemocracy has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my Security of my Business.',
-        tClientImg: '../../assets/images/Partners/IBM.svg',
-        tRole: 'Senior Solutions Consultant'
+        tContent: 'Thanks to TechDemocracy and Ping Identity, our firm now boasts enhanced security, compliance, and operational efficiency. Their modernized IAM infrastructure positioned us for growth, ensuring continued success in the dynamic financial landscape.',
+        tClientImg: '',
+        tRole: 'Security Compliance Officer, Prominent Financial Services Firm'
       },
       {
-        tContent: 'TechDemocracy(Cotelligent) has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my Security of my Business.',
-        tClientImg: '../../assets/images/Partners/Ping Identity.svg',
-        tRole: 'Senior Solutions Consultant'
+        tContent: 'TechDemocracy\'s guidance and Ping Identity\'s advanced IAM platform were a game-changer. Our user experience improved drastically, along with substantial cost savings due to minimized maintenance expenses.',
+        tClientImg: '',
+        tRole: 'IT Manager, Leading Financial Services Firm'
       },
       {
-        tContent: 'TechDemocracy(Cotelligent) has been an invaluable partner for T-Mobile With TechDemocracy we believe we have built one of the industry leading IGA platforms. We are in sync as if they knew what I was thinking before I was thinking it. They have a RoadMap for my Security of my Business.',
-        tClientImg: '../../assets/images/Partners/Sailpoint.svg',
-        tRole: 'Senior Solutions Consultant'
+        tContent: 'Thanks to TechDemocracy and Ping Identity, our firm now boasts enhanced security, compliance, and operational efficiency. Their modernized IAM infrastructure positioned us for growth, ensuring continued success in the dynamic financial landscape.',
+        tClientImg: '',
+        tRole: 'Security Compliance Officer, Prominent Financial Services Firm'
       }
     ]
   }

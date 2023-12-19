@@ -52,7 +52,7 @@
     padding: 1rem 2rem;
     border: 1px solid #7070704d;
     border-radius: 30px;
-    min-height: 300px;
+    min-height: 250px;
     max-height: 300px;
     overflow-y: hidden;
 
@@ -89,12 +89,13 @@
       height: 2.5rem;
     }
     .client img {
-      width: 35%;
+      width: 30%;
       height: auto;
+      // margin-left: -5px;
     }
   }
   .role-name {
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 600;
   }
 }

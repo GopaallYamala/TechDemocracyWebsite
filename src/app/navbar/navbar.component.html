@@ -69,28 +69,28 @@
         <!-- Solutions sub-menu -->
         <div @slideDown *ngIf="solutionsMenu" id="SolutionsMenu" class="nav-info flex-row-nowrap row">
           <div class="flex-col-nowrap nav-content col" *ngFor="let solution of solutionsObj">
-            <h5 (click)="navToPages('/solutions', solution.tittle)" class="nav-title">{{solution.tittle}}</h5>
+            <h3 (click)="navToPages('/solutions', solution.tittle)" class="nav-title">{{solution.tittle}}</h3>
             <div class="nav-desc">
               <p>{{solution.desc}}</p>
             </div>
-            <div class="more-links flex-col-wrap">
+            <!-- <div class="more-links flex-col-wrap">
               <a>{{solution.stories}}</a>
               <a>{{solution.approch}}</a>
               <a>{{solution.customise}}</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Services sub-menu -->
         <div @slideDown *ngIf="displayCreateMenu" id="ServicesMenu" class="nav-info flex-row-nowrap col-md-12">
           <div class="flex-col-nowrap nav-content" *ngFor="let service of servicesObj">
-            <h5 (click)="navToPages('/adv-consulting', service.tittle)" class="nav-title">{{service.tittle}}</h5>
+            <h3 (click)="navToPages('/adv-consulting', service.tittle)" class="nav-title">{{service.tittle}}</h3>
             <div class="nav-desc">
               <p>{{service.desc}}</p>
             </div>
-            <div class="more-links flex-col-wrap">
+            <!-- <div class="more-links flex-col-wrap">
               <a>{{service.businessModel}}</a>
               <a>{{service.stories}}</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Resources sub-menu -->
@@ -124,10 +124,10 @@
               <div class="nav-desc">
                 <p>{{item.desc}}</p>
               </div>
-              <div class="more-links flex-col-wrap">
+              <!-- <div class="more-links flex-col-wrap">
                 <a>{{item.businessModel}}</a>
                 <a>{{item.stories}}</a>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
