@@ -1,13 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'resources-context',
   templateUrl: './resources-context.component.html',
   styleUrls: ['./resources-context.component.scss']
 })
-export class ResourcesContextComponent implements OnInit {
+export class ResourcesContextComponent implements OnInit, OnChanges {
 
   @Input() contextType: string;
+  @Input() resourceObj: any;
+  resourceJson: any;
 
   upcomingEvents = [1, 2, 3, 4, 5, 6];
   latestVideos = [{ type: "webinar" }, { type: "Firechart" }, { type: "Event" }, { type: "webinar" }, { type: "Firechart" }, { type: "Event" }, { type: "webinar" }, { type: "Firechart" }, { type: "Event" }];
@@ -19,7 +21,13 @@ export class ResourcesContextComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log(this.resourceObj);
+  }
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes) {
+      this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
+    }
   }
 
   viewAllVideos() {

@@ -43,12 +43,9 @@ exports.getResource = function (req, res, next) {
 };
 
 exports.updateResource = function (req, res, next) {
-  let resource = {
-    resourceJson: req.body.jsonObject,
-  };
   Resource.updateOne(
-    { _id: req.params._id },
-    resource,
+    { _id: req.body._id },
+    req.body.resourceJson,
     function (err, resource) {
       if (err) {
         res.json({
@@ -56,7 +53,7 @@ exports.updateResource = function (req, res, next) {
         });
       }
       res.json({
-        message: resource,
+        resource: "updated successfully",
       });
     }
   );

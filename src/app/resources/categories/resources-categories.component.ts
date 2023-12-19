@@ -1,15 +1,21 @@
-import { Component } from '@angular/core'
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'resources-categories',
   templateUrl: './resources-categories.component.html',
   styleUrls: ['./resources-categories.component.scss']
 })
-export class ResourcesCategoriesComponent {
+export class ResourcesCategoriesComponent implements OnChanges {
 
   categoriesIndex: number = 6;
+  @Input() resourceObj: any;
+  resourceJson: any;
+  selectedCategorie: string = 'CaseStudy';
 
-  resourcesObj = ['Case Study', 'Customer Success', 'Online Journal', 'WhitePapers', 'Events & Videos', 'Reports'];
+  constructor(private readonly router: Router) { }
+
+  resourcesObj = ['CaseStudy', 'Customer Success', 'Online Journal', 'Whitepapers', 'Events & Videos', 'Reports'];
   CategorieObj = [
     {
       type: 'Customer Story',
@@ -67,4 +73,23 @@ export class ResourcesCategoriesComponent {
     this.categoriesIndex = this.CategorieObj.length;
   }
 
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes) {
+      this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
+      console.log(this.resourceJson);
+
+    }
+  }
+
+  SelectCategorie(item) {
+    this.selectedCategorie = item;
+  }
+
+  open(id) {
+    let index = this.resourceJson.map(res => res.id).indexOf(id);
+    if (index !== -1) {
+      this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]) }]);
+    }
+  }
 }

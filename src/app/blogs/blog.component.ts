@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { StrapiService } from "src/shared/services/strapi.service";
 import { BlogService } from "./shared/blog.service";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: 'blogs',
@@ -13,6 +14,7 @@ export class BlogComponent {
   strapiBlogAttrs: any;
   contextType: string = 'All';
   blogData: any;
+  blogDeatils:any;
   CategorieObj = [
     {
       type: 'Customer Story',
@@ -27,10 +29,13 @@ export class BlogComponent {
   ]
 
   constructor(private readonly strapiService: StrapiService,
+    private readonly router: Router,
+    private route: ActivatedRoute,
     private readonly blogService: BlogService) { }
 
 
   ngOnInit() {
+    this.blogDeatils = JSON.parse(this.route.snapshot.paramMap.get('data'));
     this.getStrapiBlog();
     this.getAllBlogs();
   }

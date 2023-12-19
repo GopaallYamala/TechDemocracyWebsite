@@ -14,6 +14,7 @@ export class ResourcesComponent implements OnInit {
   contextType: string = 'All'
   resourceList: any;
   resourceStringObj: any;
+  resourceObj: any;
 
   constructor(private readonly strapiService: StrapiService,
     private readonly resourceService: ResourceService,
@@ -40,6 +41,7 @@ export class ResourcesComponent implements OnInit {
 
   getAllResources() {
     this.resourceService.getAllResources().subscribe(res => {
+      this.resourceObj = res.resources;
       if (res.resources.length === 0) {
         this.saveStrapiJson();
       }
@@ -48,8 +50,10 @@ export class ResourcesComponent implements OnInit {
       }
       else {
         console.log(">>>>>>>>>> Yes, Changed <<<<<<<<<<<<");
+        res.resources[0].resourceJson = this.resourceStringObj;
         let json = {
-          jsonObject: this.resourceStringObj,
+          _id: res.resources[0]._id,
+          resourceJson: this.resourceStringObj
         }
         this.updateResource(res.resources[0]._id, json);
       }
@@ -68,7 +72,7 @@ export class ResourcesComponent implements OnInit {
 
   updateResource(id, json) {
     this.resourceService.updateResource(id, json).subscribe(res => {
-      console.log(res);
+     this.getAllResources();
     })
   }
 
