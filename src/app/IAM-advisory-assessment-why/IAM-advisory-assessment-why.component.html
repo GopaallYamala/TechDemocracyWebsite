@@ -2,9 +2,9 @@
   <div class="container pt-5">
     <div>
       <h2>{{advAssmtObj.heading}}</h2>
-      <div class="row pt-4 gy-3">
+      <div class="row pt-5 gy-3">
         <div class="col-md-4 " *ngFor="let item of advAssmtObj.list">
-          <div class="flex-col-nowrap reason get-aligned ">
+          <div class="flex-col-nowrap reason find-gaps ">
             <svg-icon-component [name]="'impl_services'"></svg-icon-component>
             <div class="pt-4">
               <h3>{{item.hdng}}</h3>
