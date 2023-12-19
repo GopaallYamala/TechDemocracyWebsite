@@ -104,25 +104,25 @@ export class NavBarComponent implements OnInit {
   servicesObj = [
     {
       tittle: 'Advisory Consulting',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'Our advisory services go beyond the obvious, assuring a thorough examination that builds the framework for a successful digital transition.',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
     {
       tittle: 'Implementation Service',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'The commitment of TechDemocracy to bespoke solutions ensures that the implementation completely corresponds with your business goals.',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
     {
       tittle: 'Operations & Support',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'With proactive security measures to back it up, TechDemocracy\'s round-the-clock support guarantees that your business runs smoothly.',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
     {
       tittle: 'Manage Services',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'The managed services provided by TechDemocracy guarantee continual progress rather than just status quo maintenance.',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     }
@@ -166,37 +166,37 @@ export class NavBarComponent implements OnInit {
   companyMenuData = [
     {
       title: 'About us',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'Your Trusted Security Partner',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
     {
       title: 'Leadership',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'Meet the Masters of Security',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
     {
       title: 'Careers',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'Explore Opportunities in TechDemocracy',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
     },
     {
       title: 'Contact us',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+      desc: 'Talk to Our Cyber Consultants',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
-    },
+    }
     // {
     //   title: 'News',
-    //   desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+    //   desc: 'Updates from the Cyber World',
     //   businessModel: 'Business Model',
     //   stories: 'Customer Success Stories',
-    // },
+    // }
     // {
     //   title: 'Testimonials',
-    //   desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',
+    //   desc: 'Customer Reviews & Feedback',
     //   businessModel: 'Business Model',
     //   stories: 'Customer Success Stories',
     // }
