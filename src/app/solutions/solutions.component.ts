@@ -83,7 +83,7 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Identity Governance Solutions',
             solutionContent: 'Our Identity Governance Administration (IGA) solutions serve as the bedrock of a resilient digital identity ecosystem, ensuring that businesses can navigate the complexities of identity management with confidence and precision..',
-            solutionImg: '../../assets/images/heroimages/Identity_Governance_Solutions.png',
+            solutionImg: '../../assets/images/heroimages/SolutionheroImgSample.png',
           };
           this.igaData = {
             solutionHdng: 'Solve key Identity Governance and Administration challenges',
@@ -100,22 +100,22 @@ export class SolutionsComponent implements OnInit {
               {
                 bHdng: `Streamlined Onboarding`,
                 bContent: `Effortlessly integrate new users into your ecosystem with precision and speed.`,
-                image: '../../assets/images/All_Solutions/solutions__Streamlined_Onboarding.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Streamlined Onboarding.svg'
               },
               {
                 bHdng: `Airtight Access Controls`,
                 bContent: `Enjoy the peace of mind that comes with robust role-based access controls, tailored to your organization's unique needs.`,
-                image: '../../assets/images/All_Solutions/solutions__Airtight_Access_Control.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Airtight Access Control.svg'
               },
               {
                 bHdng: `Strategic Advantage`,
                 bContent: `Transform identity management from a compliance necessity into a strategic advantage, aligning it with your organizational goals.`,
-                image: '../../assets/images/All_Solutions/solutions__Strategic_Advantage.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Strategic Advantage.svg'
               },
               {
                 bHdng: `Enhanced Security Posture`,
                 bContent: `IGA enhances security by managing identities and access, reducing the impact of insider threats and external attacks on sensitive data. `,
-                image: '../../assets/images/All_Solutions/solutions__Enhanced_Security_Posture.svg'
+                image: '../../assets/images/All_Solutions/Solutions__Enhanced Security Posture.svg'
               }
             ]
           };

@@ -1,0 +1,26 @@
+.privacy-policy-container {
+  margin-top: 125px;
+  @media screen and (max-width: 992px) {
+    margin-top: 0;
+  }
+  .policy-header {
+    .policy-heading-main {
+      background: #111111;
+      color: #fff;
+      min-height: 6rem;
+      display: flex;
+      align-items: center;
+    }
+    .policy-header-content {
+      background: #e9ecf5;
+      padding-top: 2rem;
+      min-height: 17rem;
+    }
+  }
+
+  .policyimg{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+}
