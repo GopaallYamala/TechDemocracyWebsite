@@ -1,20 +1,21 @@
 .solutions-partnership {
   padding: 4rem 0;
-  background-color: #E7E9F9;
+  background-color: #29002b;
   .partner-text {
     width: 80%;
     font-weight: 500;
     line-height: 40px;
     @media screen and (max-width: 992px) {
       width: auto;
-      }
-
+    }
   }
   .img-container {
     margin-top: 1rem;
     img {
-      filter: grayscale(1);
+      filter: grayscale(0);
       // margin-right: 0rem;
+      filter: brightness(0) invert(1);
+      opacity: 0.6;
       width: auto;
       height: 80px;
     }

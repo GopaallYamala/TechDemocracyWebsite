@@ -18,8 +18,8 @@ h2 {
   font-weight: 600 !important;
   color: #222;
   font-size: 2rem !important;
-  // line-height: 2.25rem !important;
-  line-height: calc(100% + 4px);
+  line-height: 2.25rem !important;
+  // line-height: calc(100% + 4px);
   @media screen and (max-width: 992px) {
     font-size: 1.5rem !important;
   }
@@ -30,7 +30,7 @@ h3 {
   font-size: 1.5rem !important;
   font-weight: 600 !important;
   color: #222;
-  line-height: calc(100% + 4px);
+  // line-height: calc(100% + 4px);
   @media screen and (max-width: 992px) {
     font-size: 1.25rem !important;
   }
@@ -81,8 +81,8 @@ p {
   //   font-family: neue-haas-grotesk-text, sans-serif;
   font-style: normal;
   font-size: 1.25rem !important;
-  // line-height: 1.85rem;
-  line-height: calc(100% + 4px);
+  line-height: 1.85rem;
+  // line-height: calc(100% + 4px);
   font-weight: 400;
   color: #212529;
   word-break: break-word;

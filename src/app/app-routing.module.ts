@@ -9,6 +9,9 @@ import { AdvisoryConsultingComponent } from './advisory-consulting/advisory-cons
 import { ResourcesComponent } from './resources/resources.component';
 import { CompanyComponent } from './company/company.component';
 import { BlogComponent } from './blogs/blog.component';
+import { PrivacyPolicyComponent } from './Policies/privacy-policy.component';
+import { CookiePolicyComponent } from './cookie-policy/cookie-policy.component';
+import { TermsAndConditionsComponent } from './terms-conditions/terms-conditions.component';
 
 const routes: Routes = [
   { path: '', component: AppHomeComponent },
@@ -21,7 +24,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
   { path: 'company', component: CompanyComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
-  { path: 'blogs', component: BlogComponent },
+  { path: 'blogs', component: BlogComponent},
+  { path: 'privacy-policy', component: PrivacyPolicyComponent},
+  { path: 'cookie-policy', component: CookiePolicyComponent },
+  { path: 'terms-conditions', component: TermsAndConditionsComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' }
 
 ];

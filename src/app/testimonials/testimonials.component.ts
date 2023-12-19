@@ -18,7 +18,7 @@ export class TestimonialsComponent implements OnInit {
       {
         tContent: 'TechDemocracy\'s guidance and Ping Identity\'s advanced IAM platform were a game-changer. Our user experience improved drastically, along with substantial cost savings due to minimized maintenance expenses.',
         tClientImg: '',
-        tRole: 'IT Manager, Leading Financial Services Firm'
+        tRole: 'IT Manager, Leading Financial Services Firm, North America'
       },
       {
         tContent: 'Thanks to TechDemocracy and Ping Identity, our firm now boasts enhanced security, compliance, and operational efficiency. Their modernized IAM infrastructure positioned us for growth, ensuring continued success in the dynamic financial landscape.',

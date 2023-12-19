@@ -1,0 +1,119 @@
+.blog-container {
+  //Display Headings
+  h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    // color: #222;
+    line-height: 2.5rem;
+
+    @media screen and (max-width: 992px) {
+      font-size: 2rem !important;
+    }
+  }
+
+  h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600 !important;
+    color: #222;
+    font-size: 2rem !important;
+    line-height: 2.25rem !important;
+    // line-height: calc(100% + 4px);
+    @media screen and (max-width: 992px) {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  h3 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #222;
+    // line-height: calc(100% + 4px);
+    @media screen and (max-width: 992px) {
+      font-size: 1.25rem !important;
+    }
+  }
+
+  h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    color: #222;
+    line-height: 1.6rem !important;
+
+    @media screen and (max-width: 992px) {
+      font-size: 1.4rem !important;
+      line-height: 1.8rem !important;
+    }
+  }
+
+  h5 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #222;
+    line-height: 1.6rem !important;
+    @media screen and (max-width: 992px) {
+      font-size: 1rem !important;
+    }
+  }
+
+  //Headings
+
+  //body
+
+  p {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: 1.25rem !important;
+    line-height: 1.85rem;
+    word-break: break-word;
+    word-wrap: break-word;
+    // padding-block: 0;
+    // color: rgb(55, 55, 55);
+    // color: #444444;
+  }
+
+  .subtitle {
+    //   font-family: neue-haas-grotesk-text, sans-serif;
+    font-style: normal;
+    font-size: 1.25rem !important;
+    line-height: 1.85rem;
+    // line-height: calc(100% + 4px);
+    font-weight: 400;
+    color: #212529;
+    word-break: break-word;
+    word-wrap: break-word;
+    @media screen and (max-width: 992px) {
+      font-size: 1rem !important;
+    }
+  }
+
+  .label {
+    font-style: normal;
+    font-size: 1.15rem;
+    line-height: 1.85rem;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+
+  // Image Zoom Hover
+  .zoomhover {
+    overflow: hidden;
+    border-radius: 16px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
