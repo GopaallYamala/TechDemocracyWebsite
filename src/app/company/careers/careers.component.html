@@ -2,11 +2,69 @@
   <solutions-hero [dataObj]="careersUsData"></solutions-hero>
   <section class="container">
     <div id="1" #elm1 class="col-md-12">
-      <h3 class="gutter-bottom-1">Careers</h3>
+      <!-- <h3 class="gutter-bottom-1">Careers</h3> -->
       <!-- <iframe class="iframe-base" src="https://techdemocracy.com/" title="ZOHO"></iframe> -->
-      <iframe id="careers_api_source" style="border: none; margin: 0px; min-height: 2700px;" src="https://jobsapi.ceipal.com/APISource/v1/index.html?bgcolor=1ba1ff&api_key=Uk13WTkxdGdwcWdSaVBDYmgvT3dBUT09&cp_id=" width="100%" height="auto"></iframe>
+      <!-- <iframe id="careers_api_source" style="border: none; margin: 0px; min-height: 2700px;" src="https://jobsapi.ceipal.com/APISource/v1/index.html?bgcolor=1ba1ff&api_key=Uk13WTkxdGdwcWdSaVBDYmgvT3dBUT09&cp_id=" width="100%" height="auto"></iframe> -->
+
+      <div class="row mb-5 careerstop">
+        <div class="col-md-6 contact-details">
+          <div class="contact-details">
+            <div class="pt-5 pb-2 contentspacing justify-content-left align-items-top">
+              <!-- <div class="col-md-9 ps-5"> -->
+              <h2>We're always on the lookout for talented individuals. Take the first step towards a bright future.
+                Upload your resume today!</h2>
+              <p class="subtitle">Welcome to our career page! At TechDemocracy, we value innovation, creativity, and
+                hard work. We believe that our people are our greatest asset, and we're always on the lookout for
+                talented individuals who share our passion for excellence.
+
+                We offer a supportive and dynamic work environment, competitive compensation packages, and opportunities
+                for growth and advancement. Join our team and be a part of something special!</p>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 contact-details">
+          <section class=" d-flex justify-content-left align-items-center">
+            <!-- <div class="col-xl-12"> -->
+            <div class="card">
+              <!-- <div class="card-body"> -->
+              <div class="align-items-center pt-3 py-3">
+                <!-- <div class="col-md-10 ps-5"> -->
+                <h6 class="mb-2 ps-0">Full name</h6>
+                <input type="text" class="form-control form-control-lg" placeholder="Enter Full Name" />
+                <!-- </div> -->
+              </div>
+              <div class="align-items-center py-3">
+                <!-- <div class="col-md-10 ps-5"> -->
+                <h6 class="mb-2 ps-0">Email address</h6>
+                <input type="email" class="form-control form-control-lg" placeholder="Enter Email" />
+                <!-- </div> -->
+              </div>
+              <div class="align-items-center py-3">
+                <!-- <div class="col-md-10 ps-5"> -->
+                <h6 class="mb-2 ps-0">Contact Number(Optional)</h6>
+                <input type="number" class="form-control form-control-lg" placeholder="Enter Contact Number" />
+                <!-- </div> -->
+              </div>
+              <div class="align-items-center py-3">
+                <label for="formFileLg" class="form-label">Large file input example</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+              </div>
+              <div class="py-3">
+                <!-- <div class="col-md-10 ps-5 half-width"> -->
+                <button type="button" class="btn btn-outline-danger btn-lg full-width" routerLink="/company"
+                  routerLinkActive="active">Upload Resume</button>
+                <!-- </div> -->
+              </div>
+              <!-- </div> -->
+            </div>
+            <!-- </div> -->
+          </section>
+        </div>
+      </div>
     </div>
-    <div class="row gutter-bottom-1">
+
+    <div class="row gutter-bottom-1 py-4">
       <p class="abt-us">About Us TechDemocracy</p>
       <div id="2" #elm2 class="row gutter-bottom-2">
         <h3 class="col-md-10">Full range of consultant services and software solutions to help you quickly deploy
