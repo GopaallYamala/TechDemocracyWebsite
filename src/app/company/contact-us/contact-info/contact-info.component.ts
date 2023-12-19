@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { AnimationDefinitions } from "src/shared/animations";
+import { UtilService } from "src/shared/services/util.service";
 
 @Component({
   selector: 'contact-info',
@@ -9,12 +10,19 @@ import { AnimationDefinitions } from "src/shared/animations";
 })
 
 export class ContactInfoComponent implements OnInit {
-  ngOnInit() {
 
-  }
-
+  country:string;
   display: any;
   emailObj: any;
+
+  constructor(private readonly utilService: UtilService) { }
+
+  ngOnInit() {
+    this.utilService.dataState.subscribe(
+      (data: string) => {
+        this.country = data;
+      });
+  }
 
   sendMessage() {
     this.emailObj = {

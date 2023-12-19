@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
 import AOS from "aos";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,14 @@ import AOS from "aos";
   animations: [AnimationDefinitions]
 })
 export class ConsultationComponent implements OnInit {
+  
+  constructor (private readonly router: Router) {}
+  
   ngOnInit () {
     AOS.init();
+  }
+
+  talkToExpert () {
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
   }
 }

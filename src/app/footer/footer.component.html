@@ -1,4 +1,4 @@
-<footer class="tdc-footer" >
+<footer class="tdc-footer">
   <div class="container">
     <div class="footer-head">
       <article class="logo-content">
@@ -11,39 +11,41 @@
         </div>
       </article>
     </div>
-    <section class="tdc-footer-content row" data-aos="fade-up" 
-    data-aos-duration="1000">
+    <section class="tdc-footer-content row" data-aos="fade-up" data-aos-duration="1000">
 
       <article class="pages-menu col-md-4 col-sm-12">
         <h4 class="text-light">Solutions</h4>
         <ul>
-          <li><a href="#">Identity Governance & Administration (IGA)</a></li>
-          <li><a href="#">Customer Identity Access Management (CIAM)</a></li>
-          <li><a href="#">Privileged Access Management (PAM)</a></li>
-          <li><a href="#">Access Management (AM)</a></li>
-          <li><a href="#">Managed Security Operation Center (SOC)</a></li>
+          <li (click)="navToPages('/solutions', 'Identity Governance & Administration')"><a>Identity Governance &
+              Administration (IGA)</a></li>
+          <li (click)="navToPages('/solutions', 'Customer Identity & Access Management')"><a>Customer Identity Access
+              Management (CIAM)</a></li>
+          <li (click)="navToPages('/solutions', 'Previliged Access Management')"><a>Privileged Access Management
+              (PAM)</a></li>
+          <li (click)="navToPages('/solutions', 'Access Management')"><a>Access Management (AM)</a></li>
+          <li (click)="navToPages('/solutions', 'Manage SOC')"><a>Managed Security Operation Center (SOC)</a></li>
         </ul>
       </article>
       <article class="col-md-2 col-sm-12">
         <h4 class="text-light">Services</h4>
         <ul>
-          <li><a href="#">Advisory Consulting</a></li>
-          <li><a href="#">Implementation Services</a></li>
-          <li><a href="#">Operation & Support Services</a></li>
-          <li><a href="#">Managed Services</a></li>
+          <li (click)="navToPages('/services', 'Advisory Consulting')"><a>Advisory Consulting</a></li>
+          <li (click)="navToPages('/services', 'Implementation Service')"><a>Implementation Services</a></li>
+          <li (click)="navToPages('/services', 'Operations & Support')"><a>Operation & Support Services</a></li>
+          <li (click)="navToPages('/services', 'Manage Services')"><a>Managed Services</a></li>
         </ul>
         <!-- <address>2005 Stokes Isle Apt. 896, Venaville 10010, USA info@yourdomain.com (+68) 120034509</address> -->
       </article>
       <article class="col-md-3 col-sm-12 footerleft">
         <h4 class="text-light">Our Company</h4>
         <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Leadership Team</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Careers</a></li>
+          <li (click)="navToPages('/company', 'About us')"><a>About us</a></li>
+          <li (click)="navToPages('/company', 'Leadership')"><a>Leadership Team</a></li>
+          <li [routerLink]="'/blogs'"><a>Blogs</a></li>
+          <li (click)="navToPages('/company', 'Careers')"><a>Careers</a></li>
         </ul>
       </article>
-      <article class="col-md-3 col-sm-12">
+      <article *ngIf="country === 'United States' || country === ''" class="col-md-3 col-sm-12">
         <h4 class="text-light">Head Office: United States</h4>
         <address>1 Corporate Place South Suite # 110, Piscataway, NJ 08854. Call Us : +1 732 404 8350</address>
         <p style="color: #FFFFFF;">Email us : <a href="#">solutions@techdemocracy.com</a></p>
@@ -56,17 +58,32 @@
           </ul>
         </div>
       </article>
+      <article *ngIf="country === 'Canada'" class="col-md-3 col-sm-12">
+        <h4 class="text-light">Delivery Center: <br> Techdemocracy Ltd</h4>
+        <address> #846, 8th Floor
+          Mississauga - Toronto Airport Corporate Center
+          2425 Matheson Blvd East
+          Mississauga, ON L4W 5K4</address>
+        <phone class="text-light">Call Us : +1 647 792 0050</phone>
+        <p style="color: #FFFFFF;">Email us : <a href="#">solutions@techdemocracy.com</a></p>
+      </article>
+      <article *ngIf="country === 'India'" class="col-md-3 col-sm-12">
+        <h4 class="text-light">Delivery Center: <br> Cotelligent India Pvt Ltd</h4>
+        <address>Survey No 83/1 upper ground floor,The Skyview 20, Divija Commercial Properties Pvt Ltd,Raidurgam
+          Hyderabad - 500081</address>
+        <phone class="text-light">Call Us : +91 - 40 - 67231701</phone>
+        <p style="color: #FFFFFF;">Email us : <a href="#">sales@cotelligent.com</a></p>
+      </article>
     </section>
-    <h3 class="footer-text-hdng">Your Trusted identity Security Partner</h3>
+    <h3 class="footer-text-hdng">Your Trusted Identity Security Partner</h3>
     <div class="footer-divider"></div>
     <div class="flex-row-nowrap foot-note">
       <p class="copyright-txt">&copy; 2023 TechDemocracy LLC and/or its affiliates. All rights reserved.</p>
       <div class="footnote-links">
-        <a [routerLink]="'/privacy-policy'">Privacy policy</a>
-        <a [routerLink]="'/cookie-policy'">Cookie policy</a>
+        <a [routerLink]="'/privacy-policy'">Privacy Policy</a>
+        <a [routerLink]="'/cookie-policy'">Cookie Policy</a>
         <a [routerLink]="'/terms-conditions'">Terms & Conditions</a>
       </div>
-
     </div>
   </div>
 </footer>
