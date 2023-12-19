@@ -119,8 +119,8 @@
         <div @slideDown *ngIf="companyMenu" id="CompanyMenu" class="nav-info flex-row-nowrap col-md-12">
           <section class="row">
             <div class="nav-content breathing-space-bottom col" *ngFor="let item of companyMenuData">
-              <h6 (click)="navToPages('/company', item.title)" class="nav-title w-75">
-                {{item.title}}</h6>
+              <h3 (click)="navToPages('/company', item.title)" class="nav-title">
+                {{item.title}}</h3>
               <div class="nav-desc">
                 <p>{{item.desc}}</p>
               </div>
