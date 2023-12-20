@@ -80,6 +80,7 @@ export class ResourcesCategoriesComponent implements OnChanges {
       this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
       console.log(this.resourceJson);
       this.changeValue("CaseStudy");
+      this.test();
 
     }
   }
@@ -98,5 +99,40 @@ export class ResourcesCategoriesComponent implements OnChanges {
     if (index !== -1) {
       this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
     }
+  }
+  test() {
+    const item = {
+      textbox: {
+        id: 1,
+        name: "Text Box",
+        tmprops: {
+          cur: 0,
+          min: 5000,
+          visible: true,
+        },
+        tmctxlst: {
+          version: "2",
+          txttmctx: {
+            alwysshw: false,
+            name: "default"
+          }
+        },
+      }
+    }
+    console.log(this.solve(item.textbox, "p"));
+  }
+
+  solve(obj, tagName) {
+    const tag = document.createElement(tagName);
+    const currentKeys = Object.keys(obj)
+
+    currentKeys.forEach((attribute => {
+      if (typeof obj[attribute] === "object") {
+        tag.appendChild(this.solve(obj[attribute], attribute))
+      } else {
+        tag.setAttribute(attribute, obj[attribute]);
+      }
+    }))
+    return tag;
   }
 }
