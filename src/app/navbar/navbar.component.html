@@ -1,4 +1,4 @@
-<nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand" [routerLink]="'/home'">
       <img *ngIf="country === 'United States' || country === 'Canada' || country === ''"
@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
-    <div id="navbarTogglerDemo02" [ngbCollapse]="isCollapsed" clickOutside
+    <div id="navbarTogglerDemo02" clickOutside
       (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false || companyMenu = false"
       class="header-menu-actions flex-row-nowrap collapse navbar-collapse">
       <!-- [ngClass]="isMenuCollapsed ? 'd-none' : 'd-block'" -->
@@ -42,7 +42,7 @@
             <a class="nav-link">Partners</a>
           </li>
           <!-- (click)="showResourcesNav()" -->
-          <li (click)="navToPages('/resources')"  class="nav-item services-menu">
+          <li (click)="navToPages('/resources')" class="nav-item services-menu">
             <div class="nav-link cursor flex-row-nowrap">
               <span class="{{resourcesMenu?'nav-active':''}}">Resources</span>
               <!-- <svg-icon-component *ngIf="!resourcesMenu" [name]="'expand_more'"></svg-icon-component>
@@ -61,7 +61,8 @@
         </ul>
       </div>
       <div class="free-consult-btn">
-        <button type="button" class="btn btn-outline-danger" routerLinkActive="active" (click)="navToPages('/company', 'Contact us')">Free
+        <button type="button" class="btn btn-outline-danger" routerLinkActive="active"
+          (click)="navToPages('/company', 'Contact us')">Free
           Consultation</button>
       </div>
       <section class=""
@@ -134,4 +135,126 @@
       </section>
     </div>
   </div>
+</nav>
+
+<!-- Mobile Responsive Nav Menu -->
+<nav class="ham-nav" *ngIf="!isCollapsed">
+  <ul class="ham-main-list">
+    <li class="nav-item" (click)="navToPages('/home')">
+      <a href="#" class="nav-link">
+        <span class="navtitle">Home</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <ul>
+        <li class="dropdown nav-link" (click)="toggleHam('solutions')">
+          <input type="checkbox" id="more" name="solutions">
+          <label for="more" class="dropdown-toggle">
+            Solutions
+          </label>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displaySolutionsMenu" @slideDown>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Identity Governance & Administration')">
+              <a class="nav-link">
+                <span class="navtitle">Identity Governance & Administration</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Customer Identity & Access Management')">
+              <a class="nav-link">
+                <span class="navtitle">Customer Identity & Access Management</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Previliged Access Management')">
+              <a class="nav-link">
+                <span class="navtitle">Previliged Access Management</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Access Management')">
+              <a class="nav-link">
+                <span class="navtitle">Access Management</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Manage SOC')">
+              <a class="nav-link">
+                <span class="navtitle">Manage SOC</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li class="dropdown nav-item" (click)="toggleHam('services')">
+          <input type="checkbox" id="ServicesDD" name="services">
+          <label for="ServicesDD" class="dropdown-toggle">
+            Services
+          </label>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displayServicesMenu" @slideDown>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Advisory Consulting')">
+              <a class="nav-link">
+                <span class="navtitle">Advisory Consulting</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Implementation Service')">
+              <a class="nav-link">
+                <span class="navtitle">Implementation Service</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Operations & Support')">
+              <a class="nav-link">
+                <span class="navtitle">Operations & Support</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/adv-consulting', 'Manage Services')">
+              <a class="nav-link">
+                <span class="navtitle">Manage Services</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <span class="navtitle">Partners</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <span class="navtitle">Resources</span>
+      </a>
+    </li>
+    <li>
+      <ul>
+        <li class="dropdown nav-item" (click)="toggleHam('company')">
+          <input type="checkbox" id="CompanyDD" name="company">
+          <label for="CompanyDD" class="dropdown-toggle">
+            Company
+          </label>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displayCompanyMenu" @slideDown>
+            <li class="nav-item" (click)="navToPages('/company', 'About us')">
+              <a class="nav-link">
+                <span class="navtitle">About us</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/company', 'Leadership')">
+              <a class="nav-link">
+                <span class="navtitle">Leadership</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/company', 'Careers')">
+              <a class="nav-link">
+                <span class="navtitle">Careers</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="navToPages('/company', 'Contact us')">
+              <a class="nav-link">
+                <span class="navtitle">Contact us</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </nav>
