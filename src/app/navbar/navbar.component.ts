@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AnimationDefinitions } from 'src/shared/animations';
+import AOS from "aos";
 import { Location } from '@angular/common';
 import { TDCGeoLocationService } from 'src/shared/services/geo-location.service';
 import { UtilService } from 'src/shared/services/util.service';
@@ -36,6 +37,13 @@ export class NavBarComponent implements OnInit {
   selectedResourceType: string = "All";
   isCollapsed: boolean = true;
 
+  toggleNavbar: boolean = true;
+
+  toggleSubMenus: boolean = true;
+  displaySolutionsMenu: boolean = false;
+  displayServicesMenu: boolean = false;
+  displayCompanyMenu: boolean = false;
+
   constructor(private readonly router: Router,
     private location: Location,
     private readonly geoLocationService: TDCGeoLocationService,
@@ -44,6 +52,7 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit() {
+    AOS.init();
     this.utilService.dataState.subscribe(
       (data: string) => {
         this.country = data;
@@ -269,12 +278,32 @@ export class NavBarComponent implements OnInit {
       this.solutionsMenu = false;
       this.resourcesMenu = false;
     }
+    this.isCollapsed = true;
 
   }
 
   resourceType(type: string) {
     this.selectedResourceType = type;
   }
+
+  toggleHam (item) {
+    if (item === 'solutions') {
+      this.displaySolutionsMenu = true;
+      this.displayServicesMenu = false;
+      this.displayCompanyMenu = false;
+    } else if (item === 'services') {
+      this.displaySolutionsMenu = false;
+      this.displayServicesMenu = true;
+      this.displayCompanyMenu = false;
+    } else if (item === 'company') {
+      this.displaySolutionsMenu = false;
+      this.displayServicesMenu = false;
+      this.displayCompanyMenu = true;
+    }
+  }
+
+
+
 
 
 }
