@@ -13,13 +13,15 @@ data-aos-duration="1000">
     <div class="our-solutions-body row">
       <div class="our-solutions-blocks col-xs-12 col-md-6 col-lg-6">
         <div class="row mb-4">
-          <div class="col-xs-12 col-md-6 col-lg-6 Block-card">
+          <div class="col-xs-12 col-md-6 col-lg-6 Block-card"
+           (click)="navToPages('/solutions', 'Identity Governance & Administration')">
             <div class="our-solution sol-dark-blue col-md-12 zoom-card">
               <h3>Identity Governance & Administration</h3>
               <p class="opacity-75">TechDemocracy's Identity Governance optimizes security by efficiently handling user access and rights.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-6">
+          <div class="col-xs-12 col-md-6 col-lg-6"
+           (click)="navToPages('/solutions', 'Customer Identity & Access Management')">
             <div class="our-solution sol-dark-pink col-md-12 zoom-card">
               <h3>Customer Identity & Access Management</h3>
               <p class="opacity-75">Trust TechDemocracy's CIAM for robust protection and management of customer identities.</p>
@@ -27,13 +29,15 @@ data-aos-duration="1000">
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-6 Block-card">
+          <div class="col-xs-12 col-md-6 col-lg-6 Block-card" 
+          (click)="navToPages('/solutions', 'Previliged Access Management')">
             <div class="our-solution sol-light-blue col-md-12 zoom-card">
-              <h3>Privileged Access Management</h3>
+              <h3>Priviliged Access Management</h3>
               <p class="opacity-75">Elevate security layers with TechDemocracy's Privileged Access Management for critical accounts.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-6 Block-card">
+          <div class="col-xs-12 col-md-6 col-lg-6 Block-card"
+          (click)="navToPages('/solutions', 'Access Management')">
             <div class="our-solution sol-dark-purple col-md-12 zoom-card">
               <h3>Access Management</h3>
               <p class="opacity-75">TechDemocracy's Access Management offers precise and efficient user access control.</p>
@@ -42,7 +46,7 @@ data-aos-duration="1000">
         </div>
       </div>
       <div class="solution-workers col-xs-12 col-md-6 col-lg-6">
-        <img src="../../assets/images/Resource/HealthcareInd.png" alt="">
+        <img src="../../assets/images/heroimages/Our Solutions in Identity Security.png" alt="">
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'tdc-right-partner',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 
 export class TDCRightPartnerComponent {
 
+  constructor (private readonly router: Router) {}
+
+  talkToExpert () {
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
+  }
 }

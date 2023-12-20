@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'solutions-hero',
@@ -7,6 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 
 export class SolutionsHeroComponent {
+
+  constructor (private readonly router: Router) {}
   @Input() solutionName = ``;
   @Input() dataObj = {
     title: '',
@@ -16,5 +19,9 @@ export class SolutionsHeroComponent {
     solutionContent: '',
     displayBtn: true,
     solutionImg: '../../assets/images/Solutions-Page.png',
+  }
+
+  talkToExpert () {
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { AnimationDefinitions } from 'src/shared/animations';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,8 @@ export class CarouselComponent implements OnInit {
   images = ['../../assets/images/Slideshow1.png', '../../assets/images/Slideshow2.png', '../../assets/images/Slideshow3.png'];
 
   slideShowData : any = [{}]
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig, 
+    private readonly router: Router) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
   }
@@ -49,6 +51,14 @@ export class CarouselComponent implements OnInit {
       imgUrl: `../../assets/images/slides/HeroImg_ManagedSoc-01.svg`
     }
   ]
+  }
+
+  talkToExpert () {
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
+  }
+
+  knowMore() {
+    this.router.navigate(['/solutions'], { queryParams: { prop: 'Identity Governance & Administration' } });
   }
 
 }
