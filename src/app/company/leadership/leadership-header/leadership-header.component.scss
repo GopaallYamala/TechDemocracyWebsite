@@ -1,0 +1,37 @@
+.leadership {
+  width: 100%;
+  background: #29002B;
+  min-height: 320px;
+  position: relative;
+  .hero-container {
+    position: absolute;
+    top: 8rem;
+    .bg-cust-color {
+      background: linear-gradient(105deg, #173cb4 0%, #009dff 49.9%, #173cb4 100%);
+      min-height: 335px;
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      border-radius: 10px;
+      opacity: 0.6;
+    }
+  }
+  .leaders-intro {
+    position: absolute;
+    top: 40%;
+    left: 3rem;
+    z-index: 5;
+    p {
+      color: #FFFFFF;
+    }
+  }
+  img {
+    height: 335px;
+  }
+}
+
+.leadership-header {
+  h2 {
+    color: #FFFFFF;
+  }
+}

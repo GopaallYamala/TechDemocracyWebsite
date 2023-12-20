@@ -46,7 +46,7 @@ export class CareersComponent implements OnInit, AfterViewInit {
   upcomingEvents = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   careersUsData = {
-    title: 'CAREERS',
+    title: 'Careers',
     heading: 'Join us for greater revolution to collaborate in Techdemocracy',
     subHeading: '',
     solutionName: 'Partners',

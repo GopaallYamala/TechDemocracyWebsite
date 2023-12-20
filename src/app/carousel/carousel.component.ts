@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { AnimationDefinitions } from 'src/shared/animations';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,8 @@ export class CarouselComponent implements OnInit {
   images = ['../../assets/images/Slideshow1.png', '../../assets/images/Slideshow2.png', '../../assets/images/Slideshow3.png'];
 
   slideShowData : any = [{}]
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig, 
+    private readonly router: Router) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = false;
   }
@@ -26,29 +28,37 @@ export class CarouselComponent implements OnInit {
     this.slideShowData = [
     {
       caption: `Your trusted identity partner:`,
-      heading: `Identity attacks are Fast-Growing, Serious and Costly. How prepared are you?`,
-      content: `Secure identities, Defend against Threats, and Meet All-new Compliance Levels`,
+      heading: `Identity Attacks Are Fast-growing, Serious, and Costly. How Prepared Are You?`,
+      content: `TechDemocracy deciphers your Business Challenges, aligns your Identity Security landscape with Industry Trends, and charts a Roadmap for Efficiency, Risk Reduction, and Digital Transformation `,
       imgUrl: `../../assets/images/slides/HeroImg_Services.svg`
     },
     {
       caption: `Your trusted identity partner:`,
-      heading: `Not Half-baked, Not a Broken piece of Solution, Not Off-the-shelf`,
-      content: `Modernize your Identity security posture with our comprehensive.`,
+      heading: `Not Half-baked, Not a Broken Piece of Solution, Not Off-the-shelf`,
+      content: `Secure your Human and Non-Human Identities, Defend Against Threats, and Meet your Compliance Requirements with tailor-made and agile Identity Security Solutions by TechDemocracy`,
       imgUrl: `../../assets/images/slides/HeroImg_Solutions.svg`
     },
     {
       caption: `Your trusted identity partner:`,
-      heading: `We are experts in Delivering Identity Solutions`,
-      content: `Embark on a captivating carousel showcasing our IDM prowess. Explore cutting-edge solutions like multi-factor authentication, role based access control, and more. Elevate your identity security with us.`,
+      heading: `We Handle the Backend, You Conquer the Frontend`,
+      content: `TechDemocracy is a boutique cybersecurity firm with over two decades of experience, focusing on fully managing identity security solutions that integrate and operate the entire identity lifecycle under one umbrella.`,
       imgUrl: `../../assets/images/slides/HeroImg_AboutUS_v2-01.svg`
     },
     {
       caption: `SecureCyber Hub:`,
-      heading: `Cybersecurity security Operations Center`,
+      heading: `Cybersecurity Security Operations Center`,
       content: `Cyber Security Operations Center encompasses Technologies, Processes, People and processes to defend IT, OT/ICT infrastructure like data, applications, assets and networks from cyber attacks.`,
       imgUrl: `../../assets/images/slides/HeroImg_ManagedSoc-01.svg`
     }
   ]
+  }
+
+  talkToExpert () {
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
+  }
+
+  knowMore() {
+    this.router.navigate(['/solutions'], { queryParams: { prop: 'Identity Governance & Administration' } });
   }
 
 }

@@ -33,4 +33,35 @@
     border: 2px solid green;
     background-color: white;
   }
+
+  .careerstop {
+    padding: 10rem 0rem 4rem 0rem;
+  }
+
+  .contact-details {
+
+    position: relative;
+    // top: 4rem;
+    // @media screen and (max-width: 992px) {
+    //   position: initial;
+    //   top: 12rem;
+    // }
+  
+    // position: absolute;
+    // right: 0;
+
+    .contentspacing {
+      padding-right: 10rem;
+    }
+
+    .card {
+      // width:30%;
+      border: none;
+      border-radius: 15px;
+    }
+    ::placeholder {
+     font-size: 0.8rem;
+     opacity: 0.3;
+    }
+  }
 }

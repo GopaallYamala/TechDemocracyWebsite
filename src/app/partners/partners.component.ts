@@ -13,6 +13,6 @@ export class PartnersComponent {
     solutionName: '',
     displayBtn: false,
     solutionContent: ' ',
-    solutionImg: '../../assets/images/Solutions-Page.png'
+    solutionImg: '../../assets/images/heroimages/Partners.png'
   }
 }

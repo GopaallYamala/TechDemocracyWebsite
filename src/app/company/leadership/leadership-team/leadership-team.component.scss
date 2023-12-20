@@ -1,0 +1,35 @@
+.leadership-team {
+  padding-top: 14rem;
+  .prof-card {
+    width: 200px;
+    height: auto;
+    border: none;
+    h6 {
+      font-weight: 400;
+    }
+  }
+
+  // Image Zoom Hover
+  .zoomhover {
+    overflow: hidden;
+    border-radius: 16px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .team-content {
+    width: 70%;
+  }
+}

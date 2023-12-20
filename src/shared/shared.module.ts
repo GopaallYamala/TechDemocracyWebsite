@@ -50,6 +50,9 @@ import { BlogComponent } from 'src/app/blogs/blog.component';
 import { GuidingPrinciplesComponent } from 'src/app/guiding-principles/guiding-principles.component';
 import { PrivacyPolicyComponent } from 'src/app/Policies/privacy-policy.component';
 import { TermsAndConditionsComponent } from 'src/app/terms-conditions/terms-conditions.component';
+import { LeadershipComponent } from 'src/app/company/leadership/leadership.component';
+import { LeadershipHeaderComponent } from 'src/app/company/leadership/leadership-header/leadership-header.component';
+import { LeadershipTeam } from 'src/app/company/leadership/leadership-team/leadership-team.component';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
@@ -57,7 +60,8 @@ import { TermsAndConditionsComponent } from 'src/app/terms-conditions/terms-cond
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
     ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent,
-    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, PrivacyPolicyComponent, TermsAndConditionsComponent],
+    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, PrivacyPolicyComponent, TermsAndConditionsComponent, LeadershipComponent, LeadershipHeaderComponent, 
+    LeadershipTeam],
     
   imports: [
     CommonModule,
@@ -73,7 +77,7 @@ import { TermsAndConditionsComponent } from 'src/app/terms-conditions/terms-cond
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
     ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent,
     GoogleMapsComponent, PrivacyPolicyComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, 
-    TermsAndConditionsComponent]
+    TermsAndConditionsComponent, LeadershipComponent, LeadershipHeaderComponent, LeadershipTeam]
 })
 
 

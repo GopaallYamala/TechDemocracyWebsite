@@ -39,32 +39,32 @@ export class AppHomeComponent implements OnInit {
       {
         title: `Skilled Resources`,
         info: `Our team’s expertise ensures a seamless transition from planning to execution, with ready-to-go, experienced consultants available to kickstart their engagement from Day 0`,
-        icon: `../../assets/images/Home_Icons/Home_SkilledResources_32x.svg`
+        icon: `../../assets/images/Home_Icons/HomeSkilledResources.svg`
       },
       {
         title: `Industry Experience`,
-        info: `Over 200 successful Identity Security & Cyber Sec engagements. We’ve developed vertical-specific processes and solution frameworks to deliver tailored solutions`,
-        icon: `../../assets/images/Home_Icons/Home_IndustryExperience_32x.svg`
+        info: `Over 200 successful Identity Security & Cyber Security engagements. We’ve developed vertical-specific processes and solution frameworks to deliver tailored solutions`,
+        icon: `../../assets/images/Home_Icons/HomeIndustryExperience.svg`
       },
       {
         title: `Center of Excellence (CoE)`,
         info: `A dedicated team of SMEs to ensure thought leadership, provide technology expertise guidance, and offer frameworks to expedite deployment cycles, improving project timelines.`,
-        icon: `../../assets/images/Home_Icons/Home_CenterofExcellence(CoE)_32x.svg`
+        icon: `../../assets/images/Home_Icons/HomeCenterofExcellenceCoE.svg`
       },
       {
         title: `Trainings`,
         info: `Industry-proven training methodology for transferring Identity Security functional and technical knowledge. Includes a dedicated Identity Security Training Lab`,
-        icon: `../../assets/images/Home_Icons/Home_Trainings_32x.svg`
+        icon: `../../assets/images/Home_Icons/HomeTrainings.svg`
       },
       {
         title: `Innovation`,
         info: `Innovation is in our DNA. We boast a robust product line used to develop utilities & accelerators, aiding clients in their Identity Journey, implementation and support`,
-        icon: `../../assets/images/Home_Icons/Home_Innovation_32x.svg`
+        icon: `../../assets/images/Home_Icons/HomeInnovation.svg`
       },
       {
         title: `Alliance & Partnership`,
         info: `Reseller and services partnerships with leading Identity product vendors in the USA, Canada, and India. Our strategic collaborations offer unparalleled access to cutting-edge solutions`,
-        icon: `../../assets/images/Home_Icons/Home_Partnership_32x.svg`
+        icon: `../../assets/images/Home_Icons/HomePartnership.svg`
       }
     ]
     }

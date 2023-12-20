@@ -1,6 +1,6 @@
 <nav @slideUp class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
-    <a class="navbar-brand">
+    <a class="navbar-brand" [routerLink]="'/home'">
       <img *ngIf="country === 'United States' || country === 'Canada' || country === ''"
         src="../../assets/images/TechDemocracyBlackText.svg" class="company-logo" alt="TechDemocracy Logo">
       <img *ngIf="country == 'India'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
@@ -61,7 +61,7 @@
         </ul>
       </div>
       <div class="free-consult-btn">
-        <button type="button" class="btn btn-outline-danger" routerLinkActive="active">Free
+        <button type="button" class="btn btn-outline-danger" routerLinkActive="active" (click)="navToPages('/company', 'Contact us')">Free
           Consultation</button>
       </div>
       <section class=""
