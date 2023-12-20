@@ -62,6 +62,7 @@ export class SolutionsComponent implements OnInit {
     ]
   }
   title: any;
+solutionType:string;
 
   constructor(private readonly activatedRoute: ActivatedRoute) {
 
@@ -69,6 +70,7 @@ export class SolutionsComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe((query: any) => {
       if (query.prop)
+      this.solutionType = query.prop;
         this.navToPages(query.prop);
     });
   }
@@ -80,13 +82,13 @@ export class SolutionsComponent implements OnInit {
           this.solutionData = {
             title: 'Our Solutions',
             heading: 'Unlocking Secure Access:',
-            subHeading: 'Automate compliance and protect your enterprise against threats.',
+            subHeading: 'Automate compliance and protect your enterprise against threats',
             solutionName: 'Identity Governance Solutions',
             solutionContent: 'Our Identity Governance Administration (IGA) solutions serve as the bedrock of a resilient digital identity ecosystem, ensuring that businesses can navigate the complexities of identity management with confidence and precision..',
             solutionImg: '../../assets/images/heroimages/SolutionheroImgSample.png',
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance and Administration challenges',
+            solutionHdng: 'Key Identity Governance and Administration challenges',
             pointsList: [
               'Limited resources and budget constraints',
               'Complexity of IT environment ',
@@ -125,10 +127,10 @@ export class SolutionsComponent implements OnInit {
           };
           this.potentialDiffDataObj = {
             hdng: `IGA Features and Capabilities`,
-            content: `We recognize that the intricate dance between user access, compliance, and security is more crucial than ever and need these capabilities:`,
+            content: `We recognize that the intricate dance between user access, compliance, and security is more crucial than ever, and needs these capabilities`,
             featuresObj: [
               {
-                title: `Identity life cycle management`,
+                title: `Identity Lifecycle Management `,
                 info: `Identity lifecycle management ensures secure and compliant user access, covering creation, modification, and deactivation throughout their association with an organization.`,
                 icon: `../../assets/images/Icons/IconIdentitylifecyclemanagement.svg`
               },
@@ -170,7 +172,7 @@ export class SolutionsComponent implements OnInit {
             solutionImg: '../../assets/images/heroimages/Customer_Identity_Access_Management.png'
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance and Administration challenges',
+            solutionHdng: 'Key Customer Identity & Access Management challenges',
             pointsList: [
               'Seamless Onboarding Complexity',
               'Identity Proofing Enhancement',
@@ -212,12 +214,12 @@ export class SolutionsComponent implements OnInit {
             content: ``,
             featuresObj: [
               {
-                title: `User registration`,
+                title: `User Registration `,
                 info: `Efficient user registration in Customer Identity & Access Management (CIAM) ensures seamless onboarding, prioritizing security and user experience.`,
-                icon: `../../assets/images/Icons/IconUserregistration.svg`
+                icon: `../../assets/images/Icons/IconUserRegistration.svg`
               },
               {
-                title: `Identity proofing`,
+                title: `Identity Proofing`,
                 info: `In CIAM, identity proofing ensures robust user authentication, bolstering security measures and fostering trust in digital interactions.`,
                 icon: `../../assets/images/Icons/IconIdentityproofing.svg`
               },
@@ -227,7 +229,7 @@ export class SolutionsComponent implements OnInit {
                 icon: `../../assets/images/Icons/IconSSO.svg`
               },
               {
-                title: `Single Portal Access all the applications`,
+                title: `Single Portal Access`,
                 info: `Streamline user experience with CIAM's single portal, granting access to all applications for a unified and efficient interaction.`,
                 icon: `../../assets/images/Icons/IconSinglePortalAccessalltheapplications.svg`
               },
@@ -254,7 +256,7 @@ export class SolutionsComponent implements OnInit {
             solutionImg: '../../assets/images/heroimages/Privileged_Access_Management.png'
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance and Administration challenges',
+            solutionHdng: 'Key Previliged Access Management challenges',
             pointsList: [
               'Balancing Privilege and Efficiency',
               'Session Visibility Enhancement',
@@ -305,13 +307,13 @@ export class SolutionsComponent implements OnInit {
                 icon: `../../assets/images/Icons/IconCredentialVaultingPasswordManagement.svg`
               },
               {
-                title: `Session Recording &Management`,
-                info: `PAM's session recording and management track and monitor privileged user activities, enhancing security, compliance, and incident response capabilities.`,
+                title: `Session Recording & Management`,
+                info: `PAM's session recording and management tracks and monitors privileged user activities, enhancing security, compliance, and, incident response capabilities.`,
                 icon: `../../assets/images/Icons/IconSessionRecordingManagement.svg`
               },
               {
                 title: `Least Privilege and End Point Protection`,
-                info: `Least privilege and endpoint protection in PAM bolster security by limiting access and fortifying endpoints against potential threats effectively.`,
+                info: `Least privilege and end point protection in PAM bolsters security by limiting access and fortifying end points against potential threats, effectively.`,
                 icon: `../../assets/images/Icons/IconLeastPrivilegeandEndPointProtection.svg`
               },
               {
@@ -334,10 +336,10 @@ export class SolutionsComponent implements OnInit {
             subHeading: 'Automate compliance and protect your enterprise against threats.',
             solutionName: 'Access Management',
             solutionContent: "TechDemocracy's Access Management (AM) solutions rise to the occasion, not just as gatekeepers but as architects of a secure, user-friendly access experience.",
-            solutionImg: '../../assets/images/heroimages/Privileged_Access_Management.png'
+            solutionImg: '../../assets/images/heroimages/AccessManagement.png'
           };
           this.igaData = {
-            solutionHdng: 'Solve key Identity Governance and Administration challenges',
+            solutionHdng: 'Key Access Management challenges',
             pointsList: [
               'Single Sign-On Simplification',
               'Multi-Factor Authentication Enhancement',
@@ -452,7 +454,7 @@ export class SolutionsComponent implements OnInit {
             ]
           };
           this.whyChooseTDCDataObj = {
-            theQsn: `Why choose TechDemocracy for Manage SOC?`,
+            theQsn: `Discover Why TechDemocracy is the Best Choice for Managing Your SOC`,
             theAns: `Enterprises seeking AM solutions desire more than a simplistic access control mechanism—they seek a partner capable of simplifying Single Sign-On complexities, fortifying multi-factor authentication, and navigating the intricacies of policy management with finesse.`
           };
           this.potentialDiffDataObj = {
@@ -461,22 +463,22 @@ export class SolutionsComponent implements OnInit {
             featuresObj: [
               {
                 title: `Managed SOC with aiXDR`,
-                info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI+VA+EDR: Comprehensive Cybersecurity for Digital-Era) a holistic approach to cybersecurity by gathering deep insights from endpoints, servers, clouds, network devices, applications, IOT, and OT and applying user identity, threat intelligence, and vulnerability assessment to establish threat profiles, generate threat indicators, raise essential alerts, and offer remediation path – automated or triaged.`,
+                info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI+VA+EDR: Comprehensive Cybersecurity for Digital-Era) is a holistic cybersecurity approach that considers user identity, threat intelligence, and vulnerability assessment to create threat profiles, generate threat indicators, raise critical alerts, and provide automated or triaged remediation paths.`,
                 icon: `../../assets/images/Icons/IconManagedSOCwithaiXDR.svg`
               },
               {
                 title: `Managed SOC with aiSIEM`,
-                info: `(SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI: Comprehensive Cybersecurity for Digital-Era) aiSIEM platform augments and automates security services with our AI and ML powered solutions. It delivers continuous coverage by collecting telemetry from logs, identity management, networks, endpoints, clouds and applications.`,
+                info: `With our AI and ML-powered solutions, the (SIEM+SOAR+UEBA+NBAD/NTA+TI+IDS/IPS+ML+AI: Comprehensive Cybersecurity for Digital-Era) aiSIEM platform enhances and automates security services. It provides continuous coverage by gathering telemetry from networks, endpoints, logs, identity management, clouds, and apps.`,
                 icon: `../../assets/images/Icons/IconManagedSOCwithaiSIEM.svg`
               },
               {
                 title: `Cyber Advisory Services`,
-                info: `Threat and security assessment Secure business strategies, products, and services. Support business growth by providing comprehensive security risk. A deep understanding of your business priorities enables us to provide strategic advice and a ‘secure by design’ approach. With our expertise and experience, we efficiently and flexibly assist our clients in the planning and implementation of their security programs`,
+                info: `We are providing comprehensive security risk to support business growth. With a thorough comprehension of your company's goals, we can offer strategic counsel and a "secure by design" methodology. Our knowledge and experience help our clients develop and carry out their security initiatives effectively and adaptably.`,
                 icon: `../../assets/images/Icons/IconCyberAdvisoryServices.svg`
               },
               {
-                title: `Integrated Threat Management (Common threat intelligence + Threat Hunting)`,
-                info: `ITM is a security approach that consolidates different security components into a single platform or application for an enterprise IT architecture. ITM evolved as a response to increasingly complex and frequent malicious attacks by hackers and others intent on damaging systems. ITM solutions address different types of attacks, such as malware and spam.`,
+                title: `Integrated Threat Management (Common Threat Intelligence + Threat Hunting)`,
+                info: `In an enterprise IT architecture, ITM is a security strategy that combines many security elements into a single platform or application. ITM developed as a defense when hackers and other intruders became more skilled and regular in their attacks on systems. ITM solutions handle a variety of assaults, including spam and malware.`,
                 icon: `../../assets/images/Icons/IconIntegratedThreatManagement.svg`
               }
             ]

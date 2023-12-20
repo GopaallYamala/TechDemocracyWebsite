@@ -8,7 +8,7 @@ import { Component } from '@angular/core'
 export class PartnersComponent {
   partnersData = {
     title: 'Partners',
-    heading: 'We are Technologically Partner with major Identity Giants in the World',
+    heading: 'We Work With Leading Identity Giants to Deliver Superior Cybersecurity Services',
     subHeading: '',
     solutionName: '',
     displayBtn: false,
