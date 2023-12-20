@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AboutUsUIComponent {
   aboutUsData = {
     title: 'About Us',
-    heading: 'TechDemocracy - Your Trusted Identity Security Advisory',
+    heading: 'TechDemocracy – Your Trusted Cyber Security Solutions and Services Partner',
     subHeading: 'Securing Your Trust, Protecting Your Digital Frontier. Your Safety, Our Priority.',
     solutionName: '',
     displayBtn: false,

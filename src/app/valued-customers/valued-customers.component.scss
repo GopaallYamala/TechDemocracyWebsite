@@ -3,5 +3,18 @@
   .customers-list {
     justify-content: center;
     align-items: center;
+
+    .partner-img {
+      // filter: grayscale(0.95);
+      width: 70%;
+      height: auto;
+
+      transition: transform 0.3s; /* Animation */
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.15);
+        // box-shadow: 0 3px 8px rgb(255 255 255 / 18%), 0 3px 6px rgb(0 0 0 / 8%);
+      }
+    }
   }
 }

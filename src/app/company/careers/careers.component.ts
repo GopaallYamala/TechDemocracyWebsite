@@ -47,12 +47,12 @@ export class CareersComponent implements OnInit, AfterViewInit {
 
   careersUsData = {
     title: 'Careers',
-    heading: 'Join us for greater revolution to collaborate in Techdemocracy',
-    subHeading: '',
-    solutionName: 'Partners',
+    heading: 'Take the First Step Towards a Bright Future',
+    subHeading: 'A career with us is more than a job – it\'s an opportunity for growth and success.',
+    solutionName: '',
     displayBtn: false,
     solutionContent: '',
-    solutionImg: '../../assets/images/partners-img.JPG'
+    solutionImg: '../../assets/images/heroimages/Career.png'
   }
 
   achivedCardsArr = [

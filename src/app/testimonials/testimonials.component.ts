@@ -18,22 +18,27 @@ export class TestimonialsComponent implements OnInit {
       {
         tContent: 'TechDemocracy\'s guidance and Ping Identity\'s advanced IAM platform were a game-changer. Our user experience improved drastically, along with substantial cost savings due to minimized maintenance expenses.',
         tClientImg: '',
-        tRole: 'IT Manager, Leading Financial Services Firm, North America'
+        tRole: 'IT Manager, Leading Financial Services Firm, USA'
       },
       {
-        tContent: 'Thanks to TechDemocracy and Ping Identity, our firm now boasts enhanced security, compliance, and operational efficiency. Their modernized IAM infrastructure positioned us for growth, ensuring continued success in the dynamic financial landscape.',
+        tContent: 'TechDemocracy, in collaboration with SailPoint, revolutionized our retail enterprise. The IGA implementation elevated security, streamlined access, and ensured operational efficiency. Their expertise positioned us for growth, showcasing a commitment to excellence in identity security.',
         tClientImg: '',
-        tRole: 'Security Compliance Officer, Prominent Financial Services Firm'
+        tRole: 'CISO, Largest Online Retail Enterprise, Canada'
       },
       {
-        tContent: 'TechDemocracy\'s guidance and Ping Identity\'s advanced IAM platform were a game-changer. Our user experience improved drastically, along with substantial cost savings due to minimized maintenance expenses.',
+        tContent: 'TechDemocracy\'s SOC services transformed our security landscape. Their expertise and proactive approach ensured real-time threat detection, rapid incident response, and compliance adherence. The partnership fortified our cybersecurity posture, providing a robust defense against evolving threats.',
         tClientImg: '',
-        tRole: 'IT Manager, Leading Financial Services Firm'
+        tRole: 'Cyber Security Officer, Largest Government Entity, India'
       },
       {
-        tContent: 'Thanks to TechDemocracy and Ping Identity, our firm now boasts enhanced security, compliance, and operational efficiency. Their modernized IAM infrastructure positioned us for growth, ensuring continued success in the dynamic financial landscape.',
+        tContent: 'TechDemocracy\'s expertise in healthcare identity management was instrumental in our transition from a burdensome legacy system to SailPoint. Their seamless migration and integration with critical healthcare platforms like Epic Systems showcased their commitment to improving our security and operational efficiency.',
         tClientImg: '',
-        tRole: 'Security Compliance Officer, Prominent Financial Services Firm'
+        tRole: 'HealthCare IT Director, Canada'
+      },
+      {
+        tContent: 'With the help of TechDemocracy, we replaced the legacy Access Governance system and established a contemporary CIAM platform utilizing OAuth and OIDC protocols for user authentication and SSO across both web and mobile applications within a remarkable 12-month timeframe.',
+        tClientImg: '',
+        tRole: 'IT Security Manager, Healthcare Sector, USA'
       }
     ]
   }

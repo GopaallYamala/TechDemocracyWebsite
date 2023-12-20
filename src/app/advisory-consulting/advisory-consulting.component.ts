@@ -128,7 +128,7 @@ export class AdvisoryConsultingComponent implements OnInit {
             solutionImg: '../../assets/images/heroimages/Operations_Support.png'
           };
           this.advAssmtDataObj = {
-            heading: 'Why Operate and Support',
+            heading: 'We Operate and Support',
             list: [
              {
               hdng: '1.	24/7 Management: ',
@@ -146,7 +146,7 @@ export class AdvisoryConsultingComponent implements OnInit {
           };
           this.tdcConsultantDataObj = {
             heading: `Why TechDemocracy for Operations and Support?`,
-            content: `In the realm of Identity Security, continuous and reliable support is non-negotiable. TechDemocracy is not just a service provider but a reliable partner committed to safeguarding your systems. Our 24/7 support ensures that your organization operates seamlessly, backed by proactive security measures. We take pride in managing your environment with an unwavering focus on optimal performance and risk reduction`
+            content: `In the realm of Identity Security, continuous and reliable support is non-negotiable. TechDemocracy is not just a service provider but a reliable partner committed to safeguarding your systems. Our 24/7 support ensures that your organization operates seamlessly, backed by proactive security measures. We take pride in managing your environment with an unwavering focus on optimal performance and risk reduction.`
           };
           break;
         case `Manage Services`:
