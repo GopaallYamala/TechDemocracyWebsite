@@ -29,7 +29,7 @@ export class CarouselComponent implements OnInit {
     {
       caption: `Your trusted identity partner:`,
       heading: `Identity Attacks Are Fast-growing, Serious, and Costly. How Prepared Are You?`,
-      content: `TechDemocracy deciphers your Business Challenges, aligns your Identity Security landscape with Industry Trends, and charts a Roadmap for Efficiency, Risk Reduction, and Digital Transformation `,
+      content: `TechDemocracy deciphers your Business Challenges, aligns your Identity Security landscape with Industry Trends, and Charts a Roadmap for Efficiency, Risk Reduction, and Digital Transformation `,
       imgUrl: `../../assets/images/slides/HeroImg_Services.svg`
     },
     {
@@ -41,7 +41,7 @@ export class CarouselComponent implements OnInit {
     {
       caption: `Your trusted identity partner:`,
       heading: `We Handle the Backend, You Conquer the Frontend`,
-      content: `TechDemocracy is a boutique cybersecurity firm with over two decades of experience, focusing on fully managing identity security solutions that integrate and operate the entire identity lifecycle under one umbrella.`,
+      content: `TechDemocracy is a boutique cybersecurity firm with over two decades of experience, focusing on fully managing Identity Security solutions that integrate and operate the entire identity lifecycle under one umbrella`,
       imgUrl: `../../assets/images/slides/HeroImg_AboutUS_v2-01.svg`
     },
     {

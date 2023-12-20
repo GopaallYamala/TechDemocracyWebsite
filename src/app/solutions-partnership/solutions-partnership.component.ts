@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'solutions-partnership',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class SolutionsPartnershipComponent {
+
+  @Input() solutionType:string='Identity Governance & Administration';
 
 }
