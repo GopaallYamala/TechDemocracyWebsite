@@ -1,6 +1,6 @@
 .leadership {
   width: 100%;
-  background: #29002B;
+  background: #29002b;
   min-height: 320px;
   position: relative;
   .hero-container {
@@ -22,16 +22,18 @@
     left: 3rem;
     z-index: 5;
     p {
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
   img {
     height: 335px;
+    object-fit: cover;
+    width: 100%;
   }
 }
 
 .leadership-header {
   h2 {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
