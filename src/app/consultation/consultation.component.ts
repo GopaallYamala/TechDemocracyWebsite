@@ -20,6 +20,6 @@ export class ConsultationComponent implements OnInit {
   }
 
   talkToExpert () {
-    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact Us' } });
   }
 }

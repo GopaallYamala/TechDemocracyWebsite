@@ -12,6 +12,6 @@ export class TDCRightPartnerComponent {
   constructor (private readonly router: Router) {}
 
   talkToExpert () {
-    this.router.navigate(['/company'], { queryParams: { prop: 'Contact us' } });
+    this.router.navigate(['/company'], { queryParams: { prop: 'Contact Us' } });
   }
 }

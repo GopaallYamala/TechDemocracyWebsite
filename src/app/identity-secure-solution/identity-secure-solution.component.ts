@@ -31,7 +31,7 @@ export class IdentitySecureSolutionComponent implements OnInit {
       } else if (title === 'Advisory Consulting' || title === 'Implementation Service' || title === 'Operations & Support' || title === 'Manage Services') {
         this.router.navigate(['/adv-consulting'], { queryParams: { prop: title } });
         this.location.replaceState('/adv-consulting');
-      } else if (title === 'Contact us' || title === 'About us' || title === 'Leadership' || title === 'Careers' || title === 'News' || title === 'Testimonials') {
+      } else if (title === 'Contact Us' || title === 'About Us' || title === 'Leadership' || title === 'Careers' || title === 'News' || title === 'Testimonials') {
         this.router.navigate(['/company'], { queryParams: { prop: title } });
         this.location.replaceState('/company');
       } else {

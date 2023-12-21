@@ -68,11 +68,11 @@ export class AdvisoryConsultingComponent implements OnInit {
             list: [
              {
               hdng: 'Comprehensive Review: ',
-              content: 'Identify gaps and weaknesses for a strong cybersecurity plan..'
+              content: 'Identify gaps and weaknesses for a strong cybersecurity plan.'
              },
              {
               hdng: 'Foundational Planning:',
-              content: 'Leverage our expertise to create a solid plan for your transformation journey..'
+              content: 'Leverage our expertise to create a solid plan for your transformation journey.'
              },
              {
               hdng: 'Strategic Roadmap:',
