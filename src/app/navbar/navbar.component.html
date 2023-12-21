@@ -1,3 +1,4 @@
+<!-- Web Nav Menu -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light tdc-navbar">
   <div class="container justify-content-between align-items-baseline">
     <a class="navbar-brand" [routerLink]="'/home'">
@@ -153,6 +154,9 @@
             Solutions
           </label>
           <ul class="dropdown-menu ham-main-list" *ngIf="displaySolutionsMenu" @slideDown>
+            <li class="nav-item back-action" (click)="hideSubMenu('solutions')">
+              Back
+            </li>
             <li class="nav-item" (click)="navToPages('/adv-consulting', 'Identity Governance & Administration')">
               <a class="nav-link">
                 <span class="navtitle">Identity Governance & Administration</span>

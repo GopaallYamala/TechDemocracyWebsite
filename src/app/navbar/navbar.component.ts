@@ -286,7 +286,8 @@ export class NavBarComponent implements OnInit {
     this.selectedResourceType = type;
   }
 
-  toggleHam (item) {
+  toggleHam(item) {
+    // event.preventDefault();
     if (item === 'solutions') {
       this.displaySolutionsMenu = true;
       this.displayServicesMenu = false;
@@ -302,7 +303,16 @@ export class NavBarComponent implements OnInit {
     }
   }
 
-
+  hideSubMenu(menuItem) {
+    // event.preventDefault();
+    if (menuItem === 'solutions') {
+      this.displaySolutionsMenu = false;
+    } else if (menuItem === 'services') {
+      this.displayServicesMenu = false;
+    } else if (menuItem === 'company') {
+      this.displayCompanyMenu = false;
+    }
+  }
 
 
 
