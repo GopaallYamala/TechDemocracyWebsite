@@ -174,7 +174,7 @@ export class NavBarComponent implements OnInit {
 
   companyMenuData = [
     {
-      title: 'About us',
+      title: 'About Us',
       desc: 'Your Trusted Security Partner',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
@@ -192,7 +192,7 @@ export class NavBarComponent implements OnInit {
       stories: 'Customer Success Stories',
     },
     {
-      title: 'Contact us',
+      title: 'Contact Us',
       desc: 'Talk to Our Cyber Consultants',
       businessModel: 'Business Model',
       stories: 'Customer Success Stories',
@@ -261,7 +261,7 @@ export class NavBarComponent implements OnInit {
       } else if (title === 'Advisory Consulting' || title === 'Implementation Service' || title === 'Operations & Support' || title === 'Manage Services') {
         this.router.navigate(['/adv-consulting'], { queryParams: { prop: title } });
         this.location.replaceState('/adv-consulting');
-      } else if (title === 'Contact us' || title === 'About us' || title === 'Leadership' || title === 'Careers' || title === 'News' || title === 'Testimonials') {
+      } else if (title === 'Contact Us' || title === 'About Us' || title === 'Leadership' || title === 'Careers' || title === 'News' || title === 'Testimonials') {
         this.router.navigate(['/company'], { queryParams: { prop: title } });
         this.location.replaceState('/company');
       } else {
@@ -286,7 +286,8 @@ export class NavBarComponent implements OnInit {
     this.selectedResourceType = type;
   }
 
-  toggleHam (item) {
+  toggleHam(item) {
+    // event.preventDefault();
     if (item === 'solutions') {
       this.displaySolutionsMenu = true;
       this.displayServicesMenu = false;
@@ -302,7 +303,16 @@ export class NavBarComponent implements OnInit {
     }
   }
 
-
+  hideSubMenu(menuItem) {
+    // event.preventDefault();
+    if (menuItem === 'solutions') {
+      this.displaySolutionsMenu = false;
+    } else if (menuItem === 'services') {
+      this.displayServicesMenu = false;
+    } else if (menuItem === 'company') {
+      this.displayCompanyMenu = false;
+    }
+  }
 
 
 

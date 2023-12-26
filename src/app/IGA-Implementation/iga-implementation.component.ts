@@ -11,4 +11,5 @@ export class IGAImplementationComponent {
     theQsn: ``,
     theAns: ``
   };
+  @Input() solutionType: string = 'Identity Governance & Administration';
 }

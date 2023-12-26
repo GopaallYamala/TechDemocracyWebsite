@@ -4,14 +4,18 @@ data-aos-duration="1000">
     <section class="iga-implementation-container">
       <div class="row">
         <div class="iga-img-container col-md-6 col-xs-12">
-          <img src="../../assets/images/heroimages/Diagramiga.svg" alt="">
+          <img *ngIf="solutionType=='Identity Governance & Administration'" src="../../assets/images/heroimages/Identity Governance and Administration.svg" alt="">
+          <img *ngIf="solutionType=='Customer Identity & Access Management'" src="../../assets/images/heroimages/Customer Identity and Access Management.svg" alt="">
+          <img *ngIf="solutionType=='Previliged Access Management'" src="../../assets/images/heroimages/Privileged Access Management referral.svg" alt="">
+          <img *ngIf="solutionType=='Access Management'" src="../../assets/images/heroimages/Access Management referral copy.svg" alt="">
+          <img *ngIf="solutionType=='Manage SOC'" src="../../assets/images/heroimages/Identity Governance and Administration.svg" alt="">
         </div>
         <div class="iga-content col-md-6 col-xs-12">
           <h2 class="iga-hdng">{{whyChooseTDCObj.theQsn}}</h2>
           <p class="iga-content-para">{{whyChooseTDCObj.theAns}}</p>
           <div>
             <button class="btn btn-danger iga-read-more-btn">
-              Download Datasheet
+              <a href="../../assets/documents/TDC & SailPoint 27092023_v2.0.0_LetterHead Size.pdf" target="blank">Download Datasheet</a>
             </button>
           </div>
         </div>

@@ -84,7 +84,7 @@ solutionType:string;
             heading: 'Unlocking Secure Access:',
             subHeading: 'Automate compliance and protect your enterprise against threats',
             solutionName: 'Identity Governance Solutions',
-            solutionContent: 'Our Identity Governance Administration (IGA) solutions serve as the bedrock of a resilient digital identity ecosystem, ensuring that businesses can navigate the complexities of identity management with confidence and precision..',
+            solutionContent: 'Our Identity Governance Administration (IGA) solutions serve as the bedrock of a resilient digital identity ecosystem, ensuring that businesses can navigate the complexities of identity management with confidence and precision.',
             solutionImg: '../../assets/images/heroimages/SolutionheroImgSample.png',
           };
           this.igaData = {
@@ -357,7 +357,7 @@ solutionType:string;
 
               },
               {
-                bHdng: `Fortified Multi-Factor Authentication`,
+                bHdng: `Fortified MFA`,
                 bContent: `Strengthen security with robust authentication, ensuring only authorized users gain access.`,
                 image: '../../assets/images/All_Solutions/Solutions__Fortified MultiFactor Authentication.svg'
 

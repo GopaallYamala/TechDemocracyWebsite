@@ -33,7 +33,7 @@ export class TestimonialsComponent implements OnInit {
       {
         tContent: 'TechDemocracy\'s expertise in healthcare identity management was instrumental in our transition from a burdensome legacy system to SailPoint. Their seamless migration and integration with critical healthcare platforms like Epic Systems showcased their commitment to improving our security and operational efficiency.',
         tClientImg: '',
-        tRole: 'HealthCare IT Director, Canada'
+        tRole: 'Senior Director, Identity & Access Management, One of the largest healthcare organization in midwest region, USA'
       },
       {
         tContent: 'With the help of TechDemocracy, we replaced the legacy Access Governance system and established a contemporary CIAM platform utilizing OAuth and OIDC protocols for user authentication and SSO across both web and mobile applications within a remarkable 12-month timeframe.',
