@@ -77,9 +77,12 @@
   }
 
   .ham-main-list {
-    background-color: #fff;
+    background-color: #FFFFFF;
     padding: 2rem;
     text-align: left;
+    height: 100vh;
+    font-size: 20px;
+    font-weight: 800;
     .nav-item {
       position: static;
       padding-bottom: 2rem;
