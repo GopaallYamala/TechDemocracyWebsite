@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { AnimationDefinitions } from 'src/shared/animations';
 
@@ -64,7 +65,8 @@ export class SolutionsComponent implements OnInit {
   title: any;
 solutionType:string;
 
-  constructor(private readonly activatedRoute: ActivatedRoute) {
+  constructor(private readonly activatedRoute: ActivatedRoute, 
+    private readonly meta: Meta) {
 
   }
   ngOnInit(): void {
@@ -73,6 +75,11 @@ solutionType:string;
       this.solutionType = query.prop;
         this.navToPages(query.prop);
     });
+    // this.meta.addTags([
+    //   {name: 'title', content: "Delivery Center India - Cotelligent. Delivery Center United States - TechDemocracy. Delivery Center Canada. TechDemocracy Delivery Center Philippines | Get in touch with TechDemocracy"},
+    //   { name: 'description', content: "Connect effortlessly with TechDemocracy’s delivery center in India using our contact Information or the inquiry submission form. Connect effortlessly with TechDemocracy’s delivery center in USA using our contact Information or the inquiry submission form. Connect effortlessly with TechDemocracy’s delivery center in Canada using our contact Information or the inquiry submission form. Connect effortlessly with TechDemocracy’s delivery center in Philippines using our contact Information or the inquiry submission form." },
+    //   { name: 'keywords', content: "Contact information, Inquiry form, Contact details, Reach out, Inquiry submission, India office, Techdemocracy India, Cotelligent, enquiries, Contact form, Get connected, Customer support, Reach us, Connect with us. Techdemocracy delivery center, Canada delivery center, Contact information, Inquiry form, Contact details, Inquiry submission, Canada office, Techdemocracy Canada, enquiries, Contact form, Get connected, Customer support, Reach us, Connect with us, Contact support, Message us, Enquiry form, Customer service. Philippines office, Contact information, Inquiry form, Contact details, Reach out, Inquiry submission, enquiries, Get connected, Customer support, Reach us, Connect with us, Contact support, Message us, Enquiry form, TechdemocracyPhilippines" }]
+    // );
   }
 
   navToPages(title?: any) {
@@ -161,6 +168,11 @@ solutionType:string;
               }
             ]
           }
+          this.meta.addTags([
+            {name: 'title', content: "Identity Governance Solutions | IGA | Identity Management"},
+            { name: 'description', content: "Explore cutting-edge Identity Governance Solutions: PIM, GRC, IAM, and Identity Analytics. Embrace a robust Identity Governance Framework for enhanced security." },
+            { name: 'keywords', content: "Privileged Identity Management (PIM), Governance, Risk, and Compliance (GRC), Identity Analytics, Identity and Access Management (IAM), Identity Governance Framework" }]
+          );
           break;
         case 'Customer Identity & Access Management':
           this.solutionData = {
@@ -245,6 +257,11 @@ solutionType:string;
               }
             ]
           };
+          this.meta.addTags([
+            {name: 'title', content: "Customer Identity and Access Management | CIAM - TechDemocracy"},
+            { name: 'description', content: "Discover techDemocracy’s Customer Identity and Access Management solutions, featuring PIM, GRC, IAM, and Identity Analytics." },
+            { name: 'keywords', content: "Identity governance, IGA, Privileged Identity Management (PIM), Governance, Risk, and Compliance (GRC), Identity Analytics, Identity and Access Management (IAM), Identity Governance Framework, Identity Proofing Enhancement, Behavior Analytics Integration" }]
+          );
           break;
         case `Previliged Access Management`:
           this.solutionData = {
@@ -328,6 +345,11 @@ solutionType:string;
               },
             ]
           };
+          this.meta.addTags([
+            {name: 'title', content: "Previliged Access Management (PAM) | Identity Security Solution"},
+            { name: 'description', content: "Our Privileged Access Management solution transcends traditional privilege management by ensuring just-in-time access, robust session recording & reliable endpoint protection." },
+            { name: 'keywords', content: "PAM, cyberthreats, Session Visibility Enhancement, Endpoint Protection Optimization, PAM solution,Proactive Security Measures, Credential Vaulting, Password Management, Application Privileged Account Management, APAM" }]
+          );
           break;
         case `Access Management`:
           this.solutionData = {
@@ -360,7 +382,6 @@ solutionType:string;
                 bHdng: `Fortified MFA`,
                 bContent: `Strengthen security with robust authentication, ensuring only authorized users gain access.`,
                 image: '../../assets/images/All_Solutions/Solutions__Fortified MultiFactor Authentication.svg'
-
               },
               {
                 bHdng: `Efficient Policy Management`,
@@ -406,6 +427,11 @@ solutionType:string;
               }
             ]
           };
+          this.meta.addTags([
+            {name: 'title', content: "Access Management Solutions | AM | Multi-Factor Authentication"},
+            { name: 'description', content: "TechDemocracy's Access Management (AM) solutions rise to the occasion, not just as gatekeepers but as architects of a secure, user-friendly access experience." },
+            { name: 'keywords', content: "AM solution, access control, policy management, Streamlined Single Sign-On, User Convenience Optimization, access control mechanism, Single Sign-On, MFA, SAML, Open ID Connect, TechDemocracy" }]
+          );
           break;
         case `Manage SOC`:
           this.solutionData = {
@@ -483,6 +509,11 @@ solutionType:string;
               }
             ]
           };
+          this.meta.addTags([
+            {name: 'title', content: "Manage SOC | TechDemocracy | Security Operations Center"},
+            { name: 'description', content: "Secure your business with TechDemocracy’s Managed SOC services - expert monitoring and protection for your digital assets. Get peace of mind today!" },
+            { name: 'keywords', content: "Cybersecurity, Threat detection, Incident response, Security monitoring Network defense, Security analysis, SIEM, Security Information and Event Management, Managed detection and response, MDR, Security alerts, Security protocols" }]
+          );
           break;
         default:
           break;

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -41,7 +42,8 @@ export class AdvisoryConsultingComponent implements OnInit {
   }
   title: any;
 
-  constructor(private readonly activatedRoute: ActivatedRoute) {
+  constructor(private readonly activatedRoute: ActivatedRoute,
+    private readonly meta: Meta) {
 
   }
   ngOnInit(): void {
@@ -84,6 +86,11 @@ export class AdvisoryConsultingComponent implements OnInit {
             heading: `Why TechDemocracy for Advisory Consulting? `,
             content: `Embarking on a cybersecurity transformation journey requires more than just a plan; it requires a strategic roadmap. TechDemocracy excels not only in identifying gaps but also in creating foundational plans aligned with your business objectives. Our advisory services go beyond the surface, ensuring a comprehensive review that lays the groundwork for a successful digital transformation.`
           };
+          this.meta.addTags([
+            {name: 'title', content: "Identity Security Advisory Consultant | TechDemocracy"},
+            { name: 'description', content: "TechDemocracy's advisory consultants offer expertise in cybersecurity strategies. Gain a tailored plan ensuring business objectives and digital transformation." },
+            { name: 'keywords', content: "advisory consulting, cybersecurity transformation journey, digital transformation, business objectives, strategic roadmap, foundational planning, techdemocracy advisory team" }]
+          );
           break;
         case 'Implementation Service':
           this.solutionData = {
@@ -116,6 +123,11 @@ export class AdvisoryConsultingComponent implements OnInit {
             heading: `Why TechDemocracy for Implementation?`,
             content: `Embarking on an IAM implementation journey requires a partner with proven industry expertise. At TechDemocracy, we stand out as the go-to choice for organizations seeking a seamless transition. Our commitment to tailored solutions ensures that the implementation aligns perfectly with your unique business needs. Beyond mere deployment, we focus on ensuring that your systems are not only modernized but also future-proofed for scalability and evolving security challenges.`
           };
+          this.meta.addTags([
+            {name: 'title', content: "Identity Security Implementation Services | TechDemocracy"},
+            { name: 'description', content: "Explore TechDemocracy’s expert-led Identity Security Implementation Services, offering IAM Integration, Access Management, and Identity Governance Solutions." },
+            { name: 'keywords', content: "IAM implementation journey, Identity Implementation Solutions, IAM Implementation Services, Access Management Solutions, Implementation of Identity Security, IAM Integration Services, Security Software Implementation, Identity Governance Implementation, Access Control Implementation" }]
+          );
           break;
         case `Operations & Support`:
           this.solutionData = {
@@ -148,6 +160,11 @@ export class AdvisoryConsultingComponent implements OnInit {
             heading: `Why TechDemocracy for Operations and Support?`,
             content: `In the realm of Identity Security, continuous and reliable support is non-negotiable. TechDemocracy is not just a service provider but a reliable partner committed to safeguarding your systems. Our 24/7 support ensures that your organization operates seamlessly, backed by proactive security measures. We take pride in managing your environment with an unwavering focus on optimal performance and risk reduction.`
           };
+          this.meta.addTags([
+            {name: 'title', content: "Identity Security Operations and Support | TechDemocracy"},
+            { name: 'description', content: "Trust TechDemocracy as your best Identity Security Solutions provider, offering comprehensive operations and support for a secure identity landscape." },
+            { name: 'keywords', content: "Identity security, round-the-clock support, Identity security environment, proactive security measures, risk mitigation, identity security operations, identity security support, best identity security solutions provider" }]
+          );
           break;
         case `Manage Services`:
           this.solutionData = {
@@ -180,6 +197,11 @@ export class AdvisoryConsultingComponent implements OnInit {
             heading: `Why TechDemocracy for Managed Services? `,
             content: `While many offer managed services, TechDemocracy takes pride in providing more than just support. Our managed services go beyond maintaining status quo; they ensure continuous improvement. From onboarding to reengineering, we manage your Identity Security environment with an unwavering focus on tailored outcomes, zero downtime, and ongoing optimization.`
           };
+          this.meta.addTags([
+            {name: 'title', content: "Identity Security Managed Services | TechDemocracy"},
+            { name: 'description', content: "Experience TechDemocracy's managed services for a secure identity environment, offering end-to-end support for your digital journey." },
+            { name: 'keywords', content: "identity security ecosystem, end-to-end support, seamless transformation, managed services, identity security environment, digital business, Techdemocracy services, Techdemocracy identity security services" }]
+          );
           break;
         default:
           break;
