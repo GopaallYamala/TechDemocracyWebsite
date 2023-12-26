@@ -3,7 +3,6 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { AnimationDefinitions } from 'src/shared/animations';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'carousel-component',
   templateUrl: './carousel.component.html',

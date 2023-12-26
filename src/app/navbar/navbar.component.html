@@ -139,7 +139,7 @@
 </nav>
 
 <!-- Mobile Responsive Nav Menu -->
-<nav class="ham-nav" *ngIf="!isCollapsed">
+<nav class="ham-nav" *ngIf="!isCollapsed" @slideDown>
   <ul class="ham-main-list">
     <li class="nav-item" (click)="navToPages('/home')">
       <a href="#" class="nav-link">
@@ -153,8 +153,8 @@
           <label for="more" class="dropdown-toggle">
             Solutions
           </label>
-          <ul class="dropdown-menu ham-main-list" *ngIf="displaySolutionsMenu" @slideDown>
-            <li class="nav-item back-action" (click)="hideSubMenu('solutions')">
+          <ul class="dropdown-menu ham-main-list" *ngIf="displaySolutionsMenu" @slideRight>
+            <li class="nav-item back-action" (click)="hideSubMenu('solutions', $event)">
               Back
             </li>
             <li class="nav-item" (click)="navToPages('/adv-consulting', 'Identity Governance & Administration')">
@@ -186,14 +186,18 @@
         </li>
       </ul>
     </li>
-    <li>
+    <li class="nav-item">
       <ul>
-        <li class="dropdown nav-item" (click)="toggleHam('services')">
+        <li class="dropdown nav-link" (click)="toggleHam('services')">
           <input type="checkbox" id="ServicesDD" name="services">
           <label for="ServicesDD" class="dropdown-toggle">
             Services
           </label>
-          <ul class="dropdown-menu ham-main-list" *ngIf="displayServicesMenu" @slideDown>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displayServicesMenu" (click)="hideSubMenu('services', $event)"
+            @slideRight>
+            <li class="nav-item back-action" (click)="hideSubMenu('services', $event)">
+              Back
+            </li>
             <li class="nav-item" (click)="navToPages('/adv-consulting', 'Advisory Consulting')">
               <a class="nav-link">
                 <span class="navtitle">Advisory Consulting</span>
@@ -235,7 +239,10 @@
           <label for="CompanyDD" class="dropdown-toggle">
             Company
           </label>
-          <ul class="dropdown-menu ham-main-list" *ngIf="displayCompanyMenu" @slideDown>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displayCompanyMenu" @slideRight>
+            <li class="nav-item back-action" (click)="hideSubMenu('company', $event)">
+              Back
+            </li>
             <li class="nav-item" (click)="navToPages('/company', 'About Us')">
               <a class="nav-link">
                 <span class="navtitle">About Us</span>
