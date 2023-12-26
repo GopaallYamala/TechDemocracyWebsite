@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { StrapiService } from 'src/shared/services/strapi.service';
 
@@ -13,7 +14,8 @@ export class ResourcesComponent implements OnInit {
   contextType: string = 'All'
 
   constructor(private readonly strapiService: StrapiService,
-    private readonly activatedRoute: ActivatedRoute) { }
+    private readonly activatedRoute: ActivatedRoute, 
+    private meta: Meta) { }
 
 
   ngOnInit() {
@@ -23,6 +25,11 @@ export class ResourcesComponent implements OnInit {
       }
     });
     this.freeConsult();
+    this.meta.addTags([
+      {name: 'title', content: "TechDemocracy Blog | Cybersecurity, Risk Solutions & IAM Updates"},
+      { name: 'description', content: "Stay informed with Techdemocracy Cybersecurity Blog. Get insights into Identity Management, CyberRisk Solutions & Threat Intelligence for effective Cyberdefense." },
+      { name: 'keywords', content: "Cybersecurity insights, Identity management blog, CyberRisk solutions posts, IAM solutions blog, Security tips and tricks, Data protection articles, Threat intelligence blog, Cyber defense strategies, Identity and access management updates, Security best practices, IT security blogs, Cyber threat analysis, Cyber awareness articles" }]
+    );
   }
 
 
