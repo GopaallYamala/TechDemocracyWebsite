@@ -303,7 +303,7 @@ export class NavBarComponent implements OnInit {
     }
   }
 
-  hideSubMenu(menuItem) {
+  hideSubMenu(menuItem, event) {
     // event.preventDefault();
     if (menuItem === 'solutions') {
       this.displaySolutionsMenu = false;
@@ -312,6 +312,7 @@ export class NavBarComponent implements OnInit {
     } else if (menuItem === 'company') {
       this.displayCompanyMenu = false;
     }
+    event.stopPropagation();
   }
 
 
