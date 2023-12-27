@@ -58,6 +58,12 @@ export class NavBarComponent implements OnInit {
         this.country = data;
       }
     )
+    const navIcons = document.querySelectorAll<HTMLElement>('#ham-menu-icon');
+    navIcons.forEach(navIcon => {
+      navIcon.addEventListener('click', function () {
+        this.classList.toggle('open');
+      });
+    });
     // this.geoLocationService.getIpAddress().subscribe(resp => {
     //   console.log(resp, 'geo location response-----------');
     //   this.ipaddress = resp['ip'];
@@ -288,6 +294,9 @@ export class NavBarComponent implements OnInit {
 
   toggleHam(item) {
     // event.preventDefault();
+    this.displaySolutionsMenu = false;
+    this.displayServicesMenu = false;
+    this.displayCompanyMenu = false;
     if (item === 'solutions') {
       this.displaySolutionsMenu = true;
       this.displayServicesMenu = false;
@@ -301,6 +310,7 @@ export class NavBarComponent implements OnInit {
       this.displayServicesMenu = false;
       this.displayCompanyMenu = true;
     }
+    event.stopPropagation();
   }
 
   hideSubMenu(menuItem, event) {
