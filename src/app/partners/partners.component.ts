@@ -11,11 +11,13 @@ export class PartnersComponent implements OnInit {
   constructor (private readonly meta: Meta) {}
 
   ngOnInit () {
+    // Meta tags starts
     this.meta.addTags([
       {name: 'title', content: "TechDemocracy Partners | Strategy and Technology Partners"},
       { name: 'description', content: "Engage with our Strategy and Technology Partnerships. Explore Services & Channel Reseller options. Leverage the expertise of Techdemocracy Official Partners." },
       { name: 'keywords', content: "Strategy Partners, Technology Partners, Cybersecurity solutions, Channel Reseller, Services & Channel Reseller, Official Partner, Techdemocracy" }]
     );
+    // Meta tags ends
   }
   
   partnersData = {
