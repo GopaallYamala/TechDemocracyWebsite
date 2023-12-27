@@ -11,7 +11,7 @@
   </article> -->
   <ng-container *ngIf="contextType === 'All';else other">
     <highlights [resourceObj]="resourceObj"></highlights>
-    <resources-categories [resourceObj]="resourceObj"></resources-categories>
+    <resources-categories [resourceObj]="resourceObj" [categoriesList]="categoriesList"></resources-categories>
     <events></events>
   </ng-container>
   <ng-template #other>
@@ -19,5 +19,6 @@
       <resources-context [contextType]="contextType" [resourceObj]="resourceObj"></resources-context>
     </ng-container>
   </ng-template>
+  <!-- <div id="DynamicData"></div> -->
 
 </section>

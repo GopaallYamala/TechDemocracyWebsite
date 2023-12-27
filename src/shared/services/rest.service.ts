@@ -31,7 +31,8 @@ export class RestService {
     const headerDict = {
       'Content-Type': 'application/json',
       // 'Authorization': 'Bearer ' + localStorage.getItem('JWT_TOKEN'),
-      'Authorization': 'Bearer 8381aed0d6f4809bab767c991a63b957a835cc72cfe433f5a14bba3bd5db7a07a4a7f5a8ad4f16db7edf2c19f2850ff3ed8aae2151829b66f1e39d705d59689eddcd702e5d479ceadd4a173066fc9e92a432187aa0a4c5429ecf59eacb00e6ac5fbaa6e9594b712ef55f801e6edd7e542713593fd7aa9c6e26471f61c7794423'
+      // 'Authorization': 'Bearer 8381aed0d6f4809bab767c991a63b957a835cc72cfe433f5a14bba3bd5db7a07a4a7f5a8ad4f16db7edf2c19f2850ff3ed8aae2151829b66f1e39d705d59689eddcd702e5d479ceadd4a173066fc9e92a432187aa0a4c5429ecf59eacb00e6ac5fbaa6e9594b712ef55f801e6edd7e542713593fd7aa9c6e26471f61c7794423'
+      'Authorization': 'Bearer 5c68362ab6172c18aa9a59b323d937a471460cfb20d95f0872188b336e21de8b028e32792c6e665551cee715bd17ed034c3af59cb2b77d474d06ab482524a502bae1a2eb0df114a9f2ad9d46aa1f0a263ece7045e56e1b052e0f81e45cd3d5c5d04ec6dc6a1b509c59cb7dd7518a32a2e1afd846711dca8cb596d9b72dd97157'
     }
     return new HttpHeaders(headerDict);
   }

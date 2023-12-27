@@ -22,7 +22,7 @@ export class ResourcesHighlightsComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes) {
-      this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
+      this.resourceJson = JSON.parse(this.resourceObj);
       console.log(this.resourceJson);
     }
   }

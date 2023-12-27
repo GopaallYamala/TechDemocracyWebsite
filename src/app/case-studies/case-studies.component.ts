@@ -1,5 +1,7 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import AOS from "aos";
+import { StrapiService } from 'src/shared/services/strapi.service';
 import { ResourceService } from '../resources/shared/resources.service';
 
 @Component({
@@ -25,12 +27,14 @@ export class CaseStudiesComponent implements OnInit {
   isOverflow: any;
   listOfCaseStudies: any;
 
-  constructor(private readonly resourceService: ResourceService) { }
+  constructor(private readonly resourceService: ResourceService,
+    private readonly router: Router,
+    private readonly strapiService: StrapiService) { }
 
 
   ngOnInit() {
     AOS.init();
-    this.getAllResources();
+    this.getResources();
   }
 
   scrollRight(): void {
@@ -50,6 +54,20 @@ export class CaseStudiesComponent implements OnInit {
       resourceObj = JSON.parse(resourceObj[0].resourceJson);
       this.listOfCaseStudies = resourceObj.filter(resource => resource?.attributes?.ResourceType == "CaseStudy");
     })
+  }
+
+  getResources() {
+    this.strapiService.getBlog().subscribe(res => {
+      let resourceObj = res.data;
+      this.listOfCaseStudies = resourceObj.filter(resource => resource?.attributes?.category?.data?.attributes?.CategoryTitle == "Case Studies");
+    });
+  }
+
+  open(id) {
+    let index = this.listOfCaseStudies.map(res => res.id).indexOf(id);
+    if (index !== -1) {
+      this.router.navigate(['/blogs', { data: JSON.stringify(this.listOfCaseStudies[index]), skipLocationChange: true }]);
+    }
   }
 
 }

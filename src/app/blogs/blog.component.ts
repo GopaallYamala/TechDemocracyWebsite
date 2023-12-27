@@ -36,8 +36,9 @@ export class BlogComponent {
 
   ngOnInit() {
     this.blogDeatils = JSON.parse(this.route.snapshot.paramMap.get('data'));
-    this.getStrapiBlog();
-    this.getAllBlogs();
+    document.getElementById("ResourceArticle").innerHTML = this.blogDeatils.attributes.ArticleEditContent;
+    // this.getStrapiBlog();
+    // this.getAllBlogs();
   }
 
 

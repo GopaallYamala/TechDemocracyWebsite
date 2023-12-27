@@ -16,6 +16,7 @@ export class ResourcesComponent implements OnInit {
   resourceList: any;
   resourceStringObj: any;
   resourceObj: any;
+  categoriesList:any;
 
   constructor(private readonly strapiService: StrapiService,
     private readonly resourceService: ResourceService,
@@ -32,10 +33,37 @@ export class ResourcesComponent implements OnInit {
       }
     });
     this.meta.addTags([
-      {name: 'title', content: "TechDemocracy Blog | Cybersecurity, Risk Solutions & IAM Updates"},
+      { name: 'title', content: "TechDemocracy Blog | Cybersecurity, Risk Solutions & IAM Updates" },
       { name: 'description', content: "Stay informed with Techdemocracy Cybersecurity Blog. Get insights into Identity Management, CyberRisk Solutions & Threat Intelligence for effective Cyberdefense." },
       { name: 'keywords', content: "Cybersecurity insights, Identity management blog, CyberRisk solutions posts, IAM solutions blog, Security tips and tricks, Data protection articles, Threat intelligence blog, Cyber defense strategies, Identity and access management updates, Security best practices, IT security blogs, Cyber threat analysis, Cyber awareness articles" }]
     );
+    this.getResources();
+    this.getCategorys();
+  }
+
+  getResources() {
+    this.strapiService.getBlog().subscribe(res => {
+      const myJSON = JSON.stringify(res.data);
+      // let sample = res.data[0];
+      // document.getElementById("DynamicData").innerHTML = sample.attributes.ArticleEditContent;
+      this.resourceObj = myJSON;
+    });
+  }
+
+  getCategorys() {
+    let categories = [];
+    this.categoriesList = undefined;
+    this.strapiService.getCategory().subscribe(res => {
+      categories.push("All");
+      console.log("Categorys", res);
+      let data = res.data;
+      data.forEach(categorie => {
+        if(categorie){
+          categories.push(categorie.attributes.CategoryTitle);
+        }
+      });
+      this.categoriesList = categories;
+    })
   }
 
   getStrapiResources() {
@@ -80,7 +108,7 @@ export class ResourcesComponent implements OnInit {
 
   updateResource(id, json) {
     this.resourceService.updateResource(id, json).subscribe(res => {
-     this.getAllResources();
+      this.getAllResources();
     })
   }
 

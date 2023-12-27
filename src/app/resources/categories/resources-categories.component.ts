@@ -11,8 +11,9 @@ export class ResourcesCategoriesComponent implements OnChanges {
   categoriesIndex: number = 6;
   @Input() resourceObj: any;
   resourceJson: any;
-  selectedCategorie: string = 'CaseStudy';
+  selectedCategorie: string = "All";
   selectedCategorieList: any;
+  @Input() categoriesList: any;
 
   constructor(private readonly router: Router) { }
 
@@ -71,15 +72,15 @@ export class ResourcesCategoriesComponent implements OnChanges {
   ]
 
   viewAll() {
-    this.categoriesIndex = this.CategorieObj.length;
+    this.categoriesIndex = this.categoriesList.length;
   }
 
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes) {
-      this.resourceJson = JSON.parse(this.resourceObj[0].resourceJson);
+      this.resourceJson = JSON.parse(this.resourceObj);
       console.log(this.resourceJson);
-      this.changeValue("CaseStudy");
+      this.changeValue("Case Studies");
       this.test();
 
     }
@@ -87,11 +88,19 @@ export class ResourcesCategoriesComponent implements OnChanges {
 
   SelectCategorie(item) {
     this.selectedCategorie = item;
-    this.changeValue(item);
+    if (item === "All") {
+      this.allCategories();
+    }
+    else
+      this.changeValue(item);
+  }
+
+  allCategories() {
+    this.selectedCategorieList = this.resourceJson;
   }
 
   changeValue(value: any) {
-    this.selectedCategorieList = this.resourceJson.filter(resource => resource?.attributes?.ResourceType == value);
+    this.selectedCategorieList = this.resourceJson.filter(resource => resource?.attributes?.category?.data?.attributes?.CategoryTitle == value);
   }
 
   open(id) {

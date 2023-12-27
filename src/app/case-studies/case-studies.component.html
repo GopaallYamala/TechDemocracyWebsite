@@ -20,15 +20,15 @@
                 <div class="overflow flex-row-nowrap">
                   <!-- [ngStyle]="{'width': overflowWidth, 'left': pagePosition}" -->
                   <article class="casestudie-card-body" *ngFor="let resource of listOfCaseStudies; let index = index">
-                    <div class="card">
+                    <div (click)="open(resource?.id)" class="card cursor">
                       <!-- [ngStyle]="{'width': cardWidth}" -->
                       <!-- <span>{{i}}</span> -->
-                      <img src="{{'http://localhost:1337' + resource?.attributes?.HeroImage?.data?.attributes?.url}}"
-                        alt="{{resource?.attributes?.HeroImage?.data?.attributes?.hash}}">
+                      <img src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                        alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
                     </div>
                     <div class="card-content">
                       <!-- <p>Legacy Identity Technology to Modern Identity Governance Case Study</p> -->
-                      <p>{{resource?.attributes?.Comments}}</p>
+                      <p>{{resource?.attributes?.HeadingTitle}}</p>
                     </div>
                   </article>
                 </div>

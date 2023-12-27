@@ -21,13 +21,13 @@
           *ngFor="let resource of resourceJson | slice: (resourceJson?.length > 2 ? resourceJson?.length - 2 : 0); index as i">
           <section class="prefered-caseStudie py-3">
             <article (click)="open(resource?.id)" class="resourceimg cursor">
-              <img src="{{'http://localhost:1337' + resource?.attributes?.HeroImage?.data?.attributes?.url}}"
-                alt="{{resource?.attributes?.HeroImage?.data?.attributes?.hash}}">
+              <img src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
             </article>
-            <p class="events pt-3">{{resource?.attributes?.ResourceType}}</p>
+            <p class="events pt-3">{{resource?.attributes?.category?.data?.attributes?.CategoryTitle}}</p>
             <!-- <label class="events pt-3">Customer Story</label> -->
             <h3 class="prefered-size text-dark">
-              {{resource?.attributes?.Comments}}
+              {{resource?.attributes?.HeadingTitle}}
             </h3>
           </section>
         </div>
