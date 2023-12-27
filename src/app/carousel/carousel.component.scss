@@ -56,7 +56,10 @@
 
   @media screen and (max-width: 992px) {
     padding: 3rem 3rem;
-    height: auto;
+    // height: auto;
+    .carousel-img-container {
+      display: none;
+    }
     .carousel-talk-btn {
       width: 100%;
     }

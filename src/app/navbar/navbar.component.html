@@ -7,12 +7,17 @@
       <img *ngIf="country == 'India'" src="../../assets/images/CotelligentMainLogo.svg" class="company-logo"
         alt="Cotelligent Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" (click)="isCollapsed = !isCollapsed"
       aria-label="Toggle navigation">
-      <!-- (click)="displayMenu()" -->
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+    <div id="ham-menu-icon" (click)="isCollapsed = !isCollapsed">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
     <div id="navbarTogglerDemo02" clickOutside
       (clickOutside)="displayCreateMenu = false || solutionsMenu = false || resourcesMenu = false || companyMenu = false"
@@ -153,7 +158,7 @@
           <label for="more" class="dropdown-toggle">
             Solutions
           </label>
-          <ul class="dropdown-menu ham-main-list" *ngIf="displaySolutionsMenu" @slideRight>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displaySolutionsMenu" @slideLeft>
             <li class="nav-item back-action" (click)="hideSubMenu('solutions', $event)">
               Back
             </li>
@@ -194,7 +199,7 @@
             Services
           </label>
           <ul class="dropdown-menu ham-main-list" *ngIf="displayServicesMenu" (click)="hideSubMenu('services', $event)"
-            @slideRight>
+            @slideLeft>
             <li class="nav-item back-action" (click)="hideSubMenu('services', $event)">
               Back
             </li>
@@ -232,14 +237,14 @@
         <span class="navtitle">Resources</span>
       </a>
     </li>
-    <li>
+    <li class="nav-item">
       <ul>
         <li class="dropdown nav-item" (click)="toggleHam('company')">
           <input type="checkbox" id="CompanyDD" name="company">
           <label for="CompanyDD" class="dropdown-toggle">
             Company
           </label>
-          <ul class="dropdown-menu ham-main-list" *ngIf="displayCompanyMenu" @slideRight>
+          <ul class="dropdown-menu ham-main-list" *ngIf="displayCompanyMenu" @slideLeft>
             <li class="nav-item back-action" (click)="hideSubMenu('company', $event)">
               Back
             </li>
@@ -266,6 +271,11 @@
           </ul>
         </li>
       </ul>
+    </li>
+    <li>
+        <button type="button" class="btn btn-danger btn-lg" routerLinkActive="active"
+          (click)="navToPages('/company', 'Contact Us')">Free
+          Consultation</button>
     </li>
   </ul>
 </nav>
