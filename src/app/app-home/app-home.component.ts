@@ -32,11 +32,13 @@ export class AppHomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Meta tags starts
     this.meta.addTags([
-      {name: 'title', content: "Enhance your cybersecurity with TechDemocracy's cutting-edge IAM solutions. We specialize in identity and access management, SOC, IGA, PAM, and CIAM."},
-      { name: 'description', content: 'TechDemocracy - Leader in Identity Security Solutions - IAM' },
+      {name: 'title', content: "TechDemocracy - Leader in Identity Security Solutions - IAM"},
+      { name: 'description', content:  "Enhance your cybersecurity with TechDemocracy's cutting-edge IAM solutions. We specialize in identity and access management, SOC, IGA, PAM, and CIAM." },
       { name: 'keywords', content: 'identity and access management, management identity, identity management and access management, network security, iam solutions, cyber risk visibility, SOC, IGA, PAM, CIAM, iam identity access management, IDM ' }]
     );
+    // Meta tags ends
     this.potentialDiffHomeObj = {
       hdng: `The TechDemocracy Advantage`,
     content: `We are a boutique cybersecurity company that’s been in the business for more than two decades. Our philosophy is to work with a cohort of businesses where we can roll up our sleeves and deliver them the security, safety and seamless deployment within their budget and timelines.`,

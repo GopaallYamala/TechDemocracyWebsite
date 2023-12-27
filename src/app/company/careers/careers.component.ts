@@ -64,11 +64,13 @@ export class CareersComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.animateValue(document.getElementById('value'));
+    // Meta tags starts
     this.meta.addTags([
-      {name: 'title', content: "Job opportunities in Democracy, Career Opportunities"},
+      {name: 'title', content: "Job opportunities in TechDemocracy, Career Opportunities"},
       { name: 'description', content: "Explore rewarding careers at TechDemocracy. Join us in cybersecurity, IAM, and identity security fields. Discover open job positions and submit your resume." },
       { name: 'keywords', content: "Hiring, Job opportunity, job vacancy, Careers in cybersecurity, career in IAM, Career in Identity security, cybersecurity job opportunities, open job positions, Talent pool, submit resume" }]
     );
+    // Meta tags ends
   }
 
   animateValue(obj: any, start = 0, end: any = null, duration = 3000) {
