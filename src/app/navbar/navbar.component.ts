@@ -285,7 +285,12 @@ export class NavBarComponent implements OnInit {
       this.resourcesMenu = false;
     }
     this.isCollapsed = true;
-
+    const navIcons = document.querySelectorAll<HTMLElement>('#ham-menu-icon');
+    if (document.getElementById('ham-menu-icon').classList.contains('open')) {
+      document.getElementById('ham-menu-icon').classList.remove('open');  
+    } else {
+      document.getElementById('ham-menu-icon').classList.add('open');
+    }
   }
 
   resourceType(type: string) {
@@ -310,6 +315,16 @@ export class NavBarComponent implements OnInit {
       this.displayServicesMenu = false;
       this.displayCompanyMenu = true;
     }
+    const navIcons = document.querySelectorAll<HTMLElement>('#ham-menu-icon');
+      navIcons.forEach(navIcon => {
+        navIcon.addEventListener('click', function () {
+          if (this.classList.contains('open')) {
+            this.classList.remove('open');  
+          } else {
+            this.classList.toggle('open');
+          }
+        });
+      });
     event.stopPropagation();
   }
 
