@@ -16,8 +16,9 @@ resourceSchema.statics = {
         this.find(query, cb);
     },
 
-    update: function(query, updateData, cb) {
-        this.findOneAndUpdate(query, {$set: updateData},{new: true}, cb);
+    updateOne: function(query, updateData, cb) {
+        // this.findOneAndUpdate(query, {$set: updateData},{new: true}, cb);
+        this.findOneAndUpdate( { _id: query }, {  resourceJson: updateData }, { new: true }, cb )
     },
 
     delete: function(query, cb) {
@@ -25,5 +26,5 @@ resourceSchema.statics = {
     }
 }
 
-var resourceModel = mongoose.model('Resource', resourceSchema);
+var resourceModel = mongoose.model('resource', resourceSchema);
 module.exports = resourceModel;

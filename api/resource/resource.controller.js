@@ -3,8 +3,6 @@ var Resource = require("../resource/resource.dao");
 exports.createResource = function (req, res, next) {
   let resource = {
     resourceJson: req.body.jsonObject,
-    strapiId: req.body.strapiId,
-    resourceType: req.body.resourceType
   };
   Resource.create(resource, function (err, resource) {
     if (err) {
@@ -32,7 +30,7 @@ exports.getResources = function (req, res, next) {
 };
 
 exports.getResource = function (req, res, next) {
-  Resource.get({ strapiId: req.params.strapiId }, function (err, resources) {
+  Resource.get({ _id: req.params._id }, function (err, resources) {
     if (err) {
       res.json({
         error: err,
@@ -45,14 +43,9 @@ exports.getResource = function (req, res, next) {
 };
 
 exports.updateResource = function (req, res, next) {
-  let resource = {
-    resourceJson: req.body.jsonObject,
-    strapiId: req.body.strapiId,
-    resourceType: req.body.resourceType
-  };
-  Resource.update(
-    { strapiId: req.params.strapiId },
-    resource,
+  Resource.updateOne(
+    { _id: req.body._id },
+    req.body.resourceJson,
     function (err, resource) {
       if (err) {
         res.json({
@@ -60,7 +53,7 @@ exports.updateResource = function (req, res, next) {
         });
       }
       res.json({
-        message: "updated successfully",
+        resource: "updated successfully",
       });
     }
   );

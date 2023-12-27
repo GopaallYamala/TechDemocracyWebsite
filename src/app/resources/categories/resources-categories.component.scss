@@ -9,13 +9,18 @@
     width: 100%;
     height: auto;
   }
+  .categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   img.casestudyimg {
-    border-radius: 12px !important; 
+    border-radius: 12px !important;
     filter: saturate(80%);
   }
 
-  label {
+  p {
     color: #dc3545;
     font-size: 14px !important;
   }
