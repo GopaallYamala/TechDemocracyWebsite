@@ -53,6 +53,7 @@ import { TermsAndConditionsComponent } from 'src/app/terms-conditions/terms-cond
 import { LeadershipComponent } from 'src/app/company/leadership/leadership.component';
 import { LeadershipHeaderComponent } from 'src/app/company/leadership/leadership-header/leadership-header.component';
 import { LeadershipTeam } from 'src/app/company/leadership/leadership-team/leadership-team.component';
+import { DateFormatPipe } from './pipes/date-format.pipe';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
@@ -60,9 +61,9 @@ import { LeadershipTeam } from 'src/app/company/leadership/leadership-team/leade
     TestimonialsComponent, AdvisoryConsultingComponent, EventsComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent, ResourcesCategoriesComponent,
     ResourcesContextComponent, AppearDirective, ContactUsCompoent, ContactInfoComponent, CertifiedPartnersComponent, PartnersComponent, PartnersClientNewsComponent, GoogleMapsComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent,
-    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, PrivacyPolicyComponent, TermsAndConditionsComponent, LeadershipComponent, LeadershipHeaderComponent, 
-    LeadershipTeam],
-    
+    CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, PrivacyPolicyComponent, TermsAndConditionsComponent, LeadershipComponent, LeadershipHeaderComponent,
+    LeadershipTeam, DateFormatPipe],
+
   imports: [
     CommonModule,
     BrowserModule,
@@ -76,8 +77,8 @@ import { LeadershipTeam } from 'src/app/company/leadership/leadership-team/leade
     TestimonialsComponent, AdvisoryConsultingComponent, IAMAdvisoryAssessmentWhyComponent, SVGIconComponent, TDCforConsultantComponent, ExpertsInIdentityComponent,
     TDCRightPartnerComponent, OurStatsComponent, SolutionsPartnershipComponent, ResourcesHighlightsComponent,
     ResourcesCategoriesComponent, AppearDirective, EventsComponent, ResourcesContextComponent, ContactUsCompoent, ContactInfoComponent, PartnersComponent, PartnersClientNewsComponent,
-    GoogleMapsComponent, PrivacyPolicyComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent, 
-    TermsAndConditionsComponent, LeadershipComponent, LeadershipHeaderComponent, LeadershipTeam]
+    GoogleMapsComponent, PrivacyPolicyComponent, AboutTDCComponent, OtherLocationsBannerComponent, LeadershipBannerComponent, CompanyComponent, AboutUsUIComponent, WhatWeDoComponent, IdentitySecureSolutionComponent, YoutubeVidContainerComponent, NewsComponent, CareersComponent, BlogComponent, GuidingPrinciplesComponent,
+    TermsAndConditionsComponent, LeadershipComponent, LeadershipHeaderComponent, LeadershipTeam, DateFormatPipe ]
 })
 
 
