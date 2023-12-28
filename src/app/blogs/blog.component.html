@@ -8,7 +8,7 @@
   </article> -->
   <header class="blog-header">
     <div class="blog-headding-main">
-      <h3 class="container text-light pt-1 px-5">Resource / Customer Success Story</h3>
+      <h4 class="container text-light pt-1 px-5">Resource / Customer Success Story</h4>
     </div>
     <div class="blog-header-content d-flex align-items-center">
       <div class="container">
@@ -22,7 +22,7 @@
             </h1> -->
             <h1 class="text-light">{{blogDeatils?.attributes?.HeadingTitle}}
             </h1>
-            <p><small class="text-light opacity-75">Published on {{blogDeatils?.attributes?.publishedAt}}</small> </p>
+            <p><small class="text-light opacity-75">Published on {{blogDeatils?.attributes?.publishedAt | formatLocalDate}}</small> </p>
           </div>
           <div class="col-md-6 hero-image d-flex align-items-center">
             <!-- <img src="../../assets/images/heroimages/Cyber_Security_Operations_Center.png" alt="Hero Image png"> -->
