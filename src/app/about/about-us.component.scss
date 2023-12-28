@@ -74,13 +74,14 @@
     iframe {
       max-width: 100% !important;
       width: auto !important;
-      height: auto !important;
+      height: 250px;
     }
   }
 
   @media screen and (max-width: 992px) {
     iframe {
       width: 100% !important;
+      height: 250px;
     }
   }
 }

@@ -70,15 +70,18 @@ export class AdvisoryConsultingComponent implements OnInit {
             list: [
              {
               hdng: 'Comprehensive Review: ',
-              content: 'Identify gaps and weaknesses for a strong cybersecurity plan.'
+              content: 'Identify gaps and weaknesses for a strong cybersecurity plan.',
+              icon: '../../assets/images/Icons/IconComprehensiveReview.svg'
              },
              {
               hdng: 'Foundational Planning:',
-              content: 'Leverage our expertise to create a solid plan for your transformation journey.'
+              content: 'Leverage our expertise to create a solid plan for your transformation journey.',
+              icon: '../../assets/images/Icons/IconFoundationalPlanning.svg'
              },
              {
               hdng: 'Strategic Roadmap:',
-              content: 'Chart a strategic roadmap for efficiency, risk reduction, and digital transformation.'
+              content: 'Chart a strategic roadmap for efficiency, risk reduction, and digital transformation.',
+              icon: '../../assets/images/Icons/IconStrategicRoadmap.svg'
              }
             ]
           };
@@ -107,15 +110,18 @@ export class AdvisoryConsultingComponent implements OnInit {
             list: [
              {
               hdng: '1. Seamless Integration',
-              content: 'Ensure your IAM capabilities seamlessly adapt to your environment.'
+              content: 'Ensure your IAM capabilities seamlessly adapt to your environment.',
+              icon: '../../assets/images/Icons/IconSeamlessIntegration.svg'
              },
              {
               hdng: '2. Legacy System Migration',
-              content: 'Modernize your systems for enhanced efficiency.'
+              content: 'Modernize your systems for enhanced efficiency.',
+              icon: '../../assets/images/Icons/IconLegacySystemMigration.svg'
              },
              {
               hdng: '3.Rapid Onboarding',
-              content: 'Accelerate application onboarding for swift deployment.'
+              content: 'Accelerate application onboarding for swift deployment.',
+              icon: '../../assets/images/Icons/IconRapidOnboarding.svg'
              }
             ]
           };
@@ -144,15 +150,18 @@ export class AdvisoryConsultingComponent implements OnInit {
             list: [
              {
               hdng: '1.	24/7 Management: ',
-              content: 'Ensure uninterrupted Identity Security with our round-the-clock support.'
+              content: 'Ensure uninterrupted Identity Security with our round-the-clock support.',
+              icon: '../../assets/images/Icons/Icon247Management.svg'
              },
              {
               hdng: '2.	Continuous Improvement: ',
-              content: 'Receive tailored outcomes with zero downtime.'
+              content: 'Receive tailored outcomes with zero downtime.',
+              icon: '../../assets/images/Icons/IconContinuousImprovement33.svg'
              },
              {
               hdng: '3.	Proactive Security: ',
-              content: 'Stay ahead with proactive security measures and risk mitigation.'
+              content: 'Stay ahead with proactive security measures and risk mitigation.',
+              icon: '../../assets/images/Icons/IconProactiveSecurity.svg'
              }
             ]
           };
@@ -181,15 +190,18 @@ export class AdvisoryConsultingComponent implements OnInit {
             list: [
              {
               hdng: '1.	End-to-End Support: ',
-              content: 'Benefit from comprehensive support across key Identity Security domains.'
+              content: 'Benefit from comprehensive support across key Identity Security domains.',
+              icon: '../../assets/images/Icons/IconEndtoEndSupport.svg'
              },
              {
               hdng: '2.	Seamless Transformation: ',
-              content: 'Achieve transformation seamlessly, from system onboarding to reengineering.'
+              content: 'Achieve transformation seamlessly, from system onboarding to reengineering.',
+              icon: '../../assets/images/Icons/IconSeamlessTransformation.svg'
              },
              {
               hdng: '3.	Continuous Improvement:  ',
-              content: 'Receive continuous improvement insights for ongoing optimization.'
+              content: 'Receive continuous improvement insights for ongoing optimization.',
+              icon: '../../assets/images/Icons/IconContinuousImprovement37.svg'
              }
             ]
           };

@@ -15,17 +15,17 @@ export class IAMAdvisoryAssessmentWhyComponent {
      {
       hdng: '',
       content: '',
-      icon: '../../assets/images/Icons/IconEndtoEndSupport.svg'
+      icon: ''
      },
      {
       hdng: '',
       content: '',
-      icon: '../../assets/images/Icons/IconFederationSAMLOAuthOpenIDConnect.svg'
+      icon: ''
      },
      {
       hdng: '',
       content: '',
-      icon: '../../assets/images/Icons/IconEndtoEndSupport.svg'
+      icon: ''
      }
     ]
   }

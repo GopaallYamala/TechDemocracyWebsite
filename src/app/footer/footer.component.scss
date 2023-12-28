@@ -112,6 +112,9 @@
 	}
 	.footnote-links {
 		padding-left: 1rem;
+		@media screen and (max-width: 992px) {
+			padding-left: 0;
+		}
 	}
 	.footnote-links a {
 		color: #FFFFFF;
