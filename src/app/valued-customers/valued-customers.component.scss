@@ -1,5 +1,10 @@
 .valued-customers {
   margin-bottom: 2rem;
+  .customers-hdng {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .customers-list {
     justify-content: center;
     align-items: center;
