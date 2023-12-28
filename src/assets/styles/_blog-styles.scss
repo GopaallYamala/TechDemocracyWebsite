@@ -1,11 +1,11 @@
+//Display Headings
 .blog-container {
-  //Display Headings
   h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     font-weight: 600 !important;
     // color: #222;
-    line-height: 2.5rem;
+    line-height: 2.75rem;
 
     @media screen and (max-width: 992px) {
       font-size: 2rem !important;
@@ -18,6 +18,7 @@
     color: #222;
     font-size: 2rem !important;
     line-height: 2.25rem !important;
+    margin-top: 3rem !important;
     // line-height: calc(100% + 4px);
     @media screen and (max-width: 992px) {
       font-size: 1.5rem !important;
@@ -29,6 +30,7 @@
     font-size: 1.5rem !important;
     font-weight: 600 !important;
     color: #222;
+    margin-top: 3rem !important;
     // line-height: calc(100% + 4px);
     @media screen and (max-width: 992px) {
       font-size: 1.25rem !important;
@@ -69,6 +71,7 @@
     line-height: 1.85rem;
     word-break: break-word;
     word-wrap: break-word;
+    // color: red !important;
     // padding-block: 0;
     // color: rgb(55, 55, 55);
     // color: #444444;
@@ -97,6 +100,13 @@
     word-wrap: break-word;
   }
 
+  img {
+    aspect-ratio: 960/638;
+    width: 100%;
+    min-height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
   // Image Zoom Hover
   .zoomhover {
     overflow: hidden;

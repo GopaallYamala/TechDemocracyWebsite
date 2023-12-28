@@ -485,7 +485,7 @@ solutionType:string;
           };
           this.potentialDiffDataObj = {
             hdng: `Our Solutions and portfolio`,
-            content: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero`,
+            content: `Experience a holistic cybersecurity approach with TechDemocracy's Managed SOC featuring aiXDR, integrating user identity, threat intelligence, and vulnerability assessment. Rely on us to create threat profiles, generate indicators, and provide automated remediation paths for robust cyber defense.`,
             featuresObj: [
               {
                 title: `Managed SOC with aiXDR`,

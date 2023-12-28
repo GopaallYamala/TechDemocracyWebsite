@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ViewEncapsulation } from "@angular/core";
 import { StrapiService } from "src/shared/services/strapi.service";
 import { BlogService } from "./shared/blog.service";
 import { ActivatedRoute, Router } from "@angular/router";
@@ -6,7 +6,8 @@ import { ActivatedRoute, Router } from "@angular/router";
 @Component({
   selector: 'blogs',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  styleUrls: ['./blog.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class BlogComponent {
