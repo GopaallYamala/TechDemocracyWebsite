@@ -15,15 +15,19 @@
         <div class="row">
           <div class="col-md-6 py-5 px-5">
             <div class="text-light">
-              <p><span class="badge rounded-pill bg-dark text-light">HealthCare Industry</span></p>
+              <p><span class="badge rounded-pill bg-dark text-light">{{blogDeatils?.attributes?.industry_type?.data?.attributes?.IndustryType}}</span></p>
             </div>
-            <h1 class="text-light">Enhancing Security in Healthcare Enhancing Security in HealthcareEnhancing Security
+            <!-- <h1 class="text-light">Enhancing Security in Healthcare Enhancing Security in HealthcareEnhancing Security
               in HealthcareEnhancing Security in HealthcareEnhancing
+            </h1> -->
+            <h1 class="text-light">{{blogDeatils?.attributes?.HeadingTitle}}
             </h1>
-            <p><small class="text-light opacity-75">Published on 12th December 2023</small> </p>
+            <p><small class="text-light opacity-75">Published on {{blogDeatils?.attributes?.publishedAt}}</small> </p>
           </div>
           <div class="col-md-6 hero-image d-flex align-items-center">
-            <img src="../../assets/images/heroimages/Cyber_Security_Operations_Center.png" alt="Hero Image png">
+            <!-- <img src="../../assets/images/heroimages/Cyber_Security_Operations_Center.png" alt="Hero Image png"> -->
+            <img src="{{'http://localhost:1337' + blogDeatils?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+            alt="{{blogDeatils?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
           </div>
         </div>
       </div>
@@ -52,7 +56,8 @@
   <section class="blog-body">
     <div class="container py-5 px-5">
       <div class="row">
-        <div class="col-md-9 textedit">
+        <div id="ResourceArticle" class="col-md-9 textedit"></div>
+        <!-- <div class="col-md-9 textedit">
           <div class="introduction">
             <h2>Introduction</h2>
             <p>Introduction In the age of digital transformation, the healthcare industry is rapidly evolving.
@@ -66,7 +71,6 @@
           </div>
           <div class="iga">
             <h3>The Importance of IGA in Healthcare:</h3>
-            <!-- <img src="../../assets/images/IGA.PNG" alt="Hero Image png"> -->
             <h4 class="">Protecting patient data:</h4>
             <p>Patient data is a prime target for cybercriminals due to its high value on the black market. Implementing
               IGA helps healthcare organizations ensure that only authorized personnel can access sensitive patient
@@ -104,8 +108,6 @@
               dolor sit amet.</p>
           </div>
           <div class="">
-            <!-- <div class="row"> -->
-            <!-- <div class="col-md-8"> -->
             <h4 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ullam.
               Aperiam, doloribus. Et
               blanditiis rerum quia laudantium excepturi, harum officia, mollitia facilis laboriosam quaerat tempore
@@ -131,11 +133,8 @@
               accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
               ipsum
               dolor sit amet</p>
-            <!-- </div> -->
-            <!-- <div class="col-md-1"></div> -->
-            <!-- </div> -->
           </div>
-        </div>
+        </div> -->
         <div class="col-md-3 pt-5">
           <!-- <ng-container *ngFor="let sample of CategorieObj">
             <div class="flex-col-nowrap gutter-bottom-1">

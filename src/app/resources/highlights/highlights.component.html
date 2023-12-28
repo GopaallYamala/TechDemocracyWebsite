@@ -3,47 +3,46 @@
     <div class="container">
       <section class="row gx-5 d-flex justify-content-between">
         <div class="col-md-6 col-xs-12 first-col">
-          <span class="badge rounded-pill solutions-pill text-bg-dark"
-            >Resources</span
-          >
+          <span class="badge rounded-pill solutions-pill text-bg-dark">Resources</span>
           <h1>Techdemocracy Identity Articles, CaseStudies, Videos</h1>
         </div>
         <div class="col-md-6 col-xs-12 second-col">
-          <label>Upcoming events</label>
+          <p>Upcoming events</p>
           <h2 class="pt-3 txtbg">
             Webinar : Building a Frictionless identity joureny in the Regulated
             industry
           </h2>
-          <label>14th November 2023, 01:48 PM</label>
+          <p>14th November 2023, 01:48 PM</p>
         </div>
       </section>
 
       <section class="row gx-5 pt-4 d-flex justify-content-between">
-        <div class="col-md-6 col-xs-12 first-col">
+        <div class="col-md-6 col-xs-12 first-col"
+          *ngFor="let resource of resourceJson | slice: (resourceJson?.length > 2 ? resourceJson?.length - 2 : 0); index as i">
           <section class="prefered-caseStudie py-3">
-            <article class="resourceimg">
-              <img src="../../assets/images/Resource/HealthcareInd.png" />
-          
-          </article>
-            <label class="events pt-3">Customer Story</label>
+            <article (click)="open(resource?.id)" class="resourceimg cursor">
+              <img src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
+            </article>
+            <p class="events pt-3">{{resource?.attributes?.category?.data?.attributes?.CategoryTitle}}</p>
+            <!-- <label class="events pt-3">Customer Story</label> -->
             <h3 class="prefered-size text-dark">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam qui odit vel, tenetur deleniti
+              {{resource?.attributes?.HeadingTitle}}
             </h3>
           </section>
         </div>
-        <div class="col-md-6 col-xs-12 second-col">
+        <!-- <div class="col-md-6 col-xs-12 second-col">
           <div class="prefered-caseStudie py-3">
             <div class="resourceimg">
               <img src="../../assets/images/Resource/TelecomInd.png" />
             </div>
             <label class="events pt-3">Whitepapers</label>
             <h3 class="prefered-size text-dark">
-                ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                qui odit vel, tenetur deleniti, ratione eligendi
+              ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              qui odit vel, tenetur deleniti, ratione eligendi
             </h3>
           </div>
-        </div>
+        </div> -->
       </section>
     </div>
   </section>

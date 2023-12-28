@@ -7,16 +7,6 @@ var resourceSchema = new Schema(
       unique: false,
       required: true,
     },
-    strapiId: {
-      type: Number,
-      unique: false,
-      required: true,
-    },
-    resourceType: {
-      type: String,
-      unique: false,
-      required: true,
-    }
   },
   {
     timestamps: true,
