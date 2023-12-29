@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { AnimationDefinitions } from "src/shared/animations";
 import { UtilService } from "src/shared/services/util.service";
+import { RestService } from "src/shared/services/rest.service";
 
 @Component({
   selector: 'contact-info',
@@ -15,7 +16,8 @@ export class ContactInfoComponent implements OnInit {
   display: any;
   emailObj: any;
 
-  constructor(private readonly utilService: UtilService) { }
+  constructor(private readonly utilService: UtilService,
+    private readonly restService: RestService) { }
 
   ngOnInit() {
     this.utilService.dataState.subscribe(
@@ -43,4 +45,7 @@ export class ContactInfoComponent implements OnInit {
     // });
   }
 
+  sendNewMail () {
+    this.restService.sendFeedbackMail()
+  }
 }
