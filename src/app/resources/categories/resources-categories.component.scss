@@ -9,7 +9,7 @@
     width: 100%;
     height: auto;
   }
-  .categories{
+  .categories {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,10 +30,13 @@
     font-weight: 500;
     line-height: 1.85;
   }
-  ul, li {
+  ul,
+  li {
     list-style-type: none;
   }
-
+  .selected {
+    font-weight: bold;
+  }
   .list-casestudy {
     &:hover {
       cursor: pointer;

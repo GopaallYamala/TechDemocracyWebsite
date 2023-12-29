@@ -4,7 +4,8 @@
     <section class="row">
       <div class="flex-col-nowrap col-md-3">
         <div class="py-2" *ngFor="let resource of categoriesList">
-          <li (click)="SelectCategorie(resource)" class="list-casestudy w-75">{{resource}}</li>
+          <li (click)="SelectCategorie(resource)" class="list-casestudy w-75 {{selectedCategorie === resource ? 'selected' : ''}}">
+            {{resource}}</li>
         </div>
       </div>
       <div class="col-md-9 categories">
