@@ -107,7 +107,7 @@ async function sendMail(data, callback) {
   });
 
   let mailOptions  = {
-    from: '"Lakshman Kotipalli"', // sender address
+    from: '"Lakshman Kotipalli" <TechDemocracy Admin>', // sender address
     to: data.email, // list of receivers
     subject: "Welcome to Cotelligent", // mail subject
     html: `<h1>Hello ${data.name}</h1><br>
