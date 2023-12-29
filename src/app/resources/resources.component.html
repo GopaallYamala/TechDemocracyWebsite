@@ -12,7 +12,9 @@
   <ng-container *ngIf="contextType === 'All';else other">
     <highlights [resourceObj]="resourceObj"></highlights>
     <resources-categories [resourceObj]="resourceObj" [categoriesList]="categoriesList"></resources-categories>
-    <events></events>
+    <!-- <events></events> -->
+      <!-- Consultation -->
+  <consultation-component></consultation-component>
   </ng-container>
   <ng-template #other>
     <ng-container>

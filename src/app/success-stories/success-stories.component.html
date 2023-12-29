@@ -1,16 +1,17 @@
-<section class="success-stories py-5">
+<section *ngIf="selectedSolution" class="success-stories py-5">
   <div class="container">
     <section class="success-stories-container">
       <div class="row">
         <div class="ss-content col-md-6 col-xs-12 py-5">
-          <h4 class="ss-hdng">Our Success Stories</h4>
-          <h2 class="ss-content-para ">Full range of consultant services and software solutions to help you quickly deploy critical cybersecurity technologies</h2>
+          <h4 class="ss-hdng">{{category ? category : 'Our Success Stories'}}</h4>
+          <h2 class="ss-content-para ">{{blogTitle}}</h2>
           <button class="btn btn-danger ss-read-more-btn">
             Read more
           </button>
         </div>
         <div class="ss-img-container col-md-6 col-xs-12 d-flex align-items-end flex-column">
-          <img src="../../assets/images/SolutionThumbnailLower.png" alt="Governance Administration Mapping">
+          <!-- <img src="../../assets/images/SolutionThumbnailLower.png" alt="Governance Administration Mapping"> -->
+          <img src="http://localhost:1337{{heroImage}}">
         </div>
       </div>
     </section>
