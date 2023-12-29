@@ -39,7 +39,7 @@ app.use(bodyParserURLEncoded);
 // });
 
 // call the database connectivity function
-db();
+// db();
 
 // Error handling
 app.use(function (req, res, next) {
@@ -88,6 +88,7 @@ app.listen(properties.PORT, (req, res) => {
 app.post('/sendmail', (req, res) => {
   console.log("---- node req came");
   let mailData = req.body;
+  console.log(req.body, "-------req body");
   sendMail(mailData, info => {
     console.log(`Mail has been sent :)`);
     res.send(info);
@@ -107,10 +108,10 @@ async function sendMail(data, callback) {
   });
 
   let mailOptions  = {
-    from: '"Lakshman Kotipalli" <TechDemocracy Admin>', // sender address
+    from: '"TDC Solutions"', // sender address
     to: data.email, // list of receivers
     subject: "Welcome to Cotelligent", // mail subject
-    html: `<h1>Hello ${data.name}</h1><br>
+    html: `<h1>Hello ${data.fullName}</h1><br>
     <h3>Thanks for the Message, we will get back to you soon!</h3>`
   };
 
