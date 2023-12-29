@@ -25,7 +25,7 @@ import { Component, Input, Output, EventEmitter, ElementRef, HostListener } from
 			padding-left : 0;
 			background-color: #fff;
 			border-color: #3e3d3d;
-
+			border-radius: 8px;
 			&:focus {
 					border-color: #E06337;
 			}
@@ -69,10 +69,11 @@ import { Component, Input, Output, EventEmitter, ElementRef, HostListener } from
 			font-size: 0.875rem;
 			cursor: pointer;
 			padding: 0 1rem;
-				border-color: #3e3d3d;
+			border-radius: 8px;
+			// border-color: #3e3d3d;
 
 			&:focus {
-					border-color: #E06337;
+					// border-color: #E06337;
 			}
 			&:hover {
 					background-color: #cfcfcf;
