@@ -8,26 +8,31 @@
   </article> -->
   <header class="blog-header">
     <div class="blog-headding-main">
-      <h4 class="container text-light pt-1 px-5">Resource / Customer Success Story</h4>
+      <h4 class="container text-light pt-1 px-5">Resource /
+        {{blogDeatils?.attributes?.category?.data?.attributes?.CategoryTitle}}</h4>
     </div>
     <div class="blog-header-content d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-md-6 py-5 px-5">
             <div class="text-light">
-              <p><span class="badge rounded-pill bg-dark text-light">{{blogDeatils?.attributes?.industry_type?.data?.attributes?.IndustryType}}</span></p>
+              <p><span
+                  class="badge rounded-pill bg-dark text-light">{{blogDeatils?.attributes?.industry_type?.data?.attributes?.IndustryType}}</span>
+              </p>
             </div>
             <!-- <h1 class="text-light">Enhancing Security in Healthcare Enhancing Security in HealthcareEnhancing Security
               in HealthcareEnhancing Security in HealthcareEnhancing
             </h1> -->
             <h1 class="text-light">{{blogDeatils?.attributes?.HeadingTitle}}
             </h1>
-            <p><small class="text-light opacity-75">Published on {{blogDeatils?.attributes?.publishedAt | formatLocalDate}}</small> </p>
+            <p class="text-light subtitle">{{blogDeatils?.attributes?.SubTitle}}</p>
+            <p><small class="text-light publishdate">Published on {{blogDeatils?.attributes?.publishedAt |
+                formatLocalDate}}</small> </p>
           </div>
           <div class="col-md-6 hero-image d-flex align-items-center">
             <!-- <img src="../../assets/images/heroimages/Cyber_Security_Operations_Center.png" alt="Hero Image png"> -->
             <img src="{{'http://localhost:1337' + blogDeatils?.attributes?.FeaturedImage?.data?.attributes?.url}}"
-            alt="{{blogDeatils?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
+              alt="{{blogDeatils?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
           </div>
         </div>
       </div>
@@ -54,87 +59,15 @@
   </section> -->
   <!-- <hr> -->
   <section class="blog-body">
-    <div class="container py-5 px-5">
+    <div class="container py-1 px-5">
       <div class="row">
-        <div id="ResourceArticle" class="col-md-9 textedit"></div>
-        <!-- <div class="col-md-9 textedit">
-          <div class="introduction">
-            <h2>Introduction</h2>
-            <p>Introduction In the age of digital transformation, the healthcare industry is rapidly evolving.
-              Electronic
-              health records (EHRs), telemedicine, and mobile healthcare apps are just a few examples of how technology
-              is
-              improving patient care and data accessibility. However, these innovations also bring new cybersecurity
-              challenges, making identity governance and administration (IGA) essential for safeguarding sensitive
-              patient
-              information.</p>
+        <div class="col-md-9 textedit">
+          <div id="ResourceArticle"></div>
+          <div class="flex-row-nowrap" *ngFor="let image of blogDeatils?.attributes?.SupportingImages?.data">
+            <img class="img-thumbnail" src="{{'http://localhost:1337' + image?.attributes?.url}}"
+              alt="{{'http://localhost:1337' + image?.attributes?.hash}}">
           </div>
-          <div class="iga">
-            <h3>The Importance of IGA in Healthcare:</h3>
-            <h4 class="">Protecting patient data:</h4>
-            <p>Patient data is a prime target for cybercriminals due to its high value on the black market. Implementing
-              IGA helps healthcare organizations ensure that only authorized personnel can access sensitive patient
-              records.
-              This mitigates the risk of data breaches and maintains patient confidentiality.</p>
-            <h4 class="">Regulatory Compliance:</h4>
-            <p>The healthcare industry is subject to a multitude of regulations, such as HIPAA in the United States. and
-              GDPR
-              in Europe. Failure to comply can result in severe penalties. IGA solutions assist healthcare organizations
-              in
-              adhering to these regulations by enforcing access controls, auditing, and reporting.</p>
-            <p>Lorem ipsum dolor sit amet,
-              consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat,
-              sed
-              diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-              sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-              et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-              ipsum
-              dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet,
-              consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat,
-              sed
-              diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-              sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-              et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-              ipsum
-              dolor sit amet.</p>
-          </div>
-          <div class="">
-            <h4 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ullam.
-              Aperiam, doloribus. Et
-              blanditiis rerum quia laudantium excepturi, harum officia, mollitia facilis laboriosam quaerat tempore
-              hic
-              iste, cupiditate doloribus molestias.</h4>
-            <button type="button" class="btn btn-outline-danger mb-5 mt-3">Download PDF</button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi, blanditiis non consequuntur
-              officia
-              cupiditate aperiam, veniam itaque ipsam eum quasi dolore quos atque porro harum, error quam et ut?
-              >Lorem
-              ipsum dolor sit amet,
-              consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat,
-              sed
-              diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-              sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr,
-              sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-              eos
-              et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-              ipsum
-              dolor sit amet</p>
-          </div>
-        </div> -->
+        </div>
         <div class="col-md-3 pt-5">
           <!-- <ng-container *ngFor="let sample of CategorieObj">
             <div class="flex-col-nowrap gutter-bottom-1">
@@ -144,6 +77,7 @@
               <a href="#">{{sample.read}}</a>
             </div>
           </ng-container> -->
+         
 
           <div class="sticky-md-top stickycase">
             <ng-container *ngFor="let sample of CategorieObj">

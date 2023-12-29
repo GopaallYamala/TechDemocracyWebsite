@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { StrapiService } from "src/shared/services/strapi.service";
 import { BlogService } from "./shared/blog.service";
 import { ActivatedRoute, Router } from "@angular/router";
@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from "@angular/router";
   encapsulation: ViewEncapsulation.None
 })
 
-export class BlogComponent {
+export class BlogComponent implements OnInit {
 
   strapiBlogAttrs: any;
   contextType: string = 'All';
