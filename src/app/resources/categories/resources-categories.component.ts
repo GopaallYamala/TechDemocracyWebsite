@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core'
 import { Router } from '@angular/router';
 
@@ -15,7 +16,7 @@ export class ResourcesCategoriesComponent implements OnChanges {
   selectedCategorieList: any;
   @Input() categoriesList: any;
 
-  constructor(private readonly router: Router) { }
+  constructor(private readonly router: Router, private location: Location) { }
 
   resourcesObj = ['CaseStudy', 'Customer Success', 'Online Journal', 'Whitepapers', 'Events & Videos', 'Reports'];
   CategorieObj = [
@@ -80,7 +81,8 @@ export class ResourcesCategoriesComponent implements OnChanges {
     if (changes) {
       this.resourceJson = JSON.parse(this.resourceObj);
       console.log(this.resourceJson);
-      this.changeValue("Case Studies");
+      // this.changeValue("Case Studies");
+      this.allCategories();
       this.test();
 
     }
@@ -107,6 +109,9 @@ export class ResourcesCategoriesComponent implements OnChanges {
     let index = this.resourceJson.map(res => res.id).indexOf(id);
     if (index !== -1) {
       this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
+      setTimeout(() => {
+        this.location.replaceState('/blogs');
+      }, 100);
     }
   }
   test() {
