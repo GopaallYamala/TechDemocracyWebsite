@@ -2,7 +2,6 @@ import { AfterViewInit, Component, HostListener, OnInit, QueryList, Renderer2, V
 import { FormBuilder, FormGroup } from "@angular/forms";
 import { Meta } from "@angular/platform-browser";
 import { AnimationDefinitions } from "src/shared/animations";
-import { ContactInfo } from "../contact-us/contact-info/contact-info.component";
 import { CompanyService } from "../shared/company.service";
 
 @Component({
