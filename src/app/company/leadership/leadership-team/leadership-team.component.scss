@@ -1,12 +1,19 @@
 .leadership-team {
-  padding-top: 14rem;
+  padding-top: 12rem;
   .prof-card {
     width: 200px;
     height: auto;
     border: none;
+    background-color: transparent;
     h6 {
       font-weight: 400;
     }
+  }
+
+  .lt-strip {
+    background-color: #ecf3ff;
+    // padding: 3rem 0;
+    margin-bottom: 2rem;
   }
 
   // Image Zoom Hover
