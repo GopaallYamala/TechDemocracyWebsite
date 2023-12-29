@@ -54,6 +54,7 @@ import { LeadershipComponent } from 'src/app/company/leadership/leadership.compo
 import { LeadershipHeaderComponent } from 'src/app/company/leadership/leadership-header/leadership-header.component';
 import { LeadershipTeam } from 'src/app/company/leadership/leadership-team/leadership-team.component';
 import { DateFormatPipe } from './pipes/date-format.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
@@ -70,7 +71,9 @@ import { DateFormatPipe } from './pipes/date-format.pipe';
     BrowserAnimationsModule,
     RouterModule,
     HttpClientModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [PotentialDifferentiatorComponent, ConsultationComponent, AcceleratorsUtilitiesComponent, ChallengesComponent, ValuedCustomersComponent, CaseStudiesComponent,
     SolutionsHeroComponent, SuccessStoriesComponent, IGASolutionsComponent, IGAImplementationComponent,

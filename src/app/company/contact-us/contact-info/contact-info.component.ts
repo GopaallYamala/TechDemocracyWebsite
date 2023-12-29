@@ -2,6 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { AnimationDefinitions } from "src/shared/animations";
 import { UtilService } from "src/shared/services/util.service";
 import { RestService } from "src/shared/services/rest.service";
+import { CompanyService } from "../../shared/company.service";
+import { FormBuilder, FormGroup } from "@angular/forms";
 
 @Component({
   selector: 'contact-info',
@@ -12,14 +14,18 @@ import { RestService } from "src/shared/services/rest.service";
 
 export class ContactInfoComponent implements OnInit {
 
-  country:string;
+  country: string;
   display: any;
   emailObj: any;
+  contactInfoForm: FormGroup;
+  contactInfo: ContactInfo;
 
   constructor(private readonly utilService: UtilService,
-    private readonly restService: RestService) { }
+    private readonly companyService: CompanyService,
+    private readonly formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.contactInfoForm = this.formBuilder.group(ContactForm);
     this.utilService.dataState.subscribe(
       (data: string) => {
         this.country = data;
@@ -33,19 +39,30 @@ export class ContactInfoComponent implements OnInit {
       subject: 'test sendmail',
       html: 'Mail of test sendmail ',
     }
-    this.callSendMail(this.emailObj);
+    // this.callSendMail(this.emailObj);
   }
 
-  callSendMail(data) {
-    // const sendmail = require('sendmail')();
-
-    // sendmail(data, function (err, reply) {
-    //   console.log(err && err.stack);
-    //   console.dir(reply);
-    // });
+  callSendMail() {
+    this.sendNewMail({ ...this.contactInfo, ...this.contactInfoForm.value });
   }
 
-  sendNewMail () {
-    this.restService.sendFeedbackMail()
+  sendNewMail(contactDetails: ContactInfo) {
+    this.companyService.sendMail(contactDetails).subscribe(res => {
+      console.log(res);
+    });
   }
+}
+
+export const ContactForm = {
+  fullName: [''],
+  email: [''],
+  number: [''],
+  helpText: []
+}
+
+export class ContactInfo {
+  fullName: string
+  email: string
+  number: number
+  helpText: string
 }
