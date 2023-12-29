@@ -113,6 +113,28 @@ export class RestService {
       });
   }
 
+  public sendEmail (url, data) {
+    return this.httpClient.post(url, data);
+  }
+
+  public sendFeedbackMail(): any {
+    let data = {
+      name: 'Chandra Bose',
+      email: 'lakshman.kotipalli@techdemocracy.com'
+    }
+    this.sendEmail("http://localhost:3000/sendMail", data).subscribe(
+      respData => {
+        let res: any = respData;
+        console.log(res, 'resssssssssssssssssssssssssssss');
+        
+        console.log(`${data.name} - mail has been sent`);
+      },
+      err => {
+        console.log(err);
+      }
+    );
+  }
+
   uploadCSVFile(formData: FormData) {
     return this.httpClient.post(`${this.maincontexturl}/upload-form`, formData);
   }
