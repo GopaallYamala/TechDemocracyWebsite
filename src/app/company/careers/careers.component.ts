@@ -58,7 +58,7 @@ export class CareersComponent implements OnInit, AfterViewInit {
   }
 
   achivedCardsArr = [
-    { value: '5 Millions+', id: 'IdentityManaged', desc: 'User Identity managed since inception' }, { value: '100+', id: 'SuccessfulIDM', desc: 'SuccessfulIDM, CyberSec Implementation' },
+    { value: '5 Millions+', id: 'IdentityManaged', desc: 'User Identities managed since inception' }, { value: '100+', id: 'SuccessfulIDM', desc: 'SuccessfulIDM, CyberSec Implementation' },
     { value: '30+', id: 'ActiveCurrentEngagements', desc: 'Active current engagements in identity security' }, { value: '23+', id: 'DedicatedHeadcount', desc: 'Years of experience in Cyber Security' }
   ]
 
