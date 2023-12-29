@@ -4,6 +4,9 @@ var properties = require("../config/properties");
 var db = require("../config/database");
 var log = require("morgan")("dev");
 var bodyParser = require("body-parser");
+var cors = require("cors");
+var nodemailer = require("nodemailer");
+var details = require("./details.json");
 
 //home routes
 var homeRoutes = require("../api/home/home.routes");
@@ -21,6 +24,7 @@ var bodyParserURLEncoded = bodyParser.urlencoded({ extended: true });
 var router = express.Router();
 // call the database connectivity function
 // configure app.use()
+app.use(cors({origin: '*'}));
 app.use(log);
 app.use(bodyParserJSON);
 app.use(bodyParserURLEncoded);
@@ -35,7 +39,7 @@ app.use(bodyParserURLEncoded);
 // });
 
 // call the database connectivity function
-db();
+// db();
 
 // Error handling
 app.use(function (req, res, next) {
@@ -80,5 +84,41 @@ app.get("/", (req, res) => {
 app.listen(properties.PORT, (req, res) => {
   console.log(`Server is running on ${properties.PORT} port.`);
 });
+
+app.post('/sendmail', (req, res) => {
+  console.log("---- node req came");
+  let mailData = req.body;
+  console.log(req.body, "-------req body");
+  sendMail(mailData, info => {
+    console.log(`Mail has been sent :)`);
+    res.send(info);
+  })
+})
+
+async function sendMail(data, callback) {
+  // creating reusable object with default smtp transporter
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.office365.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: details.email,
+      pass: details.password
+    }
+  });
+
+  let mailOptions  = {
+    from: '"TDC Solutions"', // sender address
+    to: data.email, // list of receivers
+    subject: "Welcome to Cotelligent", // mail subject
+    html: `<h1>Hello ${data.fullName}</h1><br>
+    <h3>Thanks for the Message, we will get back to you soon!</h3>`
+  };
+
+  // sending mail with defined transporter object
+  let info = await transporter.sendMail(mailOptions);
+
+  callback(info);
+}
 
 module.exports = app;
