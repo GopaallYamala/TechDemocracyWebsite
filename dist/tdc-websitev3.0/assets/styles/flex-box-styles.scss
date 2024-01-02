@@ -1,0 +1,23 @@
+.display-flex {
+  display: flex;
+}
+
+.flex-row-wrap, .flex-row-nowrap, .flex-col-wrap, .flex-col-nowrap {
+  @extend .display-flex;
+}
+
+.flex-row-wrap {
+  flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+  flex-flow: row nowrap;
+}
+
+.flex-col-wrap {
+  flex-flow: column wrap;
+}
+
+.flex-col-nowrap {
+  flex-flow: column nowrap;
+}
