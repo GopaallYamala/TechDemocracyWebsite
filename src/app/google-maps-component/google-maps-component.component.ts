@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AnimationDefinitions } from 'src/shared/animations';
+import { UtilService } from 'src/shared/services/util.service';
 
 @Component({
   selector: 'google-maps-comp',
@@ -9,6 +10,21 @@ import { AnimationDefinitions } from 'src/shared/animations';
 })
 
 export class GoogleMapsComponent {
+
+
+  
+  country:string;
+  constructor(private readonly utilService: UtilService) { }
+
+  ngOnInit() {
+    this.utilService.dataState.subscribe(
+      (data: string) => {
+        this.country = data;
+      });
+  }
+
+
+  
   // display: any;
   center: google.maps.LatLngLiteral = {
     lat: 24,

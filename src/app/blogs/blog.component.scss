@@ -14,6 +14,10 @@
       display: flex;
       align-items: center;
     }
+
+    .publishdate {
+      font-size: 14px !important;
+    }
     .blog-header-content {
       background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
       min-height: 21rem;
@@ -23,8 +27,9 @@
         position: relative;
 
         img {
-          position: absolute;
           // position: absolute;
+          // position: absolute;
+          margin: 3rem 0rem !important;
           top: 15%;
           border-radius: 24px;
           width: 96%;
@@ -90,9 +95,6 @@
       font-size: 12px;
       font-weight: 500;
       line-height: 1.85;
-    }
-    ul, li {
-      list-style-type: none;
     }
   
     .list-casestudy {

@@ -2,13 +2,14 @@
 .blog-container {
   h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 2.5rem !important;
-    font-weight: 600 !important;
+    font-size: 2.75rem !important;
+    font-weight: 700 !important;
     // color: #222;
-    line-height: 2.75rem;
+    line-height: 3rem;
 
     @media screen and (max-width: 992px) {
       font-size: 2rem !important;
+      line-height: 2.5rem;
     }
   }
 
@@ -67,24 +68,29 @@
 
   p {
     font-family: neue-haas-grotesk-text, sans-serif;
-    font-size: 1.25rem !important;
-    line-height: 1.85rem;
-    word-break: break-word;
-    word-wrap: break-word;
+    font-size: 1.15rem !important;
+    line-height: 1.9rem;
+    opacity: 0.9;
     // color: red !important;
     // padding-block: 0;
     // color: rgb(55, 55, 55);
     // color: #444444;
   }
 
+  .publishdate {
+    font-size: 14px !important;
+    opacity: 0.5;
+  }
+
   .subtitle {
-    //   font-family: neue-haas-grotesk-text, sans-serif;
+    font-family: neue-haas-grotesk-text, sans-serif;
     font-style: normal;
     font-size: 1.25rem !important;
     line-height: 1.85rem;
     // line-height: calc(100% + 4px);
     font-weight: 400;
-    color: #212529;
+    // color: #212529;
+    opacity: 0.7;
     word-break: break-word;
     word-wrap: break-word;
     @media screen and (max-width: 992px) {
@@ -92,6 +98,12 @@
     }
   }
 
+  .a {
+    color: #212529;
+    font-size: 1.5rem !important;
+    font-weight: 500;
+    line-height: 1.85;
+  }
   .label {
     font-style: normal;
     font-size: 1.15rem;
@@ -100,12 +112,35 @@
     word-wrap: break-word;
   }
 
+  ol,
+  ul {
+    display: block;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+  ul,
+  ol,
+  li {
+    // list-style-type: disc;
+
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: 1.15rem !important;
+    line-height: 1.9rem;
+    opacity: 0.9;
+    // text-indent: 10%;
+  }
+
   img {
     aspect-ratio: 960/638;
-    width: 100%;
-    min-height: auto;
+    width: 100% !important;
+    height: auto;
     border-radius: 12px;
     object-fit: cover;
+    margin: 1rem 0rem;
   }
   // Image Zoom Hover
   .zoomhover {

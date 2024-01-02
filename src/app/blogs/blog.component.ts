@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { StrapiService } from "src/shared/services/strapi.service";
 import { BlogService } from "./shared/blog.service";
 import { ActivatedRoute, Router } from "@angular/router";
@@ -10,12 +10,12 @@ import { ActivatedRoute, Router } from "@angular/router";
   encapsulation: ViewEncapsulation.None
 })
 
-export class BlogComponent {
+export class BlogComponent implements OnInit {
 
   strapiBlogAttrs: any;
   contextType: string = 'All';
   blogData: any;
-  blogDeatils:any;
+  blogDeatils: any;
   CategorieObj = [
     {
       type: 'Customer Story',
@@ -37,7 +37,8 @@ export class BlogComponent {
 
   ngOnInit() {
     this.blogDeatils = JSON.parse(this.route.snapshot.paramMap.get('data'));
-    document.getElementById("ResourceArticle").innerHTML = this.blogDeatils.attributes.ArticleEditContent;
+    if (this.blogDeatils?.attributes?.ArticleEditContent)
+      document.getElementById("ResourceArticle").innerHTML = this.blogDeatils.attributes.ArticleEditContent;
     // this.getStrapiBlog();
     // this.getAllBlogs();
   }

@@ -79,12 +79,13 @@ export class ResourcesCategoriesComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes) {
-      this.resourceJson = JSON.parse(this.resourceObj);
-      console.log(this.resourceJson);
-      // this.changeValue("Case Studies");
-      this.allCategories();
-      this.test();
-
+      if (this.resourceObj) {
+        this.resourceJson = JSON.parse(this.resourceObj);
+        console.log(this.resourceJson);
+        // this.changeValue("Case Studies");
+        this.allCategories();
+        this.test();
+      }
     }
   }
 
@@ -109,9 +110,9 @@ export class ResourcesCategoriesComponent implements OnChanges {
     let index = this.resourceJson.map(res => res.id).indexOf(id);
     if (index !== -1) {
       this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
-      setTimeout(() => {
-        this.location.replaceState('/blogs');
-      }, 100);
+      // setTimeout(() => {
+      //   this.location.replaceState('/blogs');
+      // }, 100);
     }
   }
   test() {

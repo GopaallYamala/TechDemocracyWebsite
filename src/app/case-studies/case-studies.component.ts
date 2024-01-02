@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import AOS from "aos";
@@ -29,6 +30,7 @@ export class CaseStudiesComponent implements OnInit {
 
   constructor(private readonly resourceService: ResourceService,
     private readonly router: Router,
+    private readonly location:Location,
     private readonly strapiService: StrapiService) { }
 
 
@@ -67,6 +69,9 @@ export class CaseStudiesComponent implements OnInit {
     let index = this.listOfCaseStudies.map(res => res.id).indexOf(id);
     if (index !== -1) {
       this.router.navigate(['/blogs', { data: JSON.stringify(this.listOfCaseStudies[index]), skipLocationChange: true }]);
+      // setTimeout(() => {
+      //   this.location.replaceState('/blogs');
+      // }, 100);
     }
   }
 
