@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, HostListener, OnInit, QueryList, Renderer2, ViewChildren, ViewEncapsulation } from "@angular/core";
+import { FormBuilder, FormGroup } from "@angular/forms";
 import { Meta } from "@angular/platform-browser";
 import { AnimationDefinitions } from "src/shared/animations";
+import { CompanyService } from "../shared/company.service";
 
 @Component({
   selector: 'careers',
@@ -12,16 +14,53 @@ import { AnimationDefinitions } from "src/shared/animations";
 
 export class CareersComponent implements OnInit, AfterViewInit {
 
+  @ViewChildren('elm1, elm2, elm3') elms: QueryList<any>;
+  detectedElms = [];
+  isScroll: boolean = false;
+  careersInfoForm: FormGroup;
+  careersInfo: CareersInfo;
+  files: any;
+  upcomingEvents = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  careersUsData = {
+    title: 'Careers',
+    heading: 'Take the First Step Towards a Bright Future',
+    subHeading: 'A career with us is more than a job – it\'s an opportunity for growth and success.',
+    solutionName: '',
+    displayBtn: false,
+    solutionContent: '',
+    solutionImg: '../../assets/images/heroimages/Career.png'
+  }
+  achivedCardsArr = [
+    { value: '5 Millions+', id: 'IdentityManaged', desc: 'User Identities managed since inception' }, { value: '100+', id: 'SuccessfulIDM', desc: 'SuccessfulIDM, CyberSec Implementation' },
+    { value: '30+', id: 'ActiveCurrentEngagements', desc: 'Active current engagements in identity security' }, { value: '23+', id: 'DedicatedHeadcount', desc: 'Years of experience in Cyber Security' }
+  ]
+
+
+
   constructor(private renderer: Renderer2,
+    private readonly formBuilder: FormBuilder,
+    private readonly companyService: CompanyService,
     private meta: Meta) {
     this.renderer.listen('window', 'resize', this.detectElms.bind(this));
     this.renderer.listen('window', 'scroll', this.detectElms.bind(this));
   }
 
-  @ViewChildren('elm1, elm2, elm3') elms: QueryList<any>;
 
-  detectedElms = [];
-  isScroll: boolean = false;
+  ngOnInit() {
+    this.careersInfoForm = this.formBuilder.group(CareersForm);
+    this.animateValue(document.getElementById('value'));
+    // Meta tags starts
+    this.meta.addTags([
+      { name: 'title', content: "Job opportunities in TechDemocracy, Career Opportunities" },
+      { name: 'description', content: "Explore rewarding careers at TechDemocracy. Join us in cybersecurity, IAM, and identity security fields. Discover open job positions and submit your resume." },
+      { name: 'keywords', content: "Hiring, Job opportunity, job vacancy, Careers in cybersecurity, career in IAM, Career in Identity security, cybersecurity job opportunities, open job positions, Talent pool, submit resume" }]
+    );
+    // Meta tags ends
+  }
+
+  ngAfterViewInit() {
+    setTimeout(this.detectElms.bind(this))
+  }
 
   detectElms() {
     const detectedElms: any = []
@@ -38,39 +77,6 @@ export class CareersComponent implements OnInit, AfterViewInit {
       this.animateValue(document.getElementById('DedicatedHeadcount'));
       this.isScroll = true;
     }
-  }
-
-  ngAfterViewInit() {
-    setTimeout(this.detectElms.bind(this))
-  }
-
-
-  upcomingEvents = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-  careersUsData = {
-    title: 'Careers',
-    heading: 'Take the First Step Towards a Bright Future',
-    subHeading: 'A career with us is more than a job – it\'s an opportunity for growth and success.',
-    solutionName: '',
-    displayBtn: false,
-    solutionContent: '',
-    solutionImg: '../../assets/images/heroimages/Career.png'
-  }
-
-  achivedCardsArr = [
-    { value: '5 Millions+', id: 'IdentityManaged', desc: 'User Identities managed since inception' }, { value: '100+', id: 'SuccessfulIDM', desc: 'SuccessfulIDM, CyberSec Implementation' },
-    { value: '30+', id: 'ActiveCurrentEngagements', desc: 'Active current engagements in identity security' }, { value: '23+', id: 'DedicatedHeadcount', desc: 'Years of experience in Cyber Security' }
-  ]
-
-  ngOnInit() {
-    this.animateValue(document.getElementById('value'));
-    // Meta tags starts
-    this.meta.addTags([
-      {name: 'title', content: "Job opportunities in TechDemocracy, Career Opportunities"},
-      { name: 'description', content: "Explore rewarding careers at TechDemocracy. Join us in cybersecurity, IAM, and identity security fields. Discover open job positions and submit your resume." },
-      { name: 'keywords', content: "Hiring, Job opportunity, job vacancy, Careers in cybersecurity, career in IAM, Career in Identity security, cybersecurity job opportunities, open job positions, Talent pool, submit resume" }]
-    );
-    // Meta tags ends
   }
 
   animateValue(obj: any, start = 0, end: any = null, duration = 3000) {
@@ -116,6 +122,47 @@ export class CareersComponent implements OnInit, AfterViewInit {
     }
   }
 
+  // Import
+  handleInputChange(e) {
+    var file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+    e.target.value = '';
+    this.files = file;
+    var reader = this.parseImageFile(file);
+    this.onFileChange(this.files);
+  }
+  // file validation
+  onFileChange(ev) {
+    let file: any
+    file = ev;
+    let fileName: string = file.name;
+    let attchFile = new attachedFile();
+    attchFile.fileName = fileName.split('.')[0];
+    attchFile.fileType = fileName.split('.')[1];
+    attchFile.file = file;
+    this.files = attchFile;
+  }
+
+  parseImageFile(file) {
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = (e) => {
+      reader.result;
+    }
+  }
+
+  upload() {
+    this.confirmUpload({ ...this.careersInfo, ...this.careersInfoForm.value });
+  }
+
+  confirmUpload(careers: CareersInfo) {
+    if (this.files) {
+      careers.fileUpload = this.files;
+    }
+    this.companyService.sendMail(careers).subscribe(res => {
+      console.log(res);
+    });
+  }
+
 }
 
 function isInViewport(elm: any) {
@@ -128,3 +175,25 @@ function isInViewport(elm: any) {
 
   return elementBottom > viewportTop && elementTop < viewportBottom;
 }
+
+
+export const CareersForm = {
+  fullName: [''],
+  email: [''],
+  number: [''],
+  fileUpload: ['']
+}
+
+export class CareersInfo {
+  fullName: string
+  email: string
+  number: number
+  fileUpload: attachedFile;
+}
+
+export class attachedFile {
+  file: string
+  fileType: string;
+  fileName: string
+}
+
