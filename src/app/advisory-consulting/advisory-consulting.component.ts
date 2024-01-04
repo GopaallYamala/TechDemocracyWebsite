@@ -92,7 +92,7 @@ export class AdvisoryConsultingComponent implements OnInit {
           this.meta.addTags([
             {name: 'title', content: "Identity Security Advisory Consultant | TechDemocracy"},
             { name: 'description', content: "TechDemocracy's advisory consultants offer expertise in cybersecurity strategies. Gain a tailored plan ensuring business objectives and digital transformation." },
-            { name: 'keywords', content: "advisory consulting, cybersecurity transformation journey, digital transformation, business objectives, strategic roadmap, foundational planning, techdemocracy advisory team" }]
+            { name: 'keywords', content: "advisory consulting, cybersecurity transformation journey, digital transformation, business objectives, strategic roadmap, foundational planning, TechDemocracy advisory team" }]
           );
           break;
         case 'Implementation Service':

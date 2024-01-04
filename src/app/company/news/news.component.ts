@@ -16,7 +16,7 @@ export class NewsComponent {
 
   newsUsData = {
     title: 'NEWS & PRESS RELEASE',
-    heading: 'Latest News Updates from Techdemocracy and its partners',
+    heading: 'Latest News Updates from TechDemocracy and its partners',
     subHeading: '',
     solutionName: 'Partners',
     displayBtn: false,
