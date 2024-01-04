@@ -63,37 +63,45 @@
       <div class="row">
         <div class="col-md-9 textedit">
           <div id="ResourceArticle"></div>
-          <div class="flex-row-nowrap" *ngFor="let image of blogDeatils?.attributes?.SupportingImages?.data">
-            <img class="img-thumbnail" src="{{'http://localhost:1337' + image?.attributes?.url}}"
-              alt="{{'http://localhost:1337' + image?.attributes?.hash}}">
+          <div class="flex-row-nowrap">
+            <div class="col-md-6" *ngFor="let image of blogDeatils?.attributes?.SupportingImages?.data">
+              <img class="img-thumbnail" src="{{'http://localhost:1337' + image?.attributes?.url}}"
+                alt="{{'http://localhost:1337' + image?.attributes?.hash}}">
+            </div>
           </div>
         </div>
         <div class="col-md-3 pt-5">
-          <!-- <ng-container *ngFor="let sample of CategorieObj">
-            <div class="flex-col-nowrap gutter-bottom-1">
-              <div class="caseStudy"></div>
-              <label class="breathing-space-bottom">{{sample.type}}</label>
-              <h6><strong>{{sample.desc}}</strong></h6>
-              <a href="#">{{sample.read}}</a>
-            </div>
-          </ng-container> -->
-         
-
           <div class="sticky-md-top stickycase">
-            <ng-container *ngFor="let sample of CategorieObj">
-              <div class="d-flex flex-column gutter-bottom-1 ">
+            <ng-container *ngIf="recommendedArticle">
+              <div (click)="openArticle(0)" class="d-flex flex-column gutter-bottom-1 ">
                 <div class="zoomhover">
-                  <img class="casestudyimg" src="../../assets/images/Resource/TelecomInd.png" />
+                  <!-- <img class="casestudyimg" src="../../assets/images/Resource/TelecomInd.png" /> -->
+                  <img class="casestudyimg"
+                    src="{{'http://localhost:1337' + recommendedArticle?.data?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                    alt="{{recommendedArticle2?.data?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
                 </div>
                 <article class="pt-3 pb-5">
-                  <label>{{sample.type}}</label>
-                  <h4>{{sample.desc}}</h4>
-                  <a href="#">{{sample.read}}</a>
+                  <label>{{recommendedArticle?.data?.attributes?.category?.data?.attributes?.CategoryTitle}}</label>
+                  <h4>{{recommendedArticle?.data?.attributes?.HeadingTitle}}</h4>
                 </article>
               </div>
 
             </ng-container>
+            <ng-container *ngIf="recommendedArticle2">
+              <div (click)="openArticle(1)" class="d-flex flex-column gutter-bottom-1 ">
+                <div class="zoomhover">
+                  <img class="casestudyimg"
+                    src="{{'http://localhost:1337' + recommendedArticle2?.data?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                    alt="{{recommendedArticle2?.data?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
+                  <!-- <img class="casestudyimg" src="../../assets/images/Resource/TelecomInd.png" /> -->
+                </div>
+                <article class="pt-3 pb-5">
+                  <label>{{recommendedArticle2?.data?.attributes?.category?.data?.attributes?.CategoryTitle}}</label>
+                  <h4>{{recommendedArticle2?.data?.attributes?.HeadingTitle}}</h4>
+                </article>
+              </div>
 
+            </ng-container>
           </div>
         </div>
       </div>

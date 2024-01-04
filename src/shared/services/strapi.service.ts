@@ -12,10 +12,19 @@ export class StrapiService extends RestService {
     const strapiResourceUrl = `/api/resource-articles?populate=*`
     return this.getStrapi(strapiResourceUrl);
   }
+  getArticle(id:any): Observable<any> {
+    const strapiResourceUrl = `/api/resource-articles/${id}?populate=*`
+    return this.getStrapi(strapiResourceUrl);
+  }
 // Categorys
   getCategory(){
     const strapiCategorysUrl = `/api/categories`
     return this.getStrapi(strapiCategorysUrl);
+  }
+
+  getAllNews() {
+    const getAllNewsByUrl = `/api/press-releases?populate=*`;
+    return this.getStrapi(getAllNewsByUrl);
   }
 
   getFullBlog(): Observable<any> {
