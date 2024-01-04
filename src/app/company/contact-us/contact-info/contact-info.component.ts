@@ -49,6 +49,7 @@ export class ContactInfoComponent implements OnInit {
   sendNewMail(contactDetails: ContactInfo) {
     this.companyService.sendMail(contactDetails).subscribe(res => {
       console.log(res);
+      this.contactInfoForm.reset();
     });
   }
 }
