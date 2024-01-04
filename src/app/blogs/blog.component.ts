@@ -3,6 +3,8 @@ import { StrapiService } from "src/shared/services/strapi.service";
 import { BlogService } from "./shared/blog.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import e from "express";
+import { Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'blogs',
@@ -35,11 +37,19 @@ export class BlogComponent implements OnInit {
   constructor(private readonly strapiService: StrapiService,
     private readonly router: Router,
     private route: ActivatedRoute,
-    private readonly blogService: BlogService) { }
+    private readonly blogService: BlogService,
+    private meta: Meta) { }
 
 
   ngOnInit() {
     this.blogDeatils = JSON.parse(this.route.snapshot.paramMap.get('data'));
+    if (this.blogDeatils) {
+      this.meta.addTags([
+        {name: 'title', content: this.blogDeatils.attributes.seo.metaTitle},
+        {name: 'description', content: this.blogDeatils.attributes.seo.metaDescription},
+        {name: 'keywords', content: this.blogDeatils.attributes.seo.keywords}
+      ])
+    }
     if (this.blogDeatils?.attributes?.ArticleEditContent)
       document.getElementById("ResourceArticle").innerHTML = this.blogDeatils.attributes.ArticleEditContent;
     this.recommendedArticle = undefined;
