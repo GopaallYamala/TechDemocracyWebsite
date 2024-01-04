@@ -29,6 +29,12 @@ export const AnimationDefinitions = [
       animate('200ms ease-out', style({ opacity: 0, height: '0px' }))
     ])
   ]),
+  trigger('in',[
+    transition(':enter', [
+      style({transform: 'translateY(2%)'}),       
+      animate('700ms  ease-in', style({transform: 'translateY(0%)'})),
+    ])      
+  ]),
   trigger('slideUpA', [
     transition(':enter', [
       style({ transform: 'translateY(10%)', opacity: 0 }),

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import AOS from "aos";
 
 @Component({
   selector: 'solutions-hero',
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
 export class SolutionsHeroComponent {
 
   constructor (private readonly router: Router) {}
+  
   @Input() solutionName = ``;
   @Input() dataObj = {
     title: '',
