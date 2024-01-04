@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { AnimationDefinitions } from "src/shared/animations";
 import { UtilService } from "src/shared/services/util.service";
-import { RestService } from "src/shared/services/rest.service";
 import { CompanyService } from "../../shared/company.service";
 import { FormBuilder, FormGroup } from "@angular/forms";
 
@@ -19,6 +18,8 @@ export class ContactInfoComponent implements OnInit {
   emailObj: any;
   contactInfoForm: FormGroup;
   contactInfo: ContactInfo;
+  showSuccessMessage: boolean = false;
+  showErrorMessage: boolean = false;
 
   constructor(private readonly utilService: UtilService,
     private readonly companyService: CompanyService,
@@ -32,15 +33,15 @@ export class ContactInfoComponent implements OnInit {
       });
   }
 
-  sendMessage() {
-    this.emailObj = {
-      from: 'no-reply@techdemocracy.com',
-      to: 'lakshman.kotipalli@techdemocracy.com, ramu.vundavelli@techdemocracy.com',
-      subject: 'test sendmail',
-      html: 'Mail of test sendmail ',
-    }
-    // this.callSendMail(this.emailObj);
-  }
+  // sendMessage() {
+  //   this.emailObj = {
+  //     from: 'no-reply@techdemocracy.com',
+  //     to: 'lakshman.kotipalli@techdemocracy.com, ramu.vundavelli@techdemocracy.com',
+  //     subject: 'test sendmail',
+  //     html: 'Mail of test sendmail ',
+  //   }
+  //   // this.callSendMail(this.emailObj);
+  // }
 
   callSendMail() {
     this.sendNewMail({ ...this.contactInfo, ...this.contactInfoForm.value });
@@ -48,9 +49,18 @@ export class ContactInfoComponent implements OnInit {
 
   sendNewMail(contactDetails: ContactInfo) {
     this.companyService.sendMail(contactDetails).subscribe(res => {
-      console.log(res);
+      this.showSuccessMessage = true;
       this.contactInfoForm.reset();
-    });
+      setTimeout(() => {
+        this.showSuccessMessage = false;
+      }, 3000);
+    },
+      err => {
+        this.showErrorMessage = true;
+        setTimeout(() => {
+          this.showErrorMessage = false;
+        }, 3000);
+      });
   }
 }
 
