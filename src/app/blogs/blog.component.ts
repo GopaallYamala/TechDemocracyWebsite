@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 import { StrapiService } from "src/shared/services/strapi.service";
 import { BlogService } from "./shared/blog.service";
 import { ActivatedRoute, Router } from "@angular/router";
+import e from "express";
 
 @Component({
   selector: 'blogs',
@@ -16,6 +17,8 @@ export class BlogComponent implements OnInit {
   contextType: string = 'All';
   blogData: any;
   blogDeatils: any;
+  recommendedArticle: any
+  recommendedArticle2: any
   CategorieObj = [
     {
       type: 'Customer Story',
@@ -39,8 +42,25 @@ export class BlogComponent implements OnInit {
     this.blogDeatils = JSON.parse(this.route.snapshot.paramMap.get('data'));
     if (this.blogDeatils?.attributes?.ArticleEditContent)
       document.getElementById("ResourceArticle").innerHTML = this.blogDeatils.attributes.ArticleEditContent;
+    this.recommendedArticle = undefined;
+    this.recommendedArticle2 = undefined;
+    this.getArticle(this.blogDeatils?.attributes?.RecommendedArticle?.data[0]?.id, 0);
+    this.getArticle(this.blogDeatils?.attributes?.RecommendedArticle_2?.data[0]?.id, 1);
     // this.getStrapiBlog();
     // this.getAllBlogs();
+  }
+
+
+  getArticle(id: any, val: number) {
+    if (id) {
+      this.strapiService.getArticle(id).subscribe(res => {
+        if (val === 0)
+          this.recommendedArticle = res;
+        else {
+          this.recommendedArticle2 = res;
+        }
+      });
+    }
   }
 
 
@@ -97,6 +117,27 @@ export class BlogComponent implements OnInit {
     this.blogService.deleteBlog(strapiId).subscribe((res: any) => {
       console.log(res);
     });
+  }
+
+  openArticle(val: number) {
+    if (val === 0) {
+      if (this.recommendedArticle) {
+        this.router.navigate(['/']);
+        setTimeout(() => {
+          this.router.navigate(['/blogs', { data: JSON.stringify(this.recommendedArticle?.data), skipLocationChange: true }]);
+        }, 50);
+      }
+    }
+    else {
+      if (this.recommendedArticle2) {
+        this.router.navigate(['/']);
+        setTimeout(() => {
+          this.router.navigate(['/blogs', { data: JSON.stringify(this.recommendedArticle2?.data), skipLocationChange: true }]);
+        }, 50);
+      }
+
+    }
+
   }
 
 }
