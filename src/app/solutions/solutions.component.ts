@@ -1,14 +1,28 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { AnimationDefinitions } from 'src/shared/animations';
+// import { AnimationDefinitions } from 'src/shared/animations';
+import {
+  transition,
+  trigger,
+  style,
+  animate
+} from '@angular/animations';
 
 @Component({
   selector: 'solutions',
   templateUrl: './solutions.component.html',
   styleUrls: ['./solutions.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  animations: AnimationDefinitions
+  // animations: AnimationDefinitions
+  animations: [
+    trigger('in',[
+      transition(':enter', [
+        style({transform: 'translateY(2%)'}),       
+        animate('700ms  ease-in', style({transform: 'translateY(0%)'})),
+      ])      
+    ]),
+  ],
 })
 
 export class SolutionsComponent implements OnInit {
@@ -519,5 +533,14 @@ solutionType:string;
           break;
       }
     }
+  }
+
+  animateIn () {
+    return trigger('test',[
+      transition(':enter', [
+        style({transform: 'translateY(2%)'}),
+        animate('700ms  ease-in', style({transform: 'translateY(0%)'})),
+      ])
+    ])
   }
 }

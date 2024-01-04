@@ -41,20 +41,20 @@
         <ul>
           <li (click)="navToPages('/company', 'About Us')"><a>About Us</a></li>
           <li (click)="navToPages('/company', 'Leadership')"><a>Leadership Team</a></li>
-          <li [routerLink]="'/blogs'"><a>Blogs</a></li>
+          <li [routerLink]="'/resources'"><a>Resources</a></li>
           <li (click)="navToPages('/company', 'Careers')"><a>Careers</a></li>
         </ul>
       </article>
       <article *ngIf="country === 'United States' || country === ''" class="col-md-3 col-sm-12">
         <h4 class="text-light">Head Office: United States</h4>
         <address>1 Corporate Place South Suite # 110, Piscataway, NJ 08854. Call Us : +1 732 404 8350</address>
-        <p style="color: #FFFFFF;">Email us : <a href="#">solutions@techdemocracy.com</a></p>
+        <p style="color: #FFFFFF;">Email us : <a href="mailto:solutions@techdemocracy.com">solutions@techdemocracy.com</a></p>
         <div class="delivery-centers-list">
           <h4 class="text-light">Delivery Centers :</h4>
           <ul class="delivery-centers">
-            <li><a href="#">Canada</a></li>
-            <li><a href="#">India</a></li>
-            <li><a href="#">Philippines</a></li>
+            <li><a class="text-decoration-none">Canada</a></li>
+            <li><a class="text-decoration-none">India</a></li>
+            <li><a class="text-decoration-none">Philippines</a></li>
           </ul>
         </div>
       </article>
@@ -65,14 +65,14 @@
           2425 Matheson Blvd East
           Mississauga, ON L4W 5K4</address>
         <phone class="text-light">Call Us : +1 647 792 0050</phone>
-        <p style="color: #FFFFFF;">Email us : <a href="#">solutions@techdemocracy.com</a></p>
+        <p style="color: #FFFFFF;">Email us : <a href="mailto:solutions@techdemocracy.com">solutions@techdemocracy.com</a></p>
       </article>
       <article *ngIf="country === 'India'" class="col-md-3 col-sm-12">
         <h4 class="text-light">Delivery Center: <br> Cotelligent India Pvt Ltd</h4>
         <address>Survey No 83/1 upper ground floor,The Skyview 20, Divija Commercial Properties Pvt Ltd,Raidurgam
           Hyderabad - 500081</address>
         <phone class="text-light">Call Us : +91 - 40 - 67231701</phone>
-        <p style="color: #FFFFFF;">Email us : <a href="#">sales@cotelligent.com</a></p>
+        <p style="color: #FFFFFF;">Email us : <a href="mailto:sales@cotelligent.com">sales@cotelligent.com</a></p>
       </article>
     </section>
     <h3 class="footer-text-hdng">Your Trusted Identity Security Partner</h3>

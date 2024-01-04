@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'resources', component: ResourcesComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
   { path: 'company', component: CompanyComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' },
-  { path: 'blogs', component: BlogComponent},
+  { path: 'blogs', component: BlogComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange'},
   { path: 'privacy-policy', component: PrivacyPolicyComponent},
   { path: 'cookie-policy', component: CookiePolicyComponent },
   { path: 'terms-conditions', component: TermsAndConditionsComponent },

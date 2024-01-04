@@ -2,7 +2,7 @@
   <div class="container">
     <section class="leadership-banner-container">
       <div class="row py-5">
-        <div class="col-md-8 leadership-content flex-col-nowrap">
+        <div class="col-md-8 leadership-content flex-col-nowrap"  data-aos="fade-up" data-aos-duration="1000">
           <p class="subtitle">Leadership</p>
           <h2>Meet the Leaders Steering TechDemocracy</h2>
           <p>TechDemocracy's leadership is made up of seasoned visionaries in identity security. They not only embrace
@@ -10,11 +10,11 @@
             mentors, guides, and motivators driven by unwavering integrity, they inspire our team to consistently strive
             for excellence.</p>
           <div class="mt-3">
-            <button class="btn btn-outline-danger">Discover Our Leadership</button>
+            <button class="btn btn-outline-danger" (click)="navToPages('/company', 'Leadership')">Discover Our Leadership</button>
           </div>
         </div>
-        <div class="col-md-4">
-          <img src="../../assets/images/leadership-dum.JPG" alt="Our Leadership Picture">
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
+          <img class="leadership-strip" src="../../assets/images/Leadership_Images/Sub_Leadership_bw.png" alt="Our Leadership Picture">
         </div>
       </div>
     </section>

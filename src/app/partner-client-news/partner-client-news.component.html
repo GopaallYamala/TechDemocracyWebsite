@@ -1,25 +1,25 @@
-<section class="partner-client-news">
+<section class="partner-client-news"  *ngIf="newsObj.length > 0" data-aos="fade-up" data-aos-duration="1000">
   <div class="container py-5">
     <header class="cp-news-hdr flex-row-nowrap">
       <h2>Partner & Client News</h2>
       <div>
-        <button class="btn btn-outline-danger">View All</button>
+        <!-- <button class="btn btn-outline-danger">View All</button> -->
       </div>
     </header>
-    <section class="cp-cards-container row">
+    <section *ngFor="let news of newsObj | slice: (newsObj?.length > 4 ? newsObj?.length - 4 : 0); index as i" class="cp-cards-container row">
       <article class="cp-card-section col-md-3">
         <div class="cp-card">
-          <img src="../../assets/images/Resource/HealthcareInd.png" />
+          <img src="{{'http://localhost:1337' + news?.attributes?.NewsImage?.data?.attributes?.url}}" />
         </div>
 
-        <label>New Partnership</label>
-        <h4>The quick, brown fox jumps over a lazy dog flock</h4>
-        <a href="#">Read Story</a>
+        <label>{{news?.attributes?.NewsFrom}}</label>
+        <h4>{{news?.attributes?.NewsTitle}}</h4>
+        <a href="{{news?.attributes?.ExternalLink}}" target="_blank">Read Story</a>
       </article>
 
 
 
-      <article class="cp-card-section col-md-3">
+      <!-- <article class="cp-card-section col-md-3">
         <div class="cp-card">
           <img src="../../assets/images/Resource/TelecomInd.png" />
         </div>
@@ -47,7 +47,7 @@
         <h4>The quick, brown fox jumps over a lazy dog flock</h4>
         <a href="#">Read Story</a>
       </article>
-
+ -->
 
     </section>
   </div>
