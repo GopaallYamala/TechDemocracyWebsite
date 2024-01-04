@@ -14,7 +14,9 @@ export class RestService {
 
     if (environment.production) {
       // this.maincontexturl = '/backend-api';
-      this.maincontexturl = 'http://125.20.96.9:4201';
+      // this.maincontexturl = 'http://125.20.96.9:4201';
+      this.maincontexturl = 'http://162.240.148.84:3000';
+      this.strapiContextUrl = 'http://162.240.148.84:1337'
     } else {
       // this.maincontexturl = 'http://10.0.20.24:4201';
       // this.maincontexturl = 'http://10.0.20.50:4201';
