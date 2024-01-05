@@ -20,8 +20,10 @@ export class HeaderComponent implements OnInit {
   selectedState = "United States";
   quickActions = ['United States', 'India', 'Canada'];
   resourceJson: any;
-  latestRecordTitle: string;
-  latestCategorie: string;
+  // latestRecordTitle: string;
+  // latestCategorie: string;
+  lastRecord: any;
+
 
   constructor(private readonly utilService: UtilService,
     private readonly strapiService: StrapiService,
@@ -46,18 +48,17 @@ export class HeaderComponent implements OnInit {
     this.strapiService.getBlog().subscribe(res => {
       const myJSON = res.data;
       this.resourceJson = myJSON;
-      let lastRecord = this.resourceJson[this.resourceJson.length - 1];
-      this.latestRecordTitle = lastRecord?.attributes?.HeadingTitle;
-      this.latestCategorie = lastRecord?.attributes?.category?.data?.attributes?.CategoryTitle;
+      this.lastRecord = this.resourceJson[this.resourceJson.length - 1];
     });
   }
 
-  open() {
-    let lastRecord = this.resourceJson[this.resourceJson.length - 1];
-    // this.latestRecordTitle = lastRecord?.attributes?.HeadingTitle;
-    // this.latestCategorie = lastRecord?.attributes?.category?.data?.attributes?.CategoryTitle;
+  open(lastRecord) {
     if (lastRecord) {
-      this.router.navigate(['/blogs', { data: JSON.stringify(lastRecord), skipLocationChange: true }]);
+      let data = {
+        slug: lastRecord.attributes.Slug,
+        id: lastRecord.id
+      }
+      this.router.navigate(['/blogs', { data: JSON.stringify(data) }]);
     }
   }
 }

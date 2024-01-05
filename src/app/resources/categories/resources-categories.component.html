@@ -1,6 +1,6 @@
 <div class="resources-container">
   <div class="container py-5">
-    <h2 class="gutter-bottom-2">Categories</h2>
+    <h2 *ngIf="categoriesList?.length > 0" class="gutter-bottom-2">Categories</h2>
     <section class="row">
       <div class="flex-col-nowrap col-md-3">
         <div class="py-2" *ngFor="let resource of categoriesList">
@@ -12,7 +12,7 @@
         <div class="row">
           <!-- | filter: { episodeId: searchEpisodeById } -->
           <ng-container *ngFor="let resource of selectedCategorieList | slice:0:categoriesIndex; let i = index">
-            <div (click)="open(resource?.id)"
+            <div (click)="open(resource)"
               *ngIf="((resource?.attributes?.category?.data?.attributes?.CategoryTitle === selectedCategorie) || ('All' === selectedCategorie));else empty"
               class="flex-col-nowrap col-md-4 gutter-bottom-1 cursor">
               <!-- <div class="caseStudy"></div> -->

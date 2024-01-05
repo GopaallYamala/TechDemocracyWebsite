@@ -30,7 +30,7 @@ export class CaseStudiesComponent implements OnInit {
 
   constructor(private readonly resourceService: ResourceService,
     private readonly router: Router,
-    private readonly location:Location,
+    private readonly location: Location,
     private readonly strapiService: StrapiService) { }
 
 
@@ -65,13 +65,13 @@ export class CaseStudiesComponent implements OnInit {
     });
   }
 
-  open(id) {
-    let index = this.listOfCaseStudies.map(res => res.id).indexOf(id);
-    if (index !== -1) {
-      this.router.navigate(['/blogs', { data: JSON.stringify(this.listOfCaseStudies[index]), skipLocationChange: true }]);
-      // setTimeout(() => {
-      //   this.location.replaceState('/blogs');
-      // }, 100);
+  open(resource) {
+    if (resource) {
+      let data = {
+        slug: resource.attributes.Slug,
+        id: resource.id
+      }
+      this.router.navigate(['/blogs', { data: JSON.stringify(data) }]);
     }
   }
 

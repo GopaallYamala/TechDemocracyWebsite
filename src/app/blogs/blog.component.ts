@@ -42,22 +42,29 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit() {
-    this.blogDeatils = JSON.parse(this.route.snapshot.paramMap.get('data'));
-    if (this.blogDeatils) {
-      this.meta.addTags([
-        {name: 'title', content: this.blogDeatils.attributes.seo.metaTitle},
-        {name: 'description', content: this.blogDeatils.attributes.seo.metaDescription},
-        {name: 'keywords', content: this.blogDeatils.attributes.seo.keywords}
-      ])
+    let data: any = JSON.parse(this.route.snapshot.paramMap.get('data'));
+    this.getArticleDetails(data.id);
+  }
+
+  getArticleDetails(id) {
+    if (id) {
+      this.strapiService.getArticle(id).subscribe(res => {
+        this.blogDeatils = res.data;
+        if (this.blogDeatils) {
+          this.meta.addTags([
+            { name: 'title', content: this.blogDeatils.attributes.seo.metaTitle },
+            { name: 'description', content: this.blogDeatils.attributes.seo.metaDescription },
+            { name: 'keywords', content: this.blogDeatils.attributes.seo.keywords }
+          ])
+        }
+        if (this.blogDeatils?.attributes?.ArticleEditContent)
+          document.getElementById("ResourceArticle").innerHTML = this.blogDeatils?.attributes?.ArticleEditContent;
+        this.recommendedArticle = undefined;
+        this.recommendedArticle2 = undefined;
+        this.getArticle(this.blogDeatils?.attributes?.RecommendedArticle?.data[0]?.id, 0);
+        this.getArticle(this.blogDeatils?.attributes?.RecommendedArticle_2?.data[0]?.id, 1);
+      });
     }
-    if (this.blogDeatils?.attributes?.ArticleEditContent)
-      document.getElementById("ResourceArticle").innerHTML = this.blogDeatils.attributes.ArticleEditContent;
-    this.recommendedArticle = undefined;
-    this.recommendedArticle2 = undefined;
-    this.getArticle(this.blogDeatils?.attributes?.RecommendedArticle?.data[0]?.id, 0);
-    this.getArticle(this.blogDeatils?.attributes?.RecommendedArticle_2?.data[0]?.id, 1);
-    // this.getStrapiBlog();
-    // this.getAllBlogs();
   }
 
 
