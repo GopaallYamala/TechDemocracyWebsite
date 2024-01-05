@@ -4,11 +4,12 @@
       <section class="casestudies-section row">
         <article class="casestudies-content col-md-12 text-light" data-aos="fade-up" data-aos-duration="1000">
           <h2>Case Studies</h2>
-          <div class="view-casestudies">
+          <div class="view-casestudies gutter-bottom-2">
             <p>Some of our Client’s Success Stories</p>
-            <a class="nav-link" routerLink="/resources" routerLinkActive="active">View All</a>
+            <a *ngIf="listOfCaseStudies?.length <= 2" class="nav-link" routerLink="/resources"
+              routerLinkActive="active">View All</a>
           </div>
-          <button *ngFor="let btn of buttonsList" type="button" class="btn btn-outline-light">{{btn}}</button>
+          <!-- <button *ngFor="let btn of buttonsList" type="button" class="btn btn-outline-light">{{btn}}</button> -->
           <section class="casestudies-action">
             <div class="slideshow-container">
               <div *ngIf="listOfCaseStudies?.length >= 6" class="left" (click)="scrollLeft()">
@@ -20,10 +21,11 @@
                 <div class="overflow flex-row-nowrap">
                   <!-- [ngStyle]="{'width': overflowWidth, 'left': pagePosition}" -->
                   <article class="casestudie-card-body" *ngFor="let resource of listOfCaseStudies; let index = index">
-                    <div (click)="open(resource?.id)" class="card cursor">
+                    <div (click)="open(resource)" class="card cursor">
                       <!-- [ngStyle]="{'width': cardWidth}" -->
                       <!-- <span>{{i}}</span> -->
-                      <img src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                      <img
+                        src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
                         alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
                     </div>
                     <div class="card-content">

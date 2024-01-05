@@ -106,15 +106,26 @@ export class ResourcesCategoriesComponent implements OnChanges {
     this.selectedCategorieList = this.resourceJson.filter(resource => resource?.attributes?.category?.data?.attributes?.CategoryTitle == value);
   }
 
-  open(id) {
-    let index = this.resourceJson.map(res => res.id).indexOf(id);
-    if (index !== -1) {
-      this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
-      // setTimeout(() => {
-      //   this.location.replaceState('/blogs');
-      // }, 100);
+  // open(id) {
+  //   let index = this.resourceJson.map(res => res.id).indexOf(id);
+  //   if (index !== -1) {
+  //     this.router.navigate(['/blogs', { data: JSON.stringify(this.resourceJson[index]), skipLocationChange: true }]);
+  //     // setTimeout(() => {
+  //     //   this.location.replaceState('/blogs');
+  //     // }, 100);
+  //   }
+  // }
+
+  open(resource) {
+    if (resource) {
+      let data = {
+        slug: resource.attributes.Slug,
+        id: resource.id
+      }
+      this.router.navigate(['/blogs', { data: JSON.stringify(data) }]);
     }
   }
+
   test() {
     const item = {
       textbox: {
