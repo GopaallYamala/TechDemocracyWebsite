@@ -16,8 +16,10 @@ export class RestService {
       // this.maincontexturl = '/backend-api';
       // this.maincontexturl = 'http://125.20.96.9:4201';
       // this.maincontexturl = 'http://162.240.148.84:52518';
-      this.maincontexturl = 'http://localhost:52518';
-      this.strapiContextUrl = 'http://162.240.148.84:1337'
+      // this.maincontexturl = 'http://localhost:52518';
+      // this.strapiContextUrl = 'http://162.240.148.84:1337'
+      this.maincontexturl = '';
+      this.strapiContextUrl = '';
     } else {
       // this.maincontexturl = 'http://10.0.20.24:4201';
       // this.maincontexturl = 'http://10.0.20.50:4201';
@@ -35,7 +37,7 @@ export class RestService {
       'Content-Type': 'application/json',
       // 'Authorization': 'Bearer ' + localStorage.getItem('JWT_TOKEN'),
       // 'Authorization': 'Bearer 54f483a805db87d66e79a24dfaedeadaf16b46ce95212ce468b405a138879fb323a3f7fed825c751f363608ddf73573e8d75a3130a401b44bf120b572efb35555d93730877e45070fd6f889fd10f355a321e5a87115dfa1f01de3a59727f893de157a59433ccae85b48a0d0231906dfb1e538729c2dfbefb52183767db66fe66'
-      'Authorization': 'Bearer 5c68362ab6172c18aa9a59b323d937a471460cfb20d95f0872188b336e21de8b028e32792c6e665551cee715bd17ed034c3af59cb2b77d474d06ab482524a502bae1a2eb0df114a9f2ad9d46aa1f0a263ece7045e56e1b052e0f81e45cd3d5c5d04ec6dc6a1b509c59cb7dd7518a32a2e1afd846711dca8cb596d9b72dd97157'
+      'Authorization': 'Bearer 34e640b3541260c0ca82c1b7e1c3368a7111968963fa42dfe54b5d7a829370017a74547f712e515651ddda8c15a420caf1d6a4cab4332033d15023216c0396a5822d543b8deee4631cb3e7ba3db74f329f4ab31a2481af5da56ab7209baabb76afb54fcc28fd21d7d6faf7aaf33f628ea47b8ea95ffccb28915423e2f6271771'
     }
     return new HttpHeaders(headerDict);
   }
