@@ -4,14 +4,15 @@
     <section class="row">
       <div class="flex-col-nowrap col-md-3">
         <div class="py-2" *ngFor="let resource of categoriesList">
-          <li (click)="SelectCategorie(resource)" class="list-casestudy w-75 {{selectedCategorie === resource ? 'selected' : ''}}">
+          <li (click)="SelectCategorie(resource)"
+            class="list-casestudy w-75 {{selectedCategorie === resource ? 'selected' : ''}}">
             {{resource}}</li>
         </div>
       </div>
       <div class="col-md-9 categories">
         <div class="row">
           <!-- | filter: { episodeId: searchEpisodeById } -->
-          <ng-container *ngFor="let resource of selectedCategorieList | slice:0:categoriesIndex; let i = index">
+          <ng-container *ngFor="let resource of (selectedCategorie === 'All' ? resourceJson: selectedCategorieList) | slice:(selectedCategorie === 'All' ? '' : (selectedCategorieList?.length > 6 ? selectedCategorieList?.length - 6 : 0)); let i = index">
             <div (click)="open(resource)"
               *ngIf="((resource?.attributes?.category?.data?.attributes?.CategoryTitle === selectedCategorie) || ('All' === selectedCategorie));else empty"
               class="flex-col-nowrap col-md-4 gutter-bottom-1 cursor">
@@ -21,7 +22,7 @@
                 src="{{strapiContextUrl + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
                 alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
               <article class="pt-3 pb-5">
-                <p>{{resource?.attributes?.category?.data?.attributes?.CategoryTitle}}</p>
+                <p class="mb-0">{{resource?.attributes?.category?.data?.attributes?.CategoryTitle}}</p>
                 <h4>{{resource?.attributes?.HeadingTitle}}</h4>
                 <!-- <a href="#">{{sample.read}}</a> -->
               </article>
@@ -36,11 +37,11 @@
             <h4>No data available</h4>
           </ng-container>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <button *ngIf="resourceJson?.length >= 6" (click)="viewAll()"
             class="btn btn-outline-dark btn-lg btn-block">View
             All</button>
-        </div>
+        </div> -->
 
       </div>
     </section>
