@@ -59,11 +59,11 @@ export class CaseStudiesComponent implements OnInit {
       this.listOfCaseStudies = resourceObj.filter(resource => resource?.attributes?.ResourceType == "CaseStudy");
     })
   }
-
+  // Customer Success
   getResources() {
     this.strapiService.getBlog().subscribe(res => {
       let resourceObj = res.data;
-      this.listOfCaseStudies = resourceObj.filter(resource => resource?.attributes?.category?.data?.attributes?.CategoryTitle == "Case Studies");
+      this.listOfCaseStudies = resourceObj.filter(resource => ((resource?.attributes?.category?.data?.attributes?.CategoryTitle == "Case Studies") || (resource?.attributes?.category?.data?.attributes?.CategoryTitle == "Customer Success") || (resource?.attributes?.category?.data?.attributes?.CategoryTitle == "Online Journal")));
     });
   }
 

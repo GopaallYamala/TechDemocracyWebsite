@@ -6,7 +6,7 @@
           <h2>Case Studies</h2>
           <div class="view-casestudies gutter-bottom-2">
             <p>Some of our Client’s Success Stories</p>
-            <a *ngIf="listOfCaseStudies?.length <= 2" class="nav-link" routerLink="/resources"
+            <a *ngIf="listOfCaseStudies?.length >= 2" class="nav-link" routerLink="/resources"
               routerLinkActive="active">View All</a>
           </div>
           <!-- <button *ngFor="let btn of buttonsList" type="button" class="btn btn-outline-light">{{btn}}</button> -->
@@ -36,7 +36,7 @@
                 </div>
               </div>
               <!-- [ngClass]="{'disabled':currentPage === totalPages}" -->
-              <div *ngIf="listOfCaseStudies?.length >= 6" class="right" (click)="scrollRight()">
+              <div class="right" (click)="scrollRight()">
                 <svg-icon-component [name]="'navigate_next'"></svg-icon-component>
               </div>
             </div>
