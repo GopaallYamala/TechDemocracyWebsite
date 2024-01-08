@@ -18,7 +18,7 @@
               <!-- <div class="caseStudy"></div> -->
               <!-- <img class="casestudyimg" src="../../assets/images/Resource/TelecomInd.png" /> -->
               <img class="casestudyimg"
-                src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+                src="{{strapiContextUrl + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
                 alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
               <article class="pt-3 pb-5">
                 <p>{{resource?.attributes?.category?.data?.attributes?.CategoryTitle}}</p>

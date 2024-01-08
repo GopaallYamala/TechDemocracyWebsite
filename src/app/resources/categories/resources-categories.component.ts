@@ -15,6 +15,7 @@ export class ResourcesCategoriesComponent implements OnChanges {
   selectedCategorie: string = "All";
   selectedCategorieList: any;
   @Input() categoriesList: any;
+  @Input() strapiContextUrl:any;
 
   constructor(private readonly router: Router, private location: Location) { }
 

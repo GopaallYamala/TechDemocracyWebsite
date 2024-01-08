@@ -21,7 +21,7 @@
           *ngFor="let resource of resourceJson | slice: (resourceJson?.length > 2 ? resourceJson?.length - 2 : 0); index as i">
           <section class="prefered-caseStudie py-3">
             <article (click)="open(resource)" class="resourceimg cursor">
-              <img src="{{'http://localhost:1337' + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
+              <img src="{{strapiContextUrl + resource?.attributes?.FeaturedImage?.data?.attributes?.url}}"
                 alt="{{resource?.attributes?.FeaturedImage?.data?.attributes?.hash}}">
             </article>
             <p class="events pt-3">{{resource?.attributes?.category?.data?.attributes?.CategoryTitle}}</p>

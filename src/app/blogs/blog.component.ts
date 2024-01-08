@@ -21,6 +21,7 @@ export class BlogComponent implements OnInit {
   blogDeatils: any;
   recommendedArticle: any
   recommendedArticle2: any
+  strapiContextUrl:any;
   CategorieObj = [
     {
       type: 'Customer Story',
@@ -42,6 +43,7 @@ export class BlogComponent implements OnInit {
 
 
   ngOnInit() {
+    this.strapiContextUrl = this.strapiService.strapiContextUrl;
     let data: any = JSON.parse(this.route.snapshot.paramMap.get('data'));
     this.getArticleDetails(data.id);
   }

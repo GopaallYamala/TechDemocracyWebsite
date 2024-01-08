@@ -27,6 +27,7 @@ export class CaseStudiesComponent implements OnInit {
   @ViewChild('widgetsContent', { read: ElementRef }) public widgetsContent: ElementRef<any>;
   isOverflow: any;
   listOfCaseStudies: any;
+  strapiContextUrl: any;
 
   constructor(private readonly resourceService: ResourceService,
     private readonly router: Router,
@@ -36,6 +37,7 @@ export class CaseStudiesComponent implements OnInit {
 
   ngOnInit() {
     AOS.init();
+    this.strapiContextUrl = this.resourceService.strapiContextUrl;
     this.getResources();
   }
 
