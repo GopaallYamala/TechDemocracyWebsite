@@ -13,6 +13,8 @@ export class ResourcesHighlightsComponent implements OnInit, OnChanges {
 
   @Input() resourceObj: any;
   resourceJson: any;
+  @Input() strapiContextUrl: any;
+
 
   constructor(private readonly router: Router, private readonly location: Location) { }
 

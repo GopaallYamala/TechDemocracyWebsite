@@ -6,10 +6,11 @@
         <!-- <button class="btn btn-outline-danger">View All</button> -->
       </div>
     </header>
-    <section *ngFor="let news of newsObj | slice: (newsObj?.length > 4 ? newsObj?.length - 4 : 0); index as i" class="cp-cards-container row">
-      <article class="cp-card-section col-md-3">
+    <div class="row">
+    <section *ngFor="let news of newsObj | slice: (newsObj?.length > 4 ? newsObj?.length - 4 : 0); index as i" class="cp-cards-container col-md-3">
+      <article class="cp-card-section">
         <div class="cp-card">
-          <img src="{{'http://localhost:1337' + news?.attributes?.NewsImage?.data?.attributes?.url}}" />
+          <img src="{{strapiContextUrl + news?.attributes?.NewsImage?.data?.attributes?.url}}" />
         </div>
 
         <label>{{news?.attributes?.NewsFrom}}</label>
@@ -50,5 +51,6 @@
  -->
 
     </section>
+  </div>
   </div>
 </section>

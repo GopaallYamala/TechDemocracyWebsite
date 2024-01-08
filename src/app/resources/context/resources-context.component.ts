@@ -11,6 +11,7 @@ export class ResourcesContextComponent implements OnInit, OnChanges {
   @Input() contextType: string;
   @Input() resourceObj: any;
   resourceJson: any;
+  @Input() strapiContextUrl: any;
 
   upcomingEvents = [1, 2, 3, 4, 5, 6];
   latestVideos = [{ type: "webinar" }, { type: "Firechart" }, { type: "Event" }, { type: "webinar" }, { type: "Firechart" }, { type: "Event" }, { type: "webinar" }, { type: "Firechart" }, { type: "Event" }];
@@ -21,7 +22,7 @@ export class ResourcesContextComponent implements OnInit, OnChanges {
   listOfUsers = [{ role: 'Panelist', name: 'Divyansh Chavan', designation: 'Chief Technology Officer' }, { role: 'Panelist', name: 'Manohar Ram', designation: 'Accounting Supervisor' }, { role: 'Panelist', name: 'Ninarika Sengupta', designation: 'Product Developer' }, { role: 'Moderator', name: 'Nayan Bhavsar', designation: 'Cloud System Adminstrator' }]
 
 
-  constructor(private router:Router){
+  constructor(private router: Router) {
 
   }
 

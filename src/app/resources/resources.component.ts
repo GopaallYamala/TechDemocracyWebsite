@@ -16,7 +16,8 @@ export class ResourcesComponent implements OnInit {
   resourceList: any;
   resourceStringObj: any;
   resourceObj: any;
-  categoriesList:any;
+  categoriesList: any;
+  strapiContextUrl: any;
 
   constructor(private readonly strapiService: StrapiService,
     private readonly resourceService: ResourceService,
@@ -39,6 +40,7 @@ export class ResourcesComponent implements OnInit {
     );
     this.getResources();
     this.getCategorys();
+    this.strapiContextUrl = this.strapiService.strapiContextUrl;
   }
 
   getResources() {
@@ -58,7 +60,7 @@ export class ResourcesComponent implements OnInit {
       console.log("Categorys", res);
       let data = res.data;
       data.forEach(categorie => {
-        if(categorie){
+        if (categorie) {
           categories.push(categorie.attributes.CategoryTitle);
         }
       });

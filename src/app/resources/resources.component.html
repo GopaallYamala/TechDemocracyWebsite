@@ -10,15 +10,15 @@
     </div>
   </article> -->
   <ng-container *ngIf="contextType === 'All';else other">
-    <highlights [resourceObj]="resourceObj"></highlights>
-    <resources-categories [resourceObj]="resourceObj" [categoriesList]="categoriesList"></resources-categories>
+    <highlights [resourceObj]="resourceObj" [strapiContextUrl]="strapiContextUrl"></highlights>
+    <resources-categories [resourceObj]="resourceObj" [categoriesList]="categoriesList" [strapiContextUrl]="strapiContextUrl"></resources-categories>
     <!-- <events></events> -->
       <!-- Consultation -->
   <consultation-component></consultation-component>`
   </ng-container>
   <ng-template #other>
     <ng-container>
-      <resources-context [contextType]="contextType" [resourceObj]="resourceObj"></resources-context>
+      <resources-context [contextType]="contextType" [resourceObj]="resourceObj" [strapiContextUrl]="strapiContextUrl"></resources-context>
     </ng-container>
   </ng-template>
   <!-- <div id="DynamicData"></div> -->

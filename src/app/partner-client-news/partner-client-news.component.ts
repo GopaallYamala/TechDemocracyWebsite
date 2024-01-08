@@ -10,6 +10,7 @@ import { StrapiService } from 'src/shared/services/strapi.service';
 export class PartnersClientNewsComponent implements OnInit {
 
 newsObj:any;
+strapiContextUrl:any;
 
   constructor(private readonly strapiService:StrapiService){
 
@@ -17,6 +18,7 @@ newsObj:any;
 
   ngOnInit() {
     this.getAllNews();
+    this.strapiContextUrl =this.strapiService.strapiContextUrl;
   }
 
   getAllNews(){

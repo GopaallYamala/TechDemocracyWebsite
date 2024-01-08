@@ -16,10 +16,12 @@ export class SuccessStoriesComponent implements OnChanges, OnInit {
   subTitle: any;
   heroImage: any;
   selectedSolution:any;
+  strapiContextUrl:any;
 
   constructor(private readonly strapiService: StrapiService) { }
 
   ngOnInit() {
+    this.strapiContextUrl = this.strapiService.strapiContextUrl;
     this.getAllResources();
   }
 
