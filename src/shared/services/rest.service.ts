@@ -18,8 +18,8 @@ export class RestService {
       // this.maincontexturl = 'http://162.240.148.84:52518';
       // this.maincontexturl = 'http://localhost:52518';
       // this.strapiContextUrl = 'http://162.240.148.84:1337'
-      this.maincontexturl = 'http://14.99.142.194:39358';
-      this.strapiContextUrl = ' http://14.99.142.194:49458';
+      this.maincontexturl = 'https://14.99.142.194:39358';
+      this.strapiContextUrl = ' https://14.99.142.194:49458';
     } else {
       // this.maincontexturl = 'http://10.0.20.24:4201';
       // this.maincontexturl = 'http://10.0.20.50:4201';
